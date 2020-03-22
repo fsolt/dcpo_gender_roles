@@ -49,3 +49,9 @@ evs_combo,fatherchild4,d064,c(1:4)
 evs_combo,childrespon4,d064_01,c(4:1)
 evs_combo,emotion4,d065,c(4:1)
 evs_combo,movement4b,e108,c(4:1)
+amb_combo,polileader4,vb50,c(1:4)
+amb_combo,corruptpoli3,vb51,"c(1,2,3)"
+amb_combo,job3b,vb52,"c(1,2,3)"
+amb_combo,quota10,eref1,c(1:10)
+amb_combo,discriminate4a,dis12,c(1:4)
+amb_combo,discriminate4b,rac1e,c(1:4)
