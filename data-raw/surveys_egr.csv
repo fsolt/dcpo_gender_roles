@@ -1,162 +1,166 @@
 ﻿survey,item,variable,values
+issp2002,work5a,v4,"c(5:1)"
+issp1994,work5a,v4,"c(5:1)"
+issp1988,work5a,v4,"c(5:1)"
+nsss8990,work5a,work5d,"c(5:1)"
+nsss1993,work5a,mumwkwr3,"c(5:1)"
+evs_combo,work4,d056,c(4:1)
+wvs_combo,work4,d056,c(4:1)
 wvs_combo,job3a,c001,"c(1,3,2)"
-wvs_combo,children2,d019,"c(1,0)"
-wvs_combo,parent3,d023,"c(0,2,1)"
-wvs_combo,childwork4a,d056,c(4:1)
-wvs_combo,housewife4,d057,c(4:1)
+evs_combo,job3a,c001,"c(1,3,2)"
+wvs_combo,childfull2,d019,"c(1,0)"
+evs_combo,childfull2,d019,"c(1,0)"
+wvs_combo,housewifefull4,d057,"c(1:4)"
+evs_combo,housewifefull4,d057,"c(1:4)"
+issp1988,housewifefull5,v9,"c(1:5)"
+issp1994,housewifefull5,v8,"c(1:5)"
+issp2002,housewifefull5,v8,"c(1:5)"
+nsss8990,housewifefull5,WFFULFIL,"c(1:5)"
 wvs_combo,income4,d058,c(4:1)
+evs_combo,income4,d058,c(4:1)
+issp1988,income5,v11,"c(5:1)"
+issp1994,income5,v11,"c(5:1)"
+issp2002,income5,v10,"c(5:1)"
+nsss8990,income5,HSBWFWK,"c(5:1)"
 wvs_combo,polileader4,d059,c(1:4)
+evs_combo,polileader4,d059,c(1:4)
+lb2004, polileader4, p57wvs_b, c(1:4)
+lb2009, polileader4, p57wvs_d, c(1:4)
+amb_combo,polileader4,vb50,c(1:4)
+hun_pre1990,partyleader5,v148,"c(1,5,2,4,3)"
 wvs_combo,education4,d060,c(1:4)
-wvs_combo,childwork4b,d061,c(1:4)
-wvs_combo,want4,d062,c(1:4)
+evs_combo,education4,d060,c(1:4)
+wvs_combo,preschoolwork4,d061,c(1:4)
+evs_combo,preschoolwork4,d061,c(1:4)
+issp1988,preschoolwork5,v5,"c(1:5)"
+issp1994,preschoolwork5,v5,"c(1:5)"
+issp2002,preschoolwork5,v5,"c(1:5)"
+nsss8990,preschoolwork5,PRESSUF,"c(1:5)"
+nsss1993,preschoolwork5,pressuf3,"c(1:5)"
+wvs_combo,wantch4,d062,c(1:4)
+evs_combo,wantch4,d062,c(1:4)
+issp1988,wantch5,v8,"c(1:5)"
+issp1994,wantch5,v7,"c(1:5)"
+issp2002,wantch5,v7,"c(1:5)"
+nsss8990,wantch5,WKHMKID,"c(1:5)"
 wvs_combo,jobinde4,d063,c(4:1)
+evs_combo,jobinde4,d063,c(4:1)
+issp1988,jobinde5,v10,"c(5:1)"
+issp1994,jobinde5,v9,"c(5:1)"
+issp2002,jobinde5,v9,"c(5:1)"
+nsss8990,jobinde5,WWKINDEP,"c(5:1)"
 wvs_combo,moneyprob4,d066,c(1:4)
+lb2004, moneyprob4, p57n_c, c(1:4)
+lb2009, moneyprob4, p67st_e, c(4:4)
 wvs_combo,veil5a,d067,c(1:5)
+wvs_combo,veil5b,f164,c(1:5)
 wvs_combo,goodmother5,d068,c(1:5)
 wvs_combo,goodwife5,d069,c(1:5)
 wvs_combo,education5,d071,c(5:1)
 wvs_combo,independence5,d072,c(5:1)
-wvs_combo,work5a,d073,c(5:1)
+wvs_combo,havingwork5,d073,c(5:1)
 wvs_combo,numwife4a,d076,c(1:4)
 wvs_combo,obey4,d077,c(1:4)
 wvs_combo,busiexecutive4,d078,c(1:4)
-wvs_combo,movement4b,e108,c(4:1)
-wvs_combo,work5b,e213,c(1:5)
-wvs_combo,veil5b,f164,c(5:1)
-wvs_combo,class5,f165,c(1:5)
-wvs_combo,numwife4b,f166,c(1:5)
-wvs_combo,beat10,f199,c(10:1)
-evs_combo,unmarried2,a124_40,"c(0,1)"
-evs_combo,job3a,c001,"c(1,3,2)"
-evs_combo,children2,d019,"c(1,0)"
 evs_combo,manchildren5,d020,c(1:5)
-evs_combo,single3,d023,"c(0,2,1)"
-evs_combo,childwork4a,d056,c(4:1)
-evs_combo,housewife4,d057,c(4:1)
-evs_combo,income4,d058,c(4:1)
-evs_combo,polileader4,d059,c(1:4)
-evs_combo,education4,d060,c(1:4)
-evs_combo,childwork4b,d061,c(1:4)
-evs_combo,want4,d062,c(4:1)
-evs_combo,jobinde4,d063,c(4:1)
-evs_combo,fatherchild4,d064,c(1:4)
-evs_combo,childrespon4,d064_01,c(4:1)
-evs_combo,movement4b,e108,c(4:1)
-amb_combo,polileader4,vb50,c(1:4)
-amb_combo,job3b,vb52,"c(1,2,3)"
-amb_combo,quota10,eref1,c(1:10)
-amb_combo,discriminate4b,rac1e,c(1:4)
+wvs_combo,islamclass5,f165,"c(1:5)"
+wvs_combo,sparent3,d023,"c(0,2,1)"
+evs_combo,sparent3,d023,"c(0,2,1)"
+wvs_combo,work5b,e213,c(1:5)
+issp1988,work3a,v17,"c(3:1)"
+issp1988,work3b,v16,"c(3:1)"
+issp1988,work3c,v15,"c(3:1)"
+issp1988,work3d,v14,"c(3:1)"
+issp1994,work3a,v18,"c(3:1)"
+issp1994,work3b,v17,"c(3:1)"
+issp1994,work3c,v16,"c(3:1)"
+issp1994,work3d,v15,"c(3:1)"
+issp2002,work3a,v17,"c(3:1)"
+issp2002,work3b,v16,"c(3:1)"
+issp2002,work3c,v15,"c(3:1)"
+issp2002,work3d,v14,"c(3:1)"
+issp2002,work3f,v64,"c(3:1)"
+nsss1994,work3d,p36q7a,"c(3:1)"
+nsss1994,work3c,p36q7b,"c(3:1)"
+nsss1994,work3b,p36q7c,"c(3:1)"
+nsss1994,work3a,p36q7d,"c(3:1)"
+nsss8990,work3d,WKPFBEFK,"c(3:1)"
+nsss8990,work3c,WKPFPRES,"c(3:1)"
+nsss8990,work3b,WKPFSCH,"c(3:1)"
+nsss8990,work3a,WKPFGONE,"c(3:1)"
+nsss8990,work3e,WKPFHRET,"c(3:1)"
+nsss8990,work3d,WKSHBEFK,"c(3:1)"
+nsss8990,work3c,WKSHPRES,"c(3:1)"
+nsss8990,work3b,WKSHSCH,"c(3:1)"
+nsss8990,work3a,WKSHGONE,"c(3:1)"
+wvs_combo,islamnumwife5,f166,c(5:1)
+wvs_combo,beat10,f199,c(10:1)
+evs_combo,unmarried2,a124_40,"c(1,0)"
+evs_combo,fatherchild4,d064,c(4:1)
+evs_combo,chrespon4,d064_01,c(4:1)
+lb2006,chrespon3, p88n, "c(1,3,2)"
 lb2009, equality4, p15st_f, c(4:1)
+amb_combo,politicianecon3,vb52,"c(1,2,3)"
+hun_pre1990,politicianpopular3,v151,"c(1,2,3)"
+hun_pre1990,politicianbetter3,v153,"c(1,3,2)"
+amb_combo,quota10,eref1,c(1:10)
+cnes2003,quota2,p38,"c(2,1)"
 lb1997, concentrate4, nps67b, c(1:4)
 lb2000, concentrate4, p69st, c(1:4)
 lb2004, concentrate4, p57st_a, c(1:4)
 lb2009, concentrate4, p67st_c, c(1:4)
-lb2004, polileader4, p57wvs_b, c(1:4)
-lb2009, polileader4, p57wvs_d, c(1:4)
-lb2004, moneyprob4, p57n_c, c(1:4)
-lb2009, moneyprob4, p67st_e, c(1:4)
-lb2006, childequal3, p88n, "c(1,3,2)"
 lb2007, whisper2, p70n_a, "c(1,2)"
 lb2007, rubbed2, p70n_b, "c(1,2)"
 lb2002, respect4, p24ub, "c(4,1)"
 lb2007, womenretire83, p74na, c(18:100)
 lb2007, menretire83, p74nb, c(18:100)
-lb2006, public2a, p87n_1, "c(0,1)"
-lb2006, public2b, p87n_2, "c(0,1)"
-lb2006, public2c, p87n_3, "c(0,1)"
-lb2006, public2d, p87n_4, "c(0,1)"
-lb2006, public2e, p87n_5, "c(1,0)"
-lb2006, public2f, p87n_6, "c(0,1)"
-lb1995, opportunity2a, p66a, "c(2,1)"
-lb1996, opportunity2a, p69a, "c(2,1)"
-lb1997, opportunity2a, sp69a, "c(2,1)"
-lb2000, opportunity2a, p70st_a, "c(2,1)"
-lb1995, opportunity2b, p66b, "c(2,1)"
-lb1996, opportunity2b, p69b, "c(2,1)"
-lb1997, opportunity2b, sp69b, "c(2,1)"
-lb2000, opportunity2b, p70st_b, "c(2,1)"
-lb2005, opportunity2b, p69st, "c(2,1)"
-lb2006, opportunity2b, p77st_b, "c(2,1)"
-lb1995, opportunity2c, p66c, "c(2,1)"
-lb1996, opportunity2c, p69c, "c(2,1)"
-lb1997, opportunity2c, sp69c, "c(2,1)"
-lb2000, opportunity2c, p70st_c, "c(2,1)"
-lb2006, qualeducation3, p69n, "c(1,2,3)"
-lb1997, opportunity2d, sp69d, "c(2,1)"
-lb2000, opportunity2d, p70st_d, "c(2,1)"
-lb2006, opportunity2d, p77st_a, "c(2,1)"
-lb2002, discriminate6a, p27no2a, "c(1:6)"
-lb2002, discriminate6b, p27no2b, "c(1:6)"
-lb2006, poliwork4, p89n, "c(1,2,3)"
-aes1990,job5a,f6wifhom,"c(1:5)"
-aes1993,job5b,e5,"c(5:1)"
+lb2006, public2a, p87n_1, "c(1,0)"
+lb2006, public2b, p87n_2, "c(1,0)"
+lb2006, public2c, p87n_5, "c(1,0)"
+lb2006, poliwork4, p89n, "c(1,2,4,3)"
+aes1990,responch,f6wifhom,"c(1:5)"
 aes1998,protdis2,e12,"c(2,1)"
 aes1998,equality3,e17p4,"c(3:1)"
-aes1998,children5,g14p3,"c(1:5)"
-aes1998,genderbeing4,g17p9,"c(1:4)"
 aes2001,equality3,e10p4,"c(3:1)"
+aes1998,children5,g14p3,"c(1:5)"
 aes2001,children5,g10p3,"c(1:5)"
-nsss1984,prestg5,WfPrestg,"c(1:5)"
+aes1998,genderbeing4,g17p9,"c(1:4)"
+nsss1984,lecprestg5,WfPrestg,"c(1:5)"
+nsss1987,lecprestg5,wfprestg,"c(1:5)"
 nsss1984,respect5,WfRespct,"c(5:1)"
-nsss1984,earn5,WomEarn,"c(5:1)"
-nsss1984,family5,WomFam,"c(1:5)"
-nsss1984,career5,WCareer,"c(1:5)"
-nsss1984,jobsex4a,JobSexN,"c(1:4)"
-nsss1984,jobsex4b,JobSexY,"c(1:4)"
-nsss1987,treatjob5,wompref,"c(5:1)"
-nsss1987,prestg5,wfprestg,"c(1:5)"
 nsss1987,respect5,wfrespct,"c(5:1)"
+nsss1984,earn5,WomEarn,"c(5:1)"
 nsss1987,earn5,womearn,"c(5:1)"
+nsss8990,earn5,WEARNOK,"c(5:1)"
+nsss1993,earn5,wearnok3,"c(5:1)"
+nsss1984,family5,WomFam,"c(1:5)"
 nsss1987,family5,womfam,"c(1:5)"
+nsss8990,family5,WDEVFAM,"c(1:5)"
+nsss1993,family5,wdevfa3,"c(1:5)"
+nsss1984,career5,WCareer,"c(1:5)"
 nsss1987,career5,wcareer,"c(1:5)"
+nsss8990,career5,WCARBAD,"c(1:5)"
+nsss1993,career5,wcarbad3,"c(1:5)"
+nsss1984,jobsex4a,JobSexN,"c(1:4)"
 nsss1987,jobsex4a,jobsexn,"c(1:4)"
+nsss1984,jobsex4b,JobSexY,"c(1:4)"
 nsss1987,jobsex4b,jobsexy,"c(1:4)"
+nsss1987,treatjob5,wompref,"c(5:1)"
 nsss8788,paygender6,rewsex,"c(1:6)"
 nsss8788,lifegender5,at2sex,"c(1:5)"
-nsss8990,childwork5a,MUMWKWRM,"c(5:1)"
-nsss8990,childwork5b,PRESSUF,"c(1:5)"
-nsss8990,familywork5a,FAMSUFFT,"c(1:5)"
 nsss8990,familywork5b,FAMHAPWK,"c(5:1)"
-nsss8990,home5,WKHMKID,"c(1:5)"
-nsss8990,housewife5,WFFULFIL,"c(5:1)"
-nsss8990,jobinde5,WWKINDEP,"c(5:1)"
-nsss8990,income5,HSBWFWK,"c(5:1)"
-nsss8990,home5,WFHMFAM,"c(1:5)"
-nsss8990,work3a,WKSHBEFK,"c(3:1)"
-nsss8990,work3b,WKSHPRES,"c(3:1)"
-nsss8990,work3c,WKSHSCH,"c(3:1)"
-nsss8990,work3d,WKSHGONE,"c(3:1)"
 nsss8990,single5a,LONEMO,"c(5:1)"
 nsss8990,single5b,LONEFA,"c(5:1)"
-nsss8990,earn5,WEARNOK,"c(5:1)"
-nsss8990,family5,WDEVFAM,"c(1:5)"
-nsss8990,career5,WCARBAD,"c(1:5)"
-nsss8990,work3e,WKPFBEFK,"c(3:1)"
-nsss8990,work3f,WKPFPRES,"c(3:1)"
-nsss8990,work3g,WKPFSCH,"c(3:1)"
-nsss8990,work3h,WKPFGONE,"c(3:1)"
-nsss8990,work3i,WKPFHRET,"c(3:1)"
 nsss8990,wifejob7,WKPFNOWH,"c(7:1)"
 nsss8990,bornsex6,AT2SEX,"c(1:6)"
 nsss8990,childernmoter5,PRESHOME,"c(1:5)"
 nsss8990,todller5,TODNDMO,"c(1:5)"
 nsss8990,wifejob5,WKPFNWH,"c(5:1)"
 nsss8990,paygender6,REWSEX,"c(1:6)"
-nsss1993,childwork5a,mumwkwr3,"c(5:1)"
-nsss1993,childwork5b,pressuf3,"c(1:5)"
-nsss1993,familywork5a,famsuff3,"c(1:5)"
-nsss1993,earn5,wearnok3,"c(5:1)"
-nsss1993,family5,wdevfa3,"c(1:5)"
-nsss1993,career5,wcarbad3,"c(1:5)"
 nsss1993,home5,wfhmfam3,"c(1:5)"
-nsss1993,familywork5a,famsuf3x,"c(1:5)"
 nsss1993,lifegender5,at2sex3,"c(1:5)"
 nsss1993,press4a,prdegwo,"c(1:4)"
 nsss1993,press4b,prmobad,"c(1:4)"
-nsss1994,work3j,p36q7a,"c(3:1)"
-nsss1994,work3k,p36q7b,"c(3:1)"
-nsss1994,work3l,p36q7c,"c(3:1)"
-nsss1994,work3m,p36q7d,"c(3:1)"
 nsss9596,womenpaleav5,p78q3d,"c(5:1)"
 nsss9596,menpaleav5,p78q3e,"c(5:1)"
 nsss9596,womenpaleav9,p78q5c,"c(1:9)"
@@ -164,11 +168,8 @@ nsss9596,menpaleav9,p78q5d,"c(1:9)"
 nsss9596,childmother5,p79q8a,"c(1:5)"
 nsss9596,childfather5,p79q8b,"c(5:1)"
 bda2002,bornsex10,v72,"c(0:9)"
-bda2002,household5a,v110,"c(5:1)"
 cnes2000,houshold4,C24gzene,"c(4:1)"
 cnes2003,socialposition,p24_h,"c(1:4)"
-cnes2003,household5b,p26_g,"c(5:1)"
-cnes2003,quota2,p38,"c(2,1)"
 ce_post1996,household5c,v118,"c(5:1)"
 hun_pre1990,repre3,v64,"c(1,2,3)"
 hun_pre1990,driver5,v141,"c(1,5,2,4,3)"
@@ -178,14 +179,10 @@ hun_pre1990,boss5,v144,"c(1,5,2,4,3)"
 hun_pre1990,mp5,v145,"c(1,5,2,4,3)"
 hun_pre1990,surgeon5,v146,"c(1,5,2,4,3)"
 hun_pre1990,minister5,v147,"c(1,5,2,4,3)"
-hun_pre1990,partyleader5,v148,"c(1,5,2,4,3)"
 hun_pre1990,duty3,v149,"c(1,2,3)"
 hun_pre1990,politics3,v150,"c(1,2,3)"
-hun_pre1990,politician3a,v151,"c(1,2,3)"
-hun_pre1990,politician3b,v153,"c(1,3,2)"
 hun_post1994,duty5,v150,"c(5:1)"
 hun_post1994,worksuff5,v151,"c(5:1)"
-pnes1997,role5,sexrl052,"c(1:5)"
 slovakia1999,respect4,v184,"c(4:1)"
 slovakia1999,politics5a,v186,"c(5:1)"
 slovakia1999,advice4,v187,"c(4:1)"
@@ -207,52 +204,32 @@ aes1998,equalopp5,e2equop,"c(5,4,1,2,3)"
 aes1987,equalopp3,Q51EQOPW,"c(3,1,2)"
 aes1990,equalopp5,f5equop,"c(5,4,1,2,3)"
 aes1993,equalopp5,e2equop,"c(5,4,1,2,3)"
-cdcee,house4,v232,"c(1:4)"
-cdcee,equal4,v168,"c(4:1)"
+nsss8990,home5a,WFHMFAM,"c(1:5)"
+issp1988,home5a,v12,"c(1:5)"
+issp1998,home5a,v12,"c(1:5)"
+issp1991,home5a,v16,"c(1:5)"
+issp2008,home5a,v12,"c(1:5)"
+issp1994,home5b,v12,"c(1:5)"
+issp2002,home5b,v11,"c(1:5)"
+bda2002,household5a,v110,"c(5:1)"
+cnes2003,household5b,p26_g,"c(5:1)"
+pnes1997,role5,sexrl052,"c(1:5)"
+cdcee,household4,v232,"c(1:4)"
 asianb1,supervise4,q070,"c(1:4)"
 asianb3,politics4,qIII139,"c(1:4)"
-asianb3,child4,qIII62,"c(1:4)"
-issp2008,house5,v12,"c(1:5)"
+asianb3,prechild4,qIII62,"c(1:4)"
 issp2002,child5,v13,"c(5:1)"
 issp2002,house5a,v12,"c(5:1)"
-issp2002,house5,v11,"c(1:5)"
 issp2002,maternity5,v27,"c(5:1)"
-issp2002,work3,v64,"c(3:1)"
-issp2002,work3a,v17,"c(3:1)"
-issp2002,work3b,v16,"c(3:1)"
-issp2002,work3c,v15,"c(3:1)"
-issp2002,work3d,v14,"c(3:1)"
-issp2002,work5,v10,"c(5:1)"
-issp2002,work5a,v7,"c(1:5)"
-issp2002,work5b,v6,"c(1:5)"
-issp2002,work5c,v5,"c(1:5)"
-issp2002,work5d,v4,"c(5:1)"
-issp1998,work5b,v13,"c(1:5)"
-issp1998,house5,v12,"c(1:5)"
 issp1994,maternity5,v42,"c(5:1)"
-issp1994,work3a,v18,"c(3:1)"
-issp1994,work3b,v17,"c(3:1)"
-issp1994,work3c,v16,"c(3:1)"
-issp1994,work3d,v15,"c(3:1)"
-issp1994,work5e,v14,"c(5:1)"
-issp1994,house5b,v13,"c(1:5)"
-issp1994,house5,v12,"c(1:5)"
-issp1994,work5,v11,"c(5:1)"
-issp1994,work5a,v7,"c(1:5)"
-issp1994,work5b,v6,"c(1:5)"
-issp1994,work5c,v5,"c(1:5)"
-issp1994,work5d,v4,"c(5:1)"
-issp1991,work5b,v17,"c(1:5)"
-issp1991,house5,v16,"c(1:5)"
-issp1988,work3a,v17,"c(3:1)"
-issp1988,work3b,v16,"c(3:1)"
-issp1988,work3c,v15,"c(3:1)"
-issp1988,work3d,v14,"c(3:1)"
-issp1988,house5,v12,"c(1:5)"
-issp1988,work5,v11,"c(5:1)"
-issp1988,work5a,v8,"c(1:5)"
-issp1988,work5b,v6,"c(1:5)"
-issp1988,work5c,v5,"c(1:5)"
-issp1988,work5d,v4,"c(5:1)"
-issp1985,business5,v37,"c(5:1)"
-amb_combo,politics4a,vb50,"c(1:4)"
+issp1988,familywork5a,v6,"c(1:5)"
+issp1991,familywork5a,v17,"c(1:5)"
+issp1994,familywork5a,v6,"c(1:5)"
+issp1998,familywork5a,v13,"c(1:5)"
+issp2002,familywork5a,v6,"c(1:5)"
+nsss8990,familywork5a,FAMSUFFT,"c(1:5)"
+nsss1993,familywork5a,famsuff3,"c(1:5)"
+nsss1993,familywork5a,famsuf3x,"c(1:5)"
+issp1994,familywork5b,v14,"c(5:1)"
+issp1994,msww5,v13,"c(1:5)"
+issp1985,businessopp5,v37,"c(5:1)"
