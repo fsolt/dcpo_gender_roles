@@ -1,19 +1,16 @@
 ﻿survey,item,variable,values
-aes1987,equalopp3,q51eqopw,"c(3,1,2)"
-aes1990,equalopp5,f5equop,"c(5,4,1,2,3)"
-aes1990,responch,f6wifhom,c(1:5)
-aes1993,equalopp5,e2equop,"c(5,4,1,2,3)"
-aes1996,equalopp5,e2equop,"c(5,4,1,2,3)"
-aes1998,children5,g14p3,c(1:5)
-aes1998,equality3,e17p4,c(3:1)
-aes1998,equalopp5,e2equop,"c(5,4,1,2,3)"
-aes1998,genderbeing4,g17p9,c(1:4)
-aes1998,protdis2,e12,"c(2,1)"
-aes2001,children5,g10p3,c(1:5)
-aes2001,equality3,e10p4,c(3:1)
-aes2001,equalopp5,e2equop,"c(5,4,1,2,3)"
-aes2004,equalopp5,e2equop,"c(5,4,1,2,3)"
-aes2010,equalopp5,e2equop,"c(5,4,1,2,3)"
+aes1993,jobpref5,e6pref,c(5:1)
+aes1993,govtact5,e6opp,c(5:1)
+aes1996,jobpref5,e5pref,c(5:1)
+aes1996,govtact5,e5opp,c(5:1)
+aes1998,jobpref5,e6pref,c(5:1)
+aes1998,govtact5,e6opp,c(5:1)
+aes2001,jobpref5,e4pref,c(5:1)
+aes2001,govtact5,e4opp,c(5:1)
+aes2004,jobpref5,e4pref,c(5:1)
+aes2004,govtact5,e4opp,c(5:1)
+aes2010,jobpref5,e4pref,c(5:1)
+aes2010,govtact5,e4opp,c(5:1)
 amb_brazil2016,polileader4,vb50,c(1:4)
 amb_canada2012,polileader4,vb50,c(1:4)
 amb_combo,polileader4,vb50,c(1:4)
@@ -166,6 +163,7 @@ lb2009,concentrate4,p67st_c,c(1:4)
 lb2009,equality4,p15st_f,c(4:1)
 lb2009,moneyprob4, p67st_e,c(1:4)
 lb2009,polileader4, p57wvs_d,c(1:4)
+nsss1984,jobpref5,wompref,c(5:1)
 nsss1984,career5,wcareer,c(1:5)
 nsss1984,earn5,womearn,c(5:1)
 nsss1984,family5a,womfam,c(1:5)
@@ -173,6 +171,7 @@ nsss1984,jobsex4a,jobsexn,c(1:4)
 nsss1984,jobsex4b,jobsexy,c(1:4)
 nsss1984,lecprestg5,wfprestg,c(1:5)
 nsss1984,respect5,wfrespct,c(5:1)
+nsss1987,jobpref5,wompref,c(5:1)
 nsss1987,career5,wcareer,c(1:5)
 nsss1987,earn5,womearn,c(5:1)
 nsss1987,family5a,womfam,c(1:5)
