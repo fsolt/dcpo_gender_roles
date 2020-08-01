@@ -40,7 +40,7 @@ nocite: |
 ```{r setup, include=FALSE}
 options(tinytex.verbose = TRUE)
 
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, dpi = 300)
+knitr::opts_chunk$set(cache = TRUE, echo = FALSE, fig.width=6.5, fig.height=2.5)
 
 # If `DCPOtools` is not yet installed:
 # remotes::install_github("fsolt/DCPOtools")
@@ -54,18 +54,41 @@ set.seed(324)
 
 
 
-# The Source Data
+# The Source Data on Gender Egalitarian Attitudes
 
-The first step towards remedying this problem is collecting the available public opinion data on gender egalitarian attitudes.
-
-```{r dcpo_input_raw}
-surveys_egr <- read_csv("data-raw/surveys_egr.csv", col_types = "cccc")[1:244,]
+```{r dcpo_input_raw, include=FALSE, cache.extra = tools::md5sum(here::here("data-raw", "surveys_egr.csv"))}
+surveys_egr <- read_csv(here::here("data-raw", "surveys_egr.csv"),
+                        col_types = "cccc")[1:244,]
 
 dcpo_input_raw <- DCPOtools::dcpo_setup(vars = surveys_egr,
-                                        file = "data/dcpo_input_raw.csv")
+                                        datapath = here::here("..", "data", "dcpo_surveys"),
+                                        file = here::here("data", "dcpo_input_raw.csv"))
+
+n_surveys <- surveys_egr %>%
+  distinct(survey) %>% 
+  nrow()
+
+n_items <- surveys_egr %>%
+  distinct(item) %>% 
+  nrow()
+
+n_countries <- dcpo_input_raw %>%
+  distinct(country) %>% 
+  nrow()
+
+year_range <- paste(summary(dcpo_input_raw$year)[6]-summary(dcpo_input_raw$year)[1],
+                    "years, from",
+                    summary(dcpo_input_raw$year)[1],
+                    "to",
+                    summary(dcpo_input_raw$year)[6])
+
 ```
 
-```{r obs_by_item, echo=FALSE, fig.cap = "Items with the Most Observations in the Source Data \\label{items_by_obs}"}
+The first step towards remedying this problem is collecting the available public opinion data on gender egalitarian attitudes.
+We draw on data from `r n_surveys` survey datasets, in which we identified `r n_items` distinct relevant survey items.
+Together, these survey items were asked in `r n_countries` different countries over `r year_range`.
+
+```{r obs_by_item, fig.cap = "Items with the Most Observations in the Source Data \\label{items_by_obs}"}
 dcpo_input_raw %>%
   distinct(country, year, item) %>%
   count(item) %>%
@@ -74,7 +97,8 @@ dcpo_input_raw %>%
   ggplot(aes(forcats::fct_reorder(item, n, .desc = TRUE), n)) +
   geom_bar(stat = "identity") +
   theme_bw() +
-  theme(axis.title.x = element_blank() ) +
+  theme(axis.title.x = element_blank(),
+        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95)) +
   ylab("Country-Year-Item Observations")
 
 polileader4_cy <- dcpo_input_raw %>% filter(item == "polileader4") %>% distinct(country, year) %>% nrow()
@@ -88,11 +112,16 @@ total_cy <- (max(dcpo_input_raw$year) - min(dcpo_input_raw$year))*(dcpo_input_ra
 housewifefull4_cy <- dcpo_input_raw %>% filter(item == "housewifefull4") %>% distinct(country, year) %>% nrow()
 ```
 
+Figure&nbsp;\ref{items_by_obs} displays in how many country-years each of most-commonly asked items are available.
 The `polileader4` item, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do," was the most frequently asked question in the data we collected.
 Employed by the Americas Barometer, the Arab Barometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years.
-That this constitutes only `r sprintf("%2.1f", (polileader4_cy*100/total_cy))`% of the `r total_cy` total possible country-years covered underscores just how sparse the available public opinion data is on this topic.
+That this--again, which represents the _most common_ survey item--constitutes only `r sprintf("%2.1f", (polileader4_cy*100/total_cy))`% of the `r total_cy` total possible country-years covered underscores just how sparse the available public opinion data is on this topic.
 
-```{r obs_by_country, echo=FALSE, fig.cap = "Countries with the Most Observations in the Source Data \\label{countries_by_obs}"}
+Which countries are most data-rich?
+Figure&nbsp;\ref{countries_by_obs} below shows the dozen countries with the highest count of country-year-item observations.
+
+
+```{r obs_by_country, fig.cap = "Countries with the Most Observations in the Source Data \\label{countries_by_obs}"}
 dcpo_input_raw %>%
   mutate(country = if_else(stringr::str_detect(country, "United"),
                            stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
@@ -104,7 +133,8 @@ dcpo_input_raw %>%
   ggplot(aes(forcats::fct_reorder(country, n, .desc = TRUE), n)) +
   geom_bar(stat = "identity") +
   theme_bw() +
-  theme(axis.title.x = element_blank() ) +
+  theme(axis.title.x = element_blank(),
+        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95)) +
   ylab("Country-Year-Item Observations")
 
 # uk_nas <- {1 + max(swiid_source$year) - min(swiid_source$year) - 
@@ -116,10 +146,11 @@ dcpo_input_raw %>%
 # med_cy <- swiid_source %>% count(country, year) %>% count(country, name = "nn") %>% pull(nn) %>% median() %>% wordify_numeral()
 ```
 
-```{r years_by_country, echo=FALSE, fig.cap="Country-Year Coverage in the Source Data \\label{countries_by_years}"}
+```{r years_by_country, fig.cap="Country-Year Coverage in the Source Data \\label{countries_by_years}", cache.extra = tools::md5sum(here::here("data", "dcpo_input_raw.csv"))}
 library(patchwork)
 
-dcpo_input_raw1 <- read_csv("data/dcpo_input_raw.csv", col_types = "cdcddcd") %>% 
+dcpo_input_raw1 <- read_csv(here::here("data", "dcpo_input_raw.csv"),
+                            col_types = "cdcddcd") %>% 
   with_min_yrs(2)
 
 cby_plot <- dcpo_input_raw1 %>%
@@ -157,11 +188,8 @@ cby_plot + ybc_plot
 
 
 ```{r dcpo_input}
-dcpo_input_raw1 <- read_csv("data/dcpo_input_raw.csv", col_types = "cdcddcd") %>% 
-  with_min_yrs(2)
-
 dcpo_input <- DCPOtools::format_dcpo(dcpo_input_raw1,
-                                     scale_q = "church_lb",
+                                     scale_q = "polileader4",
                                      scale_cp = 2)
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 ```
