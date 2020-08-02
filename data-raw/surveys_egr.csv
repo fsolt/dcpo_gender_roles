@@ -266,16 +266,12 @@ usgss,homecountry2,fehome,c(1:2)
 usgss,emopoli2,fepol,c(1:2)
 usgss,emopoli3,fepoly,"c(1,3,2)"
 usgss,equalamend4,eratell,c(4:1)
-usgss,armedforce2a,fefight,c(2:1)
-usgss,armedforce2b,fedirty,c(2:1)
-usgss,armedforce2c,febrass,c(2:1)
 usgss,workhard4,feless1,c(1:4)
 usgss,biochild4,fekids1,c(1:4)
 usgss,godchild4,fekids5,c(1:4)
 usgss,wantch5,homekid,c(1:5)
-usgss,fullpart3a,wrknokid,"c(3,2,1)"
-usgss,jobinde5,fewrksup,c(5:1)
-usgss,fullpart3b,fewknokd,"c(3,2,1)"
+usgss,fullpart3a,wrknokid,c(3:1)
+usgss,fullpart3b,fewknokd,c(3:1)
 usgss,earn2,fework,"c(2,1)"
 usgss,president2,fepres,"c(2,1)"
 usgss,carehomefam4,fefam,c(1:4)
@@ -290,7 +286,6 @@ usgss,trainjob2g,transair,"c(2,1)"
 usgss,trainjob2h,gunner,"c(2,1)"
 usgss,trainjob2i,fightsea,"c(2,1)"
 usgss,relation2,tradmod,"c(1,2)"
-usgss,born5,opsex,c(1:5)
 usgss,familywork5a,famsuffr,c(1:5)
 usgss,jobinde5,fejobind,c(5:1)
 usgss,home5a,hubbywk1,c(1:5)
