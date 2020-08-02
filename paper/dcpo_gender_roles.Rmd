@@ -78,8 +78,12 @@ n_countries <- dcpo_input_raw %>%
   distinct(country) %>% 
   nrow()
 
-year_range <- paste(summary(dcpo_input_raw$year)[6]-summary(dcpo_input_raw$year)[1],
-                    "years, from",
+n_years <- as.integer(summary(dcpo_input_raw$year)[6]-summary(dcpo_input_raw$year)[1])
+
+total_cy <- {n_countries * n_years} %>% 
+  scales::comma()
+
+year_range <- paste("from",
                     summary(dcpo_input_raw$year)[1],
                     "to",
                     summary(dcpo_input_raw$year)[6])
@@ -92,7 +96,8 @@ n_cyi <- dcpo_input_raw %>%
 
 The first step towards remedying this problem is collecting the available public opinion data on gender egalitarian attitudes.
 We draw on data from `r n_surveys` survey datasets, in which we identified `r n_items` distinct relevant survey items.
-Together, these survey items were asked in `r n_countries` different countries over `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
+Together, these survey items were asked in `r n_countries` different countries over `r n_years` years, `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
+Considering that observations for every year in each country surveyed would number `r total_cy` and so a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations, the available data is clearly very, very sparse.
 
 ```{r obs_by_item, fig.cap = "Items with the Most Observations in the Source Data \\label{items_by_obs}"}
 dcpo_input_raw %>%
@@ -111,17 +116,13 @@ polileader4_cy <- dcpo_input_raw %>% filter(item == "polileader4") %>% distinct(
 
 polileader4_surveys <- dcpo_input_raw %>% filter(item == "polileader4") %>% distinct(survey) %>% pull(survey)
 
-total_cy <- (max(dcpo_input_raw$year) - min(dcpo_input_raw$year))*(dcpo_input_raw %>% distinct(country) %>% nrow())
-
-
-
 housewifefull4_cy <- dcpo_input_raw %>% filter(item == "housewifefull4") %>% distinct(country, year) %>% nrow()
 ```
 
 Figure&nbsp;\ref{items_by_obs} displays in how many country-years each of most-commonly asked items are available.
 The `polileader4` item, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do," was the most frequently asked question in the data we collected.
 Employed by the Americas Barometer, the Arab Barometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years.
-That this constitutes only `r sprintf("%2.1f", (polileader4_cy*100/total_cy))`% of the `r total_cy` total possible country-years covered---and again, `polileader4` is the _most common_ survey item---underscores just how sparse the available public opinion data is on this topic.
+That this constitutes only `r round(polileader4_cy*100/(n_countries * n_years))`% of the `r total_cy` total possible country-years covered---and remember, `polileader4` is the _most common_ survey item---again underscores just how sparse the available public opinion data is on this topic.
 
 Which countries are most data-rich?
 Figure&nbsp;\ref{countries_by_obs} below shows the dozen countries with the highest count of country-year-item observations.
