@@ -287,6 +287,7 @@ usgss,trainjob2h,gunner,"c(2,1)"
 usgss,trainjob2i,fightsea,"c(2,1)"
 usgss,relation2,tradmod,"c(1,2)"
 usgss,familywork5a,famsuffr,c(1:5)
+usgss,happywork5,hapifwrk,c(5:1)
 usgss,jobinde5,fejobind,c(5:1)
 usgss,home5a,hubbywk1,c(1:5)
 usgss,msww5,mrmom,c(1:5)
