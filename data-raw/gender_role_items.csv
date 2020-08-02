@@ -476,17 +476,8 @@ jgss,Q4WNJB2L,View on Women Independence by Having Job. Having a job is the best
 jgss,Q4WWJBIA,View on Wife Working. If a husband has sufficient income, it is better for his wife not to have a job.,,1 Agree / 4 Disagree,https://www.icpsr.umich.edu/web/ICPSR/studies/4472/versions/V1/datasets/1/files/954310/downloadDoc/doc?path=/pcms/studies/0/0/4/4/04472/V1/files/954310
 jgss,Q4WWHPHH,View on Role of Wife to Help Husband. It is more important for a wife to help her husband's career than to have one herself.,,1 Agree / 4 Disagree,https://www.icpsr.umich.edu/web/ICPSR/studies/4472/versions/V1/datasets/1/files/954310/downloadDoc/doc?path=/pcms/studies/0/0/4/4/04472/V1/files/954310
 jgss,Q4WWDVY,View on Desirability of Divorce for Children Wife,,1 Agree / 4 Disagree,https://www.icpsr.umich.edu/web/ICPSR/studies/4472/versions/V1/datasets/1/files/954310/downloadDoc/doc?path=/pcms/studies/0/0/4/4/04472/V1/files/954310
-jgss,RR6ACCT,Household Budget Management,,"1 Wife manages money except for husbands
-pocket money. / 2 Husband manages money except for wifes
-pocket money. / 3 Husband manages money except for a
-house keeping allowance. / 4 All income is pooled and each takes out
-what he/she needs. / 5 Each has separate money, but some
-money is pooled. / 6 Husband and wife keep finances
-completely separate.",https://www.icpsr.umich.edu/web/ICPSR/studies/4472/versions/V1/datasets/1/files/954310/downloadDoc/doc?path=/pcms/studies/0/0/4/4/04472/V1/files/954310
-jgss,OP4NAME,View on Change of Surname at Marriage,,"1 The wife should take her husbands surname without question. / 2 The wife should change her surname
-under current conditions. / 3 It is up to the couple to decide whose
-name they will keep. / 4 There is no need for either to change their
-names.",https://www.icpsr.umich.edu/web/ICPSR/studies/4472/versions/V1/datasets/1/files/954310/downloadDoc/doc?path=/pcms/studies/0/0/4/4/04472/V1/files/954310
+jgss,RR6ACCT,Household Budget Management,,"1 Wife manages money except for husbands pocket money. / 2 Husband manages money except for wifes pocket money. / 3 Husband manages money except for a house keeping allowance. / 4 All income is pooled and each takes out what he/she needs. / 5 Each has separate money, but some money is pooled. / 6 Husband and wife keep finances completely separate.",https://www.icpsr.umich.edu/web/ICPSR/studies/4472/versions/V1/datasets/1/files/954310/downloadDoc/doc?path=/pcms/studies/0/0/4/4/04472/V1/files/954310
+jgss,OP4NAME,View on Change of Surname at Marriage,,"1 The wife should take her husbands surname without question. / 2 The wife should change her surname under current conditions. / 3 It is up to the couple to decide whose name they will keep. / 4 There is no need for either to change their names.",https://www.icpsr.umich.edu/web/ICPSR/studies/4472/versions/V1/datasets/1/files/954310/downloadDoc/doc?path=/pcms/studies/0/0/4/4/04472/V1/files/954310
 kgss,FEJOBIND,Agree or disagree: having a job is a best way for a woman to be independent ,,1 Strongly Agree / 5 Strongly Disagree,http://kgss.skku.edu/wp-content/uploads/2018/10/2003-2016_KGSS_ENG_09302018.sav_.zip
 kgss,FAMSUFFR,Agree or disagree: family life suffers when the woman takes a full-time job,,1 Strongly Agree / 5 Strongly Disagree,http://kgss.skku.edu/wp-content/uploads/2018/10/2003-2016_KGSS_ENG_09302018.sav_.zip
 kgss,TWOINCS,Agree or disagree: both man and woman should contribute to the household income ,,1 Strongly Agree / 5 Strongly Disagree,http://kgss.skku.edu/wp-content/uploads/2018/10/2003-2016_KGSS_ENG_09302018.sav_.zip
