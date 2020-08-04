@@ -209,7 +209,7 @@ save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 The DCPO model is estimated using the `DCPO` package for R [@Solt2020a], which is written in the Stan probabilistic programming language [@StanDevTeam2019a; @StanDevTeam2019b].
 
 ```{r dcpo, eval=FALSE}
-iter <- 3000
+iter <- 4000
 
 dcpo_output <- dcpo(dcpo_input,
                     iter = iter,
