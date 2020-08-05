@@ -58,7 +58,7 @@ set.seed(324)
 
 ```{r dcpo_input_raw, include=FALSE, cache.extra = tools::md5sum(here::here("data-raw", "surveys_egr.csv"))}
 surveys_egr <- read_csv(here::here("data-raw", "surveys_egr.csv"),
-                        col_types = "cccc")[1:308,]
+                        col_types = "cccc")[1:354,]
 
 dcpo_input_raw <- DCPOtools::dcpo_setup(vars = surveys_egr,
                                         datapath = here::here("..", "data", "dcpo_surveys"),
@@ -107,7 +107,7 @@ We draw on data from `r n_surveys` survey datasets, in which we identified `r n_
 Together, these survey items were asked in `r n_countries` different countries in at least two time points over `r n_years` years, `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
 Considering that observations for every year in each country surveyed would number `r total_cy` and so a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations, the available data is clearly very, very sparse.
 
-```{r obs_by_item, fig.cap = "Items with the Most Observations in the Source Data \\label{items_by_obs}"}
+```{r obs_by_item, fig.height=3, fig.cap = "Items with the Most Observations in the Source Data \\label{items_by_obs}"}
 dcpo_input_raw1 %>%
   distinct(country, year, item) %>%
   count(item) %>%
@@ -118,13 +118,13 @@ dcpo_input_raw1 %>%
   theme_bw() +
   theme(axis.title.x = element_blank(),
         axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95)) +
-  ylab("Country-Year-Item Observations")
+  ylab("Country-Years Observed")
 
-polileader4_cy <- dcpo_input_raw %>% filter(item == "polileader4") %>% distinct(country, year) %>% nrow()
+polileader4_cy <- dcpo_input_raw1 %>% filter(item == "polileader4") %>% distinct(country, year) %>% nrow()
 
-polileader4_surveys <- dcpo_input_raw %>% filter(item == "polileader4") %>% distinct(survey) %>% pull(survey)
+polileader4_surveys <- dcpo_input_raw1 %>% filter(item == "polileader4") %>% distinct(survey) %>% pull(survey)
 
-housewifefull4_cy <- dcpo_input_raw %>% filter(item == "housewifefull4") %>% distinct(country, year) %>% nrow()
+housewifefull4_cy <- dcpo_input_raw1 %>% filter(item == "housewifefull4") %>% distinct(country, year) %>% nrow()
 ```
 
 Figure&nbsp;\ref{items_by_obs} displays in how many country-years each of the twelve most-commonly asked items are available.
@@ -150,7 +150,7 @@ dcpo_input_raw1 %>%
   theme_bw() +
   theme(axis.title.x = element_blank(),
         axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95)) +
-  ylab("Country-Years Observed")
+  ylab("Year-Items Observed")
 
 # uk_nas <- {1 + max(swiid_source$year) - min(swiid_source$year) - 
 # {swiid_source %>% filter(country == "United Kingdom") %>% pull(year) %>% unique() %>% length()}} %>%
@@ -167,7 +167,8 @@ library(patchwork)
 cby_plot <- dcpo_input_raw1 %>%
   mutate(country = if_else(stringr::str_detect(country, "United"),
                            stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
-                           country)) %>% 
+                           country),
+         country = stringr::str_replace(country, "South", "S.")) %>% 
   distinct(country, year) %>%
   count(country) %>% 
   arrange(desc(n)) %>% 
@@ -181,9 +182,6 @@ cby_plot <- dcpo_input_raw1 %>%
 
 
 ybc_plot <- dcpo_input_raw1 %>%
-  mutate(country = if_else(stringr::str_detect(country, "United"),
-                           stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
-                           country)) %>%
   distinct(country, year) %>%
   count(year, name = "nn") %>%
   ggplot(aes(year, nn)) +
@@ -222,6 +220,10 @@ save(dcpo_output, file = here::here("data", "dcpo_output.rda"))
 dcpo_theta <- rstan::extract(dcpo_output, pars = "theta")
 
 save(dcpo_theta, file = here::here("data", "dcpo_theta.rda"))
+
+dcpo_sigma <- rstan::extract(dcpo_output, pars = "sigma")
+
+save(dcpo_theta, file = here::here("data", "dcpo_sigma.rda"))
 
 dcpo_y_r_pred <- rstan::extract(dcpo_output, pars = "y_r_pred")
 
