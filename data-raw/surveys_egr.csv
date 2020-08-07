@@ -34,7 +34,6 @@ arabb2,education4,q60104,c(1:4)
 arabb2,equalwork4,q60105,c(4:1)
 arabb2,hijab4b,q6076,c(4:1)
 arabb2,inheritance4,q60109,c(4:1)
-arabb2,permitsec4,q60112,c(4:1)
 arabb2,polileader4,q60103,c(1:4)
 arabb2,rejmarry4,q60113,c(4:1)
 arabb3,education4,q6014,c(1:4)
@@ -143,7 +142,6 @@ pew2008,samework4,q55ab,c(1:4)
 pew2010,decveil4,q69a,c(4:1)
 pew2010,equalright2,q80,"c(2,1)"
 pew2010,job4,q69c,c(1:4)
-pew2010,qualiob4,q47,c(4:1)
 pew2010,veilpub2a,q59,"c(1,2)"
 pew2010,veilpub2b,q59fra,"c(1,2)"
 pew2010,wifelife2,q93,"c(1,2)"
