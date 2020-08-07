@@ -58,7 +58,7 @@ set.seed(324)
 
 ```{r dcpo_input_raw, include=FALSE, cache.extra = tools::md5sum(here::here("data-raw", "surveys_egr.csv"))}
 surveys_egr <- read_csv(here::here("data-raw", "surveys_egr.csv"),
-                        col_types = "cccc")[1:354,]
+                        col_types = "cccc")
 
 dcpo_input_raw <- DCPOtools::dcpo_setup(vars = surveys_egr,
                                         datapath = here::here("..", "data", "dcpo_surveys"),
