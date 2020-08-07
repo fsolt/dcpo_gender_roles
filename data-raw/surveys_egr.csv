@@ -159,14 +159,9 @@ pewrel2006_10nat,pastors4,q27e,c(4:1)
 pewrel2006_10nat,polileader4,q27b,c(1:4)
 pewrel2006_10nat,work4,q27d,c(4:1)
 pewrel2009_afr,job4,q11d,c(1:4)
-pewrel2009_afr,religiouslead2,q59c,"c(2,1)"
-pewrel2014_latam,catholic2,q72b,"c(2,1)"
 pewrel2014_latam,job4,q19d,c(1:4)
-pewrel2014_latam,protestant2,q65,"c(2,1)"
 pewrel2015_ee,bearchild4,q16d,c(1:4)
-pewrel2015_ee,catholic2,q75b,"c(2,1)"
 pewrel2015_ee,job4,q16c,c(1:4)
-pewrel2015_ee,orthodox2,q74b,"c(2,1)"
 tcmeg2004,beat5,m710q,c(1:5)
 tcmeg2004,busiexecutive5,m710m,c(1:5)
 tcmeg2004,divorce5,m710p,c(5:1)
