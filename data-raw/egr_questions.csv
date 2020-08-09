@@ -1,0 +1,248 @@
+survey,item,variable,values,question_text,response_categories
+pewrel2015_ee,bearchild4,q16d,c(1:4),Women have a responsibility to society to bear children,1 Completely Agree / 4 Completely Disagree
+wvs_combo,beat10,f199,c(10:1),Justifiable: For a man to beat his wife,1 Never justifiable / 10 Always justifiable
+wvs7,beat10,q189,c(10:1),Justifiable: For a man to beat his wife,1 Never justifiable / 10 Always justifiable
+wvs_combo,busiexecutive4,d078,c(1:4),"On the whole, men make better business executives than women do.",1 Agree strongly / 4 Strongly disagree
+wvs7,busiexecutive4,q31,c(1:4),"On the whole, men make better business executives than women do.",1 Agree strongly / 4 Strongly disagree
+issp1985,businessopp5,v37,c(5:1),The government should increase opportunities for women in business and industry,1 Strongly in favour of / 5 Strongly against
+issp2002,child5,v13,c(5:1),Men ought to do a larger share of childcare than they do now.,1 Strongly agree / 5 Strongly disagree
+allbus,childbenwork4,fr05a,c(4:1),A child actually benefits from his or her mother having a job rather than just concentrating on the home.,"1 completely agree, 2 tend to agree, 3 tend to disagree, or 4 completely disagree"
+allbus,childbenwork4,fr05b,c(4:1),A child actually benefits from his or her mother having a job rather than just concentrating on the home,"1 completely agree, 2 tend to agree, 3 tend to disagree, or 4 completely disagree"
+evs_combo,childfull2,d019,c(1:0),Do you think that a woman has to have children in order to be fulfilled or is this not necessary?,0 Not necessary / 1 needs children
+wvs_combo,childfull2,d019,c(1:0),Do you think that a woman has to have children in order to be fulfilled or is this not necessary?,0 Not necessary / 1 needs children
+wvs4_swe,childfull2,v110,c(1:0),Do you think that a woman has to have children in order to be fulfilled or is this not necessary?,0 Not necessary / 1 needs children
+lb2006,chrespon3,p88n,"c(1,3,2)",Housework and childcare should be the responsibility of the mother or the father or be shared equally by both? (2006 LB: p88n),1 Mother / 2 Father / 3 Both
+evs_combo,chrespon4,d064_01,c(4:1),Men should take as much responsibility as women for the home and children,1 agree strongly / 4 disagree strongly
+arabb4,decision4,q6018,c(1:4),Husbands should have final say in all decisions concerning the family.,1 Strongly Agree / 4 Strongly Disagree
+pew2002,decveil4,q53b,c(4:1),Women should have the right to decide if they wear a veil.,1 Completely Agree / 4 Completely Disagree
+pew2007,decveil4,q74a,c(4:1),Women should have the right to decide if they wear a veil.,1 Completely Agree / 4 Completely Disagree
+pew2008,decveil4,q55aa,c(4:1),Women should have the right to decide if they wear a veil.,1 Completely Agree / 4 Completely Disagree
+pew2010,decveil4,q69a,c(4:1),Women should have the right to decide if they wear a veil.,1 Completely Agree / 4 Completely Disagree
+arabb2,divorce4a,q60114,c(4:1),Women and men should have equal rights in making the decision to divorce.,1 Strongly Agree / 4 Strongly Disagree
+usgss,earn2,fework,"c(2,1)",Do you approve or disapprove of a married woman earning money in business or industry if she has a husband capable of supporting her?,1 Approve / 2 Disapprove
+arabb1,education4,q5054,c(1:4),A university education is more important for a boy than a girl,1 Strongly Agree / 4 Strongly Disagree
+arabb2,education4,q60104,c(1:4),University education for males is more important than university education for females.,1 Strongly Agree / 4 Strongly Disagree
+arabb3,education4,q6014,c(1:4),University education for males is more important than university education for females.,1 Strongly Agree / 4 Strongly Disagree
+arabb4,education4,q6013,c(1:4),University education for males is more important than university education for females.,1 Strongly Agree / 4 Strongly Disagree
+evs_combo,education4,d060,c(1:4),A university education is more important for a boy than for a girl,1 agree strongly / 4  strongly disagree
+wvs_combo,education4,d060,c(1:4),A university education is more important for a boy than for a girl,1 Agree strongly / 4 Strongly disagree
+wvs4_swe,education4,v119,c(1:4),A university education is more important for a boy than for a girl,1 Agree strongly / 4 Strongly disagree
+wvs7,education4,q30,c(1:4),A university education is more important for a boy than for a girl,1 Agree strongly / 4 Strongly disagree
+tcmeg2004,education5,m710d,c(1:5),A university education is more important for a boy than a girl,1 Strongly Agree / 5 Strongly Disagree
+wvs_combo,educimp5,d071,c(5:1),"In your opinion, how important are each of the following traits in a woman?. Being educated",1 Very important / 5 No important at all
+wvs4_swe,educimp5,iv85,c(5:1),"In your opinion, how important are each of the following traits in a woman?. Being educated",1 Very important / 5 No important at all
+usgss,emopoli2,fepol,c(1:2),Most men are better suited emotionally for politics than are most women.,1 Agree / 2 Disagree
+arabb1,equaljob4,q5055,c(4:1),Men and women should have equal job opportunities and wages,1 Strongly Agree / 4 Strongly Disagree
+tcmeg2004,equaljob5,m710e,c(5:1),Men and women should have equal job opportunities and wages,1 Strongly Agree / 5 Strongly Disagree
+pew2010,equalright2,q80,"c(2,1)","On a different subject, do you think women should have equal rights with men, or shouldn’t they?",1 Should / 2 Should not
+pew2012,equalright2,q85,"c(2,1)","On a different subject, do you think women should have equal rights with men, or shouldn’t they?",1 Should / 2 Should not
+arabb3,equalright4a,q812a1,c(4:1),Insuring equal rights between men and women,1 Very Important / 4 Not Important at all
+pew2015,equalright4b,q56c,c(4:1),"For each of the following things, how important is it to have this in our country? women have the same rights as men",1 Very Important / 4 Not Important at all
+pew2016,equalright4b,q33c,c(4:1),"For each of the following things, how important is it to have this in our country? women have the same rights as men",1 Very Important / 4 Not Important at all
+arabb1,equalwage4,q5056,c(4:1),Men and women should receive equal wages and salaries,1 Strongly Agree / 4 Strongly Disagree
+arabb2,equalwork4,q60105,c(4:1),Men and women should have equal work opportunities.,1 Strongly Agree / 4 Strongly Disagree
+tcmeg2004,family5b,m710i,c(1:5),A woman should cease to work outside the home after marriage in order to devote full time to home and family,1 Strongly Agree / 5 Strongly Disagree
+issp1988,familywork5a,v6,c(1:5),"All in all, family life suffers when the woman has a full-time job",1 Strongly agree / 5 Strongly disagree
+issp1991,familywork5a,v17,c(1:5),"All in all, family life suffers when the woman has a full-time job",1 Strongly agree / 5 Strongly disagree
+issp1994,familywork5a,v6,c(1:5),"All in all, family life suffers when the woman has a full-time job",1 Strongly agree / 5 Strongly disagree
+issp1998,familywork5a,v13,c(1:5),"All in all, family life suffers when the woman has a full-time job",1 Strongly agree / 5 Strongly disagree
+issp2002,familywork5a,v6,c(1:5),"All in all, family life suffers when the woman has a full-time job",1 Strongly agree / 5 Strongly disagree
+kgss,familywork5a,famsuffr,c(1:5),family life suffers when the woman takes a full-time job,1 Strongly Agree / 5 Strongly Disagree
+usgss,familywork5a,famsuffr,c(1:5),"All in all, family life suffers when the woman has a full-time job.",1 Strongly Agree / 5 Strongly Disagree
+nsss_combo,familywork5a,famsufft,c(1:5),"All in all, family life suffers when the woman has a full-time job.",1 Strongly Agree / 5 Strongly Disagree
+nsss1989,familywork5a,famsufft,c(1:5),"All in all, family life suffers when the woman has a full-time job.",1 Strongly Agree / 5 Strongly Disagree
+nsss1993,familywork5a,famsuff3,c(1:5),"All in all, family life suffers when the woman has a full-time job.",1 Strongly agree / 5 Strongly disagree
+nsss1993,familywork5a,famsuf3x,c(1:5),"All in all, family life suffers when the woman has a full-time job",1 Strongly agree / 5 Strongly disagree
+issp1994,familywork5b,v14,c(5:1),Family life often suffers because men concentrate too much on their work.,1 Strongly agree / 5 Strongly disagree
+nsss1989,familywork5b,famhapwk,c(5:1),Family life often suffers because men concentrate too much on their work.,1 Strongly agree / 5 Strongly disagree
+evs_combo,fatherchild4,d064,c(4:1),"In general, fathers are as well suited to look after their children as mothers",1 agree strongly / 4 disagree strongly
+wvs_combo,goodmother5,d068,c(1:5),"In your opinion, how important are each of the following traits in a woman? Being a good mother",1 Very important / 5 No important at all
+wvs4_swe,goodmother5,iv82,c(1:5),"In your opinion, how important are each of the following traits in a woman? Being a good mother",1 Very important / 5 No important at all
+wvs_combo,goodwife5,d069,c(1:5),"In your opinion, how important are each of the following traits in a woman?. Being a good wife",1 Very important / 5 No important at all
+wvs4_swe,goodwife5,iv83,c(1:5),"In your opinion, how important are each of the following traits in a woman?. Being a good wife",1 Very important / 5 No important at all
+aes1993,govtact5,e6opp,c(5:1),The government should increase opportunities for women in business and industry,1 Agree strongly / 5 disagree strongly
+aes1996,govtact5,e5opp,c(5:1),The government should increase opportunities for women in business and industry,1 Agree strongly / 5 disagree strongly
+aes1998,govtact5,e6opp,c(5:1),The government should increase opportunities for women in business and industry,1 Agree strongly / 5 disagree strongly
+aes2001,govtact5,e4opp,c(5:1),The government should increase opportunities for women in business and industry,1 Agree strongly / 5 disagree strongly
+aes2004,govtact5,e4opp,c(5:1),The government should increase opportunities for women in business and industry,1 Agree strongly / 5 disagree strongly
+aes2010,govtact5,e4opp,c(5:1),The government should increase opportunities for women in business and industry,1 Agree strongly / 5 disagree strongly
+allbus,help4,fr02,c(1:4),It's more important for a wife to help her husband with his career than to pursue her own career.,1 Strongly Agree / 4 Strongly Disagree
+jgss,help4,q4wwhphh,c(1:4),"For a wife, helping her husband's work is more important than having her own",1 Strongly Agree / 4 Strongly Disagree
+usgss,help4,fehelp,c(1:4),It is more important for a wife to help her husband's career than to have one herself ,1 Strongly Agree / 4 Strongly Disagree
+arabb1,hijab4,q5046,c(4:1),"In Islam a woman should dress modestly, but Islam does not require that she wear a hijab.",1 Strongly Agree / 4 Strongly Disagree
+arabb4,hijab4,q6076,c(4:1),"A woman should dress modestly, but Islam does not require that she wear a hijab",1 Strongly Agree / 4 Strongly Disagree
+arabb2,hijab4,q6076,c(4:1),Women should wear modest clothes without needing to wear hijab.,1 Strongly Agree / 4 Strongly Disagree
+arabb3,hijab4,q6076,c(4:1),Women should wear modest clothes without needing to wear a hijab.,1 Strongly Agree / 4 Strongly Disagree
+usgss,homecountry2,fehome,c(1:2),Do you agree or disagree with this statement? Women should take care of running their homes and leave running the country up to men.,1 Agree / 2 Disagree
+issp2002,house5a,v12,c(5:1),Men ought to do a larger share of household work than they do now.,1 Strongly agree / 5 Strongly disagree
+cdcee,household4,v232,c(1:4),The best thing for a woman to do is to take care of the house,1 Agree completely / 4 Disagree completely
+evs_combo,housewifefull4,d057,c(1:4),Being a housewife is just as fulfilling as working for pay,1 agree strongly / 4 disagree strongly
+wvs_combo,housewifefull4,d057,c(1:4),Being a housewife is just as fulfilling as working for pay,1 Agree strongly / 4 Strongly disagree
+wvs4_swe,housewifefull4,v116,c(1:4),Being a housewife is just as fulfilling as working for pay,1 Agree strongly / 4 Strongly disagree
+wvs7,housewifefull4,q32,c(1:4),Being a housewife is just as fulfilling as working for pay,1 Agree strongly / 4 Strongly disagree
+kgss,housewifefull4,housewrk,c(1:5),Being a housewife is just as fulfilling as working for pay,1 Strongly Agree / 5 Strongly Disagree
+issp1988,housewifefull5,v9,c(1:5),Being a housewife is just as fulfilling as working for pay,1 Strongly agree / 5 Strongly disagree
+issp1994,housewifefull5,v8,c(1:5),Being a housewife is just as fulfilling as working for pay,1 Strongly agree / 5 Strongly disagree
+issp2002,housewifefull5,v8,c(1:5),Being a housewife is just as fulfilling as working for pay,1 Strongly agree / 5 Strongly disagree
+tcmeg2004,housewifefull5,m710k,c(1:5),Being a housewife is just as fulfilling as working for pay,1 Strongly Agree / 5 Strongly Disagree
+nsss1989,housewifefull5,wffulfil,c(1:5),Being a housewife is just as fulfilling as working for pay,1 Strongly Agree / 5 Strongly Disagree
+evs_combo,income4,d058,c(4:1),Both the husband and wife should contribute to household income,1 Strongly Agree / 5 Strongly Disagree
+wvs_combo,income4,d058,c(4:1),Both the husband and wife should contribute to household income,1 Strongly Agree / 5 Strongly Disagree
+wvs4_swe,income4,v117,c(4:1),Both the husband and wife should contribute to household income,1 Strongly Agree / 5 Strongly Disagree
+issp1988,income5,v11,c(5:1),Both the husband and wife should contribute to household income,1 Strongly Agree / 5 Strongly Disagree
+issp1994,income5,v11,c(5:1),Both the husband and wife should contribute to household income,1 Strongly Agree / 5 Strongly Disagree
+issp2002,income5,v10,c(5:1),Both the husband and wife should contribute to household income,1 Strongly Agree / 5 Strongly Disagree
+tcmeg2004,income5,m710l,c(5:1),Both the husband and wife should contribute to household income,1 Strongly Agree / 5 Strongly Disagree
+kgss,income5,twoincs,c(5:1),Both man and woman should contribute to the household income,1 Strongly Agree / 5 Strongly Disagree
+nsss1989,income5,hsbwfwk,c(5:1),Both the husband and wife should contribute to the household income,1 Strongly Agree / 5 Strongly Disagree
+arabb2,inheritance4,q60109,c(4:1),Women's share of inheritance should be equal to that of men.,1 Strongly Agree / 4 Strongly Disagree
+arabb4,inheritance4,q6014,c(4:1),Women and men should have equal rights to their inheritance (Women should not be denied their right).,1 Strongly Agree / 4 Strongly Disagree
+arabb1,islamclass4,q5044,c(4:1),It is acceptable in Islam for male and female university students to attend classes together,1 Strongly Agree / 4 Strongly Disagree
+arabb4,islamclass4,q6074,c(4:1),It is acceptable in Islam for male and female university students to attend classes together,1 Strongly Agree / 4 Strongly Disagree
+evs_combo,job3a,c001,"c(1,3,2)","When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Disagree / 3 Neither
+wvs_combo,job3a,c001,"c(1,3,2)","When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Disagree / 3 Neither
+wvs4_swe,job3a,v78,c(1:3),"When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Neither / 3 Disagree
+pew2010,job4,q69c,c(1:4),"When jobs are scarce, men should have more right to a job than women.",1 Completely Agree / 4 Completely Disagree
+pew2012,job4,q86b,c(1:4),"When jobs are scarce, men should have more right to a job than women.",1 Completely Agree / 4 Completely Disagree
+pewrel2006_10nat,job4,q27a,c(1:4),"When jobs are scarce, men should have more right to a job than women",1 Completely Agree / 4 Completely Disagree
+pewrel2009_afr,job4,q11d,c(1:4),"When jobs are scarce, men should have more right to a job than women",1 Completely Agree / 4 Completely Disagree
+pewrel2014_latam,job4,q19d,c(1:4),"When jobs are scarce, men should have more right to a job than women",1 Completely Agree / 4 Completely Disagree
+pewrel2015_ee,job4,q16c,c(1:4),"When jobs are scarce, men should have more right to a job than women",1 Completely Agree / 4 Completely Disagree
+allbus,job4a,fr06,c(1:4),A married woman should not work if there are not enough jobs to go around and her husband is also in a position to support the family.,1 Completely Agree / 4 Completely Disagree
+wvs7,job5,q33,c(1:5),"When jobs are scarce, men should have more right to a job than women",1 Strongly Agree / 5 Strongly Disagree
+evs_combo,jobinde4,d063,c(4:1),Having a job is the best way for a woman to be an independent person,1 agree strongly / 4 disagree strongly
+wvs_combo,jobinde4,d063,c(4:1),Having a job is the best way for a woman to be an independent person,1 Agree strongly / 4 Strongly disagree
+jgss,jobinde4,q4wnjb2l,c(4:1),Having a job is the best way for a woman to be an independent person.,1 Agree / 4 Disagree
+issp1988,jobinde5,v10,c(5:1),Having a job is the best way for a woman to be an independent person,1 Strongly agree / 5 Strongly disagree
+issp1994,jobinde5,v9,c(5:1),Having a job is the best way for a woman to be an independent person,1 Strongly agree / 5 Strongly disagree
+issp2002,jobinde5,v9,c(5:1),Having a job is the best way for a woman to be an independent person,1 Strongly agree / 5 Strongly disagree
+kgss,jobinde5,fejobind,c(5:1),Having a job is a best way for a woman to be independent,1 Strongly Agree / 5 Strongly Disagree
+usgss,jobinde5,fejobind,c(5:1),Having a job is the best way for a woman to be an independent person.,1 Strongly Agree / 5 Strongly Disagree
+nsss1989,jobinde5,wwkindep,c(5:1),Having a job is the best way for a woman to be an independent person,1 Strongly Agree / 5 Strongly Disagree
+aes1993,jobpref5,e6pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
+aes1996,jobpref5,e5pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
+aes1998,jobpref5,e6pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
+aes2001,jobpref5,e4pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
+aes2004,jobpref5,e4pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
+aes2010,jobpref5,e4pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
+nsss_combo,jobpref5,affactw2,c(5:1),NA,NA
+amb_combo,jobs7,gen1,c(7:1),NA,NA
+amb_us2012,jobs7,gen1,c(7:1),NA,NA
+evs_combo,manchildren5,d020,c(1:5),A man has to have children in order to be fulfilled,1 Agree strongly / 5 disagree strongly
+issp1994,maternity5,v42,c(5:1),Working women should receive paid maternity leave when they have a baby,1 Strongly agree / 5 Strongly disagree
+issp2002,maternity5,v27,c(5:1),Working women should receive paid maternity leave when they have a baby,1 Strongly agree / 5 Strongly disagree
+lb2004,moneyprob4,p57n_c,c(1:4),"If the woman earns more than the man, she will almost certainly have problems",1 Agree strongly / 4 Strongly disagree
+lb2009,moneyprob4,p67st_e,c(1:4),"If the woman earns more than the man, she will almost certainly have problems",1 Agree strongly / 4 Strongly disagree
+wvs_combo,moneyprob4,d066,c(1:4),"If a woman earns more money than her husband, it's almost certain to cause problems.",1 Agree strongly / 4 Strongly disagree
+issp1994,msww5,v13,c(1:5),It is not good if the man stays at home and cares for the children and the woman goes out to work.,1 Strongly Agree / 5 Strongly Disagree
+usgss,msww5,mrmom,c(1:5),It is not good if the man stays at home and cares for the children and the woman goes out to work.,1 Strongly Agree / 5 Strongly Disagree
+pewrel2006_10nat,obey4,q27c,c(1:4),A wife must always obey her husband,1 Strongly Agree / 4 Strongly Disagree
+wvs_combo,obey4,d077,c(1:4),A wife must always obey her husband,1 Strongly Agree / 4 Strongly Disagree
+wvs4_swe,obey4,iv87,c(1:4),A wife must always obey her husband,1 Strongly Agree / 4 Strongly Disagree
+lb2006,office2,p87n_5,"c(1,0)",Why there are not enough women in public charges: That is not their place,1 Mentioned/ 0 Not Mentioned
+pew2007,poliequal3,q47,c(1:3),Which one of the following statements comes closest to your opinion about men and women as political leaders?,"1 Men generally make better political leaders than women / 2 Women generally make better political leaders than men / 3 In general, women and men make equally good political leaders."
+pew2012,poliequal3,q101,"c(1,2,3)",Which one of the following statements comes closest to your opinion about men and women as political leaders?,"1 Men generally make better political leaders than women / 2 Women generally make better political leaders than men / 3 In general, women and men make equally good political leaders."
+amb_brazil2016,polileader4,vb50,c(1:4),"Some say that in general, men are better political leaders than women.",1 Strongly Agree / 4 Strongly Disagree
+amb_canada2012,polileader4,vb50,c(1:4),"Some say that in general, men are better political leaders than women.",1 Strongly Agree / 4 Strongly Disagree
+amb_combo,polileader4,vb50,c(1:4),"Some say that in general, men are better political leaders than women.",1 Strongly Agree / 4 Strongly Disagree
+amb_suriname2012,polileader4,vb50,c(1:4),"Some say that in general, men are better political leaders than women.",1 Strongly Agree / 4 Strongly Disagree
+amb_trinidad2012,polileader4,vb50,c(1:4),"Some say that in general, men are better political leaders than women.",1 Strongly Agree / 4 Strongly Disagree
+amb_us2012,polileader4,vb50,c(1:4),"Some say that in general, men are better political leaders than women.",1 Strongly Agree / 4 Strongly Disagree
+arabb1,polileader4,q5053,c(1:4),"On the whole, men make better political leaders than women do",1 Strongly Agree / 4 Strongly Disagree
+arabb2,polileader4,q60103,c(1:4),"In general, men are better at political leadership than women",1 Strongly Agree / 4 Strongly Disagree
+arabb3,polileader4,q6013,c(1:4),"In general, men are better at political leadership than women.",1 Strongly Agree / 4 Strongly Disagree
+eb631,polileader4,v324,c(1:4),"On the whole, men make better political leaders than women ",1 Strongly Agree / 4 Strongly Disagree
+evs_combo,polileader4,d059,c(1:4),"On the whole, men make better political leaders than women do",1 Strongly Agree / 4 Strongly Disagree
+lb2004,polileader4,p57wvs_b,c(1:4),Men are better political leaders than women,1 Strongly Agree / 4 Strongly Disagree
+lb2009,polileader4,p67wvs_d,c(1:4),Men are better political leaders than women,1 Strongly Agree / 4 Strongly Disagree
+pewrel2006_10nat,polileader4,q27b,c(1:4),"On the whole, men make better political leaders than women do",1 Strongly Agree / 4 Strongly Disagree
+wvs_combo,polileader4,d059,c(1:4),"On the whole, men make better political leaders than women do",1 Strongly Agree / 4 Strongly Disagree
+wvs4_swe,polileader4,v118,c(1:4),"On the whole, men make better political leaders than women do",1 Strongly Agree / 4 Strongly Disagree
+wvs7,polileader4,q29,c(1:4),"On the whole, men make better political leaders than women do",1 Strongly Agree / 4 Strongly Disagree
+tcmeg2004,polileader5,m710c,c(1:5),"On the whole, men make better political leaders than women do",1 Strongly Agree / 5 Strongly Disagree
+amb_combo,politicianecon3,vb52,"c(1,2,3)","If a politician is responsible for running the national economy, who would do a better job, a man, or a woman or does it not matter?",1 A man / 2 A woman / 3 Both are the same
+amb_combo,politics3,w10,c(1:3),Attitudes towards Participation of Women in Politics,1 It is not convenient for them to participate / 2 They should only participate when family obligations permit them to / 3 They should participate just like men
+asianb3,politics4,q139,c(1:4),Women should not be involved in politics as much as men,1 Strongly agree / 4 Strongly disagree
+evs_combo,preschoolwork4,d061,c(1:4),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 4 Strongly Disagree
+wvs_combo,preschoolwork4,d061,c(1:4),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 4 Strongly Disagree
+wvs7,preschoolwork4,q28,c(1:4),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 4 Strongly Disagree
+allbus,preschoolwork4,fr03a,c(1:4),A small child is bound to suffer if his or her mother goes out to work.,1 Strongly Agree / 4 Strongly Disagree
+allbus,preschoolwork4,fr03b,c(1:4),A small child is bound to suffer if his or her mother goes out to work.,1 Strongly Agree / 4 Strongly Disagree
+nsss1989,preschoolwork4,pressuf,c(1:5),A pre-school child is likely to suffer if his or her mother works. ,1 Strongly Agree / 4 Strongly Disagree
+issp1988,preschoolwork5,v5,c(1:5),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 5 Strongly Disagree
+issp1994,preschoolwork5,v5,c(1:5),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 5 Strongly Disagree
+issp2002,preschoolwork5,v5,c(1:5),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 5 Strongly Disagree
+kgss,preschoolwork5,kidsuffr,c(1:5),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 5 Strongly Disagree
+nsss1993,preschoolwork5,pressuf3,c(1:5),A pre-school child is likely to suffer if his or her mother works.,1 Strongly Agree / 5 Strongly Disagree
+aussa2003,preschoolwork5,v110,c(5:1),A preschool child is likely to suffer if his or her mother works,1 Strongly Agree / 5 Strongly Disagree
+aussa2005,preschoolwork5,v137,c(5:1),A preschool child is likely to suffer if his or her mother works,1 Strongly Agree / 5 Strongly Disagree
+usgss,president2,fepres,"c(2,1)","If your party nominated a woman for President, would you vote for her if she were qualified for the job?",1 Yes / 2 No
+amb_combo,quota7,gen6,c(1:7),ballot quotas for women,1 firmly disagrees / 7 firmly agrees
+tcmeg2004,rightvote5,m710h,c(5:1),A woman should have the right to vote and to be a member of parliament,1 Strongly Agree / 5 Strongly Disagree
+ases2000,rolehome4,v0215,c(1:4),A women's primary role is in the home,1 Strongly Agree / 4 Strongly Disagree
+lb2007,rubbed2,p70n_b,c(1:2),How do you consider the following things that can happen to a woman from a person who is not her partner? Being rubbed against on purpose,1 Flattery / 2 Offensive
+pew2002,samework4,q53c,c(1:4),There should be restrictions on men and women being employed in the same workplace.,1 Completely Agree / 4 Completely Disagree
+pew2007,samework4,q74b,c(1:4),There should be restrictions on men and women being employed in the same workplace.,1 Completely Agree / 4 Completely Disagree
+pew2008,samework4,q55ab,c(1:4),There should be restrictions on men and women being employed in the same workplace.,1 Completely Agree / 4 Completely Disagree
+evs_combo,sparent3,d023,"c(0,2,1)","If a woman wants to have a child as a single parent, but she doesn't want to have a stable relationship with a man, do you approve or disapprove?",0 Disapprove / 1 Approve / 2 Depends
+wvs_combo,sparent3,d023,"c(0,2,1)","If a woman wants to have a child as a single parent but she doesn't want to have a stable relationship with a man, do you approve or disapprove?",0 Disapprove / 1 Approve / 2 Depends
+wvs4_swe,sparent3,v112,"c(2,3,1)","If a woman wants to have a child as a single parent but she doesn't want to have a stable relationship with a man, do you approve or disapprove?",0 Disapprove / 1 Approve / 2 Depends
+asianb1,supervise4,q070,c(1:4),A man will lose face if he works under a female supervisor.,1 Strongly agree / 4 Strongly disagree
+usgss,tradroles4,fefam,c(1:4),It is much better for everyone involved if the man is the achiever outside the home and the woman takes care of the home and family.,1 Strongly Agree / 4 Strongly Disagree
+allbus,tradroles4,fr04a,c(1:4),It is much better for everyone concerned if the man goes out to work and the woman stays at home and looks after the house and children.,1 Strongly Agree / 4 Strongly Disagree
+allbus,tradroles4,fr04b,c(1:4),It is much better for everyone concerned if the man goes out to work and the woman stays at home and looks after the house and children.,1 Strongly Agree / 4 Strongly Disagree
+pgss,tradroles4,q7d,c(4:1),It is much better for the family when the man earns money and the woman looks after the house and the children.,1 Strongly Agree / 4 Strongly Disagree
+lb1997,tradroles4a,nsp68b,c(1:4),It is preferable that a woman concentrates on the home and a man on his work                                                                                                                       (1997 LB: nps67b / 2000LB: p69st  / 2004 LB: p57st_a / 2009 LB: p67st_c),1 Strongly Agree / 4 Strongly Disagree
+lb2000,tradroles4a,p69st,c(1:4),It is preferable that a woman concentrates on the home and a man on his work                                                                                                                       (1997 LB: nps67b / 2000LB: p69st  / 2004 LB: p57st_a / 2009 LB: p67st_c),1 Strongly Agree / 4 Strongly Disagree
+lb2004,tradroles4a,p57st_a,c(1:4),It is preferable that a woman concentrates on the home and a man on his work                                                                                                                       (1997 LB: nps67b / 2000LB: p69st  / 2004 LB: p57st_a / 2009 LB: p67st_c),1 Strongly Agree / 4 Strongly Disagree
+lb2009,tradroles4a,p67st_c,c(1:4),It is preferable that a woman concentrates on the home and a man on his work                                                                                                                       (1997 LB: nps67b / 2000LB: p69st  / 2004 LB: p57st_a / 2009 LB: p67st_c),1 Strongly Agree / 4 Strongly Disagree
+kgss,tradroles5,hbbywk08,c(1:5),A man's job is to earn money and a woman's job is to look after the home and family,1 Strongly Agree / 5 Strongly Disagree
+issp1988,tradroles5,v12,c(1:5),A husband's job is to earn mony; a wife's job is to look after the home and family,1 Strongly Agree / 5 Strongly Disagree
+issp1991,tradroles5,v16,c(1:5),A husband's job is to earn mony; a wife's job is to look after the home and family,1 Strongly Agree / 5 Strongly Disagree
+issp1994,tradroles5,v12,c(1:5),A man's job is to earn money; a woman's job is to look after the home and family.,1 Strongly Agree / 5 Strongly Disagree
+issp1998,tradroles5,v12,c(1:5),A husband's job is to earn mony; a wife's job is to look after the home and family,1 Strongly Agree / 5 Strongly Disagree
+issp2002,tradroles5,v11,c(1:5),A man's job is to earn money; a woman's job is to look after the home and family.,1 Strongly Agree / 5 Strongly Disagree
+issp2008,tradroles5,v12,c(1:5),A husband's job is to earn mony; a wife's job is to look after the home and family,1 Strongly Agree / 5 Strongly Disagree
+kgss,tradroles5,hubbywrk,c(1:5),A man's job is to earn money and a woman's job is to look after the home and family,1 Strongly Agree / 5 Strongly Disagree
+usgss,tradroles5,hubbywk1,c(1:5),A man's job is to earn money; a woman's job is to look after the home and family.,1 Strongly Agree / 5 Strongly Disagree
+nsss1989,tradroles5,wfhmfam,c(1:5),A husband's job is to earn money; a wife's job is to look after the home and family,1 Strongly Agree / 5 Strongly Disagree
+nsss1993,tradroles5,wfhmfam3,c(1:5),A husband's job is to earn money; a wife's job is to look after the home and family,1 Strongly Agree / 5 Strongly Disagree
+evs_combo,unmarried2,a124_40,"c(1,0)",On this list are various groups of people. Could you please sort out any that you would not like to have as neighbours? Unmarried mothers,0 Not mentioned / 1 Mentioned
+evs_combo,wantch4,d062,c(1:4),A job is alright but what most women really want is a home and children,1 agree strongly / 4 disagree strongly
+wvs_combo,wantch4,d062,c(1:4),A job is alright but what most women really want is a home and children,1 Agree strongly / 4 Strongly disagree
+issp1988,wantch5,v8,c(1:5),A job is all right but what most women really want is a home and children,1 Strongly agree / 5 Strongly disagree
+issp1994,wantch5,v7,c(1:5),A job is all right but what most women really want is a home and children,1 Strongly agree / 5 Strongly disagree
+issp2002,wantch5,v7,c(1:5),A job is all right but what most women really want is a home and children,1 Strongly agree / 5 Strongly disagree
+kgss,wantch5,homekid,c(1:5),"A job is all right, but what most women really want is a home and children",1 Strongly Agree / 5 Strongly Disagree
+usgss,wantch5,homekid,c(1:5),"A job is alright, but what most women really want is a home and children.",1 Strongly Agree / 5 Strongly Disagree
+nsss1989,wantch5,wkhmkid,c(1:5),"A job is alright, but what most women really want is a home and children.",1 Strongly Agree / 5 Strongly Disagree
+lb2007,whisper2,p70n_a,"c(1,2)",How do you consider the following things that can happen to a woman from a person who is not her partner?  Compliment in the ear,1 Flattery / 2 Offensive
+pew2010,wifelife2,q93,"c(1,2)","What kind of marriage do you think is the more satisfying way of life, number 1 or number 2?   (SHOW CARD)",1 One where the husband provides for the family and the wife takes care of the house and children / 2 One where the husband and wife both have jobs and both take care of the house and children
+issp1988,work3a,v17,c(3:1),women should work outside: after the children leave home.,1 work full-time / 2 work part-time / 3 stay home
+issp1994,work3a,v18,c(3:1),women should work outside: after the children leave home.,1 work full-time / 2 work part-time / 3 stay home
+issp2002,work3a,v17,c(3:1),women should work outside: after the children leave home.,1 work full-time / 2 work part-time / 3 stay home
+nsss1989,work3a,wkshgone,c(3:1),women should work outside: after the children leave home.,1 work full-time / 2 work part-time / 3 stay home
+issp1988,work3b,v16,c(3:1),Women should work outside: after the youngest child starts school.,1 work full-time / 2 work part-time / 3 stay home
+issp1994,work3b,v17,c(3:1),Women should work outside: after the youngest child starts school.,1 work full-time / 2 work part-time / 3 stay home
+issp2002,work3b,v16,c(3:1),Women should work outside: after the youngest child starts school.,1 work full-time / 2 work part-time / 3 stay home
+nsss1989,work3b,wkshsch,c(3:1),Women should work outside: after the youngest child starts school.,1 work full-time / 2 work part-time / 3 stay home
+issp1988,work3c,v15,c(3:1),Women should work outside: when there is a child under school age.,1 work full-time / 2 work part-time / 3 stay home
+issp1994,work3c,v16,c(3:1),Women should work outside: when there is a child under school age.,1 work full-time / 2 work part-time / 3 stay home
+issp2002,work3c,v15,c(3:1),Women should work outside: when there is a child under school age.,1 work full-time / 2 work part-time / 3 stay home
+nsss1989,work3c,wkshpres,c(3:1),Women should work outside: when there is a child under school age.,1 work full-time / 2 work part-time / 3 stay home
+issp1988,work3d,v14,c(3:1),"Do you think that women should work outside the home full-time, part-time or not at all under these circumstances: After marrying and before there are children.",1 work full-time / 2 work part-time / 3 stay home
+issp1994,work3d,v15,c(3:1),"Do you think that women should work outside the home full-time, part-time or not at all under these circumstances: After marrying and before there are children.",1 work full-time / 2 work part-time / 3 stay home
+issp2002,work3d,v14,c(3:1),"Do you think that women should work outside the home full-time, part-time or not at all under these circumstances: After marrying and before there are children.",1 work full-time / 2 work part-time / 3 stay home
+nsss1989,work3d,wkshbefk,c(3:1),"Do you think that women should work outside the home full-time, part-time or not at all under these circumstances: After marrying and before there are children.",1 work full-time / 2 work part-time / 3 stay home
+issp2002,work3f,v64,c(3:1),"Do you think that women should work outside the home full-time, part-time or not at all, when a couple has not yet had a child?",1 work full-time / 2 work part-time / 3 stay home
+evs_combo,work4,d056,c(4:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work.,1 agree strongly / 4 disagree strongly
+pewrel2006_10nat,work4,q27d,c(4:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work,1 Completely Agree / 4 Completely Disagree
+wvs_combo,work4,d056,c(4:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work,1 Agree strongly / 4 Strongly disagree
+wvs4_swe,work4,v115,c(4:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work,1 Agree strongly / 4 Strongly disagree
+allbus,work4,fr01,c(4:1),A working mother can establish just as loving and secure a relationship with her children as a mother who doesn't work.,"1 completely agree, 2 tend to agree, 3 tend to disagree, or 4 completely disagree"
+issp1988,work5a,v4,c(5:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work,1 Strongly agree / 5 Strongly disagree
+issp1994,work5a,v4,c(5:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work,1 Strongly agree / 5 Strongly disagree
+issp2002,work5a,v4,c(5:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work,1 Strongly agree / 5 Strongly disagree
+nsss_combo,work5a,mumwkwrm,c(5:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work,1 Strongly agree / 5 Strongly disagree
+nsss1989,work5a,mumwkwrm,c(5:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work,1 Strongly agree / 5 Strongly disagree
+nsss1993,work5a,mumwkwr3,c(5:1),A working mother can establish just as warm and secure a relationship with her children as a mother who does not work.,1 Strongly agree / 5 Strongly disagree
