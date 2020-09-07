@@ -125,7 +125,7 @@ aes1998,jobpref5,e6pref,c(5:1),Women should be given preferential treatment when
 aes2001,jobpref5,e4pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
 aes2004,jobpref5,e4pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
 aes2010,jobpref5,e4pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
-nsss_combo,jobpref5,affactw2,c(5:1),NA,NA
+nsss_combo,jobpref5,affactw2,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
 amb_combo,jobs7,gen1,c(7:1),NA,NA
 amb_us2012,jobs7,gen1,c(7:1),NA,NA
 evs_combo,manchildren5,d020,c(1:5),A man has to have children in order to be fulfilled,1 Agree strongly / 5 disagree strongly
