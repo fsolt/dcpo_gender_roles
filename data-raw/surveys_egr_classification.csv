@@ -161,9 +161,9 @@ aes1998,jobpref5,e6pref,c(5:1),1,1,1
 aes2001,jobpref5,e4pref,c(5:1),1,1,1
 aes2004,jobpref5,e4pref,c(5:1),1,1,1
 aes2010,jobpref5,e4pref,c(5:1),1,1,1
-nsss_combo,jobpref5,affactw2,c(5:1),,,
-amb_combo,jobs7,gen1,c(7:1),,,
-amb_us2012,jobs7,gen1,c(7:1),,,
+nsss_combo,jobpref5,affactw2,c(5:1),1,,1
+amb_combo,jobs7,gen1,c(7:1),1,,1
+amb_us2012,jobs7,gen1,c(7:1),1,,1
 tcmeg2004,judicial5,m710v,c(5:1),1,1,1
 tcmeg2004,lawmarry5,m710y,c(5:1),4,4,4
 tcmeg2004,lawveil5,m710r,c(1:5),4,4,4
