@@ -69,8 +69,7 @@ set.seed(324)
 
 ```
 
-
-#Introduction
+# Introduction
 
 Gender egalitarian attitude has been grown over the decades not only in developed countries but also in developing societies [@boehnke2011gender]. With the affluent variance in the gender egalitarian attitude around the world, scholars propose innovative research questions about the influence of gender egalitarian attitudes and its determinants. For example, the association between gender egalitarian attitudes and women's political behavior [@krauss1974political], gender inequalities [@bianchi2012housework], women's descriptive representation in parliaments [@paxton2003women] have been examined. However, the lack of cross-national time-series index prevents us from unveiling the cause and effect of gender egalitarian attitudes. Very few cross-national time-series measures of gender egalitarianism exist and there is no consensus on the measures. Even though a gender egalitarian index developed by @mcdaniel2008measuring exists, it only deals with limited number of countries (n=38) and with the fourth wave of World Value Survey (WVS) conducted between 1999 and 2004.
  To overcome this limitation, we develop a comparable cross-national over time measure about gender egalitarian view through the DCPO package for R [@Solt2020a]. (Quick Review of our Index can be included).
