@@ -1,6 +1,6 @@
 ﻿survey,item,variable,values,Woo,Allemang,Agreed
 aes1993,jobpref5,e6pref,c(5:1),1,1,1
-pewrel2015_ee,bearchild4,q16d,c(1:4),2,2,2
+pewrel2015_ee,bearchild4,q16d,c(1:4),1,2,2
 wvs_combo,beat10,f199,c(10:1),4,4,4
 wvs7,beat10,q189,c(10:1),4,4,4
 tcmeg2004,beat5,m710q,c(1:5),4,4,4
