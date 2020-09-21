@@ -20,6 +20,7 @@ pew2008,decveil4,q55aa,c(4:1),Women should have the right to decide if they wear
 pew2010,decveil4,q69a,c(4:1),Women should have the right to decide if they wear a veil.,1 Completely Agree / 4 Completely Disagree
 arabb2,divorce4a,q60114,c(4:1),Women and men should have equal rights in making the decision to divorce.,1 Strongly Agree / 4 Strongly Disagree
 usgss,earn2,fework,"c(2,1)",Do you approve or disapprove of a married woman earning money in business or industry if she has a husband capable of supporting her?,1 Approve / 2 Disapprove
+allbus,equalroles4,fr08,c(4:1),The best way to organise family and work life is for both partners to work part-time and to look after the home and children equally ,1 Completely Agree / 4 Completely Disagree
 arabb1,education4,q5054,c(1:4),A university education is more important for a boy than a girl,1 Strongly Agree / 4 Strongly Disagree
 arabb2,education4,q60104,c(1:4),University education for males is more important than university education for females.,1 Strongly Agree / 4 Strongly Disagree
 arabb3,education4,q6014,c(1:4),University education for males is more important than university education for females.,1 Strongly Agree / 4 Strongly Disagree
@@ -56,6 +57,8 @@ nsss1993,familywork5a,famsuf3x,c(1:5),"All in all, family life suffers when the 
 issp1994,familywork5b,v14,c(5:1),Family life often suffers because men concentrate too much on their work.,1 Strongly agree / 5 Strongly disagree
 nsss1989,familywork5b,famhapwk,c(5:1),Family life often suffers because men concentrate too much on their work.,1 Strongly agree / 5 Strongly disagree
 evs_combo,fatherchild4,d064,c(4:1),"In general, fathers are as well suited to look after their children as mothers",1 agree strongly / 4 disagree strongly
+usgss,biochild4,fekids1,c(1:4),Women are biologically better-suited to care for children. How important do you think this reason is for explaining why women are more likely to take care of children ,1 Very important / 4 Not at all important
+usgss,godchild4,fekids5,c(1:4),It is God's will that women care for children. How important do you think this reason is for explaining why women are more likely to take care of children ,1 Very important / 4 Not at all important
 wvs_combo,goodmother5,d068,c(1:5),"In your opinion, how important are each of the following traits in a woman? Being a good mother",1 Very important / 5 No important at all
 wvs4_swe,goodmother5,iv82,c(1:5),"In your opinion, how important are each of the following traits in a woman? Being a good mother",1 Very important / 5 No important at all
 wvs_combo,goodwife5,d069,c(1:5),"In your opinion, how important are each of the following traits in a woman?. Being a good wife",1 Very important / 5 No important at all
@@ -66,6 +69,8 @@ aes1998,govtact5,e6opp,c(5:1),The government should increase opportunities for w
 aes2001,govtact5,e4opp,c(5:1),The government should increase opportunities for women in business and industry,1 Agree strongly / 5 disagree strongly
 aes2004,govtact5,e4opp,c(5:1),The government should increase opportunities for women in business and industry,1 Agree strongly / 5 disagree strongly
 aes2010,govtact5,e4opp,c(5:1),The government should increase opportunities for women in business and industry,1 Agree strongly / 5 disagree strongly
+wvs_combo,havingwork5,d073,c(5:1),"In your opinion, how important are each of the following traits in a woman?  Woman having work outside home.",1 Very important / 5 Not very important
+wvs4_swe,havingwork5,iv89,c(5:1),"In your opinion, how important are each of the following traits in a woman?  Woman having work outside home.",1 Very important / 5 Not very important
 allbus,help4,fr02,c(1:4),It's more important for a wife to help her husband with his career than to pursue her own career.,1 Strongly Agree / 4 Strongly Disagree
 jgss,help4,q4wwhphh,c(1:4),"For a wife, helping her husband's work is more important than having her own",1 Strongly Agree / 4 Strongly Disagree
 usgss,help4,fehelp,c(1:4),It is more important for a wife to help her husband's career than to have one herself ,1 Strongly Agree / 4 Strongly Disagree
@@ -95,6 +100,8 @@ issp2002,income5,v10,c(5:1),Both the husband and wife should contribute to house
 tcmeg2004,income5,m710l,c(5:1),Both the husband and wife should contribute to household income,1 Strongly Agree / 5 Strongly Disagree
 kgss,income5,twoincs,c(5:1),Both man and woman should contribute to the household income,1 Strongly Agree / 5 Strongly Disagree
 nsss1989,income5,hsbwfwk,c(5:1),Both the husband and wife should contribute to the household income,1 Strongly Agree / 5 Strongly Disagree
+wvs_combo,independence5,d072,c(5:1),"In your opinion, how important are each of the following traits in a woman?  Woman being independent.",1 Very important / 5 Not very important
+wvs4_swe,independence5,iv88,c(5:1),"In your opinion, how important are each of the following traits in a woman?  Woman being independent.",1 Very important / 5 Not very important
 arabb2,inheritance4,q60109,c(4:1),Women's share of inheritance should be equal to that of men.,1 Strongly Agree / 4 Strongly Disagree
 arabb4,inheritance4,q6014,c(4:1),Women and men should have equal rights to their inheritance (Women should not be denied their right).,1 Strongly Agree / 4 Strongly Disagree
 arabb1,islamclass4,q5044,c(4:1),It is acceptable in Islam for male and female university students to attend classes together,1 Strongly Agree / 4 Strongly Disagree
@@ -126,9 +133,10 @@ aes2001,jobpref5,e4pref,c(5:1),Women should be given preferential treatment when
 aes2004,jobpref5,e4pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
 aes2010,jobpref5,e4pref,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
 nsss_combo,jobpref5,affactw2,c(5:1),Women should be given preferential treatment when applying for jobs and promotions,1 Strongly Agree / 5 Strongly Disagree
-amb_combo,jobs7,gen1,c(7:1),"Changing the subject again, some say that when there is not enough work, men should have a greater right to jobs than women.", 1 Strongly Agree / 7 Strongly Disagree
-amb_us2012,jobs7,gen1,c(7:1),"Changing the subject again, some say that when there is not enough work, men should have a greater right to jobs than women.", 1 Strongly Agree / 7 Strongly Disagree
+amb_combo,jobs7,gen1,c(7:1),"Changing the subject again, some say that when there is not enough work, men should have a greater right to jobs than women.",1 Strongly Agree / 7 Strongly Disagree
+amb_us2012,jobs7,gen1,c(7:1),"Changing the subject again, some say that when there is not enough work, men should have a greater right to jobs than women.",1 Strongly Agree / 7 Strongly Disagree
 evs_combo,manchildren5,d020,c(1:5),A man has to have children in order to be fulfilled,1 Agree strongly / 5 disagree strongly
+jgss,marrihap4,q4wnmga,c(1:4),"After all, women's happiness lies in marriage",1 Agree strongly / 4 Strongly disagree
 issp1994,maternity5,v42,c(5:1),Working women should receive paid maternity leave when they have a baby,1 Strongly agree / 5 Strongly disagree
 issp2002,maternity5,v27,c(5:1),Working women should receive paid maternity leave when they have a baby,1 Strongly agree / 5 Strongly disagree
 lb2004,moneyprob4,p57n_c,c(1:4),"If the woman earns more than the man, she will almost certainly have problems",1 Agree strongly / 4 Strongly disagree
@@ -184,6 +192,7 @@ lb2007,rubbed2,p70n_b,c(1:2),How do you consider the following things that can h
 pew2002,samework4,q53c,c(1:4),There should be restrictions on men and women being employed in the same workplace.,1 Completely Agree / 4 Completely Disagree
 pew2007,samework4,q74b,c(1:4),There should be restrictions on men and women being employed in the same workplace.,1 Completely Agree / 4 Completely Disagree
 pew2008,samework4,q55ab,c(1:4),There should be restrictions on men and women being employed in the same workplace.,1 Completely Agree / 4 Completely Disagree
+allbus,secondshift4,fr10,c(1:4),"Even if both parents work, it is still better if the mother has main responsibility for looking after the home and children. ",1 Completely Agree / 4 Completely Disagree
 evs_combo,sparent3,d023,"c(0,2,1)","If a woman wants to have a child as a single parent, but she doesn't want to have a stable relationship with a man, do you approve or disapprove?",0 Disapprove / 1 Approve / 2 Depends
 wvs_combo,sparent3,d023,"c(0,2,1)","If a woman wants to have a child as a single parent but she doesn't want to have a stable relationship with a man, do you approve or disapprove?",0 Disapprove / 1 Approve / 2 Depends
 wvs4_swe,sparent3,v112,"c(2,3,1)","If a woman wants to have a child as a single parent but she doesn't want to have a stable relationship with a man, do you approve or disapprove?",0 Disapprove / 1 Approve / 2 Depends
@@ -216,8 +225,9 @@ issp2002,wantch5,v7,c(1:5),A job is all right but what most women really want is
 kgss,wantch5,homekid,c(1:5),"A job is all right, but what most women really want is a home and children",1 Strongly Agree / 5 Strongly Disagree
 usgss,wantch5,homekid,c(1:5),"A job is alright, but what most women really want is a home and children.",1 Strongly Agree / 5 Strongly Disagree
 nsss1989,wantch5,wkhmkid,c(1:5),"A job is alright, but what most women really want is a home and children.",1 Strongly Agree / 5 Strongly Disagree
-lb2007,whisper2,p70n_a,"c(1,2)",How do you consider the following things that can happen to a woman from a person who is not her partner?  Compliment in the ear,1 Flattery / 2 Offensive
-pew2010,wifelife2,q93,"c(1,2)","What kind of marriage do you think is the more satisfying way of life, number 1 or number 2?   (SHOW CARD)",1 One where the husband provides for the family and the wife takes care of the house and children / 2 One where the husband and wife both have jobs and both take care of the house and children
+lb2007,whisper2,p70n_a,c(1:2),How do you consider the following things that can happen to a woman from a person who is not her partner?  Compliment in the ear,1 Flattery / 2 Offensive
+pew2010,wifelife2,q93,c(1:2),"What kind of marriage do you think is the more satisfying way of life, number 1 or number 2?   (SHOW CARD)",1 One where the husband provides for the family and the wife takes care of the house and children / 2 One where the husband and wife both have jobs and both take care of the house and children
+usgss,wifelife2,tradmod,c(1:2),"Next, we have some questions about the kind of relationship you would like with a spouse or partner. It doesn't matter whether you are now or living with someone. For each pair of items on the card, which type of relationship would you prefer? In pair A, would you prefer the type of relationship described in statement 1 or statement 2? ",1 A relationship where the man has the main responsibility for providing the household income and the woman has the main responsibility for taking care of the home and family / 2 A relationship where the man and woman equally share responsibility for providing the household income and taking care of the home and family
 issp1988,work3a,v17,c(3:1),women should work outside: after the children leave home.,1 work full-time / 2 work part-time / 3 stay home
 issp1994,work3a,v18,c(3:1),women should work outside: after the children leave home.,1 work full-time / 2 work part-time / 3 stay home
 issp2002,work3a,v17,c(3:1),women should work outside: after the children leave home.,1 work full-time / 2 work part-time / 3 stay home
