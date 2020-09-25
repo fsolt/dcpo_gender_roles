@@ -1,0 +1,1466 @@
+country,year,item,r,n,survey,cc_rank
+Germany,1994,msww5,1,569.8069682849039,issp1994,79
+Germany,1994,msww5,2,639.8652020904249,issp1994,79
+Germany,1994,msww5,3,530.5743573538122,issp1994,79
+Germany,1994,msww5,4,884.6019655177114,issp1994,79
+Germany,1994,msww5,5,407.27186585609525,issp1994,79
+Germany,1999,fatherchild4,1,76.8319886164526,evs_combo,79
+Germany,1999,fatherchild4,2,437.6162626391549,evs_combo,79
+Germany,1999,fatherchild4,3,1064.127603691319,evs_combo,79
+Germany,1999,fatherchild4,4,376.97435593570464,evs_combo,79
+Germany,1999,manchildren5,1,223.71782730360724,evs_combo,79
+Germany,1999,manchildren5,2,540.429973968762,evs_combo,79
+Germany,1999,manchildren5,3,386.75758065036524,evs_combo,79
+Germany,1999,manchildren5,4,510.9797395217264,evs_combo,79
+Germany,1999,manchildren5,5,299.4076297205294,evs_combo,79
+Germany,2002,child5,1,20.987422126947617,issp2002,79
+Germany,2002,child5,2,128.9227359226782,issp2002,79
+Germany,2002,child5,3,233.85984655741632,issp2002,79
+Germany,2002,child5,4,722.5669617991966,issp2002,79
+Germany,2002,child5,5,164.90117385458842,issp2002,79
+Germany,2002,house5a,1,44.97304741488775,issp2002,79
+Germany,2002,house5a,2,190.8856012498569,issp2002,79
+Germany,2002,house5a,3,264.84127922100566,issp2002,79
+Germany,2002,house5a,4,619.6286532717868,issp2002,79
+Germany,2002,house5a,5,166.89997596191677,issp2002,79
+Germany,2008,chrespon4,1,19.40719282395348,evs_combo,79
+Germany,2008,chrespon4,2,193.2782001046291,evs_combo,79
+Germany,2008,chrespon4,3,1034.4421971009804,evs_combo,79
+Germany,2008,chrespon4,4,774.0119414180413,evs_combo,79
+Germany,2008,fatherchild4,1,91.66964325023153,evs_combo,79
+Germany,2008,fatherchild4,2,434.7989244230936,evs_combo,79
+Germany,2008,fatherchild4,3,934.8443322814146,evs_combo,79
+Germany,2008,fatherchild4,4,510.092285824792,evs_combo,79
+Germany,2008,manchildren5,1,239.6474981310366,evs_combo,79
+Germany,2008,manchildren5,2,523.8829568385723,evs_combo,79
+Germany,2008,manchildren5,3,463.02724840859713,evs_combo,79
+Germany,2008,manchildren5,4,546.6816032193842,evs_combo,79
+Germany,2008,manchildren5,5,217.8705255843816,evs_combo,79
+Germany,2010,wifelife2,1,81.21364004824022,pew2010,79
+Germany,2010,wifelife2,2,566.2576155610611,pew2010,79
+Germany,2012,equalroles4,1,161.21211852044183,allbus,79
+Germany,2012,equalroles4,2,452.7143308043652,allbus,79
+Germany,2012,equalroles4,3,480.6838984382153,allbus,79
+Germany,2012,equalroles4,4,644.4711927595554,allbus,79
+Germany,2012,fatherwork4a,1,857.1457503922695,allbus,79
+Germany,2012,fatherwork4a,2,511.62605569120853,allbus,79
+Germany,2012,fatherwork4a,3,285.43062475310074,allbus,79
+Germany,2012,fatherwork4a,4,85.53495340565448,allbus,79
+Germany,2012,fatherwork4b,1,384.5782080809574,allbus,79
+Germany,2012,fatherwork4b,2,589.7004966896155,allbus,79
+Germany,2012,fatherwork4b,3,482.11870162304444,allbus,79
+Germany,2012,fatherwork4b,4,281.56718655594256,allbus,79
+Germany,2012,msww4,1,36.50114930571123,allbus,79
+Germany,2012,msww4,2,93.45095634992602,allbus,79
+Germany,2012,msww4,3,499.23664913852747,allbus,79
+Germany,2012,msww4,4,1113.0746343935443,allbus,79
+Germany,2012,secondshift4,1,179.47275942131395,allbus,79
+Germany,2012,secondshift4,2,372.20002816095274,allbus,79
+Germany,2012,secondshift4,3,668.2159090453517,allbus,79
+Germany,2012,secondshift4,4,516.861578815777,allbus,79
+Germany,2016,equalroles4,1,195.2319507465193,allbus,79
+Germany,2016,equalroles4,2,558.6021545723502,allbus,79
+Germany,2016,equalroles4,3,498.9231376112875,allbus,79
+Germany,2016,equalroles4,4,479.1675841800123,allbus,79
+Germany,2016,fatherwork4a,1,759.9056891464846,allbus,79
+Germany,2016,fatherwork4a,2,539.8595341931002,allbus,79
+Germany,2016,fatherwork4a,3,352.76883247609896,allbus,79
+Germany,2016,fatherwork4a,4,77.81819921727534,allbus,79
+Germany,2016,fatherwork4b,1,340.7085338971436,allbus,79
+Germany,2016,fatherwork4b,2,642.9845926305409,allbus,79
+Germany,2016,fatherwork4b,3,523.7097187927276,allbus,79
+Germany,2016,fatherwork4b,4,233.55078106227907,allbus,79
+Germany,2016,msww4,1,38.222646905306746,allbus,79
+Germany,2016,msww4,2,96.81000884142473,allbus,79
+Germany,2016,msww4,3,509.7562367683853,allbus,79
+Germany,2016,msww4,4,1088.205690071071,allbus,79
+Germany,2016,secondshift4,1,111.49073542468244,allbus,79
+Germany,2016,secondshift4,2,310.96234708881593,allbus,79
+Germany,2016,secondshift4,3,721.9046084606524,allbus,79
+Germany,2016,secondshift4,4,582.9849643013011,allbus,79
+Spain,1994,msww5,1,183.08551767842812,issp1994,42
+Spain,1994,msww5,2,735.1444000659334,issp1994,42
+Spain,1994,msww5,3,296.1128015513353,issp1994,42
+Spain,1994,msww5,4,857.5127817795766,issp1994,42
+Spain,1994,msww5,5,177.48085897398644,issp1994,42
+Spain,1999,fatherchild4,1,50.09953588356508,evs_combo,42
+Spain,1999,fatherchild4,2,249.49568870015412,evs_combo,42
+Spain,1999,fatherchild4,3,608.2083656264801,evs_combo,42
+Spain,1999,fatherchild4,4,249.49568870015412,evs_combo,42
+Spain,1999,manchildren5,1,117.23291396754229,evs_combo,42
+Spain,1999,manchildren5,2,291.5792988423488,evs_combo,42
+Spain,1999,manchildren5,3,318.63304821947395,evs_combo,42
+Spain,1999,manchildren5,4,342.68082544358515,evs_combo,42
+Spain,1999,manchildren5,5,72.14333167233372,evs_combo,42
+Spain,2003,child5,1,1.9988021073283446,issp2002,42
+Spain,2003,child5,2,93.9436990444322,issp2002,42
+Spain,2003,child5,3,129.9221369763424,issp2002,42
+Spain,2003,child5,4,1504.0985857645794,issp2002,42
+Spain,2003,child5,5,705.5771438869057,issp2002,42
+Spain,2003,house5a,1,5.996406321985034,issp2002,42
+Spain,2003,house5a,2,120.92752749336485,issp2002,42
+Spain,2003,house5a,3,148.91075699596166,issp2002,42
+Spain,2003,house5a,4,1474.116554154654,issp2002,42
+Spain,2003,house5a,5,692.5849301892714,issp2002,42
+Spain,2006,chrespon3,1,166.13168480806172,lb2006,42
+Spain,2006,chrespon3,2,2274.803129932074,lb2006,42
+Spain,2006,chrespon3,3,2.001586563952551,lb2006,42
+Spain,2008,chrespon4,1,10.167618491323845,evs_combo,42
+Spain,2008,chrespon4,2,91.57239738145392,evs_combo,42
+Spain,2008,chrespon4,3,562.7247926069346,evs_combo,42
+Spain,2008,chrespon4,4,820.3172293865684,evs_combo,42
+Spain,2008,fatherchild4,1,59.039531297149445,evs_combo,42
+Spain,2008,fatherchild4,2,227.72376897576706,evs_combo,42
+Spain,2008,fatherchild4,3,601.9264554158556,evs_combo,42
+Spain,2008,fatherchild4,4,568.5063182363808,evs_combo,42
+Spain,2008,manchildren5,1,153.5829831239569,evs_combo,42
+Spain,2008,manchildren5,2,290.09702372816747,evs_combo,42
+Spain,2008,manchildren5,3,281.2470227951042,evs_combo,42
+Spain,2008,manchildren5,4,542.5358465868044,evs_combo,42
+Spain,2008,manchildren5,5,216.06224714054878,evs_combo,42
+Spain,2010,wifelife2,1,46.69154501493353,pew2010,42
+Spain,2010,wifelife2,2,608.1968491623948,pew2010,42
+Poland,1994,msww5,1,292.5603073137206,issp1994,39
+Poland,1994,msww5,2,602.4371511456957,issp1994,39
+Poland,1994,msww5,3,166.70588393250162,issp1994,39
+Poland,1994,msww5,4,278.2290735721913,issp1994,39
+Poland,1994,msww5,5,49.80077406638265,issp1994,39
+Poland,1999,fatherchild4,1,10.059811390196721,evs_combo,39
+Poland,1999,fatherchild4,2,141.40209556668015,evs_combo,39
+Poland,1999,fatherchild4,3,575.7424945657873,evs_combo,39
+Poland,1999,fatherchild4,4,335.7542944180143,evs_combo,39
+Poland,1999,manchildren5,1,262.8872109034009,evs_combo,39
+Poland,1999,manchildren5,2,305.8059485909764,evs_combo,39
+Poland,1999,manchildren5,3,189.14803874940856,evs_combo,39
+Poland,1999,manchildren5,4,254.87801043206542,evs_combo,39
+Poland,1999,manchildren5,5,35.88656122045042,evs_combo,39
+Poland,2002,child5,1,7.053882570877631,issp2002,39
+Poland,2002,child5,2,76.8106969431828,issp2002,39
+Poland,2002,child5,3,204.3001518387591,issp2002,39
+Poland,2002,child5,4,748.3138415580197,issp2002,39
+Poland,2002,child5,5,156.91313113082984,issp2002,39
+Poland,2002,house5a,1,10.323483082003191,issp2002,39
+Poland,2002,house5a,2,136.37538950797838,issp2002,39
+Poland,2002,house5a,3,257.3613120049088,issp2002,39
+Poland,2002,house5a,4,641.3180546988282,issp2002,39
+Poland,2002,house5a,5,148.78147447565968,issp2002,39
+Poland,2008,chrespon4,1,5.627216190371423,evs_combo,39
+Poland,2008,chrespon4,2,89.52855142862268,evs_combo,39
+Poland,2008,chrespon4,3,857.0048063304964,evs_combo,39
+Poland,2008,chrespon4,4,498.5121427701565,evs_combo,39
+Poland,2008,fatherchild4,1,25.099594368824825,evs_combo,39
+Poland,2008,fatherchild4,2,217.47547839392348,evs_combo,39
+Poland,2008,fatherchild4,3,873.5363753384386,evs_combo,39
+Poland,2008,fatherchild4,4,319.54115213038483,evs_combo,39
+Poland,2008,manchildren5,1,128.4102880700886,evs_combo,39
+Poland,2008,manchildren5,2,509.80361652674094,evs_combo,39
+Poland,2008,manchildren5,3,340.8606087130472,evs_combo,39
+Poland,2008,manchildren5,4,379.38451842452537,evs_combo,39
+Poland,2008,manchildren5,5,86.75440189004186,evs_combo,39
+Poland,2010,wifelife2,1,189.13230559528074,pew2010,39
+Poland,2010,wifelife2,2,452.4789913333896,pew2010,39
+Russia,1994,msww5,1,632.852849282482,issp1994,39
+Russia,1994,msww5,2,734.4500575812357,issp1994,39
+Russia,1994,msww5,3,128.11504378745983,issp1994,39
+Russia,1994,msww5,4,217.29878309577873,issp1994,39
+Russia,1994,msww5,5,65.17297975128358,issp1994,39
+Russia,1999,fatherchild4,1,55.75554443895984,evs_combo,39
+Russia,1999,fatherchild4,2,378.0327837523624,evs_combo,39
+Russia,1999,fatherchild4,3,1282.4226658489956,evs_combo,39
+Russia,1999,fatherchild4,4,670.6606093428268,evs_combo,39
+Russia,1999,manchildren5,1,746.0456607456415,evs_combo,39
+Russia,1999,manchildren5,2,951.5159473664266,evs_combo,39
+Russia,1999,manchildren5,3,319.41813496184193,evs_combo,39
+Russia,1999,manchildren5,4,351.58055093062546,evs_combo,39
+Russia,1999,manchildren5,5,26.863542570557893,evs_combo,39
+Russia,2002,child5,1,18.167911874350253,issp2002,39
+Russia,2002,child5,2,122.6462974254565,issp2002,39
+Russia,2002,child5,3,293.2593481220518,issp2002,39
+Russia,2002,child5,4,918.5672977614961,issp2002,39
+Russia,2002,child5,5,373.6842490536741,issp2002,39
+Russia,2002,house5a,1,36.184714309386486,issp2002,39
+Russia,2002,house5a,2,271.73095020475574,issp2002,39
+Russia,2002,house5a,3,397.1569817208737,issp2002,39
+Russia,2002,house5a,4,748.640835588768,issp2002,39
+Russia,2002,house5a,5,277.8942565027027,issp2002,39
+Russia,2008,chrespon4,1,11.237820983644367,evs_combo,39
+Russia,2008,chrespon4,2,62.405000721328975,evs_combo,39
+Russia,2008,chrespon4,3,713.7263988013325,evs_combo,39
+Russia,2008,chrespon4,4,675.1935266510648,evs_combo,39
+Russia,2008,fatherchild4,1,39.15516032919605,evs_combo,39
+Russia,2008,fatherchild4,2,204.6381728624158,evs_combo,39
+Russia,2008,fatherchild4,3,725.2487781803189,evs_combo,39
+Russia,2008,fatherchild4,4,489.6286842987696,evs_combo,39
+Russia,2008,manchildren5,1,510.2224166346739,evs_combo,39
+Russia,2008,manchildren5,2,597.172588643742,evs_combo,39
+Russia,2008,manchildren5,3,171.33130973099983,evs_combo,39
+Russia,2008,manchildren5,4,130.93360675531585,evs_combo,39
+Russia,2008,manchildren5,5,24.254078332374043,evs_combo,39
+Russia,2010,wifelife2,1,222.00233577688627,pew2010,39
+Russia,2010,wifelife2,2,656.948919137866,pew2010,39
+United Kingdom,1994,msww5,1,46.73958421079933,issp1994,39
+United Kingdom,1994,msww5,2,153.83060040591866,issp1994,39
+United Kingdom,1994,msww5,3,194.2153423446868,issp1994,39
+United Kingdom,1994,msww5,4,401.8169449500405,issp1994,39
+United Kingdom,1994,msww5,5,114.38902911612966,issp1994,39
+United Kingdom,1999,fatherchild4,1,53.52750845121487,evs_combo,39
+United Kingdom,1999,fatherchild4,2,220.32317083306066,evs_combo,39
+United Kingdom,1999,fatherchild4,3,548.8552300372162,evs_combo,39
+United Kingdom,1999,fatherchild4,4,127.2364175542163,evs_combo,39
+United Kingdom,1999,manchildren5,1,16.325521936210954,evs_combo,39
+United Kingdom,1999,manchildren5,2,92.61901298993747,evs_combo,39
+United Kingdom,1999,manchildren5,3,155.1048615361028,evs_combo,39
+United Kingdom,1999,manchildren5,4,571.8052853484991,evs_combo,39
+United Kingdom,1999,manchildren5,5,115.93211959795423,evs_combo,39
+United Kingdom,2002,child5,1,15.341305874271878,issp2002,39
+United Kingdom,2002,child5,2,156.15431589281422,issp2002,39
+United Kingdom,2002,child5,3,531.1055056622184,issp2002,39
+United Kingdom,2002,child5,4,1034.6708163089293,issp2002,39
+United Kingdom,2002,child5,5,175.6262462619855,issp2002,39
+United Kingdom,2002,house5a,1,20.27245061315627,issp2002,39
+United Kingdom,2002,house5a,2,185.19291290808042,issp2002,39
+United Kingdom,2002,house5a,3,529.4624903299945,issp2002,39
+United Kingdom,2002,house5a,4,975.5652385941765,issp2002,39
+United Kingdom,2002,house5a,5,207.3363422338014,issp2002,39
+United Kingdom,2009,chrespon4,1,8.000013981907136,evs_combo,39
+United Kingdom,2009,chrespon4,2,84.17866957946977,evs_combo,39
+United Kingdom,2009,chrespon4,3,971.7380086039321,evs_combo,39
+United Kingdom,2009,chrespon4,4,456.2743812054921,evs_combo,39
+United Kingdom,2009,fatherchild4,1,43.42341502640514,evs_combo,39
+United Kingdom,2009,fatherchild4,2,272.9499348810648,evs_combo,39
+United Kingdom,2009,fatherchild4,3,889.4445465533224,evs_combo,39
+United Kingdom,2009,fatherchild4,4,271.88694866610655,evs_combo,39
+United Kingdom,2009,manchildren5,1,19.595324243028504,evs_combo,39
+United Kingdom,2009,manchildren5,2,174.71915321479455,evs_combo,39
+United Kingdom,2009,manchildren5,3,266.0491664332627,evs_combo,39
+United Kingdom,2009,manchildren5,4,831.328122456841,evs_combo,39
+United Kingdom,2009,manchildren5,5,230.16399481854796,evs_combo,39
+United Kingdom,2010,wifelife2,1,148.97274100410078,pew2010,39
+United Kingdom,2010,wifelife2,2,472.32405549666356,pew2010,39
+Bulgaria,1995,msww5,1,710.5007157425033,issp1994,37
+Bulgaria,1995,msww5,2,97.46221254088854,issp1994,37
+Bulgaria,1995,msww5,3,54.126057328361426,issp1994,37
+Bulgaria,1995,msww5,4,37.532531124077764,issp1994,37
+Bulgaria,1995,msww5,5,105.84771607251737,issp1994,37
+Bulgaria,1999,fatherchild4,1,58.86187199954597,evs_combo,37
+Bulgaria,1999,fatherchild4,2,302.62446118597705,evs_combo,37
+Bulgaria,1999,fatherchild4,3,382.6852373937804,evs_combo,37
+Bulgaria,1999,fatherchild4,4,186.26541455657363,evs_combo,37
+Bulgaria,1999,manchildren5,1,256.99722844832553,evs_combo,37
+Bulgaria,1999,manchildren5,2,260.6214388511576,evs_combo,37
+Bulgaria,1999,manchildren5,3,205.3734396354592,evs_combo,37
+Bulgaria,1999,manchildren5,4,198.55695280988283,evs_combo,37
+Bulgaria,1999,manchildren5,5,29.316972035857543,evs_combo,37
+Bulgaria,2001,child5,1,4.066163126938052,issp2002,37
+Bulgaria,2001,child5,2,27.807404875225686,issp2002,37
+Bulgaria,2001,child5,3,147.23522115345156,issp2002,37
+Bulgaria,2001,child5,4,504.0924647204871,issp2002,37
+Bulgaria,2001,child5,5,259.16053372182046,issp2002,37
+Bulgaria,2001,house5a,1,11.302216521877586,issp2002,37
+Bulgaria,2001,house5a,2,96.64871791232179,issp2002,37
+Bulgaria,2001,house5a,3,215.39785092901485,issp2002,37
+Bulgaria,2001,house5a,4,440.10479287056376,issp2002,37
+Bulgaria,2001,house5a,5,178.4271376729531,issp2002,37
+Bulgaria,2008,chrespon4,1,9.26821909886667,evs_combo,37
+Bulgaria,2008,chrespon4,2,75.32060518915652,evs_combo,37
+Bulgaria,2008,chrespon4,3,767.751376943344,evs_combo,37
+Bulgaria,2008,chrespon4,4,612.1678491506657,evs_combo,37
+Bulgaria,2008,fatherchild4,1,54.465445073854795,evs_combo,37
+Bulgaria,2008,fatherchild4,2,357.64484981245363,evs_combo,37
+Bulgaria,2008,fatherchild4,3,653.7889451025809,evs_combo,37
+Bulgaria,2008,fatherchild4,4,363.46279932678954,evs_combo,37
+Bulgaria,2008,manchildren5,1,650.7035634300527,evs_combo,37
+Bulgaria,2008,manchildren5,2,477.11536842474,evs_combo,37
+Bulgaria,2008,manchildren5,3,172.78029729635875,evs_combo,37
+Bulgaria,2008,manchildren5,4,160.98339009372248,evs_combo,37
+Bulgaria,2008,manchildren5,5,17.451176949713695,evs_combo,37
+Czechia,1994,msww5,1,270.8918373813477,issp1994,37
+Czechia,1994,msww5,2,176.54674918991284,issp1994,37
+Czechia,1994,msww5,3,184.95373724657534,issp1994,37
+Czechia,1994,msww5,4,171.87620026954477,issp1994,37
+Czechia,1994,msww5,5,139.1823578269683,issp1994,37
+Czechia,1999,fatherchild4,1,33.27849287465588,evs_combo,37
+Czechia,1999,fatherchild4,2,567.6768934325863,evs_combo,37
+Czechia,1999,fatherchild4,3,994.4857666012867,evs_combo,37
+Czechia,1999,fatherchild4,4,226.1354526015918,evs_combo,37
+Czechia,1999,manchildren5,1,460.6669311715825,evs_combo,37
+Czechia,1999,manchildren5,2,673.8702456045074,evs_combo,37
+Czechia,1999,manchildren5,3,379.1724801461588,evs_combo,37
+Czechia,1999,manchildren5,4,355.03127728826064,evs_combo,37
+Czechia,1999,manchildren5,5,20.20912979766344,evs_combo,37
+Czechia,2002,child5,1,35.82852777386058,issp2002,37
+Czechia,2002,child5,2,91.54513651563818,issp2002,37
+Czechia,2002,child5,3,283.7699351774051,issp2002,37
+Czechia,2002,child5,4,534.5796236049658,issp2002,37
+Czechia,2002,child5,5,341.0356155523622,issp2002,37
+Czechia,2002,house5a,1,52.27866911717285,issp2002,37
+Czechia,2002,house5a,2,143.29412307436903,issp2002,37
+Czechia,2002,house5a,3,306.5962552430948,issp2002,37
+Czechia,2002,house5a,4,504.1378675103551,issp2002,37
+Czechia,2002,house5a,5,295.7927298529851,issp2002,37
+Czechia,2008,chrespon4,1,33.62590351583508,evs_combo,37
+Czechia,2008,chrespon4,2,201.11536227775923,evs_combo,37
+Czechia,2008,chrespon4,3,918.084123396731,evs_combo,37
+Czechia,2008,chrespon4,4,596.7680662643893,evs_combo,37
+Czechia,2008,fatherchild4,1,87.90491068065029,evs_combo,37
+Czechia,2008,fatherchild4,2,480.735346194222,evs_combo,37
+Czechia,2008,fatherchild4,3,851.6516724797059,evs_combo,37
+Czechia,2008,fatherchild4,4,293.15892673062024,evs_combo,37
+Czechia,2008,manchildren5,1,471.521242124239,evs_combo,37
+Czechia,2008,manchildren5,2,690.6740441151317,evs_combo,37
+Czechia,2008,manchildren5,3,381.33835382388907,evs_combo,37
+Czechia,2008,manchildren5,4,192.02069780910642,evs_combo,37
+Czechia,2008,manchildren5,5,33.768141111484226,evs_combo,37
+Hungary,1994,msww5,1,685.9332547774536,issp1994,37
+Hungary,1994,msww5,2,267.602575280885,issp1994,37
+Hungary,1994,msww5,3,183.6738200204377,issp1994,37
+Hungary,1994,msww5,4,125.37753231315585,issp1994,37
+Hungary,1994,msww5,5,107.42534342793714,issp1994,37
+Hungary,1999,fatherchild4,1,33.36665210284615,evs_combo,37
+Hungary,1999,fatherchild4,2,247.26982298139723,evs_combo,37
+Hungary,1999,fatherchild4,3,445.22798792263706,evs_combo,37
+Hungary,1999,fatherchild4,4,237.76477931755048,evs_combo,37
+Hungary,1999,manchildren5,1,419.59914975711354,evs_combo,37
+Hungary,1999,manchildren5,2,320.83469573018,evs_combo,37
+Hungary,1999,manchildren5,3,150.69979013693248,evs_combo,37
+Hungary,1999,manchildren5,4,68.96355422358955,evs_combo,37
+Hungary,1999,manchildren5,5,14.631488568739101,evs_combo,37
+Hungary,2002,child5,1,11.307433395377714,issp2002,37
+Hungary,2002,child5,2,103.30514867816771,issp2002,37
+Hungary,2002,child5,3,304.15971547426153,issp2002,37
+Hungary,2002,child5,4,413.1867649870043,issp2002,37
+Hungary,2002,child5,5,163.7705414485676,issp2002,37
+Hungary,2002,house5a,1,25.251946375016935,issp2002,37
+Hungary,2002,house5a,2,123.06280780858157,issp2002,37
+Hungary,2002,house5a,3,307.1251582687149,issp2002,37
+Hungary,2002,house5a,4,371.19848878294783,issp2002,37
+Hungary,2002,house5a,5,170.45891307208865,issp2002,37
+Hungary,2008,chrespon4,1,1.3379069945743407,evs_combo,37
+Hungary,2008,chrespon4,2,32.24353022672883,evs_combo,37
+Hungary,2008,chrespon4,3,507.4200865210891,evs_combo,37
+Hungary,2008,chrespon4,4,970.1759173023635,evs_combo,37
+Hungary,2008,fatherchild4,1,45.742853016498245,evs_combo,37
+Hungary,2008,fatherchild4,2,368.0829483386541,evs_combo,37
+Hungary,2008,fatherchild4,3,658.8475758117593,evs_combo,37
+Hungary,2008,fatherchild4,4,433.81208078724734,evs_combo,37
+Hungary,2008,manchildren5,1,523.030697253556,evs_combo,37
+Hungary,2008,manchildren5,2,508.2826331651305,evs_combo,37
+Hungary,2008,manchildren5,3,259.23573589059714,evs_combo,37
+Hungary,2008,manchildren5,4,173.55515943836267,evs_combo,37
+Hungary,2008,manchildren5,5,32.08847704710883,evs_combo,37
+Netherlands,1994,msww5,1,42.03494028331258,issp1994,37
+Netherlands,1994,msww5,2,166.2715415651031,issp1994,37
+Netherlands,1994,msww5,3,269.95772759727413,issp1994,37
+Netherlands,1994,msww5,4,950.9237601869379,issp1994,37
+Netherlands,1994,msww5,5,371.77569406129794,issp1994,37
+Netherlands,1999,fatherchild4,1,15.938570813183745,evs_combo,37
+Netherlands,1999,fatherchild4,2,208.6808755088535,evs_combo,37
+Netherlands,1999,fatherchild4,3,537.0217718812781,evs_combo,37
+Netherlands,1999,fatherchild4,4,225.7127546877519,evs_combo,37
+Netherlands,1999,manchildren5,1,12.82826364245568,evs_combo,37
+Netherlands,1999,manchildren5,2,36.7600047414991,evs_combo,37
+Netherlands,1999,manchildren5,3,64.19144517833234,evs_combo,37
+Netherlands,1999,manchildren5,4,521.0170893677474,evs_combo,37
+Netherlands,1999,manchildren5,5,369.49849339191104,evs_combo,37
+Netherlands,2002,child5,1,12.99221369763424,issp2002,37
+Netherlands,2002,child5,2,147.9113559422975,issp2002,37
+Netherlands,2002,child5,3,407.7556298949823,issp2002,37
+Netherlands,2002,child5,4,552.6687826762873,issp2002,37
+Netherlands,2002,child5,5,73.95567797114875,issp2002,37
+Netherlands,2002,house5a,1,10.993411590305895,issp2002,37
+Netherlands,2002,house5a,2,168.8987780692451,issp2002,37
+Netherlands,2002,house5a,3,423.74604675360905,issp2002,37
+Netherlands,2002,house5a,4,517.6897457980413,issp2002,37
+Netherlands,2002,house5a,5,88.94669377611133,issp2002,37
+Netherlands,2008,chrespon4,1,20.965212120137146,evs_combo,37
+Netherlands,2008,chrespon4,2,211.22475925935217,evs_combo,37
+Netherlands,2008,chrespon4,3,959.5833622796448,evs_combo,37
+Netherlands,2008,chrespon4,4,343.29252461336085,evs_combo,37
+Netherlands,2008,fatherchild4,1,21.055942337867773,evs_combo,37
+Netherlands,2008,fatherchild4,2,290.4659203107286,evs_combo,37
+Netherlands,2008,fatherchild4,3,898.3491798603577,evs_combo,37
+Netherlands,2008,fatherchild4,4,325.78231591086137,evs_combo,37
+Netherlands,2008,manchildren5,1,23.37542504174687,evs_combo,37
+Netherlands,2008,manchildren5,2,60.160882122044924,evs_combo,37
+Netherlands,2008,manchildren5,3,99.55347711188288,evs_combo,37
+Netherlands,2008,manchildren5,4,833.1322335772262,evs_combo,37
+Netherlands,2008,manchildren5,5,519.7831514620339,evs_combo,37
+Slovenia,1993,msww5,1,135.44591869067386,issp1994,37
+Slovenia,1993,msww5,2,313.86088744873393,issp1994,37
+Slovenia,1993,msww5,3,156.93044372436697,issp1994,37
+Slovenia,1993,msww5,4,273.6941667335686,issp1994,37
+Slovenia,1993,msww5,5,54.17836747626955,issp1994,37
+Slovenia,1999,fatherchild4,1,14.027870047398224,evs_combo,37
+Slovenia,1999,fatherchild4,2,137.27272832096833,evs_combo,37
+Slovenia,1999,fatherchild4,3,539.0710061071603,evs_combo,37
+Slovenia,1999,fatherchild4,4,306.6091596074183,evs_combo,37
+Slovenia,1999,manchildren5,1,81.16124813137543,evs_combo,37
+Slovenia,1999,manchildren5,2,284.56536381864964,evs_combo,37
+Slovenia,1999,manchildren5,3,297.5912431483766,evs_combo,37
+Slovenia,1999,manchildren5,4,262.52156802988105,evs_combo,37
+Slovenia,1999,manchildren5,5,53.10550803657899,evs_combo,37
+Slovenia,2003,child5,1,7.9952084293133785,issp2002,37
+Slovenia,2003,child5,2,67.95927164916371,issp2002,37
+Slovenia,2003,child5,3,203.87781494749115,issp2002,37
+Slovenia,2003,child5,4,592.6448248228542,issp2002,37
+Slovenia,2003,child5,5,205.8766170548195,issp2002,37
+Slovenia,2003,house5a,1,18.988620019619272,issp2002,37
+Slovenia,2003,house5a,2,145.91255383496915,issp2002,37
+Slovenia,2003,house5a,3,272.83648765031904,issp2002,37
+Slovenia,2003,house5a,4,470.7178962758252,issp2002,37
+Slovenia,2003,house5a,5,167.89937701558094,issp2002,37
+Slovenia,2008,chrespon4,1,1.7288570436847976,evs_combo,37
+Slovenia,2008,chrespon4,2,35.69547518306687,evs_combo,37
+Slovenia,2008,chrespon4,3,894.0050507500175,evs_combo,37
+Slovenia,2008,chrespon4,4,422.7434192827204,evs_combo,37
+Slovenia,2008,fatherchild4,1,5.532026035640454,evs_combo,37
+Slovenia,2008,fatherchild4,2,121.42951717555349,evs_combo,37
+Slovenia,2008,fatherchild4,3,879.3219134302702,evs_combo,37
+Slovenia,2008,fatherchild4,4,346.4822993334279,evs_combo,37
+Slovenia,2008,manchildren5,1,84.06433220886957,evs_combo,37
+Slovenia,2008,manchildren5,2,421.36466202696766,evs_combo,37
+Slovenia,2008,manchildren5,3,327.80608245449474,evs_combo,37
+Slovenia,2008,manchildren5,4,430.99206959850227,evs_combo,37
+Slovenia,2008,manchildren5,5,77.37237216056064,evs_combo,37
+France,1999,fatherchild4,1,75.95590635307303,evs_combo,34
+France,1999,fatherchild4,2,246.83991230296633,evs_combo,34
+France,1999,fatherchild4,3,603.4038201352462,evs_combo,34
+France,1999,fatherchild4,4,672.4776534430656,evs_combo,34
+France,1999,manchildren5,1,392.82825648345494,evs_combo,34
+France,1999,manchildren5,2,456.44434655119056,evs_combo,34
+France,1999,manchildren5,3,344.6676728376556,evs_combo,34
+France,1999,manchildren5,4,220.54707467684077,evs_combo,34
+France,1999,manchildren5,5,187.69720979427422,evs_combo,34
+France,2002,child5,1,28.98218082578685,issp2002,34
+France,2002,child5,2,76.91280574883568,issp2002,34
+France,2002,child5,3,302.4537878457095,issp2002,34
+France,2002,child5,4,922.3902566420248,issp2002,34
+France,2002,child5,5,513.6008462971323,issp2002,34
+France,2002,house5a,1,44.96862006822003,issp2002,34
+France,2002,house5a,2,94.71190865235225,issp2002,34
+France,2002,house5a,3,316.68568859234034,issp2002,34
+France,2002,house5a,4,873.8022356998863,issp2002,34
+France,2002,house5a,5,516.3456413269578,issp2002,34
+France,2008,chrespon4,1,13.102393940920715,evs_combo,34
+France,2008,chrespon4,2,54.81144191589047,evs_combo,34
+France,2008,chrespon4,3,451.7497282764433,evs_combo,34
+France,2008,chrespon4,4,980.3824414230087,evs_combo,34
+France,2008,fatherchild4,1,21.41636503321159,evs_combo,34
+France,2008,fatherchild4,2,147.80348230542336,evs_combo,34
+France,2008,fatherchild4,3,514.2454600029942,evs_combo,34
+France,2008,fatherchild4,4,815.8218244322634,evs_combo,34
+France,2008,manchildren5,1,300.84508335668215,evs_combo,34
+France,2008,manchildren5,2,452.43051901047085,evs_combo,34
+France,2008,manchildren5,3,308.5573208522754,evs_combo,34
+France,2008,manchildren5,4,260.32889842994564,evs_combo,34
+France,2008,manchildren5,5,176.078066963633,evs_combo,34
+France,2010,wifelife2,1,59.62654257238888,pew2010,34
+France,2010,wifelife2,2,598.0489172607547,pew2010,34
+Austria,1995,msww5,1,224.3133871083011,issp1994,33
+Austria,1995,msww5,2,140.27433216455037,issp1994,33
+Austria,1995,msww5,3,163.58317360653922,issp1994,33
+Austria,1995,msww5,4,203.31086272318998,issp1994,33
+Austria,1995,msww5,5,164.55745011132802,issp1994,33
+Austria,1999,manchildren5,1,102.79572784914471,evs_combo,33
+Austria,1999,manchildren5,2,285.7045428111386,evs_combo,33
+Austria,1999,manchildren5,3,310.60610201162444,evs_combo,33
+Austria,1999,manchildren5,4,484.52813379759,evs_combo,33
+Austria,1999,manchildren5,5,293.4745700104853,evs_combo,33
+Austria,2004,child5,1,35.108959015222375,issp2002,33
+Austria,2004,child5,2,165.37089234981056,issp2002,33
+Austria,2004,child5,3,470.14823767523654,issp2002,33
+Austria,2004,child5,4,827.2242401389087,issp2002,33
+Austria,2004,child5,5,313.89188293484324,issp2002,33
+Austria,2004,house5a,1,68.88871462907139,issp2002,33
+Austria,2004,house5a,2,235.20903797986293,issp2002,33
+Austria,2004,house5a,3,536.8682520178567,issp2002,33
+Austria,2004,house5a,4,724.146015463986,issp2002,33
+Austria,2004,house5a,5,281.30141457485456,issp2002,33
+Austria,2008,chrespon4,1,27.418089037281316,evs_combo,33
+Austria,2008,chrespon4,2,197.80719715637304,evs_combo,33
+Austria,2008,chrespon4,3,668.8392912681555,evs_combo,33
+Austria,2008,chrespon4,4,566.4787100950605,evs_combo,33
+Austria,2008,fatherchild4,1,38.743418828105476,evs_combo,33
+Austria,2008,fatherchild4,2,264.2892929579902,evs_combo,33
+Austria,2008,fatherchild4,3,685.2102139329252,evs_combo,33
+Austria,2008,fatherchild4,4,440.898519269448,evs_combo,33
+Austria,2008,manchildren5,1,156.12905587779485,evs_combo,33
+Austria,2008,manchildren5,2,305.3511905199319,evs_combo,33
+Austria,2008,manchildren5,3,388.7576814395232,evs_combo,33
+Austria,2008,manchildren5,4,359.3336876533615,evs_combo,33
+Austria,2008,manchildren5,5,228.46643375037524,evs_combo,33
+Northern Ireland,1994,msww5,1,43.09945179324287,issp1994,33
+Northern Ireland,1994,msww5,2,132.17195730847428,issp1994,33
+Northern Ireland,1994,msww5,3,131.6924787563093,issp1994,33
+Northern Ireland,1994,msww5,4,230.3417580107986,issp1994,33
+Northern Ireland,1994,msww5,5,51.24021856144441,issp1994,33
+Northern Ireland,1999,manchildren5,1,19.442960676834826,evs_combo,33
+Northern Ireland,1999,manchildren5,2,135.6485628616383,evs_combo,33
+Northern Ireland,1999,manchildren5,3,112.13614529895433,evs_combo,33
+Northern Ireland,1999,manchildren5,4,590.9755722005376,evs_combo,33
+Northern Ireland,1999,manchildren5,5,102.1885840224342,evs_combo,33
+Northern Ireland,2002,child5,1,18.928655956399425,issp2002,33
+Northern Ireland,2002,child5,2,110.96349898833304,issp2002,33
+Northern Ireland,2002,child5,3,186.62815276124755,issp2002,33
+Northern Ireland,2002,child5,4,460.66392167596354,issp2002,33
+Northern Ireland,2002,child5,5,163.11224596852958,issp2002,33
+Northern Ireland,2002,house5a,1,15.77054862682064,issp2002,33
+Northern Ireland,2002,house5a,2,110.9235229461865,issp2002,33
+Northern Ireland,2002,house5a,3,196.6521453294992,issp2002,33
+Northern Ireland,2002,house5a,4,475.93476977595213,issp2002,33
+Northern Ireland,2002,house5a,5,147.87137990015094,issp2002,33
+Northern Ireland,2008,chrespon4,1,0.5491970670975879,evs_combo,33
+Northern Ireland,2008,chrespon4,2,20.54491827215618,evs_combo,33
+Northern Ireland,2008,chrespon4,3,291.6779933767233,evs_combo,33
+Northern Ireland,2008,chrespon4,4,171.04841614660296,evs_combo,33
+Northern Ireland,2008,fatherchild4,1,5.867295016783111,evs_combo,33
+Northern Ireland,2008,fatherchild4,2,82.52301368974916,evs_combo,33
+Northern Ireland,2008,fatherchild4,3,267.6090342288384,evs_combo,33
+Northern Ireland,2008,fatherchild4,4,120.99871108324668,evs_combo,33
+Northern Ireland,2008,manchildren5,1,2.8110766002700203,evs_combo,33
+Northern Ireland,2008,manchildren5,2,59.74795813990159,evs_combo,33
+Northern Ireland,2008,manchildren5,3,74.14048945570174,evs_combo,33
+Northern Ireland,2008,manchildren5,4,281.99811062859493,evs_combo,33
+Northern Ireland,2008,manchildren5,5,63.35744650455821,evs_combo,33
+Belgium,1999,fatherchild4,1,107.68108465283115,evs_combo,32
+Belgium,1999,fatherchild4,2,326.7436088010644,evs_combo,32
+Belgium,1999,fatherchild4,3,705.5455888203878,evs_combo,32
+Belgium,1999,fatherchild4,4,731.2027441105222,evs_combo,32
+Belgium,1999,manchildren5,1,179.15437291696037,evs_combo,32
+Belgium,1999,manchildren5,2,296.6544044300871,evs_combo,32
+Belgium,1999,manchildren5,3,309.382298020686,evs_combo,32
+Belgium,1999,manchildren5,4,465.2442686450995,evs_combo,32
+Belgium,1999,manchildren5,5,620.2900309579612,evs_combo,32
+Belgium,2002,child5,1,11.992812643970067,issp2002,32
+Belgium,2002,child5,2,113.93172011771564,issp2002,32
+Belgium,2002,child5,3,391.76521303635553,issp2002,32
+Belgium,2002,child5,4,635.6190701304135,issp2002,32
+Belgium,2002,child5,5,139.9161475129841,issp2002,32
+Belgium,2002,house5a,1,12.99221369763424,issp2002,32
+Belgium,2002,house5a,2,140.91554856664828,issp2002,32
+Belgium,2002,house5a,3,370.77779090940794,issp2002,32
+Belgium,2002,house5a,4,611.6334448424734,issp2002,32
+Belgium,2002,house5a,5,162.90237174726008,issp2002,32
+Belgium,2009,chrespon4,1,18.921964451662955,evs_combo,32
+Belgium,2009,chrespon4,2,114.17324627458952,evs_combo,32
+Belgium,2009,chrespon4,3,621.7555779261165,evs_combo,32
+Belgium,2009,chrespon4,4,754.4826867126766,evs_combo,32
+Belgium,2009,fatherchild4,1,60.263104515440155,evs_combo,32
+Belgium,2009,fatherchild4,2,206.61116713574398,evs_combo,32
+Belgium,2009,fatherchild4,3,617.8057007186643,evs_combo,32
+Belgium,2009,fatherchild4,4,622.852169786614,evs_combo,32
+Belgium,2009,manchildren5,1,70.61214689316942,evs_combo,32
+Belgium,2009,manchildren5,2,247.38243086513225,evs_combo,32
+Belgium,2009,manchildren5,3,217.8264707134037,evs_combo,32
+Belgium,2009,manchildren5,4,346.3853310993065,evs_combo,32
+Belgium,2009,manchildren5,5,620.3285317590861,evs_combo,32
+Denmark,1999,fatherchild4,1,16.031851482740826,evs_combo,32
+Denmark,1999,fatherchild4,2,140.27870047398224,evs_combo,32
+Denmark,1999,fatherchild4,3,429.8540178809884,evs_combo,32
+Denmark,1999,fatherchild4,4,411.818184962905,evs_combo,32
+Denmark,1999,manchildren5,1,269.53550305358016,evs_combo,32
+Denmark,1999,manchildren5,2,344.68480687892776,evs_combo,32
+Denmark,1999,manchildren5,3,175.3483755924778,evs_combo,32
+Denmark,1999,manchildren5,4,141.28069119165355,evs_combo,32
+Denmark,1999,manchildren5,5,21.041805071097336,evs_combo,32
+Denmark,2002,child5,1,78.95268323946961,issp2002,32
+Denmark,2002,child5,2,94.94310009809637,issp2002,32
+Denmark,2002,child5,3,294.82331083093084,issp2002,32
+Denmark,2002,child5,4,442.73466677322835,issp2002,32
+Denmark,2002,child5,5,377.7735982850571,issp2002,32
+Denmark,2002,house5a,1,69.95807375649206,issp2002,32
+Denmark,2002,house5a,2,103.93770958107392,issp2002,32
+Denmark,2002,house5a,3,284.8293002942891,issp2002,32
+Denmark,2002,house5a,4,463.72208890017595,issp2002,32
+Denmark,2002,house5a,5,391.76521303635553,issp2002,32
+Denmark,2008,chrespon4,1,2.5868467082439413,evs_combo,32
+Denmark,2008,chrespon4,2,34.00071284467486,evs_combo,32
+Denmark,2008,chrespon4,3,528.1471075358237,evs_combo,32
+Denmark,2008,chrespon4,4,930.1274564941508,evs_combo,32
+Denmark,2008,fatherchild4,1,17.932612565109398,evs_combo,32
+Denmark,2008,fatherchild4,2,164.75824429068558,evs_combo,32
+Denmark,2008,fatherchild4,3,651.0074075749096,evs_combo,32
+Denmark,2008,fatherchild4,4,657.9909439546734,evs_combo,32
+Denmark,2008,manchildren5,1,347.69141544600564,evs_combo,32
+Denmark,2008,manchildren5,2,558.5288562789716,evs_combo,32
+Denmark,2008,manchildren5,3,254.24758319250427,evs_combo,32
+Denmark,2008,manchildren5,4,255.50174451369625,evs_combo,32
+Denmark,2008,manchildren5,5,37.030402686034584,evs_combo,32
+Finland,2000,fatherchild4,1,9.117113540091173,evs_combo,32
+Finland,2000,fatherchild4,2,132.23311580736873,evs_combo,32
+Finland,2000,fatherchild4,3,518.6311970592399,evs_combo,32
+Finland,2000,fatherchild4,4,365.31369157527274,evs_combo,32
+Finland,2000,manchildren5,1,79.18772721385004,evs_combo,32
+Finland,2000,manchildren5,2,202.86113691736816,evs_combo,32
+Finland,2000,manchildren5,3,230.95174628913955,evs_combo,32
+Finland,2000,manchildren5,4,424.77532772939963,evs_combo,32
+Finland,2000,manchildren5,5,80.59472257960407,evs_combo,32
+Finland,2002,child5,1,8.734765209024866,issp2002,32
+Finland,2002,child5,2,62.93228434923292,issp2002,32
+Finland,2002,child5,3,249.9502035214095,issp2002,32
+Finland,2002,child5,4,700.7800188293176,issp2002,32
+Finland,2002,child5,5,242.39473155570835,issp2002,32
+Finland,2002,house5a,1,21.297236453583512,issp2002,32
+Finland,2002,house5a,2,79.00265329215281,issp2002,32
+Finland,2002,house5a,3,250.43991003770495,issp2002,32
+Finland,2002,house5a,4,698.8911508378924,issp2002,32
+Finland,2002,house5a,5,229.25260770002447,issp2002,32
+Finland,2009,chrespon4,1,3.288540013656883,evs_combo,32
+Finland,2009,chrespon4,2,36.03185091701329,evs_combo,32
+Finland,2009,chrespon4,3,504.8964688898711,evs_combo,32
+Finland,2009,chrespon4,4,543.1964175253337,evs_combo,32
+Finland,2009,fatherchild4,1,5.242752599201703,evs_combo,32
+Finland,2009,fatherchild4,2,68.29592350898346,evs_combo,32
+Finland,2009,fatherchild4,3,587.0074719449505,evs_combo,32
+Finland,2009,fatherchild4,4,431.07935314901255,evs_combo,32
+Finland,2009,manchildren5,1,59.61064048413555,evs_combo,32
+Finland,2009,manchildren5,2,181.06464124643128,evs_combo,32
+Finland,2009,manchildren5,3,300.7724099817687,evs_combo,32
+Finland,2009,manchildren5,4,346.7788433290339,evs_combo,32
+Finland,2009,manchildren5,5,191.5535615880074,evs_combo,32
+Latvia,1999,fatherchild4,1,19.03782363575473,evs_combo,32
+Latvia,1999,fatherchild4,2,241.4797629587837,evs_combo,32
+Latvia,1999,fatherchild4,3,491.97744237660913,evs_combo,32
+Latvia,1999,fatherchild4,4,192.38221779288992,evs_combo,32
+Latvia,1999,manchildren5,1,486.9674887882526,evs_combo,32
+Latvia,1999,manchildren5,2,408.8122128098911,evs_combo,32
+Latvia,1999,manchildren5,3,64.1274059309633,evs_combo,32
+Latvia,1999,manchildren5,4,38.07564727150946,evs_combo,32
+Latvia,1999,manchildren5,5,2.0039814353426033,evs_combo,32
+Latvia,2003,child5,1,1.9988021073283446,issp2002,32
+Latvia,2003,child5,2,112.93231906405147,issp2002,32
+Latvia,2003,child5,3,230.8616433964238,issp2002,32
+Latvia,2003,child5,4,474.7155004904819,issp2002,32
+Latvia,2003,child5,5,155.90656437161087,issp2002,32
+Latvia,2003,house5a,1,12.99221369763424,issp2002,32
+Latvia,2003,house5a,2,153.90776226428252,issp2002,32
+Latvia,2003,house5a,3,298.8209150455875,issp2002,32
+Latvia,2003,house5a,4,399.7604214656689,issp2002,32
+Latvia,2003,house5a,5,114.93112117137981,issp2002,32
+Latvia,2008,chrespon4,1,4.5875206317989035,evs_combo,32
+Latvia,2008,chrespon4,2,85.02612114115801,evs_combo,32
+Latvia,2008,chrespon4,3,773.365432872421,evs_combo,32
+Latvia,2008,chrespon4,4,611.4067190042693,evs_combo,32
+Latvia,2008,fatherchild4,1,11.429448030461076,evs_combo,32
+Latvia,2008,fatherchild4,2,307.26495720566317,evs_combo,32
+Latvia,2008,fatherchild4,3,748.4643400885367,evs_combo,32
+Latvia,2008,fatherchild4,4,387.10686572099723,evs_combo,32
+Latvia,2008,manchildren5,1,489.23751654491707,evs_combo,32
+Latvia,2008,manchildren5,2,701.1480343742312,evs_combo,32
+Latvia,2008,manchildren5,3,215.8718813141788,evs_combo,32
+Latvia,2008,manchildren5,4,80.3628165054798,evs_combo,32
+Latvia,2008,manchildren5,5,9.490386653577222,evs_combo,32
+Portugal,1999,fatherchild4,1,79.36718375138497,evs_combo,32
+Portugal,1999,fatherchild4,2,224.2327973327229,evs_combo,32
+Portugal,1999,fatherchild4,3,521.6662269430662,evs_combo,32
+Portugal,1999,fatherchild4,4,132.58361216041018,evs_combo,32
+Portugal,1999,manchildren5,1,98.21773532200693,evs_combo,32
+Portugal,1999,manchildren5,2,372.91990331218733,evs_combo,32
+Portugal,1999,manchildren5,3,205.95788942940308,evs_combo,32
+Portugal,1999,manchildren5,4,235.99015641387794,evs_combo,32
+Portugal,1999,manchildren5,5,33.32851584839814,evs_combo,32
+Portugal,2003,child5,1,4.06566342641122,issp2002,32
+Portugal,2003,child5,2,59.893705385672384,issp2002,32
+Portugal,2003,child5,3,85.20023904624044,issp2002,32
+Portugal,2003,child5,4,605.5838703844335,issp2002,32
+Portugal,2003,child5,5,330.039405639106,issp2002,32
+Portugal,2003,house5a,1,8.685394796973855,issp2002,32
+Portugal,2003,house5a,2,76.09259730409349,issp2002,32
+Portugal,2003,house5a,3,77.89371788300706,issp2002,32
+Portugal,2003,house5a,4,542.7522257213046,issp2002,32
+Portugal,2003,house5a,5,380.64917493676506,issp2002,32
+Portugal,2008,chrespon4,1,10.213271175356494,evs_combo,32
+Portugal,2008,chrespon4,2,147.96041317412104,evs_combo,32
+Portugal,2008,chrespon4,3,953.7199796024189,evs_combo,32
+Portugal,2008,chrespon4,4,430.78528241482513,evs_combo,32
+Portugal,2008,fatherchild4,1,32.14122037269061,evs_combo,32
+Portugal,2008,fatherchild4,2,293.8590322941936,evs_combo,32
+Portugal,2008,fatherchild4,3,863.5512658004393,evs_combo,32
+Portugal,2008,fatherchild4,4,327.5757672526088,evs_combo,32
+Portugal,2008,manchildren5,1,140.9059858382314,evs_combo,32
+Portugal,2008,manchildren5,2,524.799949549743,evs_combo,32
+Portugal,2008,manchildren5,3,355.1387165918192,evs_combo,32
+Portugal,2008,manchildren5,4,439.4236813012475,evs_combo,32
+Portugal,2008,manchildren5,5,57.35648728982163,evs_combo,32
+Slovakia,1999,fatherchild4,1,63.10975578206311,evs_combo,32
+Slovakia,1999,fatherchild4,2,363.2294653069651,evs_combo,32
+Slovakia,1999,fatherchild4,3,488.11497825481854,evs_combo,32
+Slovakia,1999,fatherchild4,4,365.6731538093963,evs_combo,32
+Slovakia,1999,manchildren5,1,165.32854161918877,evs_combo,32
+Slovakia,1999,manchildren5,2,324.47423032978253,evs_combo,32
+Slovakia,1999,manchildren5,3,352.0459888488983,evs_combo,32
+Slovakia,1999,manchildren5,4,278.7160606013174,evs_combo,32
+Slovakia,1999,manchildren5,5,135.92189003457224,evs_combo,32
+Slovakia,2002,child5,1,31.980833717253514,issp2002,32
+Slovakia,2002,child5,2,101.93890747374557,issp2002,32
+Slovakia,2002,child5,3,295.822711884595,issp2002,32
+Slovakia,2002,child5,4,368.7789888020796,issp2002,32
+Slovakia,2002,child5,5,307.81552452856505,issp2002,32
+Slovakia,2002,house5a,1,58.964662166186166,issp2002,32
+Slovakia,2002,house5a,2,139.9161475129841,issp2002,32
+Slovakia,2002,house5a,3,304.81732136757256,issp2002,32
+Slovakia,2002,house5a,4,323.8059413871918,issp2002,32
+Slovakia,2002,house5a,5,283.8298992406249,issp2002,32
+Slovakia,2008,chrespon4,1,8.960964462437577,evs_combo,32
+Slovakia,2008,chrespon4,2,53.676448122373955,evs_combo,32
+Slovakia,2008,chrespon4,3,681.4659276253084,evs_combo,32
+Slovakia,2008,chrespon4,4,719.5111978051149,evs_combo,32
+Slovakia,2008,fatherchild4,1,80.16491962702389,evs_combo,32
+Slovakia,2008,fatherchild4,2,341.408174942055,evs_combo,32
+Slovakia,2008,fatherchild4,3,723.6832753207553,evs_combo,32
+Slovakia,2008,fatherchild4,4,285.7920795013309,evs_combo,32
+Slovakia,2008,manchildren5,1,222.72299726099436,evs_combo,32
+Slovakia,2008,manchildren5,2,532.3906681881068,evs_combo,32
+Slovakia,2008,manchildren5,3,363.80617832889163,evs_combo,32
+Slovakia,2008,manchildren5,4,254.79445696188674,evs_combo,32
+Slovakia,2008,manchildren5,5,89.37870737943456,evs_combo,32
+Sweden,1994,msww5,1,52.870613778566494,issp1994,32
+Sweden,1994,msww5,2,149.00919275542273,issp1994,32
+Sweden,1994,msww5,3,311.84321031513497,issp1994,32
+Sweden,1994,msww5,4,467.8769086467912,issp1994,32
+Sweden,1994,msww5,5,320.6985710681528,issp1994,32
+Sweden,1999,fatherchild4,1,16.043374375994045,evs_combo,32
+Sweden,1999,fatherchild4,2,66.02517635023274,evs_combo,32
+Sweden,1999,fatherchild4,3,324.2093269614582,evs_combo,32
+Sweden,1999,fatherchild4,4,602.5964160149466,evs_combo,32
+Sweden,2002,child5,1,5.996406321985034,issp2002,32
+Sweden,2002,child5,2,38.97664109290272,issp2002,32
+Sweden,2002,child5,3,297.8215139919233,issp2002,32
+Sweden,2002,child5,4,521.687350012698,issp2002,32
+Sweden,2002,child5,5,161.9029706935959,issp2002,32
+Sweden,2002,house5a,1,8.99460948297755,issp2002,32
+Sweden,2002,house5a,2,51.96885479053696,issp2002,32
+Sweden,2002,house5a,3,282.83049818696077,issp2002,32
+Sweden,2002,house5a,4,521.687350012698,issp2002,32
+Sweden,2002,house5a,5,173.89578333756597,issp2002,32
+Sweden,2009,chrespon4,1,1.6774811146397033,evs_combo,32
+Sweden,2009,chrespon4,2,32.70647097861658,evs_combo,32
+Sweden,2009,chrespon4,3,391.0157610202725,evs_combo,32
+Sweden,2009,chrespon4,4,717.7827792760398,evs_combo,32
+Sweden,2009,fatherchild4,1,9.20438277830636,evs_combo,32
+Sweden,2009,fatherchild4,2,71.58751419899059,evs_combo,32
+Sweden,2009,fatherchild4,3,519.2018884409297,evs_combo,32
+Sweden,2009,fatherchild4,4,514.9406640394412,evs_combo,32
+Sweden,2009,manchildren5,1,24.274833597037325,evs_combo,32
+Sweden,2009,manchildren5,2,71.1504359127679,evs_combo,32
+Sweden,2009,manchildren5,3,239.35341745431938,evs_combo,32
+Sweden,2009,manchildren5,4,420.54110362181325,evs_combo,32
+Sweden,2009,manchildren5,5,335.39385987919866,evs_combo,32
+Ireland,1994,msww5,1,77.53111207810987,issp1994,28
+Ireland,1994,msww5,2,231.659226450256,issp1994,28
+Ireland,1994,msww5,3,105.55440560031826,issp1994,28
+Ireland,1994,msww5,4,289.57403306282,issp1994,28
+Ireland,1994,msww5,5,145.72112631548362,issp1994,28
+Ireland,1999,manchildren5,1,37.50067657841171,evs_combo,28
+Ireland,1999,manchildren5,2,115.73565347748203,evs_combo,28
+Ireland,1999,manchildren5,3,147.98568143927758,evs_combo,28
+Ireland,1999,manchildren5,4,615.2340683519024,evs_combo,28
+Ireland,1999,manchildren5,5,51.639205644151005,evs_combo,28
+Ireland,2002,house5a,1,32.21069595959627,issp2002,28
+Ireland,2002,house5a,2,128.12321507974687,issp2002,28
+Ireland,2002,house5a,3,207.38571264585238,issp2002,28
+Ireland,2002,house5a,4,673.3564539167727,issp2002,28
+Ireland,2002,house5a,5,148.2211702689334,issp2002,28
+Ireland,2008,chrespon4,1,4.897178814127667,evs_combo,28
+Ireland,2008,chrespon4,2,32.518716123288534,evs_combo,28
+Ireland,2008,chrespon4,3,518.0202561064939,evs_combo,28
+Ireland,2008,chrespon4,4,372.03791535570633,evs_combo,28
+Ireland,2008,fatherchild4,1,31.463115404985885,evs_combo,28
+Ireland,2008,fatherchild4,2,138.53937821121238,evs_combo,28
+Ireland,2008,fatherchild4,3,492.65644183005134,evs_combo,28
+Ireland,2008,fatherchild4,4,243.9685159775109,evs_combo,28
+Ireland,2008,manchildren5,1,48.094361435132164,evs_combo,28
+Ireland,2008,manchildren5,2,138.40203796875105,evs_combo,28
+Ireland,2008,manchildren5,3,217.62028167750736,evs_combo,28
+Ireland,2008,manchildren5,4,418.09211424008976,evs_combo,28
+Ireland,2008,manchildren5,5,116.53764423488299,evs_combo,28
+Norway,1994,msww5,1,44.83726963553342,issp1994,28
+Norway,1994,msww5,2,212.04292098471012,issp1994,28
+Norway,1994,msww5,3,295.1786917672617,issp1994,28
+Norway,1994,msww5,4,823.8848295529266,issp1994,28
+Norway,1994,msww5,5,517.4968203767816,issp1994,28
+Norway,2002,child5,1,8.99460948297755,issp2002,28
+Norway,2002,child5,2,96.94190220542471,issp2002,28
+Norway,2002,child5,3,338.7969571921544,issp2002,28
+Norway,2002,child5,4,813.5124576826363,issp2002,28
+Norway,2002,child5,5,173.89578333756597,issp2002,28
+Norway,2002,house5a,1,20.987422126947617,issp2002,28
+Norway,2002,house5a,2,110.93351695672312,issp2002,28
+Norway,2002,house5a,3,344.79336351413946,issp2002,28
+Norway,2002,house5a,4,767.5400092140843,issp2002,28
+Norway,2002,house5a,5,187.8873980888644,issp2002,28
+Norway,2008,chrespon4,1,8.442807618040504,evs_combo,28
+Norway,2008,chrespon4,2,31.438878583022188,evs_combo,28
+Norway,2008,chrespon4,3,186.5388504659833,evs_combo,28
+Norway,2008,chrespon4,4,864.785583091992,evs_combo,28
+Norway,2008,fatherchild4,1,17.111109837591368,evs_combo,28
+Norway,2008,fatherchild4,2,114.2381409949327,evs_combo,28
+Norway,2008,fatherchild4,3,263.00373866307274,evs_combo,28
+Norway,2008,fatherchild4,4,696.7611447384963,evs_combo,28
+Norway,2008,manchildren5,1,31.92213176431411,evs_combo,28
+Norway,2008,manchildren5,2,104.72930022309853,evs_combo,28
+Norway,2008,manchildren5,3,186.316922692245,evs_combo,28
+Norway,2008,manchildren5,4,165.1309478114232,evs_combo,28
+Norway,2008,manchildren5,5,601.320593777175,evs_combo,28
+Italy,1994,msww5,1,17.35264920250676,issp1994,27
+Italy,1994,msww5,2,106.22118250528784,issp1994,27
+Italy,1994,msww5,3,141.66596892086324,issp1994,27
+Italy,1994,msww5,4,277.1781346774236,issp1994,27
+Italy,1994,msww5,5,384.5566978873743,issp1994,27
+Italy,1999,fatherchild4,1,74.14731310767633,evs_combo,27
+Italy,1999,fatherchild4,2,530.0530896481185,evs_combo,27
+Italy,1999,fatherchild4,3,1009.0046526950008,evs_combo,27
+Italy,1999,fatherchild4,4,310.6171224781035,evs_combo,27
+Italy,1999,manchildren5,1,237.4718000880985,evs_combo,27
+Italy,1999,manchildren5,2,636.2641057212766,evs_combo,27
+Italy,1999,manchildren5,3,612.2163284971654,evs_combo,27
+Italy,1999,manchildren5,4,434.8639714693449,evs_combo,27
+Italy,1999,manchildren5,5,39.077637989180765,evs_combo,27
+Italy,2009,chrespon4,1,9.202206955182378,evs_combo,27
+Italy,2009,chrespon4,2,119.01388671765866,evs_combo,27
+Italy,2009,chrespon4,3,825.625505959874,evs_combo,27
+Italy,2009,chrespon4,4,498.758339579599,evs_combo,27
+Italy,2009,fatherchild4,1,23.59644654749006,evs_combo,27
+Italy,2009,fatherchild4,2,371.79912126949904,evs_combo,27
+Italy,2009,fatherchild4,3,764.4754340971601,evs_combo,27
+Italy,2009,fatherchild4,4,251.6302821268054,evs_combo,27
+Italy,2009,manchildren5,1,199.82789416404836,evs_combo,27
+Italy,2009,manchildren5,2,487.5815292233154,evs_combo,27
+Italy,2009,manchildren5,3,457.02532701549495,evs_combo,27
+Italy,2009,manchildren5,4,273.4342467764978,evs_combo,27
+Italy,2009,manchildren5,5,54.65689447288735,evs_combo,27
+United States,1994,msww5,1,191.47582021043144,"issp1994, usgss",25
+United States,1994,msww5,2,446.77691382434,"issp1994, usgss",25
+United States,1994,msww5,3,562.8228654670256,"issp1994, usgss",25
+United States,1994,msww5,4,1083.0955486650669,"issp1994, usgss",25
+United States,1994,msww5,5,433.2382194660267,"issp1994, usgss",25
+United States,1996,biochild4,1,479.9949167861515,usgss,25
+United States,1996,biochild4,2,370.9960710992963,usgss,25
+United States,1996,biochild4,3,324.9965582406234,usgss,25
+United States,1996,biochild4,4,257.9972677725564,usgss,25
+United States,1996,godchild4,1,267.99716187226795,usgss,25
+United States,1996,godchild4,2,220.99765960362393,usgss,25
+United States,1996,godchild4,3,206.99780786402786,usgss,25
+United States,1996,godchild4,4,699.9925869798043,usgss,25
+United States,1996,wifelife2,1,430.99543569756526,usgss,25
+United States,1996,wifelife2,2,1019.9891981705721,usgss,25
+United States,2002,child5,1,73.95567797114875,issp2002,25
+United States,2002,child5,3,250.84966446970725,issp2002,25
+United States,2002,child5,4,533.680162656668,issp2002,25
+United States,2002,child5,5,293.82390977726664,issp2002,25
+United States,2002,house5a,1,104.93711063473809,issp2002,25
+United States,2002,house5a,3,310.8137276895576,issp2002,25
+United States,2002,house5a,4,481.71130786613105,issp2002,25
+United States,2002,house5a,5,249.85026341604308,issp2002,25
+United States,2010,wifelife2,1,927.4724266262605,pew2010,25
+United States,2010,wifelife2,2,2572.257208551547,pew2010,25
+Cyprus,2002,child5,1,5.996406321985034,issp2002,23
+Cyprus,2002,child5,2,234.8592476110805,issp2002,23
+Cyprus,2002,child5,3,224.86523707443877,issp2002,23
+Cyprus,2002,child5,4,458.7250836318551,issp2002,23
+Cyprus,2002,child5,5,28.982630556260997,issp2002,23
+Cyprus,2002,house5a,1,12.99221369763424,issp2002,23
+Cyprus,2002,house5a,2,370.77779090940794,issp2002,23
+Cyprus,2002,house5a,3,236.85804971840884,issp2002,23
+Cyprus,2002,house5a,4,294.82331083093084,issp2002,23
+Cyprus,2002,house5a,5,22.986224234275962,issp2002,23
+Cyprus,2008,chrespon4,1,31.141941651319193,evs_combo,23
+Cyprus,2008,chrespon4,2,179.8076722191166,evs_combo,23
+Cyprus,2008,chrespon4,3,688.61146125044,evs_combo,23
+Cyprus,2008,chrespon4,4,554.2723719022813,evs_combo,23
+Cyprus,2008,fatherchild4,1,81.75931829042739,evs_combo,23
+Cyprus,2008,fatherchild4,2,379.4430231124389,evs_combo,23
+Cyprus,2008,fatherchild4,3,619.1202532682615,evs_combo,23
+Cyprus,2008,fatherchild4,4,363.6011311765514,evs_combo,23
+Cyprus,2008,manchildren5,1,416.63270695288765,evs_combo,23
+Cyprus,2008,manchildren5,2,519.4497035419927,evs_combo,23
+Cyprus,2008,manchildren5,3,236.97448933080244,evs_combo,23
+Cyprus,2008,manchildren5,4,245.9830939161194,evs_combo,23
+Cyprus,2008,manchildren5,5,43.497817102730224,evs_combo,23
+Switzerland,2003,child5,1,5.911227370181237,issp2002,23
+Switzerland,2003,child5,2,102.90655755593484,issp2002,23
+Switzerland,2003,child5,3,162.9758776947571,issp2002,23
+Switzerland,2003,child5,4,551.8766274191214,issp2002,23
+Switzerland,2003,child5,5,118.51652242145272,issp2002,23
+Switzerland,2003,house5a,1,6.803162828544901,issp2002,23
+Switzerland,2003,house5a,2,147.29894296463317,issp2002,23
+Switzerland,2003,house5a,3,153.48093806228363,issp2002,23
+Switzerland,2003,house5a,4,525.171741798277,issp2002,23
+Switzerland,2003,house5a,5,128.08471815115973,issp2002,23
+Switzerland,2008,chrespon4,1,8.794515486573134,evs_combo,23
+Switzerland,2008,chrespon4,2,117.40256906362214,evs_combo,23
+Switzerland,2008,chrespon4,3,630.5580547398968,evs_combo,23
+Switzerland,2008,chrespon4,4,490.40820753278496,evs_combo,23
+Switzerland,2008,fatherchild4,1,13.245480815933252,evs_combo,23
+Switzerland,2008,fatherchild4,2,193.1414699781713,evs_combo,23
+Switzerland,2008,fatherchild4,3,600.978705018156,evs_combo,23
+Switzerland,2008,fatherchild4,4,443.77490048389274,evs_combo,23
+Switzerland,2008,manchildren5,1,104.43235036874871,evs_combo,23
+Switzerland,2008,manchildren5,2,225.32202106850093,evs_combo,23
+Switzerland,2008,manchildren5,3,162.19937090536473,evs_combo,23
+Switzerland,2008,manchildren5,4,552.4187704724952,evs_combo,23
+Switzerland,2008,manchildren5,5,188.96401682985473,evs_combo,23
+Belarus,2000,fatherchild4,1,18.03583291808343,evs_combo,22
+Belarus,2000,fatherchild4,2,137.27272832096833,evs_combo,22
+Belarus,2000,fatherchild4,3,356.7086954909834,evs_combo,22
+Belarus,2000,fatherchild4,4,467.9296651524979,evs_combo,22
+Belarus,2000,manchildren5,1,363.7226305146825,evs_combo,22
+Belarus,2000,manchildren5,2,369.7345748207103,evs_combo,22
+Belarus,2000,manchildren5,3,111.22096966151449,evs_combo,22
+Belarus,2000,manchildren5,4,79.15726669603283,evs_combo,22
+Belarus,2000,manchildren5,5,32.06370296548165,evs_combo,22
+Belarus,2008,chrespon4,1,17.511216839634862,evs_combo,22
+Belarus,2008,chrespon4,2,136.92765768471446,evs_combo,22
+Belarus,2008,chrespon4,3,616.2070383048058,evs_combo,22
+Belarus,2008,chrespon4,4,711.1291175964867,evs_combo,22
+Belarus,2008,fatherchild4,1,29.620891360626786,evs_combo,22
+Belarus,2008,fatherchild4,2,154.48454775113683,evs_combo,22
+Belarus,2008,fatherchild4,3,646.147198634798,evs_combo,22
+Belarus,2008,fatherchild4,4,645.9478390816914,evs_combo,22
+Belarus,2008,manchildren5,1,407.68164298886927,evs_combo,22
+Belarus,2008,manchildren5,2,637.7849706823617,evs_combo,22
+Belarus,2008,manchildren5,3,198.69722138872527,evs_combo,22
+Belarus,2008,manchildren5,4,202.27004171675196,evs_combo,22
+Belarus,2008,manchildren5,5,29.71763147226314,evs_combo,22
+Croatia,1999,fatherchild4,1,50.15723442687231,evs_combo,22
+Croatia,1999,fatherchild4,2,272.98107790278436,evs_combo,22
+Croatia,1999,fatherchild4,3,467.8693068649102,evs_combo,22
+Croatia,1999,fatherchild4,4,172.749971981395,evs_combo,22
+Croatia,1999,manchildren5,1,386.300227740175,evs_combo,22
+Croatia,1999,manchildren5,2,380.5542876613941,evs_combo,22
+Croatia,1999,manchildren5,3,123.18324926108903,evs_combo,22
+Croatia,1999,manchildren5,4,95.02440540359419,evs_combo,22
+Croatia,1999,manchildren5,5,14.386682783117614,evs_combo,22
+Croatia,2008,chrespon4,1,7.624812463252978,evs_combo,22
+Croatia,2008,chrespon4,2,47.67429654426647,evs_combo,22
+Croatia,2008,chrespon4,3,740.7338965405756,evs_combo,22
+Croatia,2008,chrespon4,4,685.1885032992707,evs_combo,22
+Croatia,2008,fatherchild4,1,49.060076140388595,evs_combo,22
+Croatia,2008,fatherchild4,2,295.3744104895235,evs_combo,22
+Croatia,2008,fatherchild4,3,753.5791302996429,evs_combo,22
+Croatia,2008,fatherchild4,4,356.9021978893227,evs_combo,22
+Croatia,2008,manchildren5,1,424.65695343371556,evs_combo,22
+Croatia,2008,manchildren5,2,569.3553290589249,evs_combo,22
+Croatia,2008,manchildren5,3,271.01252130636755,evs_combo,22
+Croatia,2008,manchildren5,4,183.74465395383712,evs_combo,22
+Croatia,2008,manchildren5,5,36.32422358552604,evs_combo,22
+Estonia,1999,fatherchild4,1,25.45520782379944,evs_combo,22
+Estonia,1999,fatherchild4,2,261.3376611691952,evs_combo,22
+Estonia,1999,fatherchild4,3,484.76051488163307,evs_combo,22
+Estonia,1999,fatherchild4,4,153.882049441194,evs_combo,22
+Estonia,1999,manchildren5,1,313.58159893663867,evs_combo,22
+Estonia,1999,manchildren5,2,335.57049616904504,evs_combo,22
+Estonia,1999,manchildren5,3,178.2176760466851,evs_combo,22
+Estonia,1999,manchildren5,4,134.50129251117602,evs_combo,22
+Estonia,1999,manchildren5,5,9.592018847623697,evs_combo,22
+Estonia,2008,chrespon4,1,10.835637690536702,evs_combo,22
+Estonia,2008,chrespon4,2,167.76190174258534,evs_combo,22
+Estonia,2008,chrespon4,3,813.4674073822137,evs_combo,22
+Estonia,2008,chrespon4,4,507.33035187720344,evs_combo,22
+Estonia,2008,fatherchild4,1,23.61971861866008,evs_combo,22
+Estonia,2008,fatherchild4,2,333.91892523699676,evs_combo,22
+Estonia,2008,fatherchild4,3,786.6199804245451,evs_combo,22
+Estonia,2008,fatherchild4,4,330.34702791702637,evs_combo,22
+Estonia,2008,manchildren5,1,444.80502850991905,evs_combo,22
+Estonia,2008,manchildren5,2,553.6087993043568,evs_combo,22
+Estonia,2008,manchildren5,3,267.0441831038004,evs_combo,22
+Estonia,2008,manchildren5,4,224.35353373138446,evs_combo,22
+Estonia,2008,manchildren5,5,24.48966986972374,evs_combo,22
+Greece,1999,fatherchild4,1,45.08958229520857,evs_combo,22
+Greece,1999,fatherchild4,2,359.7146676439973,evs_combo,22
+Greece,1999,fatherchild4,3,510.01327529469256,evs_combo,22
+Greece,1999,fatherchild4,4,203.40411568727424,evs_combo,22
+Greece,1999,manchildren5,1,222.44193932302898,evs_combo,22
+Greece,1999,manchildren5,2,314.62508534878873,evs_combo,22
+Greece,1999,manchildren5,3,327.65096467851566,evs_combo,22
+Greece,1999,manchildren5,4,236.46980937042719,evs_combo,22
+Greece,1999,manchildren5,5,24.04777722411124,evs_combo,22
+Greece,2008,chrespon4,1,14.155751465622695,evs_combo,22
+Greece,2008,chrespon4,2,222.8802903906723,evs_combo,22
+Greece,2008,chrespon4,3,798.1708715442899,evs_combo,22
+Greece,2008,chrespon4,4,455.3227973758747,evs_combo,22
+Greece,2008,fatherchild4,1,81.75424460015856,evs_combo,22
+Greece,2008,fatherchild4,2,437.60461189584714,evs_combo,22
+Greece,2008,fatherchild4,3,573.6498077893425,evs_combo,22
+Greece,2008,fatherchild4,4,384.43636970004394,evs_combo,22
+Greece,2008,manchildren5,1,350.18175645966335,evs_combo,22
+Greece,2008,manchildren5,2,510.3874593610281,evs_combo,22
+Greece,2008,manchildren5,3,251.78067211714117,evs_combo,22
+Greece,2008,manchildren5,4,326.89892917396696,evs_combo,22
+Greece,2008,manchildren5,5,48.10751830339167,evs_combo,22
+Iceland,1999,fatherchild4,1,26.051758659453842,evs_combo,22
+Iceland,1999,fatherchild4,2,121.2408768382275,evs_combo,22
+Iceland,1999,fatherchild4,3,580.1526255316836,evs_combo,22
+Iceland,1999,fatherchild4,4,224.44592075837159,evs_combo,22
+Iceland,1999,manchildren5,1,60.1194430602781,evs_combo,22
+Iceland,1999,manchildren5,2,212.42203214631596,evs_combo,22
+Iceland,1999,manchildren5,3,223.44393004070028,evs_combo,22
+Iceland,1999,manchildren5,4,390.77637989180766,evs_combo,22
+Iceland,1999,manchildren5,5,54.10749875425029,evs_combo,22
+Iceland,2009,chrespon4,1,0.8073072928273918,evs_combo,22
+Iceland,2009,chrespon4,2,9.450226027259003,evs_combo,22
+Iceland,2009,chrespon4,3,424.79516101577275,evs_combo,22
+Iceland,2009,chrespon4,4,367.7779493587543,evs_combo,22
+Iceland,2009,fatherchild4,1,5.78248530907771,evs_combo,22
+Iceland,2009,fatherchild4,2,72.930063171426,evs_combo,22
+Iceland,2009,fatherchild4,3,452.9611525453376,evs_combo,22
+Iceland,2009,fatherchild4,4,270.8806646097351,evs_combo,22
+Iceland,2009,manchildren5,1,43.10055172905142,evs_combo,22
+Iceland,2009,manchildren5,2,123.04929222975323,evs_combo,22
+Iceland,2009,manchildren5,3,139.8599952737094,evs_combo,22
+Iceland,2009,manchildren5,4,373.79459063993954,evs_combo,22
+Iceland,2009,manchildren5,5,108.46508218975364,evs_combo,22
+Lithuania,1999,fatherchild4,1,8.07797355171719,evs_combo,22
+Lithuania,1999,fatherchild4,2,155.00832306006362,evs_combo,22
+Lithuania,1999,fatherchild4,3,637.7215772004566,evs_combo,22
+Lithuania,1999,fatherchild4,4,140.36955781134242,evs_combo,22
+Lithuania,1999,manchildren5,1,120.88474244649343,evs_combo,22
+Lithuania,1999,manchildren5,2,322.6085820917733,evs_combo,22
+Lithuania,1999,manchildren5,3,234.59281114789627,evs_combo,22
+Lithuania,1999,manchildren5,4,233.671257725974,evs_combo,22
+Lithuania,1999,manchildren5,5,21.085926380013248,evs_combo,22
+Lithuania,2008,chrespon4,1,8.938243297963158,evs_combo,22
+Lithuania,2008,chrespon4,2,85.58765514673212,evs_combo,22
+Lithuania,2008,chrespon4,3,906.5790399958838,evs_combo,22
+Lithuania,2008,chrespon4,4,427.87840691139957,evs_combo,22
+Lithuania,2008,fatherchild4,1,22.837601312205184,evs_combo,22
+Lithuania,2008,fatherchild4,2,242.9749536642962,evs_combo,22
+Lithuania,2008,fatherchild4,3,883.8402148952609,evs_combo,22
+Lithuania,2008,fatherchild4,4,229.63677134097114,evs_combo,22
+Lithuania,2008,manchildren5,1,105.72922005645417,evs_combo,22
+Lithuania,2008,manchildren5,2,437.7693759533078,evs_combo,22
+Lithuania,2008,manchildren5,3,534.1014801120364,evs_combo,22
+Lithuania,2008,manchildren5,4,285.70322237862695,evs_combo,22
+Lithuania,2008,manchildren5,5,54.33804009615448,evs_combo,22
+Luxembourg,1999,fatherchild4,1,49.07432904096534,evs_combo,22
+Luxembourg,1999,fatherchild4,2,204.3151681597052,evs_combo,22
+Luxembourg,1999,fatherchild4,3,433.93351256719353,evs_combo,22
+Luxembourg,1999,fatherchild4,4,466.40230277780034,evs_combo,22
+Luxembourg,1999,manchildren5,1,111.13009912332888,evs_combo,22
+Luxembourg,1999,manchildren5,2,234.2191513238721,evs_combo,22
+Luxembourg,1999,manchildren5,3,253.87854367483484,evs_combo,22
+Luxembourg,1999,manchildren5,4,326.37217889527733,evs_combo,22
+Luxembourg,1999,manchildren5,5,228.54798164533847,evs_combo,22
+Luxembourg,2008,chrespon4,1,12.460996502986024,evs_combo,22
+Luxembourg,2008,chrespon4,2,63.44456856544551,evs_combo,22
+Luxembourg,2008,chrespon4,3,466.66522836902203,evs_combo,22
+Luxembourg,2008,chrespon4,4,1047.6890160031392,evs_combo,22
+Luxembourg,2008,fatherchild4,1,27.810623109081313,evs_combo,22
+Luxembourg,2008,fatherchild4,2,185.3464736833959,evs_combo,22
+Luxembourg,2008,fatherchild4,3,513.2032492937793,evs_combo,22
+Luxembourg,2008,fatherchild4,4,862.7579316649277,evs_combo,22
+Luxembourg,2008,manchildren5,1,246.02011163888164,evs_combo,22
+Luxembourg,2008,manchildren5,2,345.14677115120685,evs_combo,22
+Luxembourg,2008,manchildren5,3,331.33269255703243,evs_combo,22
+Luxembourg,2008,manchildren5,4,335.50834606462365,evs_combo,22
+Luxembourg,2008,manchildren5,5,306.1014878729712,evs_combo,22
+Malta,1999,fatherchild4,1,39.57863334801642,evs_combo,22
+Malta,1999,fatherchild4,2,324.6249527111483,evs_combo,22
+Malta,1999,fatherchild4,3,549.9325854867172,evs_combo,22
+Malta,1999,fatherchild4,4,75.18938345405448,evs_combo,22
+Malta,1999,manchildren5,1,36.51254175194223,evs_combo,22
+Malta,1999,manchildren5,2,294.33477331594486,evs_combo,22
+Malta,1999,manchildren5,3,147.72349150628003,evs_combo,22
+Malta,1999,manchildren5,4,484.091775428536,evs_combo,22
+Malta,1999,manchildren5,5,26.07179847380727,evs_combo,22
+Malta,2008,chrespon4,1,2.519060095262831,evs_combo,22
+Malta,2008,chrespon4,2,52.82640836454543,evs_combo,22
+Malta,2008,chrespon4,3,926.2580029016278,evs_combo,22
+Malta,2008,chrespon4,4,499.14118733695074,evs_combo,22
+Malta,2008,fatherchild4,1,36.099878778904035,evs_combo,22
+Malta,2008,fatherchild4,2,381.9110712048291,evs_combo,22
+Malta,2008,fatherchild4,3,777.0420404151182,evs_combo,22
+Malta,2008,fatherchild4,4,235.93127427411557,evs_combo,22
+Malta,2008,manchildren5,1,81.71443631932952,evs_combo,22
+Malta,2008,manchildren5,2,435.13579486033893,evs_combo,22
+Malta,2008,manchildren5,3,267.795367778652,evs_combo,22
+Malta,2008,manchildren5,4,538.5863555826203,evs_combo,22
+Malta,2008,manchildren5,5,114.54239172433061,evs_combo,22
+Romania,1999,fatherchild4,1,139.27670975631094,evs_combo,22
+Romania,1999,fatherchild4,2,337.67087185522865,evs_combo,22
+Romania,1999,fatherchild4,3,414.82415711591887,evs_combo,22
+Romania,1999,fatherchild4,4,206.41008784028813,evs_combo,22
+Romania,1999,manchildren5,1,351.69874190262686,evs_combo,22
+Romania,1999,manchildren5,2,462.9197115641414,evs_combo,22
+Romania,1999,manchildren5,3,177.3523570278204,evs_combo,22
+Romania,1999,manchildren5,4,77.15328526069023,evs_combo,22
+Romania,1999,manchildren5,5,23.04578650643994,evs_combo,22
+Romania,2008,chrespon4,1,71.56954125778945,evs_combo,22
+Romania,2008,chrespon4,2,289.25662886205566,evs_combo,22
+Romania,2008,chrespon4,3,700.5299997188303,evs_combo,22
+Romania,2008,chrespon4,4,396.67694489388424,evs_combo,22
+Romania,2008,fatherchild4,1,87.55300240486793,evs_combo,22
+Romania,2008,fatherchild4,2,442.6232201978507,evs_combo,22
+Romania,2008,fatherchild4,3,590.773315421732,evs_combo,22
+Romania,2008,fatherchild4,4,339.31209338416687,evs_combo,22
+Romania,2008,manchildren5,1,489.36303721264454,evs_combo,22
+Romania,2008,manchildren5,2,629.5634906646942,evs_combo,22
+Romania,2008,manchildren5,3,270.8775012215305,evs_combo,22
+Romania,2008,manchildren5,4,41.304860765445824,evs_combo,22
+Romania,2008,manchildren5,5,14.449245285906843,evs_combo,22
+Ukraine,1999,fatherchild4,1,5.7353948679505296,evs_combo,22
+Ukraine,1999,fatherchild4,2,205.67922579091152,evs_combo,22
+Ukraine,1999,fatherchild4,3,583.0911035899551,evs_combo,22
+Ukraine,1999,fatherchild4,4,371.1498766895138,evs_combo,22
+Ukraine,1999,manchildren5,1,386.0177255754431,evs_combo,22
+Ukraine,1999,manchildren5,2,456.45671111664666,evs_combo,22
+Ukraine,1999,manchildren5,3,157.7021467251465,evs_combo,22
+Ukraine,1999,manchildren5,4,143.7514600227305,evs_combo,22
+Ukraine,1999,manchildren5,5,5.043530297305673,evs_combo,22
+Ukraine,2008,chrespon4,1,4.14249351809589,evs_combo,22
+Ukraine,2008,chrespon4,2,21.694042919814322,evs_combo,22
+Ukraine,2008,chrespon4,3,486.84080627773506,evs_combo,22
+Ukraine,2008,chrespon4,4,989.720605816178,evs_combo,22
+Ukraine,2008,fatherchild4,1,19.56075990447482,evs_combo,22
+Ukraine,2008,fatherchild4,2,140.69841059871973,evs_combo,22
+Ukraine,2008,fatherchild4,3,638.7812758039961,evs_combo,22
+Ukraine,2008,fatherchild4,4,673.6731885900889,evs_combo,22
+Ukraine,2008,manchildren5,1,688.200668083888,evs_combo,22
+Ukraine,2008,manchildren5,2,579.047292979331,evs_combo,22
+Ukraine,2008,manchildren5,3,80.56716876668403,evs_combo,22
+Ukraine,2008,manchildren5,4,103.17538109988448,evs_combo,22
+Ukraine,2008,manchildren5,5,22.03599966611933,evs_combo,22
+Australia,1994,msww5,1,68.19001423737375,issp1994,20
+Australia,1994,msww5,2,190.55839595101702,issp1994,20
+Australia,1994,msww5,3,372.70980384537154,issp1994,20
+Australia,1994,msww5,4,643.6016412267193,issp1994,20
+Australia,1994,msww5,5,372.70980384537154,issp1994,20
+Australia,2002,child5,1,7.9952084293133785,issp2002,20
+Australia,2002,child5,2,74.95507902481292,issp2002,20
+Australia,2002,child5,3,360.7837803727662,issp2002,20
+Australia,2002,child5,4,711.5735502088907,issp2002,20
+Australia,2002,child5,5,183.8897938742077,issp2002,20
+Australia,2002,house5a,1,9.994010536641722,issp2002,20
+Australia,2002,house5a,2,91.94489693710385,issp2002,20
+Australia,2002,house5a,3,378.7729993387213,issp2002,20
+Australia,2002,house5a,4,675.5951122769804,issp2002,20
+Australia,2002,house5a,5,181.89099176687935,issp2002,20
+Australia,2003,reltchild5,1,11,aussa2003,20
+Australia,2003,reltchild5,2,84,aussa2003,20
+Australia,2003,reltchild5,3,309,aussa2003,20
+Australia,2003,reltchild5,4,2013,aussa2003,20
+Australia,2003,reltchild5,5,1785,aussa2003,20
+Turkey,2001,manchildren5,1,356.7086954909834,evs_combo,20
+Turkey,2001,manchildren5,2,376.7485098444094,evs_combo,20
+Turkey,2001,manchildren5,3,144.28666334466743,evs_combo,20
+Turkey,2001,manchildren5,4,182.3623106161769,evs_combo,20
+Turkey,2001,manchildren5,5,111.22096966151449,evs_combo,20
+Turkey,2009,chrespon4,1,26.091882935847238,evs_combo,20
+Turkey,2009,chrespon4,2,195.46042246493832,evs_combo,20
+Turkey,2009,chrespon4,3,1116.3956066422245,evs_combo,20
+Turkey,2009,chrespon4,4,826.9758750811613,evs_combo,20
+Turkey,2009,fatherchild4,1,102.68226607679077,evs_combo,20
+Turkey,2009,fatherchild4,2,490.62720483621644,evs_combo,20
+Turkey,2009,fatherchild4,3,912.0867360759944,evs_combo,20
+Turkey,2009,fatherchild4,4,655.9586677513072,evs_combo,20
+Turkey,2009,manchildren5,1,1022.6673028464684,evs_combo,20
+Turkey,2009,manchildren5,2,738.8719240362534,evs_combo,20
+Turkey,2009,manchildren5,3,211.4176932959773,evs_combo,20
+Turkey,2009,manchildren5,4,204.85859577166283,evs_combo,20
+Turkey,2009,manchildren5,5,30.836827316079262,evs_combo,20
+Turkey,2010,wifelife2,1,226.37063891540365,pew2010,20
+Turkey,2010,wifelife2,2,645.4998230801632,pew2010,20
+Japan,1994,msww5,1,321.33376572132283,issp1994,17
+Japan,1994,msww5,2,145.72112631548362,issp1994,17
+Japan,1994,msww5,3,237.26388515469768,issp1994,17
+Japan,1994,msww5,4,127.03893063401135,issp1994,17
+Japan,1994,msww5,5,354.9617179479729,issp1994,17
+Japan,2002,child5,1,123.92573065435737,issp2002,17
+Japan,2002,child5,2,64.9610684881712,issp2002,17
+Japan,2002,child5,3,202.87841389382697,issp2002,17
+Japan,2002,child5,4,356.7861761581095,issp2002,17
+Japan,2002,child5,5,350.7897698361245,issp2002,17
+Japan,2002,house5a,1,150.90955910329,issp2002,17
+Japan,2002,house5a,2,72.95627691748457,issp2002,17
+Japan,2002,house5a,3,216.8700286451254,issp2002,17
+Japan,2002,house5a,4,324.805342440856,issp2002,17
+Japan,2002,house5a,5,341.7951603531469,issp2002,17
+Japan,2010,wifelife2,1,167.98584684213805,pew2010,17
+Japan,2010,wifelife2,2,421.97584632817296,pew2010,17
+Brazil,2003,child5,1,168.8987780692451,issp2002,15
+Brazil,2003,child5,2,76.95388113214126,issp2002,15
+Brazil,2003,child5,3,63.96166743450703,issp2002,15
+Brazil,2003,child5,4,325.80474349452015,issp2002,15
+Brazil,2003,child5,5,1329.2034013733492,issp2002,15
+Brazil,2003,house5a,1,308.81492558222925,issp2002,15
+Brazil,2003,house5a,2,118.9287253860365,issp2002,15
+Brazil,2003,house5a,3,92.94429799076802,issp2002,15
+Brazil,2003,house5a,4,311.81312874322174,issp2002,15
+Brazil,2003,house5a,5,1124.3261853721938,issp2002,15
+Brazil,2006,chrespon3,1,85.06742896798342,lb2006,15
+Brazil,2006,chrespon3,2,1092.8662639180927,lb2006,15
+Brazil,2006,chrespon3,3,15.011899229644133,lb2006,15
+Brazil,2010,wifelife2,1,136.5855704198139,pew2010,15
+Brazil,2010,wifelife2,2,749.1557347492424,pew2010,15
+Israel,1994,msww5,1,253.1437514839491,issp1994,15
+Israel,1994,msww5,2,351.22527881167844,issp1994,15
+Israel,1994,msww5,3,189.62428616694342,issp1994,15
+Israel,1994,msww5,4,255.01197105209633,issp1994,15
+Israel,1994,msww5,5,121.43427192956968,issp1994,15
+Israel,2002,child5,1,27.983229502596824,issp2002,15
+Israel,2002,child5,2,174.89518439123015,issp2002,15
+Israel,2002,child5,3,265.8406802746698,issp2002,15
+Israel,2002,child5,4,466.7202920611685,issp2002,15
+Israel,2002,child5,5,231.86104445008797,issp2002,15
+Israel,2002,house5a,1,44.97304741488775,issp2002,15
+Israel,2002,house5a,2,194.8832054645136,issp2002,15
+Israel,2002,house5a,3,294.82331083093084,issp2002,15
+Israel,2002,house5a,4,449.73047414887753,issp2002,15
+Israel,2002,house5a,5,196.88200757184194,issp2002,15
+Mexico,2003,child5,1,26.983828448932652,issp2002,15
+Mexico,2003,child5,2,135.91854329832742,issp2002,15
+Mexico,2003,child5,3,144.91315278130497,issp2002,15
+Mexico,2003,child5,4,682.5909196526297,issp2002,15
+Mexico,2003,child5,5,484.7095110271236,issp2002,15
+Mexico,2003,house5a,1,44.97304741488775,issp2002,15
+Mexico,2003,house5a,2,239.85625287940135,issp2002,15
+Mexico,2003,house5a,3,147.9113559422975,issp2002,15
+Mexico,2003,house5a,4,616.6304501107943,issp2002,15
+Mexico,2003,house5a,5,416.7502393779599,issp2002,15
+Mexico,2006,chrespon3,1,119.08660963237087,lb2006,15
+Mexico,2006,chrespon3,2,1001.7974927799481,lb2006,15
+Mexico,2006,chrespon3,3,73.8632667317277,lb2006,15
+Mexico,2010,wifelife2,1,245.01992599429818,pew2010,15
+Mexico,2010,wifelife2,2,883.6076431307797,pew2010,15
+New Zealand,1994,msww5,1,25.22096416998755,issp1994,15
+New Zealand,1994,msww5,2,129.8412599862322,issp1994,15
+New Zealand,1994,msww5,3,141.98468717918917,issp1994,15
+New Zealand,1994,msww5,4,450.2409159234814,issp1994,15
+New Zealand,1994,msww5,5,206.43826228026845,issp1994,15
+New Zealand,2002,child5,1,11.992812643970067,issp2002,15
+New Zealand,2002,child5,2,98.94070431275306,issp2002,15
+New Zealand,2002,child5,3,322.80654033352766,issp2002,15
+New Zealand,2002,child5,4,474.7155004904819,issp2002,15
+New Zealand,2002,child5,5,87.94729272244716,issp2002,15
+New Zealand,2002,house5a,1,14.991015804962585,issp2002,15
+New Zealand,2002,house5a,2,120.92752749336485,issp2002,15
+New Zealand,2002,house5a,3,328.8029466555127,issp2002,15
+New Zealand,2002,house5a,4,456.72628152452677,issp2002,15
+New Zealand,2002,house5a,5,83.94968850779047,issp2002,15
+Philippines,1994,msww5,1,285.20576206857817,issp1994,15
+Philippines,1994,msww5,2,1517.4197576599972,issp1994,15
+Philippines,1994,msww5,3,278.46304939090606,issp1994,15
+Philippines,1994,msww5,4,809.1502472066343,issp1994,15
+Philippines,1994,msww5,5,148.45580743714183,issp1994,15
+Philippines,2002,child5,1,107.21521494127875,issp2002,15
+Philippines,2002,child5,2,544.3999415079032,issp2002,15
+Philippines,2002,child5,3,249.88362342787207,issp2002,15
+Philippines,2002,child5,4,239.78477690897802,issp2002,15
+Philippines,2002,child5,5,55.09297506134979,issp2002,15
+Philippines,2002,house5a,1,95.07699109587273,issp2002,15
+Philippines,2002,house5a,2,452.4698336814391,issp2002,15
+Philippines,2002,house5a,3,204.55214265285636,issp2002,15
+Philippines,2002,house5a,4,349.5502321790345,issp2002,15
+Philippines,2002,house5a,5,93.19903726036547,issp2002,15
+Albania,2008,chrespon4,1,36.43468038037815,evs_combo,13
+Albania,2008,chrespon4,2,182.57247169920504,evs_combo,13
+Albania,2008,chrespon4,3,712.6579546704238,evs_combo,13
+Albania,2008,chrespon4,4,533.5929778140595,evs_combo,13
+Albania,2008,fatherchild4,1,24.220570036437408,evs_combo,13
+Albania,2008,fatherchild4,2,351.40441635987344,evs_combo,13
+Albania,2008,fatherchild4,3,683.2975818750232,evs_combo,13
+Albania,2008,fatherchild4,4,411.86768901476336,evs_combo,13
+Albania,2008,manchildren5,1,883.9983559064362,evs_combo,13
+Albania,2008,manchildren5,2,446.16820069404054,evs_combo,13
+Albania,2008,manchildren5,3,133.67646036453792,evs_combo,13
+Albania,2008,manchildren5,4,36.120440621035634,evs_combo,13
+Albania,2008,manchildren5,5,5.381780819928927,evs_combo,13
+Armenia,2008,chrespon4,1,6.950287501087502,evs_combo,13
+Armenia,2008,chrespon4,2,95.12754034038227,evs_combo,13
+Armenia,2008,chrespon4,3,590.4363107886775,evs_combo,13
+Armenia,2008,chrespon4,4,763.2826923526765,evs_combo,13
+Armenia,2008,fatherchild4,1,134.77648901403924,evs_combo,13
+Armenia,2008,fatherchild4,2,416.7390119033424,evs_combo,13
+Armenia,2008,fatherchild4,3,623.4326429052586,evs_combo,13
+Armenia,2008,fatherchild4,4,283.5023360856054,evs_combo,13
+Armenia,2008,manchildren5,1,747.0505069603944,evs_combo,13
+Armenia,2008,manchildren5,2,547.471481219886,evs_combo,13
+Armenia,2008,manchildren5,3,32.61614453754395,evs_combo,13
+Armenia,2008,manchildren5,4,119.95015457306923,evs_combo,13
+Armenia,2008,manchildren5,5,4.558179866346196,evs_combo,13
+Bosnia & Herzegovina,2008,chrespon4,1,13.766245793813273,evs_combo,13
+Bosnia & Herzegovina,2008,chrespon4,2,110.7055825916858,evs_combo,13
+Bosnia & Herzegovina,2008,chrespon4,3,844.9484513418765,evs_combo,13
+Bosnia & Herzegovina,2008,chrespon4,4,519.4764752960398,evs_combo,13
+Bosnia & Herzegovina,2008,fatherchild4,1,44.76914808232168,evs_combo,13
+Bosnia & Herzegovina,2008,fatherchild4,2,324.8706902047864,evs_combo,13
+Bosnia & Herzegovina,2008,fatherchild4,3,699.666008861417,evs_combo,13
+Bosnia & Herzegovina,2008,fatherchild4,4,415.31992490826826,evs_combo,13
+Bosnia & Herzegovina,2008,manchildren5,1,525.1214166635871,evs_combo,13
+Bosnia & Herzegovina,2008,manchildren5,2,595.409580687363,evs_combo,13
+Bosnia & Herzegovina,2008,manchildren5,3,276.06500407218226,evs_combo,13
+Bosnia & Herzegovina,2008,manchildren5,4,100.55598671237298,evs_combo,13
+Bosnia & Herzegovina,2008,manchildren5,5,11.27757204728117,evs_combo,13
+Chile,2002,child5,1,3.471309625786599,issp2002,13
+Chile,2002,child5,2,47.407268573276504,issp2002,13
+Chile,2002,child5,3,91.41596392945209,issp2002,13
+Chile,2002,child5,4,972.9130980360361,issp2002,13
+Chile,2002,child5,5,384.9488980899444,issp2002,13
+Chile,2002,house5a,1,7.503413164815775,issp2002,13
+Chile,2002,house5a,2,96.46032081969555,issp2002,13
+Chile,2002,house5a,3,129.508135089862,issp2002,13
+Chile,2002,house5a,4,918.4973796637818,issp2002,13
+Chile,2002,house5a,5,348.18728951634085,issp2002,13
+Chile,2006,chrespon3,1,79.23891050129312,lb2006,13
+Chile,2006,chrespon3,2,1095.0888990018573,lb2006,13
+Chile,2006,chrespon3,3,9.670068615627345,lb2006,13
+Georgia,2008,chrespon4,1,3.9513659563550383,evs_combo,13
+Georgia,2008,chrespon4,2,39.11479183832201,evs_combo,13
+Georgia,2008,chrespon4,3,597.59242663246,evs_combo,13
+Georgia,2008,chrespon4,4,797.6547352678526,evs_combo,13
+Georgia,2008,fatherchild4,1,109.78702111030518,evs_combo,13
+Georgia,2008,fatherchild4,2,609.0023799350317,evs_combo,13
+Georgia,2008,fatherchild4,3,466.76422978485294,evs_combo,13
+Georgia,2008,fatherchild4,4,194.45520677189725,evs_combo,13
+Georgia,2008,manchildren5,1,796.7621159815357,evs_combo,13
+Georgia,2008,manchildren5,2,563.829065349841,evs_combo,13
+Georgia,2008,manchildren5,3,83.6323754438472,evs_combo,13
+Georgia,2008,manchildren5,4,21.819383981930862,evs_combo,13
+Georgia,2008,manchildren5,5,2.3872269185563977,evs_combo,13
+Kosovo,2008,chrespon4,1,2.432068643666786,evs_combo,13
+Kosovo,2008,chrespon4,2,87.57807904425493,evs_combo,13
+Kosovo,2008,chrespon4,3,529.6510717751848,evs_combo,13
+Kosovo,2008,chrespon4,4,934.3202186888013,evs_combo,13
+Kosovo,2008,fatherchild4,1,37.64762030772995,evs_combo,13
+Kosovo,2008,fatherchild4,2,184.79301473088324,evs_combo,13
+Kosovo,2008,fatherchild4,3,500.539897331626,evs_combo,13
+Kosovo,2008,fatherchild4,4,835.1270123178975,evs_combo,13
+Kosovo,2008,manchildren5,1,799.5589485468539,evs_combo,13
+Kosovo,2008,manchildren5,2,520.8388619248987,evs_combo,13
+Kosovo,2008,manchildren5,3,172.85542789403917,evs_combo,13
+Kosovo,2008,manchildren5,4,69.55238031733764,evs_combo,13
+Kosovo,2008,manchildren5,5,2.8340038816699753,evs_combo,13
+Moldova,2008,chrespon4,1,50.39343061812012,evs_combo,13
+Moldova,2008,chrespon4,2,239.64332759599253,evs_combo,13
+Moldova,2008,chrespon4,3,746.9439458802365,evs_combo,13
+Moldova,2008,chrespon4,4,493.4922997937807,evs_combo,13
+Moldova,2008,fatherchild4,1,55.82339700399875,evs_combo,13
+Moldova,2008,fatherchild4,2,302.93558259394814,evs_combo,13
+Moldova,2008,fatherchild4,3,703.9670865727305,evs_combo,13
+Moldova,2008,fatherchild4,4,458.3514581066276,evs_combo,13
+Moldova,2008,manchildren5,1,761.0388060322646,evs_combo,13
+Moldova,2008,manchildren5,2,622.8581406326023,evs_combo,13
+Moldova,2008,manchildren5,3,105.35930430076905,evs_combo,13
+Moldova,2008,manchildren5,4,36.87399318657477,evs_combo,13
+Moldova,2008,manchildren5,5,1.0467569828132444,evs_combo,13
+Montenegro,2008,chrespon4,1,11.836731366867667,evs_combo,13
+Montenegro,2008,chrespon4,2,75.87990996376196,evs_combo,13
+Montenegro,2008,chrespon4,3,585.8599993065121,evs_combo,13
+Montenegro,2008,chrespon4,4,815.3799680885869,evs_combo,13
+Montenegro,2008,fatherchild4,1,30.650549030091945,evs_combo,13
+Montenegro,2008,fatherchild4,2,342.5524271097832,evs_combo,13
+Montenegro,2008,fatherchild4,3,554.8603591498278,evs_combo,13
+Montenegro,2008,fatherchild4,4,539.7626804110248,evs_combo,13
+Montenegro,2008,manchildren5,1,811.9528232961259,evs_combo,13
+Montenegro,2008,manchildren5,2,446.9598603173596,evs_combo,13
+Montenegro,2008,manchildren5,3,176.152873723125,evs_combo,13
+Montenegro,2008,manchildren5,4,55.66316274114359,evs_combo,13
+Montenegro,2008,manchildren5,5,9.84739950550033,evs_combo,13
+North Macedonia,2008,chrespon4,1,18.50487286024182,evs_combo,13
+North Macedonia,2008,chrespon4,2,59.989114747082056,evs_combo,13
+North Macedonia,2008,chrespon4,3,590.4212361818921,evs_combo,13
+North Macedonia,2008,chrespon4,4,779.854507905482,evs_combo,13
+North Macedonia,2008,fatherchild4,1,31.369992657289067,evs_combo,13
+North Macedonia,2008,fatherchild4,2,210.01610087002044,evs_combo,13
+North Macedonia,2008,fatherchild4,3,561.65590216142175,evs_combo,13
+North Macedonia,2008,fatherchild4,4,587.9933539904679,evs_combo,13
+North Macedonia,2008,manchildren5,1,557.4724148722889,evs_combo,13
+North Macedonia,2008,manchildren5,2,570.7742501527888,evs_combo,13
+North Macedonia,2008,manchildren5,3,216.18744726577242,evs_combo,13
+North Macedonia,2008,manchildren5,4,86.87836621637837,evs_combo,13
+North Macedonia,2008,manchildren5,5,11.694014349020827,evs_combo,13
+Serbia,2008,chrespon4,1,6.12602678395824,evs_combo,13
+Serbia,2008,chrespon4,2,69.54308120482571,evs_combo,13
+Serbia,2008,chrespon4,3,718.3447309946966,evs_combo,13
+Serbia,2008,chrespon4,4,703.8792557087612,evs_combo,13
+Serbia,2008,fatherchild4,1,48.256123626315116,evs_combo,13
+Serbia,2008,fatherchild4,2,388.73939949907094,evs_combo,13
+Serbia,2008,fatherchild4,3,700.5257278990917,evs_combo,13
+Serbia,2008,fatherchild4,4,356.0734091563189,evs_combo,13
+Serbia,2008,manchildren5,1,461.24280571316234,evs_combo,13
+Serbia,2008,manchildren5,2,656.1720838337526,evs_combo,13
+Serbia,2008,manchildren5,3,226.46757182612222,evs_combo,13
+Serbia,2008,manchildren5,4,118.94167642471214,evs_combo,13
+Serbia,2008,manchildren5,5,25.633369549699722,evs_combo,13
+Taiwan,2002,child5,1,18.988620019619272,issp2002,10
+Taiwan,2002,child5,2,341.7951603531469,issp2002,10
+Taiwan,2002,child5,3,345.7927645678036,issp2002,10
+Taiwan,2002,child5,4,915.4513651563818,issp2002,10
+Taiwan,2002,child5,5,109.93411590305895,issp2002,10
+Taiwan,2002,house5a,1,24.985026341604307,issp2002,10
+Taiwan,2002,house5a,2,419.74844253895236,issp2002,10
+Taiwan,2002,house5a,3,375.7747961777288,issp2002,10
+Taiwan,2002,house5a,4,826.5046713802705,issp2002,10
+Taiwan,2002,house5a,5,104.93711063473809,issp2002,10
+Argentina,2006,chrespon3,1,91.36341950489617,lb2006,5
+Argentina,2006,chrespon3,2,1062.6322988695897,lb2006,5
+Argentina,2006,chrespon3,3,20.980630363350638,lb2006,5
+Argentina,2010,wifelife2,1,214.4082369635167,pew2010,5
+Argentina,2010,wifelife2,2,481.899536598825,pew2010,5
+Canada,1994,msww5,1,49.278961658803446,issp1994,5
+Canada,1994,msww5,2,123.14462694420845,issp1994,5
+Canada,1994,msww5,3,197.07007525579417,issp1994,5
+Canada,1994,msww5,4,615.528839885955,issp1994,5
+Canada,1994,msww5,5,407.6333663425317,issp1994,5
+Bolivia,2006,chrespon3,1,86.06822224995969,lb2006,3
+Bolivia,2006,chrespon3,2,1062.8424654588046,lb2006,3
+Bolivia,2006,chrespon3,3,33.026178305217094,lb2006,3
+Colombia,2006,chrespon3,1,43.46298555465984,lb2006,3
+Colombia,2006,chrespon3,2,1100.2451857239182,lb2006,3
+Colombia,2006,chrespon3,3,38.84024436716282,lb2006,3
+Costa Rica,2006,chrespon3,1,38.030144715098466,lb2006,3
+Costa Rica,2006,chrespon3,2,927.7353723920073,lb2006,3
+Costa Rica,2006,chrespon3,3,24.01903876743061,lb2006,3
+Dominican Republic,2006,chrespon3,1,128.6778569123221,lb2006,3
+Dominican Republic,2006,chrespon3,2,803.1944946693906,lb2006,3
+Dominican Republic,2006,chrespon3,3,59.913030253882,lb2006,3
+Ecuador,2006,chrespon3,1,61.0483902005528,lb2006,3
+Ecuador,2006,chrespon3,2,1055.8369124849705,lb2006,3
+Ecuador,2006,chrespon3,3,57.0452170726477,lb2006,3
+El Salvador,2006,chrespon3,1,42.914428217041404,lb2006,3
+El Salvador,2006,chrespon3,2,958.665603764596,lb2006,3
+El Salvador,2006,chrespon3,3,10.176256922132996,lb2006,3
+Guatemala,2006,chrespon3,1,89.42152940236883,lb2006,3
+Guatemala,2006,chrespon3,2,797.0900831484398,lb2006,3
+Guatemala,2006,chrespon3,3,96.92527305526018,lb2006,3
+Honduras,2006,chrespon3,1,78.74661875767765,lb2006,3
+Honduras,2006,chrespon3,2,892.4404857879455,lb2006,3
+Honduras,2006,chrespon3,3,17.425232165667364,lb2006,3
+Nicaragua,2006,chrespon3,1,34.339075263823524,lb2006,3
+Nicaragua,2006,chrespon3,2,939.6184767430703,lb2006,3
+Nicaragua,2006,chrespon3,3,11.929548932027636,lb2006,3
+Panama,2006,chrespon3,1,82.06504912205459,lb2006,3
+Panama,2006,chrespon3,2,896.7107806507429,lb2006,3
+Panama,2006,chrespon3,3,27.021418613359437,lb2006,3
+Paraguay,2006,chrespon3,1,103.2726631051528,lb2006,3
+Paraguay,2006,chrespon3,2,1044.4821708241573,lb2006,3
+Paraguay,2006,chrespon3,3,17.531371868698596,lb2006,3
+Peru,2006,chrespon3,1,61.0483902005528,lb2006,3
+Peru,2006,chrespon3,2,1092.8662639180927,lb2006,3
+Peru,2006,chrespon3,3,33.026178305217094,lb2006,3
+Uruguay,2006,chrespon3,1,47.493145592825144,lb2006,3
+Uruguay,2006,chrespon3,2,1110.1043877717618,lb2006,3
+Uruguay,2006,chrespon3,3,16.736896554256898,lb2006,3
+Venezuela,2006,chrespon3,1,125.93808689456435,lb2006,3
+Venezuela,2006,chrespon3,2,904.2421499598487,lb2006,3
+Venezuela,2006,chrespon3,3,122.20870846303184,lb2006,3
+China,2010,wifelife2,1,614.9187370897553,pew2010,2
+China,2010,wifelife2,2,2255.1464325679135,pew2010,2
+Egypt,2010,wifelife2,1,337.00613350984213,pew2010,2
+Egypt,2010,wifelife2,2,423.2583629305669,pew2010,2
+India,2010,wifelife2,1,739.0962222336761,pew2010,2
+India,2010,wifelife2,2,1212.0357067720342,pew2010,2
+Indonesia,2010,wifelife2,1,382.19790179556355,pew2010,2
+Indonesia,2010,wifelife2,2,499.9809330664244,pew2010,2
+Jordan,2010,wifelife2,1,353.90090009740675,pew2010,2
+Jordan,2010,wifelife2,2,420.5907682062146,pew2010,2
+Kenya,2010,wifelife2,1,161.03178939560195,pew2010,2
+Kenya,2010,wifelife2,2,723.4809414620988,pew2010,2
+Lebanon,2010,wifelife2,1,69.15490779323345,pew2010,2
+Lebanon,2010,wifelife2,2,819.9914182684672,pew2010,2
+Nigeria,2010,wifelife2,1,335.2821821573674,pew2010,2
+Nigeria,2010,wifelife2,2,542.8943961252372,pew2010,2
+Pakistan,2010,wifelife2,1,1405.6484931457853,pew2010,2
+Pakistan,2010,wifelife2,2,327.57971659166816,pew2010,2
+South Korea,2010,wifelife2,1,207.0922563969045,pew2010,2
+South Korea,2010,wifelife2,2,410.4928303042699,pew2010,2

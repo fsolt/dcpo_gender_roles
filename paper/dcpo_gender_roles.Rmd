@@ -57,22 +57,63 @@ set.seed(324)
 # The Source Data on Gender Egalitarian Attitudes
 
 ```{r dcpo_input_raw, include=FALSE, cache.extra = tools::md5sum(here::here("data-raw", "surveys_egr.csv"))}
-surveys_egr <- read_csv(here::here("data-raw", "surveys_egr.csv"),
-                        col_types = "cccc")
+surveys_egr <- read_csv(here::here("data-raw", "surveys_egr_classification.csv"),
+                        col_types = "ccccnnn")
 
-dcpo_input_raw <- DCPOtools::dcpo_setup(vars = surveys_egr,
-                                        datapath = here::here("..", "data", "dcpo_surveys"),
-                                        file = here::here("data", "dcpo_input_raw.csv"))
+surveys_egr_public <- surveys_egr %>% 
+  filter(agreed == 1)
+
+surveys_egr_private <- surveys_egr %>% 
+  filter(agreed == 2)
+
+surveys_egr_balance <- surveys_egr %>% 
+  filter(agreed == 3)
+
+surveys_egr_dominance <- surveys_egr %>% 
+  filter(agreed == 4)
+
+dcpo_input_raw_public <- DCPOtools::dcpo_setup(vars = surveys_egr_public,
+                                               datapath = here::here("..",
+                                                                     "data", "dcpo_surveys"),
+                                               file = here::here("data",
+                                                                 "dcpo_input_raw_public.csv"))
+
+dcpo_input_raw_private <- DCPOtools::dcpo_setup(vars = surveys_egr_private,
+                                               datapath = here::here("..",
+                                                                     "data", "dcpo_surveys"),
+                                               file = here::here("data",
+                                                                 "dcpo_input_raw_private.csv"))
+
+dcpo_input_raw_balance <- DCPOtools::dcpo_setup(vars = surveys_egr_balance,
+                                               datapath = here::here("..",
+                                                                     "data", "dcpo_surveys"),
+                                               file = here::here("data",
+                                                                 "dcpo_input_raw_balance.csv"))
+
+dcpo_input_raw_dominance <- DCPOtools::dcpo_setup(vars = surveys_egr_dominance,
+                                               datapath = here::here("..",
+                                                                     "data", "dcpo_surveys"),
+                                               file = here::here("data",
+                                                                 "dcpo_input_raw_dominance.csv"))
 ```
 
 ```{r egr_summary_stats}
-dcpo_input_raw1 <- dcpo_input_raw %>% 
+dcpo_input_raw_public <- read_csv(here::here("data", "dcpo_input_raw_public.csv"))
+
+process_dcpo_input_raw <- function(dcpo_input_raw_df) {
+  dcpo_input_raw_df %>% 
   with_min_yrs(2) %>% 
   with_min_cy(5) %>% 
   group_by(country) %>% 
   mutate(cc_rank = n()) %>% 
   ungroup() %>% 
   arrange(-cc_rank)
+} 
+
+dcpo_input_raw_public1 <- process_dcpo_input_raw(dcpo_input_raw_public)
+dcpo_input_raw_private1 <- process_dcpo_input_raw(dcpo_input_raw_private)
+dcpo_input_raw_balance1 <- process_dcpo_input_raw(dcpo_input_raw_balance)
+dcpo_input_raw_dominance1 <- process_dcpo_input_raw(dcpo_input_raw_dominance)
 
 n_surveys <- surveys_egr %>%
   distinct(survey) %>% 
@@ -195,11 +236,11 @@ cby_plot + ybc_plot
 ```
 
 
-```{r dcpo_input}
-dcpo_input <- DCPOtools::format_dcpo(dcpo_input_raw1,
-                                     scale_q = "polileader4",
-                                     scale_cp = 2)
-save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
+```{r dcpo_input_public}
+dcpo_input_public <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
+                                            scale_q = "polileader4",
+                                            scale_cp = 2)
+save(dcpo_input_public, file = here::here("data", "dcpo_input_public.rda"))
 ```
 
 # Estimating Gender Egalitarianism
