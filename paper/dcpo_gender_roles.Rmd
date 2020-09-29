@@ -15,7 +15,7 @@ keywords: ""
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 fontsize: 11pt
 spacing: double
-bibliography: \dummy{`r file.path(getwd(), list.files(getwd(), ".bib$", recursive = TRUE))`}
+bibliography: \dummy{`r file.path(getwd(), list.files(getwd(), "s.bib$", recursive = TRUE))`}
 # csl: https://raw.githubusercontent.com/citation-style-language/styles/master/american-political-science-association.csl
 biblio-style: apsr
 citecolor: black
@@ -98,7 +98,8 @@ dcpo_input_raw_dominance <- DCPOtools::dcpo_setup(vars = surveys_egr_dominance,
 ```
 
 ```{r egr_summary_stats}
-dcpo_input_raw_public <- read_csv(here::here("data", "dcpo_input_raw_public.csv"))
+dcpo_input_raw_public <- read_csv(here::here("data", "dcpo_input_raw_public.csv"),
+                                  col_types = "cdcddcd")
 
 process_dcpo_input_raw <- function(dcpo_input_raw_df) {
   dcpo_input_raw_df %>% 
@@ -119,25 +120,25 @@ n_surveys <- surveys_egr %>%
   distinct(survey) %>% 
   nrow()
 
-n_items <- dcpo_input_raw1 %>%
+n_items <- dcpo_input_raw_public1 %>%
   distinct(item) %>% 
   nrow()
 
-n_countries <- dcpo_input_raw1 %>%
+n_countries <- dcpo_input_raw_public1 %>%
   distinct(country) %>% 
   nrow()
 
-n_years <- as.integer(summary(dcpo_input_raw1$year)[6]-summary(dcpo_input_raw1$year)[1])
+n_years <- as.integer(summary(dcpo_input_raw_public1$year)[6]-summary(dcpo_input_raw_public1$year)[1])
 
 total_cy <- {n_countries * n_years} %>% 
   scales::comma()
 
 year_range <- paste("from",
-                    summary(dcpo_input_raw1$year)[1],
+                    summary(dcpo_input_raw_public1$year)[1],
                     "to",
-                    summary(dcpo_input_raw1$year)[6])
+                    summary(dcpo_input_raw_public1$year)[6])
 
-n_cyi <- dcpo_input_raw1 %>% 
+n_cyi <- dcpo_input_raw_public1 %>% 
   distinct(country, year, item) %>% 
   nrow() %>% 
   scales::comma()
@@ -149,7 +150,7 @@ Together, these survey items were asked in `r n_countries` different countries i
 Considering that observations for every year in each country surveyed would number `r total_cy` and so a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations, the available data is clearly very, very sparse.
 
 ```{r obs_by_item, fig.height=3, fig.cap = "Items with the Most Observations in the Source Data \\label{items_by_obs}"}
-dcpo_input_raw1 %>%
+dcpo_input_raw_public1 %>%
   distinct(country, year, item) %>%
   count(item) %>%
   arrange(desc(n)) %>% 
@@ -161,11 +162,11 @@ dcpo_input_raw1 %>%
         axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95)) +
   ylab("Country-Years Observed")
 
-polileader4_cy <- dcpo_input_raw1 %>% filter(item == "polileader4") %>% distinct(country, year) %>% nrow()
+polileader4_cy <- dcpo_input_raw_public1 %>% filter(item == "polileader4") %>% distinct(country, year) %>% nrow()
 
-polileader4_surveys <- dcpo_input_raw1 %>% filter(item == "polileader4") %>% distinct(survey) %>% pull(survey)
+polileader4_surveys <- dcpo_input_raw_public1 %>% filter(item == "polileader4") %>% distinct(survey) %>% pull(survey)
 
-housewifefull4_cy <- dcpo_input_raw1 %>% filter(item == "housewifefull4") %>% distinct(country, year) %>% nrow()
+housewifefull4_cy <- dcpo_input_raw_public1 %>% filter(item == "housewifefull4") %>% distinct(country, year) %>% nrow()
 ```
 
 Figure&nbsp;\ref{items_by_obs} displays in how many country-years each of the twelve most-commonly asked items are available.
@@ -178,7 +179,7 @@ Figure&nbsp;\ref{countries_by_obs} below shows the dozen countries with the high
 
 
 ```{r obs_by_country, fig.cap = "Countries with the Most Observations in the Source Data \\label{countries_by_obs}"}
-dcpo_input_raw1 %>%
+dcpo_input_raw_public1 %>%
   mutate(country = if_else(stringr::str_detect(country, "United"),
                            stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
                            country)) %>% 
@@ -205,7 +206,7 @@ dcpo_input_raw1 %>%
 ```{r years_by_country, fig.cap="Country-Year Coverage in the Source Data \\label{countries_by_years}"}
 library(patchwork)
 
-cby_plot <- dcpo_input_raw1 %>%
+cby_plot <- dcpo_input_raw_public1 %>%
   mutate(country = if_else(stringr::str_detect(country, "United"),
                            stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
                            country),
@@ -222,7 +223,7 @@ cby_plot <- dcpo_input_raw1 %>%
   ylab("Years Observed")
 
 
-ybc_plot <- dcpo_input_raw1 %>%
+ybc_plot <- dcpo_input_raw_public1 %>%
   distinct(country, year) %>%
   count(year, name = "nn") %>%
   ggplot(aes(year, nn)) +
