@@ -74,6 +74,13 @@ Furthermore, by measuring cross-national time-variant attitudes toward gender eg
 
 This article proceeds with the following order. (Brief summaries about the rest of sections will be provided)
 
+
+# Below sentences are to explain four dimensions and the dimension we will concentrate (needed to be reviewed and modified)
+
+We examine all questionnaires asking opinions about gender roles from series of cross-national surveys such as World Value Surveys (WVS) and surveys conducted in individual countries or regions.
+After collecting the all questionnaires, we classify them into four categories: egarlitarian gender roles in the public sector which has been donimated by male, those in private sector where the role of female has been emphasized, the balance of female role in private and public sector, and male dominance over women.
+
+
 # The Source Data on Gender Egalitarian Attitudes
 
 ```{r dcpo_input_raw, include=FALSE, cache.extra = tools::md5sum(here::here("data-raw", "surveys_egr.csv"))}
