@@ -78,13 +78,17 @@ This article proceeds with the following order. (Brief summaries about the rest 
 # Below sentences are to explain four dimensions and the dimension we will concentrate (needed to be reviewed and modified)
 
 We examine all questionnaires asking opinions about gender roles from series of cross-national surveys such as World Value Surveys (WVS) and surveys conducted in individual countries or regions.
-After collecting the all questionnaires, we classify them into four categories: egalitarian gender roles in the public sector which has been dominated by male, those in private sector where the role of female has been emphasized, the balance of female role in private and public sector, and male dominance over women.
+After collecting the all questionnaires, we classify them into four categories: egalitarian gender roles in the public sector which has been generally dominated by male, those in private sector where the role of female has been emphasized, the balance of female role in private and public sector, and male dominance over women.
 
 
 (How about adding some sentences or table to show what kind of questionnaires are classified into the four categories?)
 
 
-Even though questionnaires in the four categories are asking about opinions about gender roles, generating estimates about egalitarian gender roles without the classification may cause multi-dimensionality problem.
+Even though questionnaires in the four categories are asking about opinions about gender roles, generating a measure of egalitarian gender roles without the classification may cause multidimensionality problem since people might have different opinions about gender roles by the dimensions.
+For instance, some people have a more egalitarian veiw about the gender role in public sector rather than in private sector, while others do not.
+
+
+
 
 # The Source Data on Gender Egalitarian Attitudes
 
