@@ -86,7 +86,7 @@ After collecting the all questionnaires, we classify them into four categories: 
 
 Even though questionnaires in the four categories are asking about opinions about gender roles, generating a measure of egalitarian gender roles without the classification may cause multidimensionality problem since people might have different opinions about gender roles by the dimensions.
 For instance, some people have a more egalitarian veiw about the gender role in public sector rather than in private sector, while others do not.
-
+Given that the number of questionnaires about gender roles is relatively high compared to others (I think adding the actual numbers will be helpful), we focus on the opinions about gender role in public sectors to generate our estimate of egalitarian gender role.
 
 
 
