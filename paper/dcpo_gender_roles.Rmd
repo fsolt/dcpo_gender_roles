@@ -86,7 +86,9 @@ However, if we disregard this kind of multi-dimensionality given that there are 
 
 
 After examining all questionnaires asking opinions about gender roles from series of cross-national surveys including World Value Survey (WVS) and surveys conducted in individual countries or regions such as Arab Barometer, Korean General Social Survey, etc., we classify them into four categories: 1) egalitarian gender roles in the public sector which has been generally dominated by male, 2) those in private sector where the role of female has been emphasized, 3) the balance of female role in private and public sector, and 4) male dominance over women. 
-
+Questionnaires related to the first dimension are asking respondents about the role of women or perspective on women in the public sector.
+For example, "On the whole, men make better business executives than women do", "Would you say that most men are better suited emotionally for politics than are most women, that men and women are equally suited, or that women are better suited than men in this area?", "When jobs are scarce, men have more right to a job than women", "Some say that in general, men are better political leaders than women. Do you strongly agree, agree, disagree or strongly disagree?", and other similar questionnaires are classified as the first dimension.
+Questionnaires about childcare or housework such as "A man can be responsible for looking after the home and children just as well while the woman works full-time" or "A father should be as heavily involved in the care of his children as the mother" are classified as the second dimension.
 
 
 Given that the number of questionnaires about gender roles is relatively high compared to others (I think adding the actual numbers will be helpful), we focus on the opinions about gender role in public sectors to generate our estimate of egalitarian gender role.
