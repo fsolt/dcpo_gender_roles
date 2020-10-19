@@ -76,16 +76,21 @@ This article proceeds with the following order. First, we discuss multi-dimensio
 
 # Multi-Dimensionality in Egalitarian Gender Role
 
-We examine all questionnaires asking opinions about gender roles from series of cross-national surveys such as World Value Surveys (WVS) and surveys conducted in individual countries or regions.
-After collecting the all questionnaires, we classify them into four categories: egalitarian gender roles in the public sector which has been generally dominated by male, those in private sector where the role of female has been emphasized, the balance of female role in private and public sector, and male dominance over women.
-
-
-(How about adding some sentences or table to show what kind of questionnaires are classified into the four categories?)
-
-
-Even though questionnaires in the four categories are asking about opinions about gender roles, generating a measure of egalitarian gender roles without the classification may cause multidimensionality problem since people might have different opinions about gender roles by the dimensions.
+Gender egalitarianism does not have only one dimension but a multi-dimension.
+Generating a measure of egalitarian gender roles without the classification may cause multidimensionality problem since people might have different opinions about gender roles by the dimensions.
 For instance, some people have a more egalitarian veiw about the gender role in public sector rather than in private sector, while others do not.
+To be specific, some might think that men and women should be treated and promoted equally at work, but that women should be in charge of housework.
+Also, others may argue that both men and women can succeed as politicians, while saying that women are responsible for parenting.
+If we disregard this kind of multi-dimensionality, we will not be able to measure gender egalitarianism properly in the various dimensions that people have.
+The multi-dimensionality problem is relatively not salient if people in a society have an egalitarian view of all dimensions.
+However, given that there are some variations of gender
+
+After examining all questionnaires asking opinions about gender roles from series of cross-national surveys including World Value Survey (WVS) and surveys conducted in individual countries or regions such as Arab Barometer, Korean General Social Survey, etc.,  
+
 Given that the number of questionnaires about gender roles is relatively high compared to others (I think adding the actual numbers will be helpful), we focus on the opinions about gender role in public sectors to generate our estimate of egalitarian gender role.
+
+
+egalitarian gender roles in the public sector which has been generally dominated by male, those in private sector where the role of female has been emphasized, the balance of female role in private and public sector, and male dominance over women.
 
 
 
