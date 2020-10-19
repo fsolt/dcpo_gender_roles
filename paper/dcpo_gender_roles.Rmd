@@ -71,10 +71,10 @@ Moreover, the index makes it possible to unveil the relationship between gender 
 Furthermore, by measuring cross-national time-variant attitudes toward gender egalitarianism, our index positions researchers to ask questions about how public opinion relates to the macrolevel processes of gender, such as the relationship between public opinion about gender roles and policy decisions [@stimson1995dynamic; @lax2009gay; @Wwlezien2017public], public opinion and political institutions [@bartels2009explaining; @grieco2011let; @nir2015institutions], and the public opinion and the makeup of national militaries [@brooks2011war; @eichenberg2016gender; @lizotte2017gender].
 
 
-This article proceeds with the following order. First, we 
+This article proceeds with the following order. First, we discuss multi-dimensionality in egalitarian gender role and the reasons why we focus on the public sector. Next, we illustrate the data source we used to build our index. Then, the estimates of egalitarian gender role about 120 countries from 1972 to 2020 is introduced. Lastly, we provide examples of how the new index about egalitarian gender role can be used and conclude.    
 
 
-# Multi-Dimensionality of Egalitarian Gender Role
+# Multi-Dimensionality in Egalitarian Gender Role
 
 We examine all questionnaires asking opinions about gender roles from series of cross-national surveys such as World Value Surveys (WVS) and surveys conducted in individual countries or regions.
 After collecting the all questionnaires, we classify them into four categories: egalitarian gender roles in the public sector which has been generally dominated by male, those in private sector where the role of female has been emphasized, the balance of female role in private and public sector, and male dominance over women.
