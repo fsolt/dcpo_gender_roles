@@ -62,20 +62,19 @@ Very few cross-national time-series measures of gender egalitarianism exist and 
 Even though a gender egalitarian index developed by @mcdaniel2008measuring exists, it only deals with limited number of countries (n=38) and with the fourth wave of World Value Survey (WVS) conducted between 1999 and 2004.
 
 
-To overcome this limitation, we develop a comparable cross-national over time measure about gender egalitarian view in the public sector through the DCPO package for R [@Solt2020a]. (Quick Review of our Index can be included - number of countries and years, unit of analysis, number of surveys and questionnaires will be introduced).
-
-
-The newly developed gender egalitarian index enables scholars to evaluate the generalizability of existing theories with large-N analysis, test the cause and effect of gender egalitarian attitudes, and build new theories with the preliminary statistical analysis.
+To overcome this limitation, we develop a comparable cross-national over time measure about gender egalitarian view in the public sector through the DCPO package for R [@Solt2020a]. 
+Our new index is based on data from 62 survey datasets from 1972 to 2020, which includes 224,640 observations. 
+The newly developed gender egalitarian index provides opportunities for scholars to evaluate the generalizability of existing theories with large-N analysis, test the cause and effect of gender egalitarian attitudes, and build new theories with the preliminary statistical analysis.
 The index provides an opportunity to descriptively examine how the attitudes have been changed over decades and why there are variations among countries with different political institutions, culture, religion, and other country specific factors.
 We also can test the long-lasting question suggested by @krauss1974political about whether the differences in political behavior such as protests, voting, political volunteerism, and feminist movement of men and women are attributed to biological differences or public opinion on the gender role.
 Moreover, the index makes it possible to unveil the relationship between gender egalitarianism and women's mobilization and representation [@erickson2002gender; @erickson2002gender; @klein2013gender; @paxton1997women].
 Furthermore, by measuring cross-national time-variant attitudes toward gender egalitarianism, our index positions researchers to ask questions about how public opinion relates to the macrolevel processes of gender, such as the relationship between public opinion about gender roles and policy decisions [@stimson1995dynamic; @lax2009gay; @Wwlezien2017public], public opinion and political institutions [@bartels2009explaining; @grieco2011let; @nir2015institutions], and the public opinion and the makeup of national militaries [@brooks2011war; @eichenberg2016gender; @lizotte2017gender].
 
 
-This article proceeds with the following order. (Brief summaries about the rest of sections will be provided)
+This article proceeds with the following order. First, we 
 
 
-# Below sentences are to explain four dimensions and the dimension we will concentrate (needed to be reviewed and modified)
+# Multi-Dimensionality of Egalitarian Gender Role
 
 We examine all questionnaires asking opinions about gender roles from series of cross-national surveys such as World Value Surveys (WVS) and surveys conducted in individual countries or regions.
 After collecting the all questionnaires, we classify them into four categories: egalitarian gender roles in the public sector which has been generally dominated by male, those in private sector where the role of female has been emphasized, the balance of female role in private and public sector, and male dominance over women.
