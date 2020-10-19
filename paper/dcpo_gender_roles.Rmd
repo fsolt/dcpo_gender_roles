@@ -62,7 +62,7 @@ Very few cross-national time-series measures of gender egalitarianism exist and 
 Even though a gender egalitarian index developed by @mcdaniel2008measuring exists, it only deals with limited number of countries (n=38) and with the fourth wave of World Value Survey (WVS) conducted between 1999 and 2004.
 
 
-To overcome this limitation, we develop a comparable cross-national over time measure about gender egalitarian view through the DCPO package for R [@Solt2020a]. (Quick Review of our Index can be included).
+To overcome this limitation, we develop a comparable cross-national over time measure about gender egalitarian view in the public sector through the DCPO package for R [@Solt2020a]. (Quick Review of our Index can be included - number of countries and years, unit of analysis, number of surveys and questionnaires will be introduced).
 
 
 The newly developed gender egalitarian index enables scholars to evaluate the generalizability of existing theories with large-N analysis, test the cause and effect of gender egalitarian attitudes, and build new theories with the preliminary statistical analysis.
