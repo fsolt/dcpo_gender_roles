@@ -71,7 +71,11 @@ Moreover, the index makes it possible to unveil the relationship between gender 
 Furthermore, by measuring cross-national time-variant attitudes toward gender egalitarianism, our index positions researchers to ask questions about how public opinion relates to the macrolevel processes of gender, such as the relationship between public opinion about gender roles and policy decisions [@stimson1995dynamic; @lax2009gay; @Wwlezien2017public], public opinion and political institutions [@bartels2009explaining; @grieco2011let; @nir2015institutions], and the public opinion and the makeup of national militaries [@brooks2011war; @eichenberg2016gender; @lizotte2017gender].
 
 
-This article proceeds with the following order. First, we discuss multi-dimensionality in egalitarian gender role and the reasons why we focus on the public sector. Next, we illustrate the data source we used to build our index. Then, the estimates of egalitarian gender role about 120 countries from 1972 to 2020 is introduced. Lastly, we provide examples of how the new index about egalitarian gender role can be used and conclude.    
+This article proceeds with the following order. 
+First, we discuss multi-dimensionality in egalitarian gender role and the reasons why we focus on the public sector.
+Next, we illustrate the data source we used to build our index.
+Then, the estimates of egalitarian gender role about 120 countries from 1972 to 2020 is introduced.
+Lastly, we provide examples of how the new index about egalitarian gender role can be used and conclude.    
 
 
 # Multi-Dimensionality in Egalitarian Gender Role
@@ -89,7 +93,8 @@ After examining all questionnaires asking opinions about gender roles from serie
 Questionnaires related to the first dimension are asking respondents about the role of women or perspective on women in the public sector.
 For example, "On the whole, men make better business executives than women do", "Would you say that most men are better suited emotionally for politics than are most women, that men and women are equally suited, or that women are better suited than men in this area?", "When jobs are scarce, men have more right to a job than women", "Some say that in general, men are better political leaders than women. Do you strongly agree, agree, disagree or strongly disagree?", and other similar questionnaires are classified as the first dimension.
 Questionnaires about childcare or housework such as "A man can be responsible for looking after the home and children just as well while the woman works full-time" or "A father should be as heavily involved in the care of his children as the mother" are classified as the second dimension.
-The rest of questionnaires are classifed into the third or fourth dimensions. While questionnaires such as "A working mother can establish just as warm and secure a relationship with her children as a mother who does not work" and "A pre-school child is likely to suffer if his or her mother works" are about the third dimension, others including "View on Change of Surname at Marriage" and "A woman can travel abroad by herself if she wishes" are related to the fourth dimension.
+The rest of questionnaires are classifed into the third or fourth dimensions.
+While questionnaires such as "A working mother can establish just as warm and secure a relationship with her children as a mother who does not work" and "A pre-school child is likely to suffer if his or her mother works" are about the third dimension, others including "View on Change of Surname at Marriage" and "A woman can travel abroad by herself if she wishes" are related to the fourth dimension.
 
 
 Given that the number of questionnaires about gender roles is relatively high compared to others (I think adding the actual numbers will be helpful), we focus on the opinions about gender role in public sectors to generate our estimate of egalitarian gender role.
