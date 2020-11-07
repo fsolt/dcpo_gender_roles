@@ -50,6 +50,52 @@ library(tidyverse)
 set.seed(324)
 ```
 
+
+# Introduction
+
+Gender egalitarian attitude has been grown over the decades not only in developed countries but also in developing societies [@boehnke2011gender].
+With the affluent variance in the gender egalitarian attitude around the world, scholars propose innovative research questions about the influence of gender egalitarian attitudes and its determinants.
+For example, the association between gender egalitarian attitudes and women's political behavior [@krauss1974political], gender inequalities [@bianchi2012housework], women's descriptive representation in parliaments [@paxton2003women] have been examined.
+However, the lack of cross-national time-series index prevents us from unveiling the cause and effect of gender egalitarian attitudes.
+Very few cross-national time-series measures of gender egalitarianism exist and there is no consensus on the measures.
+Even though a gender egalitarian index developed by @mcdaniel2008measuring exists, it only deals with limited number of countries (n=38) and with the fourth wave of World Value Survey (WVS) conducted between 1999 and 2004.
+
+
+To overcome this limitation, we develop a comparable cross-national over time measure about gender egalitarian view in the public sector through the DCPO package for R [@Solt2020a]. 
+Our new index is based on data from 62 survey datasets from 1972 to 2020, which includes 224,640 observations. 
+The newly developed gender egalitarian index provides opportunities for scholars to evaluate the generalizability of existing theories with large-N analysis, test the cause and effect of gender egalitarian attitudes, and build new theories with the preliminary statistical analysis.
+The index provides an opportunity to descriptively examine how the attitudes have been changed over decades and why there are variations among countries with different political institutions, culture, religion, and other country specific factors.
+We also can test the long-lasting question suggested by @krauss1974political about whether the differences in political behavior such as protests, voting, political volunteerism, and feminist movement of men and women are attributed to biological differences or public opinion on the gender role.
+Moreover, the index makes it possible to unveil the relationship between gender egalitarianism and women's mobilization and representation [@erickson2002gender; @erickson2002gender; @klein2013gender; @paxton1997women].
+Furthermore, by measuring cross-national time-variant attitudes toward gender egalitarianism, our index positions researchers to ask questions about how public opinion relates to the macrolevel processes of gender, such as the relationship between public opinion about gender roles and policy decisions [@stimson1995dynamic; @lax2009gay; @Wwlezien2017public], public opinion and political institutions [@bartels2009explaining; @grieco2011let; @nir2015institutions], and the public opinion and the makeup of national militaries [@brooks2011war; @eichenberg2016gender; @lizotte2017gender].
+
+
+This article proceeds with the following order. 
+First, we discuss multi-dimensionality in egalitarian gender role and the reasons why we focus on the public sector.
+Next, we illustrate the data source we used to build our index.
+Then, the estimates of egalitarian gender role about 120 countries from 1972 to 2020 is introduced.
+Lastly, we provide examples of how the new index about egalitarian gender role can be used and conclude.    
+
+
+# Multi-Dimensionality in Egalitarian Gender Role
+
+Gender egalitarianism does not have only one dimension but a multi-dimension.
+Generating a measure of egalitarian gender roles without the classification may cause multidimensionality problem since people might have different opinions about gender roles by the dimensions.
+For instance, some people have a more egalitarian veiw about the gender role in public sector rather than in private sector, while others do not.
+To be specific, some might think that men and women should be treated and promoted equally at work, but that women should be in charge of housework.
+Also, others may argue that both men and women can succeed as politicians, while saying that women are responsible for parenting.
+The multi-dimensionality problem is relatively not salient if people in a society have an egalitarian view of all dimensions.
+However, if we disregard this kind of multi-dimensionality given that there are some variations of gender egalitarain opinions by dimensions, we will not be able to measure gender egalitarianism properly in the various dimensions that people have.
+
+
+After examining all questionnaires asking opinions about gender roles from series of cross-national surveys including World Value Survey (WVS) and surveys conducted in individual countries or regions such as Arab Barometer, Korean General Social Survey, etc., we classify them into four categories: 1) egalitarian gender roles in the public sector which has been generally dominated by male, 2) those in private sector where the role of female has been emphasized, 3) the balance of female role in private and public sector, and 4) male dominance over women. 
+Questionnaires related to the first dimension are asking respondents about the role of women or perspective on women in the public sector.
+For example, "On the whole, men make better business executives than women do", "Would you say that most men are better suited emotionally for politics than are most women, that men and women are equally suited, or that women are better suited than men in this area?", "When jobs are scarce, men have more right to a job than women", "Some say that in general, men are better political leaders than women. Do you strongly agree, agree, disagree or strongly disagree?", and other similar questionnaires are classified as the first dimension.
+Questionnaires about childcare or housework such as "A man can be responsible for looking after the home and children just as well while the woman works full-time" or "A father should be as heavily involved in the care of his children as the mother" are classified as the second dimension.
+The rest of questionnaires are classifed into the third or fourth dimensions.
+While questionnaires such as "A working mother can establish just as warm and secure a relationship with her children as a mother who does not work" and "A pre-school child is likely to suffer if his or her mother works" are about the third dimension, others including "View on Change of Surname at Marriage" and "A woman can travel abroad by herself if she wishes" are related to the fourth dimension.
+
+
 We classified the available survey items on gender egalitarian attitudes into four categories.  
 The first of these categories consists of questions asking respondents' views on women gaining opportunities in the traditionally masculine public sphere of education, paid work, and politics.
 The second category, in turn, encompasses questions focusing on whether and to what degree men should take on responsibilities in the traditionally feminine private sphere of housework and childcare.
@@ -57,6 +103,7 @@ A third category we identified comprises questions asking respondents how women 
 The fourth and final category includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames to the recognition of sexual harassment and the justifiability of intimate partner violence committed by husbands.
 To avoid any potential multidimensionality in the Public Gender Egalitarianism index, we include only questions from the first category, gender egalitarianism in the public sphere.
 Thus, the "Public" in the name of the index does double duty, referring both to the fact that it measures the _public's_ attitudes on gender equality and to specifically its attitudes on this _public_ aspect of gender egalitarianism.
+
 
 
 # The Source Data on Gender Egalitarian Attitudes
