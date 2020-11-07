@@ -6,12 +6,12 @@ output:
     fig_caption: true
     latex_engine: pdflatex
     template: svm-latex-ms2.tex
-title: "[dcpo_gender_roles]: A Dataset of Dynamic Comparative Public Opinion Toward Egalitarian Gender Roles"
+title: "Public Gender Egalitarianism: A Dataset of Dynamic Comparative Public Opinion Toward Egalitarian Gender Roles in the Public Sphere"
 thanks: "Corresponding author: [frederick-solt@uiowa.edu](mailto:frederick-solt@uiowa.edu).  Current version: `r format(Sys.time(), '%B %d, %Y')`."
 author:
 
 abstract: ""
-keywords: ""
+keywords: "gender inequality, public opinion, measurement"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 fontsize: 11pt
 spacing: double
@@ -33,8 +33,6 @@ header-includes:
       - \usepackage{tabularx}
       - \usepackage{threeparttable}
       - \usepackage{wrapfig}
-nocite: |
-  @Solt2020a
 ---
 
 ```{r setup, include=FALSE}
@@ -52,6 +50,13 @@ library(tidyverse)
 set.seed(324)
 ```
 
+We classified the available survey items on gender egalitarian attitudes into four categories.  
+The first of these categories consists of questions asking respondents' views on women gaining opportunities in the traditionally masculine public sphere of education, paid work, and politics.
+The second category, in turn, encompasses questions focusing on whether and to what degree men should take on responsibilities in the traditionally feminine private sphere of housework and childcare.
+A third category we identified comprises questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere; it is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is virtually never included in surveys.
+The fourth and final category includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames to the recognition of sexual harassment and the justifiability of intimate partner violence committed by husbands.
+To avoid any potential multidimensionality in the Public Gender Egalitarianism index, we include only questions from the first category, gender egalitarianism in the public sphere.
+Thus, the "Public" in the name of the index does double duty, referring both to the fact that it measures the _public's_ attitudes on gender equality and to specifically its attitudes on this _public_ aspect of gender egalitarianism.
 
 
 # The Source Data on Gender Egalitarian Attitudes
@@ -244,7 +249,7 @@ dcpo_input_public <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
 save(dcpo_input_public, file = here::here("data", "dcpo_input_public.rda"))
 ```
 
-# Estimating Gender Egalitarianism
+# Estimating Public Gender Egalitarianism
 
 The DCPO model is estimated using the `DCPO` package for R [@Solt2020a], which is written in the Stan probabilistic programming language [@StanDevTeam2019a; @StanDevTeam2019b].
 
@@ -332,6 +337,19 @@ p1b <- ggplot(p1_data_b, aes(x = mean,
 p1a + p1b
 
 ```
+
+# Validating Public Gender Egalitarianism
+
+# Using the Public Gender Egalitarianism Index
+
+One aspect of latent-variable estimates of public opinion like the PGE that is easy for researchers to overlook is the uncertainty in the estimates.
+But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2020] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
+Therefore, taking the uncertainty in the PGE index into account is crucial to reaching well-grounded conclusions.
+
+The PGE download includes pre-formatted data to facilitate incorporating the uncertainty in the index.
+In R, the functions of the \texttt{purrr} package [@Henry2019, also included in the widely-used \texttt{tidyverse} package [@Wickham2017a]] make it entirely straightforward to incorporate the uncertainty of the PGE estimates.
+In Stata, the \texttt{mi estimate:} command prefix originally developed for analyzing multiply imputed data can be used to automate the process of building uncertainty into nearly any analysis.
+Step-by-step instructions on how to use these tools, complete with examples, are included in the data download.
 
 # Conclusion
 
