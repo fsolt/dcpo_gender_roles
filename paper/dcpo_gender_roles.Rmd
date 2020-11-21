@@ -88,25 +88,11 @@ The multi-dimensionality problem is relatively not salient if people in a societ
 However, if we disregard this kind of multi-dimensionality given that there are some variations of gender egalitarain opinions by dimensions, we will not be able to measure gender egalitarianism properly in the various dimensions that people have.
 
 
-After examining all questionnaires asking opinions about gender roles from series of cross-national surveys including World Value Survey (WVS) and surveys conducted in individual countries or regions such as Arab Barometer, Korean General Social Survey, etc., we classify them into four categories: 1) egalitarian gender roles in the public sector which has been generally dominated by male, 2) those in private sector where the role of female has been emphasized, 3) the balance of female role in private and public sector, and 4) male dominance over women. 
-Questionnaires related to the first dimension are asking respondents about the role of women or perspective on women in the public sector.
-For example, "On the whole, men make better business executives than women do", "Would you say that most men are better suited emotionally for politics than are most women, that men and women are equally suited, or that women are better suited than men in this area?", "When jobs are scarce, men have more right to a job than women", "Some say that in general, men are better political leaders than women. Do you strongly agree, agree, disagree or strongly disagree?", and other similar questionnaires are classified as the first dimension.
-Questionnaires about childcare or housework such as "A man can be responsible for looking after the home and children just as well while the woman works full-time" or "A father should be as heavily involved in the care of his children as the mother" are classified as the second dimension.
-The rest of questionnaires are classifed into the third or fourth dimensions.
-While questionnaires such as "A working mother can establish just as warm and secure a relationship with her children as a mother who does not work" and "A pre-school child is likely to suffer if his or her mother works" are about the third dimension, others including "View on Change of Surname at Marriage" and "A woman can travel abroad by herself if she wishes" are related to the fourth dimension.
-
-
 We classified the available survey items on gender egalitarian attitudes into four categories.  
 The first of these categories consists of questions asking respondents' views on women gaining opportunities in the traditionally masculine public sphere of education, paid work, and politics.
 The second category, in turn, encompasses questions focusing on whether and to what degree men should take on responsibilities in the traditionally feminine private sphere of housework and childcare.
-A third category we identified comprises questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere; it is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is virtually never included in surveys.
-The fourth and final category includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames to the recognition of sexual harassment and the justifiability of intimate partner violence committed by husbands.
-To avoid any potential multidimensionality in the Public Gender Egalitarianism index, we include only questions from the first category, gender egalitarianism in the public sphere.
-Thus, the "Public" in the name of the index does double duty, referring both to the fact that it measures the _public's_ attitudes on gender equality and to specifically its attitudes on this _public_ aspect of gender egalitarianism.
-
-
-
-# The Source Data on Gender Egalitarian Attitudes
+A third category we identified comprises questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere, such as whether mothers in the workforce can have similarly warm relationships with their children as mothers who are not; it is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is only very rarely included in surveys.
+The fourth and final category includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames through the recognition of various forms of sexual harassment to the justifiability of intimate partner violence committed by husbands.
 
 ```{r dcpo_input_raw, include=FALSE, cache.extra = tools::md5sum(here::here("data-raw", "surveys_egr.csv"))}
 surveys_egr <- read_csv(here::here("data-raw", "surveys_egr_classification.csv"),
@@ -196,8 +182,14 @@ n_cyi <- dcpo_input_raw_public1 %>%
   scales::comma()
 ```
 
-The first step towards remedying this problem is collecting the available public opinion data on gender egalitarian attitudes.
-We draw on data from `r n_surveys` survey datasets, in which we identified `r n_items` distinct relevant survey items that were asked in no fewer than five country-years.
+To avoid any potential multidimensionality in the Public Gender Egalitarianism index, we include only survey items corresponding to the first category, gender egalitarianism in the public sphere.
+Thus, the "Public" in the name of the index does double duty, referring both to the fact that it measures the _public's_ attitudes on gender equality and to specifically its attitudes on this _public_ aspect of gender egalitarianism.
+In all, we identified `r n_items` of these survey items that were asked in no fewer than five country-years; these items were drawn from `r n_surveys` different survey datasets.
+We describe these source data in detail in the next section.
+
+
+# The Source Data on Gender Egalitarian Attitudes
+
 Together, these survey items were asked in `r n_countries` different countries in at least two time points over `r n_years` years, `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
 Considering that observations for every year in each country surveyed would number `r total_cy` and so a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations, the available data is clearly very, very sparse.
 
