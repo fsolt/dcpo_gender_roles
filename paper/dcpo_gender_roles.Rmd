@@ -316,8 +316,8 @@ dcpo_y_r_pred <- rstan::extract(dcpo_output, pars = "y_r_pred")
 save(dcpo_input, dcpo_y_r_pred, file = here::here("data", "dcpo_y_r_pred.rda"))
 ```
 
-```{r cs_plot, fig.cap="Egalitarian Gender Attitudes, 2020 \\label{cs_2020}", fig.height=8, warning=FALSE}
-load(here::here("data", "dcpo_input.rda"))
+```{r cs_plot, fig.cap="Egalitarian Gender Attitudes, Most Recent Available Year \\label{cs_2020}", fig.height=8, warning=FALSE}
+load(here::here("data", "dcpo_input_public.rda"))
 load(here::here("data", "dcpo_output.rda"))
 
 theta_results <- DCPO::summarize_dcpo_results(dcpo_input,
@@ -333,10 +333,15 @@ p1_data <- theta_results %>%
     top_n(1, year) %>%
     ungroup() %>%
     arrange(-mean) %>%
-    mutate(half = ntile(mean, 2))
+    mutate(half = ntile(mean, 2),
+           country = paste0(country, " (", year, ")"))
 
-p1_data_a <- p1_data %>% filter(half==2) %>% mutate(ranked = as.factor(row_number(mean)))
-p1_data_b <- p1_data %>% filter(half==1) %>% mutate(ranked = as.factor(row_number(mean)))
+p1_data_a <- p1_data %>% 
+  filter(half==2) %>% 
+  mutate(ranked = as.factor(row_number(mean)))
+p1_data_b <- p1_data %>%
+  filter(half==1) %>%
+  mutate(ranked = as.factor(row_number(mean)))
 
 p1a <- ggplot(p1_data_a, aes(x = mean,
                              y = ranked)) +
