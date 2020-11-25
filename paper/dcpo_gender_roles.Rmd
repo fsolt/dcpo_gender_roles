@@ -91,7 +91,7 @@ However, if we disregard this kind of multi-dimensionality given that there are 
 We classified the available survey items on gender egalitarian attitudes into four categories.  
 The first of these categories consists of questions asking respondents' views on women gaining opportunities in the traditionally masculine public sphere of education, paid work, and politics.
 The second category, in turn, encompasses questions focusing on whether and to what degree men should take on responsibilities in the traditionally feminine private sphere of housework and childcare.
-A third category we identified comprises questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere, such as whether mothers in the workforce can have similarly warm relationships with their children as mothers who are not; it is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is only very rarely included in surveys.
+A third category we identified comprises questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere, such as whether mothers in the workforce can have similarly warm relationships with their children as mothers who are not; it is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is only very rarely included in surveys.^[One laudable example of this mostly unasked sort of question, apparently first included in Australia's 1989 National Social Science Survey and slowly gaining popularity, is the item asking respondents the extent to which they agree with the statement, "Family life often suffers when men concentrate too much on their work."]
 The fourth and final category includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames through the recognition of various forms of sexual harassment to the justifiability of intimate partner violence committed by husbands.
 
 ```{r dcpo_input_raw, include=FALSE, cache.extra = tools::md5sum(here::here("data-raw", "surveys_egr.csv"))}
@@ -164,6 +164,10 @@ n_items <- dcpo_input_raw_public1 %>%
 
 n_countries <- dcpo_input_raw_public1 %>%
   distinct(country) %>% 
+  nrow()
+
+n_cy <- dcpo_input_raw_public1 %>%
+  distinct(country, year) %>% 
   nrow()
 
 n_years <- as.integer(summary(dcpo_input_raw_public1$year)[6]-summary(dcpo_input_raw_public1$year)[1])
