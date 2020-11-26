@@ -25,6 +25,10 @@ pew2008,decveil4,q55aa,c(4:1),Women should have the right to decide if they wear
 pew2010,decveil4,q69a,c(4:1),Women should have the right to decide if they wear a veil.,1 Completely Agree / 4 Completely Disagree
 arabb2,divorce4a,q60114,c(4:1),Women and men should have equal rights in making the decision to divorce.,1 Strongly Agree / 4 Strongly Disagree
 usgss,earn2,fework,"c(2,1)",Do you approve or disapprove of a married woman earning money in business or industry if she has a husband capable of supporting her?,1 Approve / 2 Disapprove
+jgss,earn4,q4wwjbia,c(1:4),"If the husband has enough income, the wife should not have a job","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+nsss_combo,earn5,wearnok,c(5:1),I approve of a married woman earning money in business or industry even if she has a husband capable of supporting her,1 Agree Strongly / 5 Disagree Strongly
+nsss1989,earn5,wearnok,c(5:1),I approve of a married woman earning money in business or industry even if she has a husband capable of supporting her,1 Agree Strongly / 5 Disagree Strongly
+nsss1993,earn5,wearnok3,c(5:1),I approve of a married woman earning money in business or industry even if she has a husband capable of supporting her,1 Agree Strongly / 5 Disagree Strongly
 arabb1,education4,q5054,c(1:4),A university education is more important for a boy than a girl,1 Strongly Agree / 4 Strongly Disagree
 arabb2,education4,q60104,c(1:4),University education for males is more important than university education for females.,1 Strongly Agree / 4 Strongly Disagree
 arabb3,education4,q6014,c(1:4),University education for males is more important than university education for females.,1 Strongly Agree / 4 Strongly Disagree
@@ -88,6 +92,7 @@ wvs4_swe,havingwork5,iv89,c(5:1),"In your opinion, how important are each of the
 allbus,help4,fr02,c(1:4),It's more important for a wife to help her husband with his career than to pursue her own career.,1 Strongly Agree / 4 Strongly Disagree
 jgss,help4,q4wwhphh,c(1:4),"For a wife, helping her husband's work is more important than having her own",1 Strongly Agree / 4 Strongly Disagree
 usgss,help4,fehelp,c(1:4),It is more important for a wife to help her husband's career than to have one herself ,1 Strongly Agree / 4 Strongly Disagree
+kgss,help7,sexrole1,c(1:7),It is more important for a wife to help her husband's career than to pursue her own career,1 Strongly Agree / 7 Strongly Disagree
 arabb1,hijab4,q5046,c(4:1),"In Islam a woman should dress modestly, but Islam does not require that she wear a hijab.",1 Strongly Agree / 4 Strongly Disagree
 arabb2,hijab4,q6076,c(4:1),Women should wear modest clothes without needing to wear hijab.,1 Strongly Agree / 4 Strongly Disagree
 arabb3,hijab4,q6076,c(4:1),Women should wear modest clothes without needing to wear a hijab.,1 Strongly Agree / 4 Strongly Disagree
