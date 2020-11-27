@@ -1,423 +1,457 @@
 country,year,item,r,n,survey,cc_rank
-United States,1972,president2,1,403.9957216283442,usgss,419
-United States,1972,president2,2,1128.9880438574273,usgss,419
-United States,1974,emopoli2,1,327.9965264705369,usgss,419
-United States,1974,emopoli2,2,369.99608168932514,usgss,419
-United States,1974,emopoli3,1,237.99747957313346,usgss,419
-United States,1974,emopoli3,2,30.99967170910562,usgss,419
-United States,1974,emopoli3,3,449.99523448701706,usgss,419
-United States,1974,homecountry2,1,508.99460967531485,usgss,419
-United States,1974,homecountry2,2,921.9902359933994,usgss,419
-United States,1974,president2,1,282.99700302183516,usgss,419
-United States,1974,president2,2,1149.9878214668215,usgss,419
-United States,1975,emopoli2,1,709.9924810795159,usgss,419
-United States,1975,emopoli2,2,718.9923857692562,usgss,419
-United States,1975,homecountry2,1,514.9945461351417,usgss,419
-United States,1975,homecountry2,2,930.9901406831398,usgss,419
-United States,1975,president2,1,281.997013611864,usgss,419
-United States,1975,president2,2,1157.9877367465906,usgss,419
-United States,1977,emopoli2,1,716.9924069493138,usgss,419
-United States,1977,emopoli2,2,736.9921951487369,usgss,419
-United States,1977,homecountry2,1,568.9939742735838,usgss,419
-United States,1977,homecountry2,2,920.9902465834283,usgss,419
-United States,1977,limjob2,1,952.9899077025051,usgss,419
-United States,1977,limjob2,2,542.994249614334,usgss,419
-United States,1977,president2,1,306.99674886114275,usgss,419
-United States,1977,president2,2,1176.9875355360425,usgss,419
-United States,1977,tradroles4,1,274.997087742066,usgss,419
-United States,1977,tradroles4,2,713.9924387194004,usgss,419
-United States,1977,tradroles4,3,421.9955310078249,usgss,419
-United States,1977,tradroles4,4,91.99902571734572,usgss,419
-United States,1978,emopoli2,1,642.9931906114489,usgss,419
-United States,1978,emopoli2,2,824.9912632261979,usgss,419
-United States,1978,homecountry2,1,472.9949909163535,usgss,419
-United States,1978,homecountry2,2,1008.9893146608894,usgss,419
-United States,1978,president2,1,274.997087742066,usgss,419
-United States,1978,president2,2,1216.9871119348884,usgss,419
-United States,1982,emopoli2,1,323.9965688306523,usgss,419
-United States,1982,emopoli2,2,539.9942813844204,usgss,419
-United States,1982,emopoli3,1,228.99757488339313,usgss,419
-United States,1982,emopoli3,2,49.99947049855745,usgss,419
-United States,1982,emopoli3,3,629.9933282818239,usgss,419
-United States,1982,equalamend4,1,10.99988350968264,usgss,419
-United States,1982,equalamend4,2,20.99977760939413,usgss,419
-United States,1982,equalamend4,3,72.99922692789389,usgss,419
-United States,1982,equalamend4,4,46.99950226864401,usgss,419
-United States,1982,homecountry2,1,510.9945884952572,usgss,419
-United States,1982,homecountry2,2,1297.9862541425514,usgss,419
-United States,1982,president2,1,248.99736308281612,usgss,419
-United States,1982,president2,2,1546.9836172253677,usgss,419
-United States,1982,trainjob2a,1,711.9924598994581,usgss,419
-United States,1982,trainjob2a,2,1084.9885098186967,usgss,419
-United States,1982,trainjob2b,1,334.99645234033494,usgss,419
-United States,1982,trainjob2b,2,1475.984369117416,usgss,419
-United States,1982,trainjob2c,1,144.9984644458166,usgss,419
-United States,1982,trainjob2c,2,1675.9822511116458,usgss,419
-United States,1982,trainjob2d,1,49.99947049855745,usgss,419
-United States,1982,trainjob2d,2,1774.9812026987895,usgss,419
-United States,1982,trainjob2e,1,752.9920257082753,usgss,419
-United States,1982,trainjob2e,2,1032.989060500197,usgss,419
-United States,1982,trainjob2f,1,1173.987567306129,usgss,419
-United States,1982,trainjob2f,2,615.9934765422278,usgss,419
-United States,1982,trainjob2g,1,527.9944084647667,usgss,419
-United States,1982,trainjob2g,2,1266.9865824334458,usgss,419
-United States,1982,trainjob2h,1,777.991760957554,usgss,419
-United States,1982,trainjob2h,2,999.989409971149,usgss,419
-United States,1982,trainjob2i,1,784.991686827352,usgss,419
-United States,1982,trainjob2i,2,993.9894735113221,usgss,419
-United States,1983,emopoli2,1,542.994249614334,usgss,419
-United States,1983,emopoli2,2,982.9895900016395,usgss,419
-United States,1983,homecountry2,1,356.9962193597002,usgss,419
-United States,1983,homecountry2,2,1181.987482585898,usgss,419
-United States,1983,president2,1,207.997797273999,usgss,419
-United States,1983,president2,2,1336.9858411314262,usgss,419
-United States,1985,businessopp5,1,20,issp1985,419
-United States,1985,businessopp5,2,104,issp1985,419
-United States,1985,businessopp5,3,228,issp1985,419
-United States,1985,businessopp5,4,198,issp1985,419
-United States,1985,businessopp5,5,111,issp1985,419
-United States,1985,emopoli2,1,565.9940060436703,usgss,419
-United States,1985,emopoli2,2,899.9904689740341,usgss,419
-United States,1985,homecountry2,1,393.99582752863273,usgss,419
-United States,1985,homecountry2,2,1100.988340378235,usgss,419
-United States,1985,president2,1,261.997225412441,usgss,419
-United States,1985,president2,2,1218.9870907548307,usgss,419
-United States,1985,tradroles4,1,149.99841149567234,usgss,419
-United States,1985,tradroles4,2,576.993889553353,usgss,419
-United States,1985,tradroles4,3,573.9939213234395,usgss,419
-United States,1985,tradroles4,4,200.99787140420096,usgss,419
-United States,1986,emopoli2,1,528.9943978747378,usgss,419
-United States,1986,emopoli2,2,885.9906172344381,usgss,419
-United States,1986,homecountry2,1,343.9963570300753,usgss,419
-United States,1986,homecountry2,2,1079.988562768841,usgss,419
-United States,1986,pmpr2,1,355.99622994972907,usgss,419
-United States,1986,pmpr2,2,616.993465952199,usgss,419
-United States,1986,president2,1,194.99793494437407,usgss,419
-United States,1986,president2,2,1231.9869530844555,usgss,419
-United States,1986,priest4,1,104.99888804697065,usgss,419
-United States,1986,priest4,2,57.99938577832665,usgss,419
-United States,1986,priest4,3,110.99882450679755,usgss,419
-United States,1986,priest4,4,87.99906807746112,usgss,419
-United States,1986,tradroles4,1,131.99860211619168,usgss,419
-United States,1986,tradroles4,2,556.99410135393,usgss,419
-United States,1986,tradroles4,3,575.9939001433819,usgss,419
-United States,1986,tradroles4,4,178.99810438483567,usgss,419
-United States,1988,emopoli2,1,315.9966535508831,usgss,419
-United States,1988,emopoli2,2,633.9932859217085,usgss,419
-United States,1988,homecountry2,1,200.99787140420096,usgss,419
-United States,1988,homecountry2,2,748.9920680683906,usgss,419
-United States,1988,income5,1,44.01982444381792,issp1988,419
-United States,1988,income5,2,223.10047388571354,issp1988,419
-United States,1988,income5,3,414.18652999410494,issp1988,419
-United States,1988,income5,4,463.20860721562946,issp1988,419
-United States,1988,income5,5,210.09461666367642,issp1988,419
-United States,1988,president2,1,115.9987715566533,usgss,419
-United States,1988,president2,2,841.9910831957075,usgss,419
-United States,1988,tradroles4,1,87.99906807746112,usgss,419
-United States,1988,tradroles4,2,317.9966323708254,usgss,419
-United States,1988,tradroles4,3,398.99577457848847,usgss,419
-United States,1988,tradroles4,4,158.9983161854127,usgss,419
-United States,1988,tradroles5,1,119.05361610941665,issp1988,419
-United States,1988,tradroles5,2,266.11984777399016,issp1988,419
-United States,1988,tradroles5,3,281.12660610710986,issp1988,419
-United States,1988,tradroles5,4,441.1986949937205,issp1988,419
-United States,1988,tradroles5,5,265.11939721844885,issp1988,419
-United States,1989,emopoli2,1,284.9969818417775,usgss,419
-United States,1989,emopoli2,2,653.9930741211315,usgss,419
-United States,1989,homecountry2,1,191.99796671446063,usgss,419
-United States,1989,homecountry2,2,766.9918774478713,usgss,419
-United States,1989,president2,1,128.9986338862782,usgss,419
-United States,1989,president2,2,823.9912738162268,usgss,419
-United States,1989,tradroles4,1,94.99899394725917,usgss,419
-United States,1989,tradroles4,2,304.9967700412005,usgss,419
-United States,1989,tradroles4,3,412.99562631808453,usgss,419
-United States,1989,tradroles4,4,163.99826323526844,usgss,419
-United States,1990,emopoli2,1,233.9975219332489,usgss,419
-United States,1990,emopoli2,2,634.9932753316797,usgss,419
-United States,1990,homecountry2,1,158.9983161854127,usgss,419
-United States,1990,homecountry2,2,730.9922586889099,usgss,419
-United States,1990,income4,1,31.733309800308177,evs_combo,419
-United States,1990,income4,2,542.840735835581,evs_combo,419
-United States,1990,income4,3,856.5637783496991,evs_combo,419
-United States,1990,income4,4,324.2309386813126,evs_combo,419
-United States,1990,job3a,1,440.5611083319518,evs_combo,419
-United States,1990,job3a,2,85.08124757920585,evs_combo,419
-United States,1990,job3a,3,1277.4174500779711,evs_combo,419
-United States,1990,president2,1,93.99900453728802,usgss,419
-United States,1990,president2,2,800.9915173868903,usgss,419
-United States,1990,tradroles4,1,63.99932223815354,usgss,419
-United States,1990,tradroles4,2,300.9968124013159,usgss,419
-United States,1990,tradroles4,3,404.9957110383154,usgss,419
-United States,1990,tradroles4,4,130.9986127062205,usgss,419
-United States,1991,emopoli2,1,254.99729954264302,usgss,419
-United States,1991,emopoli2,2,718.9923857692562,usgss,419
-United States,1991,homecountry2,1,189.99798789451833,usgss,419
-United States,1991,homecountry2,2,792.9916021071211,usgss,419
-United States,1991,president2,1,91.99902571734572,usgss,419
-United States,1991,president2,2,884.9906278244669,usgss,419
-United States,1991,tradroles4,1,75.99919515780732,usgss,419
-United States,1991,tradroles4,2,343.9963570300753,usgss,419
-United States,1991,tradroles4,3,404.9957110383154,usgss,419
-United States,1991,tradroles4,4,170.99818910506647,usgss,419
-United States,1991,tradroles5,1,147.69798133922194,issp1991,419
-United States,1991,tradroles5,2,237.3353769106118,issp1991,419
-United States,1991,tradroles5,3,298.451782982014,issp1991,419
-United States,1991,tradroles5,4,347.3449078391357,issp1991,419
-United States,1991,tradroles5,5,307.6192438927243,issp1991,419
-United States,1993,emopoli2,1,216.99770196373933,usgss,419
-United States,1993,emopoli2,2,802.9914962068327,usgss,419
-United States,1993,homecountry2,1,153.99836913555694,usgss,419
-United States,1993,homecountry2,2,887.9905960543804,usgss,419
-United States,1993,president2,1,95.99898335723032,usgss,419
-United States,1993,president2,2,935.9900877329956,usgss,419
-United States,1993,tradroles4,1,63.99932223815354,usgss,419
-United States,1993,tradroles4,2,317.9966323708254,usgss,419
-United States,1993,tradroles4,3,490.9948002958342,usgss,419
-United States,1993,tradroles4,4,180.99808320477797,usgss,419
-United States,1994,emopoli2,1,388.995880478777,usgss,419
-United States,1994,emopoli2,2,1470.9844220675602,usgss,419
-United States,1994,homecountry2,1,267.99716187226795,usgss,419
-United States,1994,homecountry2,2,1631.9827170729152,usgss,419
-United States,1994,income5,1,15.879866329251419,issp1994,419
-United States,1994,income5,2,146.65523609955721,issp1994,419
-United States,1994,income5,3,389.5237799586966,issp1994,419
-United States,1994,income5,4,492.275856206794,issp1994,419
-United States,1994,income5,5,258.7484101883908,issp1994,419
-United States,1994,president2,1,153.99836913555694,usgss,419
-United States,1994,president2,2,1765.9812980090492,usgss,419
-United States,1994,tradroles4,1,130.9986127062205,usgss,419
-United States,1994,tradroles4,2,539.9942813844204,usgss,419
-United States,1994,tradroles4,3,895.9905113341496,usgss,419
-United States,1994,tradroles4,4,348.996304079931,usgss,419
-United States,1994,tradroles5,1,146.9915387474019,"issp1994, usgss",419
-United States,1994,tradroles5,2,439.04051704816095,"issp1994, usgss",419
-United States,1994,tradroles5,3,524.1408815861305,"issp1994, usgss",419
-United States,1994,tradroles5,4,1052.1499615603504,"issp1994, usgss",419
-United States,1994,tradroles5,5,572.4933614372496,"issp1994, usgss",419
-United States,1995,education4,1,43.389388518989264,wvs_combo,419
-United States,1995,education4,2,178.2033776072392,wvs_combo,419
-United States,1995,education4,3,845.4047132587051,wvs_combo,419
-United States,1995,education4,4,434.15421150845583,wvs_combo,419
-United States,1995,income4,1,20.370534427572093,wvs_combo,419
-United States,1995,income4,2,298.9647517684321,wvs_combo,419
-United States,1995,income4,3,773.8299944798903,wvs_combo,419
-United States,1995,income4,4,371.1201984886573,wvs_combo,419
-United States,1995,job3a,1,287.37522431701177,wvs_combo,419
-United States,1995,job3a,2,169.64765302215176,wvs_combo,419
-United States,1995,job3a,3,1066.877328776366,wvs_combo,419
-United States,1995,polileader4,1,87.88516389187222,wvs_combo,419
-United States,1995,polileader4,2,354.0337806952674,wvs_combo,419
-United States,1995,polileader4,3,757.6396999754006,wvs_combo,419
-United States,1995,polileader4,4,238.5990835139066,wvs_combo,419
-United States,1996,emopoli2,1,407.9956792682288,usgss,419
-United States,1996,emopoli2,2,1457.9845597379353,usgss,419
-United States,1996,homecountry2,1,307.9967382711139,usgss,419
-United States,1996,homecountry2,2,1575.983310114531,usgss,419
-United States,1996,president2,1,131.99860211619168,usgss,419
-United States,1996,president2,2,1770.981245058905,usgss,419
-United States,1996,tradroles4,1,178.99810438483567,usgss,419
-United States,1996,tradroles4,2,724.992322229083,usgss,419
-United States,1996,tradroles4,3,1033.9890499101682,usgss,419
-United States,1996,tradroles4,4,414.99560513802686,usgss,419
-United States,1996,workhard4,1,124.99867624639363,usgss,419
-United States,1996,workhard4,2,169.99819969509534,usgss,419
-United States,1996,workhard4,3,199.9978819942298,usgss,419
-United States,1996,workhard4,4,901.9904477939764,usgss,419
-United States,1998,emopoli2,1,404.9957110383154,usgss,419
-United States,1998,emopoli2,2,1341.985788181282,usgss,419
-United States,1998,homecountry2,1,279.99703479192175,usgss,419
-United States,1998,homecountry2,2,1533.9837548957425,usgss,419
-United States,1998,president2,1,115.9987715566533,usgss,419
-United States,1998,president2,2,1686.9821346213284,usgss,419
-United States,1998,tradroles4,1,129.99862329624938,usgss,419
-United States,1998,tradroles4,2,508.99460967531485,usgss,419
-United States,1998,tradroles4,3,835.9911467358806,usgss,419
-United States,1998,tradroles4,4,342.99636762010414,usgss,419
-United States,1998,tradroles5,1,120.97362047384833,issp1998,419
-United States,1998,tradroles5,2,152.96664407023798,issp1998,419
-United States,1998,tradroles5,3,236.94833101076077,issp1998,419
-United States,1998,tradroles5,4,304.9335061530888,issp1998,419
-United States,1998,tradroles5,5,419.90843470261404,issp1998,419
-United States,1999,education4,1,26.234291392867284,wvs_combo,419
-United States,1999,education4,2,61.25050146329176,wvs_combo,419
-United States,1999,education4,3,627.4807889576839,wvs_combo,419
-United States,1999,education4,4,467.28264419496605,wvs_combo,419
-United States,1999,income4,1,26.062630299548957,wvs_combo,419
-United States,1999,income4,2,338.28098992482126,wvs_combo,419
-United States,1999,income4,3,528.2525026805314,wvs_combo,419
-United States,1999,income4,4,271.81490478742114,wvs_combo,419
-United States,1999,job3a,1,117.66637551967429,wvs_combo,419
-United States,1999,job3a,2,97.840467042708,wvs_combo,419
-United States,1999,job3a,3,976.596667086525,wvs_combo,419
-United States,1999,polileader4,1,54.32072861782791,wvs_combo,419
-United States,1999,polileader4,2,207.66233602296356,wvs_combo,419
-United States,1999,polileader4,3,647.8700008827605,wvs_combo,419
-United States,1999,polileader4,4,226.71158435362113,wvs_combo,419
-United States,2000,emopoli2,1,402.99573221837306,usgss,419
-United States,2000,emopoli2,2,1326.9859470317149,usgss,419
-United States,2000,tradroles4,1,203.9978396341144,usgss,419
-United States,2000,tradroles4,2,530.9943766946801,usgss,419
-United States,2000,tradroles4,3,730.9922586889099,usgss,419
-United States,2000,tradroles4,4,337.9964205702484,usgss,419
-United States,2002,emopoli2,1,184.99804084466257,usgss,419
-United States,2002,emopoli2,2,661.9929894009007,usgss,419
-United States,2002,income5,1,108.93471484939478,issp2002,419
-United States,2002,income5,3,368.7789888020796,issp2002,419
-United States,2002,income5,4,326.80414454818435,issp2002,419
-United States,2002,income5,5,340.79575929948277,issp2002,419
-United States,2002,tradroles4,1,90.99903630737457,usgss,419
-United States,2002,tradroles4,2,256.9972783625853,usgss,419
-United States,2002,tradroles4,3,381.99595460897893,usgss,419
-United States,2002,tradroles4,4,167.99822087515304,usgss,419
-United States,2002,tradroles5,1,201.93843682716744,"issp2002, usgss",419
-United States,2002,tradroles5,2,343.89515974527524,"issp2002, usgss",419
-United States,2002,tradroles5,3,551.8317679633487,"issp2002, usgss",419
-United States,2002,tradroles5,5,1215.6294018902754,"issp2002, usgss",419
-United States,2004,emopoli2,1,209.27778371876207,usgss,419
-United States,2004,emopoli2,2,614.2134953924792,usgss,419
-United States,2004,tradroles4,1,77.51917906096348,usgss,419
-United States,2004,tradroles4,2,242.0274368953172,usgss,419
-United States,2004,tradroles4,3,406.9056908113603,usgss,419
-United States,2004,tradroles4,4,156.5683419191828,usgss,419
-United States,2006,busiexecutive4,1,27.805277081898684,wvs_combo,419
-United States,2006,busiexecutive4,2,173.6478589250757,wvs_combo,419
-United States,2006,busiexecutive4,3,657.7979876970415,wvs_combo,419
-United States,2006,busiexecutive4,4,367.11373391284377,wvs_combo,419
-United States,2006,education4,1,12.941765034879408,wvs_combo,419
-United States,2006,education4,2,83.57597683004104,wvs_combo,419
-United States,2006,education4,3,719.4940740659484,wvs_combo,419
-United States,2006,education4,4,415.6979005635048,wvs_combo,419
-United States,2006,emopoli2,1,444.74529008466857,usgss,419
-United States,2006,emopoli2,2,1426.9048888760321,usgss,419
-United States,2006,job3a,1,84.05641358307601,wvs_combo,419
-United States,2006,job3a,2,331.77160526770905,wvs_combo,419
-United States,2006,job3a,3,823.3284673156306,wvs_combo,419
-United States,2006,job4,1,77.66659448058444,pewrel2006_10nat,419
-United States,2006,job4,2,107.56480937396279,pewrel2006_10nat,419
-United States,2006,job4,3,219.96901590958157,pewrel2006_10nat,419
-United States,2006,job4,4,637.058479197007,pewrel2006_10nat,419
-United States,2006,polileader4,1,144.7980912154504,"pewrel2006_10nat, wvs_combo",419
-United States,2006,polileader4,2,457.5276273268863,"pewrel2006_10nat, wvs_combo",419
-United States,2006,polileader4,3,978.3417673949807,"pewrel2006_10nat, wvs_combo",419
-United States,2006,polileader4,4,672.3224433702657,"pewrel2006_10nat, wvs_combo",419
-United States,2006,tradroles4,1,178.59810862084723,usgss,419
-United States,2006,tradroles4,2,514.1245553484669,usgss,419
-United States,2006,tradroles4,3,935.2900951460157,usgss,419
-United States,2006,tradroles4,4,345.5563405096303,usgss,419
-United States,2007,poliequal3,1,316.2969104264851,pew2007,419
-United States,2007,poliequal3,2,117.01649448618389,pew2007,419
-United States,2007,poliequal3,3,1521.984533849639,pew2007,419
-United States,2008,emopoli2,1,327.3304548907158,usgss,419
-United States,2008,emopoli2,2,933.9773856304696,usgss,419
-United States,2008,polileader4,1,108.69746326412192,amb_combo,419
-United States,2008,polileader4,2,329.1317332695003,amb_combo,419
-United States,2008,polileader4,3,627.8117632550852,amb_combo,419
-United States,2008,polileader4,4,427.121052029484,amb_combo,419
-United States,2008,president2,1,77.16809464006501,usgss,419
-United States,2008,president2,2,1239.3721800667397,usgss,419
-United States,2008,tradroles4,1,106.1024484579763,usgss,419
-United States,2008,tradroles4,2,353.28414560741567,usgss,419
-United States,2008,tradroles4,3,623.757806764467,usgss,419
-United States,2008,tradroles4,4,233.1805600423035,usgss,419
-United States,2008,tradroles5,1,152.26067775807718,issp2008,419
-United States,2008,tradroles5,2,200.4082911082818,issp2008,419
-United States,2008,tradroles5,3,277.65979275932096,issp2008,419
-United States,2008,tradroles5,4,429.3999943179956,issp2008,419
-United States,2008,tradroles5,5,285.2601712327873,issp2008,419
-United States,2010,emopoli2,1,290.2179153428686,usgss,419
-United States,2010,emopoli2,2,1067.64313070886,usgss,419
-United States,2010,equalright2,1,66.3419209708488,pew2010,419
-United States,2010,equalright2,2,3534.524348973707,pew2010,419
-United States,2010,job4,1,139.21751597670547,pew2010,419
-United States,2010,job4,2,357.4190322701033,pew2010,419
-United States,2010,job4,3,755.1226109572372,pew2010,419
-United States,2010,job4,4,2334.1067230151666,pew2010,419
-United States,2010,president2,1,52.51792146112666,usgss,419
-United States,2010,president2,2,1358.0639194685757,usgss,419
-United States,2010,tradroles4,1,95.50300288473446,usgss,419
-United States,2010,tradroles4,2,400.3506210028528,usgss,419
-United States,2010,tradroles4,3,615.7817962683878,usgss,419
-United States,2010,tradroles4,4,305.2101340594465,usgss,419
-United States,2010,veilpub2a,1,1033.6736252899677,pew2010,419
-United States,2010,veilpub2a,2,2369.094740776599,pew2010,419
-United States,2011,busiexecutive4,1,45.96811111813857,wvs_combo,419
-United States,2011,busiexecutive4,2,214.12752827619744,wvs_combo,419
-United States,2011,busiexecutive4,3,1201.1158178772146,wvs_combo,419
-United States,2011,busiexecutive4,4,733.5181432526659,wvs_combo,419
-United States,2011,education4,1,30.1349842318126,wvs_combo,419
-United States,2011,education4,2,115.99616979299502,wvs_combo,419
-United States,2011,education4,3,1132.478912576062,wvs_combo,419
-United States,2011,education4,4,931.9326442143679,wvs_combo,419
-United States,2011,job3a,1,127.34557933098088,wvs_combo,419
-United States,2011,job3a,2,538.7366543388376,wvs_combo,419
-United States,2011,job3a,3,1547.2628004881315,wvs_combo,419
-United States,2011,polileader4,1,76.22319492178171,wvs_combo,419
-United States,2011,polileader4,2,357.7866327808265,wvs_combo,419
-United States,2011,polileader4,3,1212.3151029504122,wvs_combo,419
-United States,2011,polileader4,4,562.5063612636317,wvs_combo,419
-United States,2012,emopoli2,1,250.20979757933085,usgss,419
-United States,2012,emopoli2,2,980.2847605125072,usgss,419
-United States,2012,income5,1,18.0741468397614,issp2012,419
-United States,2012,income5,2,116.16568059078698,issp2012,419
-United States,2012,income5,3,317.58098541031904,issp2012,419
-United States,2012,income5,4,585.294413476821,issp2012,419
-United States,2012,income5,5,248.34235985495516,issp2012,419
-United States,2012,jobs7,1,22.462108738771093,amb_us2012,419
-United States,2012,jobs7,2,14.689079177037284,amb_us2012,419
-United States,2012,jobs7,3,58.86956346813305,amb_us2012,419
-United States,2012,jobs7,4,98.48575187297757,amb_us2012,419
-United States,2012,jobs7,5,51.74276344765746,amb_us2012,419
-United States,2012,jobs7,6,81.99801867738425,amb_us2012,419
-United States,2012,jobs7,7,417.0183236365998,amb_us2012,419
-United States,2012,polileader4,1,23.614313777435566,amb_us2012,419
-United States,2012,polileader4,2,132.4599130902447,amb_us2012,419
-United States,2012,polileader4,3,331.9362479953539,amb_us2012,419
-United States,2012,polileader4,4,250.36899568603607,amb_us2012,419
-United States,2012,tradroles4,1,85.1948616586535,usgss,419
-United States,2012,tradroles4,2,326.6020410216494,usgss,419
-United States,2012,tradroles4,3,624.0684552563866,usgss,419
-United States,2012,tradroles4,4,260.1203616868435,usgss,419
-United States,2012,tradroles5,1,133.42192675452392,"issp2012, usgss",419
-United States,2012,tradroles5,2,435.56522573217796,"issp2012, usgss",419
-United States,2012,tradroles5,3,432.5254179710379,"issp2012, usgss",419
-United States,2012,tradroles5,4,1133.6852906209076,"issp2012, usgss",419
-United States,2012,tradroles5,5,451.4686426094597,"issp2012, usgss",419
-United States,2014,emopoli2,1,304.5194782335,usgss,419
-United States,2014,emopoli2,2,1278.8930692860363,usgss,419
-United States,2014,tradroles4,1,105.80121859678201,usgss,419
-United States,2014,tradroles4,2,405.8355185709392,usgss,419
-United States,2014,tradroles4,3,793.5169285217484,usgss,419
-United States,2014,tradroles4,4,345.7319478491628,usgss,419
-United States,2015,equalright4b,1,4.235904075018317,pew2015,419
-United States,2015,equalright4b,2,8.895398557538465,pew2015,419
-United States,2015,equalright4b,3,69.51015272371521,pew2015,419
-United States,2015,equalright4b,4,916.1330681662786,pew2015,419
-United States,2016,emopoli2,1,337.67474086136986,usgss,419
-United States,2016,emopoli2,2,1468.1774617967753,usgss,419
-United States,2016,tradroles4,1,104.78864153543586,usgss,419
-United States,2016,tradroles4,2,397.2141265234206,usgss,419
-United States,2016,tradroles4,3,861.8712713941304,usgss,419
-United States,2016,tradroles4,4,501.2996809330453,usgss,419
-United States,2017,busiexecutive4,1,56.458501417737,wvs7,419
-United States,2017,busiexecutive4,2,267.3763415180948,wvs7,419
-United States,2017,busiexecutive4,3,1261.6483132112185,wvs7,419
-United States,2017,busiexecutive4,4,942.2084573091231,wvs7,419
-United States,2017,education4,1,53.473552580546276,wvs7,419
-United States,2017,education4,2,198.89904822441414,wvs7,419
-United States,2017,education4,3,1251.7724866175172,wvs7,419
-United States,2017,education4,4,1036.0372347238165,wvs7,419
-United States,2017,job5,2,134.44312370233115,wvs7,419
-United States,2017,job5,3,440.5576924851808,wvs7,419
-United States,2017,job5,4,1970.9746727248562,wvs7,419
-United States,2017,polileader4,1,91.09248764502284,wvs7,419
-United States,2017,polileader4,2,331.6154203406211,wvs7,419
-United States,2017,polileader4,3,1316.285450962172,wvs7,419
-United States,2017,polileader4,4,799.4081636054948,wvs7,419
-United States,2018,tradroles5,1,69.48347137578426,issp2018,419
-United States,2018,tradroles5,2,145.88700749707675,issp2018,419
-United States,2018,tradroles5,3,210.84390715038526,issp2018,419
-United States,2018,tradroles5,4,359.35643650440755,issp2018,419
-United States,2018,tradroles5,5,374.88202073159044,issp2018,419
+United States,1972,earn2,1,545.9942178442474,usgss,453
+United States,1972,earn2,2,1030.9890816802547,usgss,453
+United States,1972,president2,1,403.9957216283442,usgss,453
+United States,1972,president2,2,1128.9880438574273,usgss,453
+United States,1974,earn2,1,446.99526625710365,usgss,453
+United States,1974,earn2,2,1001.9893887910913,usgss,453
+United States,1974,emopoli2,1,327.9965264705369,usgss,453
+United States,1974,emopoli2,2,369.99608168932514,usgss,453
+United States,1974,emopoli3,1,237.99747957313346,usgss,453
+United States,1974,emopoli3,2,30.99967170910562,usgss,453
+United States,1974,emopoli3,3,449.99523448701706,usgss,453
+United States,1974,homecountry2,1,508.99460967531485,usgss,453
+United States,1974,homecountry2,2,921.9902359933994,usgss,453
+United States,1974,president2,1,282.99700302183516,usgss,453
+United States,1974,president2,2,1149.9878214668215,usgss,453
+United States,1975,earn2,1,422.99552041779606,usgss,453
+United States,1975,earn2,2,1038.9889969600238,usgss,453
+United States,1975,emopoli2,1,709.9924810795159,usgss,453
+United States,1975,emopoli2,2,718.9923857692562,usgss,453
+United States,1975,homecountry2,1,514.9945461351417,usgss,453
+United States,1975,homecountry2,2,930.9901406831398,usgss,453
+United States,1975,president2,1,281.997013611864,usgss,453
+United States,1975,president2,2,1157.9877367465906,usgss,453
+United States,1977,earn2,1,506.9946308553726,usgss,453
+United States,1977,earn2,2,998.9894205611779,usgss,453
+United States,1977,emopoli2,1,716.9924069493138,usgss,453
+United States,1977,emopoli2,2,736.9921951487369,usgss,453
+United States,1977,homecountry2,1,568.9939742735838,usgss,453
+United States,1977,homecountry2,2,920.9902465834283,usgss,453
+United States,1977,limjob2,1,952.9899077025051,usgss,453
+United States,1977,limjob2,2,542.994249614334,usgss,453
+United States,1977,president2,1,306.99674886114275,usgss,453
+United States,1977,president2,2,1176.9875355360425,usgss,453
+United States,1977,tradroles4,1,274.997087742066,usgss,453
+United States,1977,tradroles4,2,713.9924387194004,usgss,453
+United States,1977,tradroles4,3,421.9955310078249,usgss,453
+United States,1977,tradroles4,4,91.99902571734572,usgss,453
+United States,1978,earn2,1,401.99574280840193,usgss,453
+United States,1978,earn2,2,1106.988276838062,usgss,453
+United States,1978,emopoli2,1,642.9931906114489,usgss,453
+United States,1978,emopoli2,2,824.9912632261979,usgss,453
+United States,1978,homecountry2,1,472.9949909163535,usgss,453
+United States,1978,homecountry2,2,1008.9893146608894,usgss,453
+United States,1978,president2,1,274.997087742066,usgss,453
+United States,1978,president2,2,1216.9871119348884,usgss,453
+United States,1982,earn2,1,463.9950862266132,usgss,453
+United States,1982,earn2,2,1359.9855975607627,usgss,453
+United States,1982,emopoli2,1,323.9965688306523,usgss,453
+United States,1982,emopoli2,2,539.9942813844204,usgss,453
+United States,1982,emopoli3,1,228.99757488339313,usgss,453
+United States,1982,emopoli3,2,49.99947049855745,usgss,453
+United States,1982,emopoli3,3,629.9933282818239,usgss,453
+United States,1982,equalamend4,1,10.99988350968264,usgss,453
+United States,1982,equalamend4,2,20.99977760939413,usgss,453
+United States,1982,equalamend4,3,72.99922692789389,usgss,453
+United States,1982,equalamend4,4,46.99950226864401,usgss,453
+United States,1982,homecountry2,1,510.9945884952572,usgss,453
+United States,1982,homecountry2,2,1297.9862541425514,usgss,453
+United States,1982,president2,1,248.99736308281612,usgss,453
+United States,1982,president2,2,1546.9836172253677,usgss,453
+United States,1982,trainjob2a,1,711.9924598994581,usgss,453
+United States,1982,trainjob2a,2,1084.9885098186967,usgss,453
+United States,1982,trainjob2b,1,334.99645234033494,usgss,453
+United States,1982,trainjob2b,2,1475.984369117416,usgss,453
+United States,1982,trainjob2c,1,144.9984644458166,usgss,453
+United States,1982,trainjob2c,2,1675.9822511116458,usgss,453
+United States,1982,trainjob2d,1,49.99947049855745,usgss,453
+United States,1982,trainjob2d,2,1774.9812026987895,usgss,453
+United States,1982,trainjob2e,1,752.9920257082753,usgss,453
+United States,1982,trainjob2e,2,1032.989060500197,usgss,453
+United States,1982,trainjob2f,1,1173.987567306129,usgss,453
+United States,1982,trainjob2f,2,615.9934765422278,usgss,453
+United States,1982,trainjob2g,1,527.9944084647667,usgss,453
+United States,1982,trainjob2g,2,1266.9865824334458,usgss,453
+United States,1982,trainjob2h,1,777.991760957554,usgss,453
+United States,1982,trainjob2h,2,999.989409971149,usgss,453
+United States,1982,trainjob2i,1,784.991686827352,usgss,453
+United States,1982,trainjob2i,2,993.9894735113221,usgss,453
+United States,1983,earn2,1,364.9961346394694,usgss,453
+United States,1983,earn2,2,1195.9873343254942,usgss,453
+United States,1983,emopoli2,1,542.994249614334,usgss,453
+United States,1983,emopoli2,2,982.9895900016395,usgss,453
+United States,1983,homecountry2,1,356.9962193597002,usgss,453
+United States,1983,homecountry2,2,1181.987482585898,usgss,453
+United States,1983,president2,1,207.997797273999,usgss,453
+United States,1983,president2,2,1336.9858411314262,usgss,453
+United States,1985,businessopp5,1,20,issp1985,453
+United States,1985,businessopp5,2,104,issp1985,453
+United States,1985,businessopp5,3,228,issp1985,453
+United States,1985,businessopp5,4,198,issp1985,453
+United States,1985,businessopp5,5,111,issp1985,453
+United States,1985,earn2,1,201.9978608141721,usgss,453
+United States,1985,earn2,2,1285.9863812228978,usgss,453
+United States,1985,emopoli2,1,565.9940060436703,usgss,453
+United States,1985,emopoli2,2,899.9904689740341,usgss,453
+United States,1985,homecountry2,1,393.99582752863273,usgss,453
+United States,1985,homecountry2,2,1100.988340378235,usgss,453
+United States,1985,president2,1,261.997225412441,usgss,453
+United States,1985,president2,2,1218.9870907548307,usgss,453
+United States,1985,tradroles4,1,149.99841149567234,usgss,453
+United States,1985,tradroles4,2,576.993889553353,usgss,453
+United States,1985,tradroles4,3,573.9939213234395,usgss,453
+United States,1985,tradroles4,4,200.99787140420096,usgss,453
+United States,1986,earn2,1,318.99662178079654,usgss,453
+United States,1986,earn2,2,1122.9881073976003,usgss,453
+United States,1986,emopoli2,1,528.9943978747378,usgss,453
+United States,1986,emopoli2,2,885.9906172344381,usgss,453
+United States,1986,homecountry2,1,343.9963570300753,usgss,453
+United States,1986,homecountry2,2,1079.988562768841,usgss,453
+United States,1986,pmpr2,1,355.99622994972907,usgss,453
+United States,1986,pmpr2,2,616.993465952199,usgss,453
+United States,1986,president2,1,194.99793494437407,usgss,453
+United States,1986,president2,2,1231.9869530844555,usgss,453
+United States,1986,priest4,1,104.99888804697065,usgss,453
+United States,1986,priest4,2,57.99938577832665,usgss,453
+United States,1986,priest4,3,110.99882450679755,usgss,453
+United States,1986,priest4,4,87.99906807746112,usgss,453
+United States,1986,tradroles4,1,131.99860211619168,usgss,453
+United States,1986,tradroles4,2,556.99410135393,usgss,453
+United States,1986,tradroles4,3,575.9939001433819,usgss,453
+United States,1986,tradroles4,4,178.99810438483567,usgss,453
+United States,1988,earn2,1,187.99800907457603,usgss,453
+United States,1988,earn2,2,772.9918139076982,usgss,453
+United States,1988,emopoli2,1,315.9966535508831,usgss,453
+United States,1988,emopoli2,2,633.9932859217085,usgss,453
+United States,1988,homecountry2,1,200.99787140420096,usgss,453
+United States,1988,homecountry2,2,748.9920680683906,usgss,453
+United States,1988,income5,1,44.01982444381792,issp1988,453
+United States,1988,income5,2,223.10047388571354,issp1988,453
+United States,1988,income5,3,414.18652999410494,issp1988,453
+United States,1988,income5,4,463.20860721562946,issp1988,453
+United States,1988,income5,5,210.09461666367642,issp1988,453
+United States,1988,president2,1,115.9987715566533,usgss,453
+United States,1988,president2,2,841.9910831957075,usgss,453
+United States,1988,tradroles4,1,87.99906807746112,usgss,453
+United States,1988,tradroles4,2,317.9966323708254,usgss,453
+United States,1988,tradroles4,3,398.99577457848847,usgss,453
+United States,1988,tradroles4,4,158.9983161854127,usgss,453
+United States,1988,tradroles5,1,119.05361610941665,issp1988,453
+United States,1988,tradroles5,2,266.11984777399016,issp1988,453
+United States,1988,tradroles5,3,281.12660610710986,issp1988,453
+United States,1988,tradroles5,4,441.1986949937205,issp1988,453
+United States,1988,tradroles5,5,265.11939721844885,issp1988,453
+United States,1989,earn2,1,207.997797273999,usgss,453
+United States,1989,earn2,2,773.9918033176693,usgss,453
+United States,1989,emopoli2,1,284.9969818417775,usgss,453
+United States,1989,emopoli2,2,653.9930741211315,usgss,453
+United States,1989,homecountry2,1,191.99796671446063,usgss,453
+United States,1989,homecountry2,2,766.9918774478713,usgss,453
+United States,1989,president2,1,128.9986338862782,usgss,453
+United States,1989,president2,2,823.9912738162268,usgss,453
+United States,1989,tradroles4,1,94.99899394725917,usgss,453
+United States,1989,tradroles4,2,304.9967700412005,usgss,453
+United States,1989,tradroles4,3,412.99562631808453,usgss,453
+United States,1989,tradroles4,4,163.99826323526844,usgss,453
+United States,1990,earn2,1,162.9982738252973,usgss,453
+United States,1990,earn2,2,738.9921739686791,usgss,453
+United States,1990,emopoli2,1,233.9975219332489,usgss,453
+United States,1990,emopoli2,2,634.9932753316797,usgss,453
+United States,1990,homecountry2,1,158.9983161854127,usgss,453
+United States,1990,homecountry2,2,730.9922586889099,usgss,453
+United States,1990,income4,1,31.733309800308177,evs_combo,453
+United States,1990,income4,2,542.840735835581,evs_combo,453
+United States,1990,income4,3,856.5637783496991,evs_combo,453
+United States,1990,income4,4,324.2309386813126,evs_combo,453
+United States,1990,job3a,1,440.5611083319518,evs_combo,453
+United States,1990,job3a,2,85.08124757920585,evs_combo,453
+United States,1990,job3a,3,1277.4174500779711,evs_combo,453
+United States,1990,president2,1,93.99900453728802,usgss,453
+United States,1990,president2,2,800.9915173868903,usgss,453
+United States,1990,tradroles4,1,63.99932223815354,usgss,453
+United States,1990,tradroles4,2,300.9968124013159,usgss,453
+United States,1990,tradroles4,3,404.9957110383154,usgss,453
+United States,1990,tradroles4,4,130.9986127062205,usgss,453
+United States,1991,earn2,1,195.9979243543452,usgss,453
+United States,1991,earn2,2,800.9915173868903,usgss,453
+United States,1991,emopoli2,1,254.99729954264302,usgss,453
+United States,1991,emopoli2,2,718.9923857692562,usgss,453
+United States,1991,homecountry2,1,189.99798789451833,usgss,453
+United States,1991,homecountry2,2,792.9916021071211,usgss,453
+United States,1991,president2,1,91.99902571734572,usgss,453
+United States,1991,president2,2,884.9906278244669,usgss,453
+United States,1991,tradroles4,1,75.99919515780732,usgss,453
+United States,1991,tradroles4,2,343.9963570300753,usgss,453
+United States,1991,tradroles4,3,404.9957110383154,usgss,453
+United States,1991,tradroles4,4,170.99818910506647,usgss,453
+United States,1991,tradroles5,1,147.69798133922194,issp1991,453
+United States,1991,tradroles5,2,237.3353769106118,issp1991,453
+United States,1991,tradroles5,3,298.451782982014,issp1991,453
+United States,1991,tradroles5,4,347.3449078391357,issp1991,453
+United States,1991,tradroles5,5,307.6192438927243,issp1991,453
+United States,1993,earn2,1,206.99780786402786,usgss,453
+United States,1993,earn2,2,848.9910090655055,usgss,453
+United States,1993,emopoli2,1,216.99770196373933,usgss,453
+United States,1993,emopoli2,2,802.9914962068327,usgss,453
+United States,1993,homecountry2,1,153.99836913555694,usgss,453
+United States,1993,homecountry2,2,887.9905960543804,usgss,453
+United States,1993,president2,1,95.99898335723032,usgss,453
+United States,1993,president2,2,935.9900877329956,usgss,453
+United States,1993,tradroles4,1,63.99932223815354,usgss,453
+United States,1993,tradroles4,2,317.9966323708254,usgss,453
+United States,1993,tradroles4,3,490.9948002958342,usgss,453
+United States,1993,tradroles4,4,180.99808320477797,usgss,453
+United States,1994,earn2,1,363.99614522949827,usgss,453
+United States,1994,earn2,2,1568.9833842447329,usgss,453
+United States,1994,emopoli2,1,388.995880478777,usgss,453
+United States,1994,emopoli2,2,1470.9844220675602,usgss,453
+United States,1994,homecountry2,1,267.99716187226795,usgss,453
+United States,1994,homecountry2,2,1631.9827170729152,usgss,453
+United States,1994,income5,1,15.879866329251419,issp1994,453
+United States,1994,income5,2,146.65523609955721,issp1994,453
+United States,1994,income5,3,389.5237799586966,issp1994,453
+United States,1994,income5,4,492.275856206794,issp1994,453
+United States,1994,income5,5,258.7484101883908,issp1994,453
+United States,1994,president2,1,153.99836913555694,usgss,453
+United States,1994,president2,2,1765.9812980090492,usgss,453
+United States,1994,tradroles4,1,130.9986127062205,usgss,453
+United States,1994,tradroles4,2,539.9942813844204,usgss,453
+United States,1994,tradroles4,3,895.9905113341496,usgss,453
+United States,1994,tradroles4,4,348.996304079931,usgss,453
+United States,1994,tradroles5,1,146.9915387474019,"issp1994, usgss",453
+United States,1994,tradroles5,2,439.04051704816095,"issp1994, usgss",453
+United States,1994,tradroles5,3,524.1408815861305,"issp1994, usgss",453
+United States,1994,tradroles5,4,1052.1499615603504,"issp1994, usgss",453
+United States,1994,tradroles5,5,572.4933614372496,"issp1994, usgss",453
+United States,1995,education4,1,43.389388518989264,wvs_combo,453
+United States,1995,education4,2,178.2033776072392,wvs_combo,453
+United States,1995,education4,3,845.4047132587051,wvs_combo,453
+United States,1995,education4,4,434.15421150845583,wvs_combo,453
+United States,1995,income4,1,20.370534427572093,wvs_combo,453
+United States,1995,income4,2,298.9647517684321,wvs_combo,453
+United States,1995,income4,3,773.8299944798903,wvs_combo,453
+United States,1995,income4,4,371.1201984886573,wvs_combo,453
+United States,1995,job3a,1,287.37522431701177,wvs_combo,453
+United States,1995,job3a,2,169.64765302215176,wvs_combo,453
+United States,1995,job3a,3,1066.877328776366,wvs_combo,453
+United States,1995,polileader4,1,87.88516389187222,wvs_combo,453
+United States,1995,polileader4,2,354.0337806952674,wvs_combo,453
+United States,1995,polileader4,3,757.6396999754006,wvs_combo,453
+United States,1995,polileader4,4,238.5990835139066,wvs_combo,453
+United States,1996,earn2,1,319.9966111907677,usgss,453
+United States,1996,earn2,2,1594.9831089039828,usgss,453
+United States,1996,emopoli2,1,407.9956792682288,usgss,453
+United States,1996,emopoli2,2,1457.9845597379353,usgss,453
+United States,1996,homecountry2,1,307.9967382711139,usgss,453
+United States,1996,homecountry2,2,1575.983310114531,usgss,453
+United States,1996,president2,1,131.99860211619168,usgss,453
+United States,1996,president2,2,1770.981245058905,usgss,453
+United States,1996,tradroles4,1,178.99810438483567,usgss,453
+United States,1996,tradroles4,2,724.992322229083,usgss,453
+United States,1996,tradroles4,3,1033.9890499101682,usgss,453
+United States,1996,tradroles4,4,414.99560513802686,usgss,453
+United States,1996,workhard4,1,124.99867624639363,usgss,453
+United States,1996,workhard4,2,169.99819969509534,usgss,453
+United States,1996,workhard4,3,199.9978819942298,usgss,453
+United States,1996,workhard4,4,901.9904477939764,usgss,453
+United States,1998,earn2,1,326.99653706056574,usgss,453
+United States,1998,earn2,2,1509.984009056435,usgss,453
+United States,1998,emopoli2,1,404.9957110383154,usgss,453
+United States,1998,emopoli2,2,1341.985788181282,usgss,453
+United States,1998,homecountry2,1,279.99703479192175,usgss,453
+United States,1998,homecountry2,2,1533.9837548957425,usgss,453
+United States,1998,president2,1,115.9987715566533,usgss,453
+United States,1998,president2,2,1686.9821346213284,usgss,453
+United States,1998,tradroles4,1,129.99862329624938,usgss,453
+United States,1998,tradroles4,2,508.99460967531485,usgss,453
+United States,1998,tradroles4,3,835.9911467358806,usgss,453
+United States,1998,tradroles4,4,342.99636762010414,usgss,453
+United States,1998,tradroles5,1,120.97362047384833,issp1998,453
+United States,1998,tradroles5,2,152.96664407023798,issp1998,453
+United States,1998,tradroles5,3,236.94833101076077,issp1998,453
+United States,1998,tradroles5,4,304.9335061530888,issp1998,453
+United States,1998,tradroles5,5,419.90843470261404,issp1998,453
+United States,1999,education4,1,26.234291392867284,wvs_combo,453
+United States,1999,education4,2,61.25050146329176,wvs_combo,453
+United States,1999,education4,3,627.4807889576839,wvs_combo,453
+United States,1999,education4,4,467.28264419496605,wvs_combo,453
+United States,1999,income4,1,26.062630299548957,wvs_combo,453
+United States,1999,income4,2,338.28098992482126,wvs_combo,453
+United States,1999,income4,3,528.2525026805314,wvs_combo,453
+United States,1999,income4,4,271.81490478742114,wvs_combo,453
+United States,1999,job3a,1,117.66637551967429,wvs_combo,453
+United States,1999,job3a,2,97.840467042708,wvs_combo,453
+United States,1999,job3a,3,976.596667086525,wvs_combo,453
+United States,1999,polileader4,1,54.32072861782791,wvs_combo,453
+United States,1999,polileader4,2,207.66233602296356,wvs_combo,453
+United States,1999,polileader4,3,647.8700008827605,wvs_combo,453
+United States,1999,polileader4,4,226.71158435362113,wvs_combo,453
+United States,2000,emopoli2,1,402.99573221837306,usgss,453
+United States,2000,emopoli2,2,1326.9859470317149,usgss,453
+United States,2000,tradroles4,1,203.9978396341144,usgss,453
+United States,2000,tradroles4,2,530.9943766946801,usgss,453
+United States,2000,tradroles4,3,730.9922586889099,usgss,453
+United States,2000,tradroles4,4,337.9964205702484,usgss,453
+United States,2002,emopoli2,1,184.99804084466257,usgss,453
+United States,2002,emopoli2,2,661.9929894009007,usgss,453
+United States,2002,income5,1,108.93471484939478,issp2002,453
+United States,2002,income5,3,368.7789888020796,issp2002,453
+United States,2002,income5,4,326.80414454818435,issp2002,453
+United States,2002,income5,5,340.79575929948277,issp2002,453
+United States,2002,tradroles4,1,90.99903630737457,usgss,453
+United States,2002,tradroles4,2,256.9972783625853,usgss,453
+United States,2002,tradroles4,3,381.99595460897893,usgss,453
+United States,2002,tradroles4,4,167.99822087515304,usgss,453
+United States,2002,tradroles5,1,201.93843682716744,"issp2002, usgss",453
+United States,2002,tradroles5,2,343.89515974527524,"issp2002, usgss",453
+United States,2002,tradroles5,3,551.8317679633487,"issp2002, usgss",453
+United States,2002,tradroles5,5,1215.6294018902754,"issp2002, usgss",453
+United States,2004,emopoli2,1,209.27778371876207,usgss,453
+United States,2004,emopoli2,2,614.2134953924792,usgss,453
+United States,2004,tradroles4,1,77.51917906096348,usgss,453
+United States,2004,tradroles4,2,242.0274368953172,usgss,453
+United States,2004,tradroles4,3,406.9056908113603,usgss,453
+United States,2004,tradroles4,4,156.5683419191828,usgss,453
+United States,2006,busiexecutive4,1,27.805277081898684,wvs_combo,453
+United States,2006,busiexecutive4,2,173.6478589250757,wvs_combo,453
+United States,2006,busiexecutive4,3,657.7979876970415,wvs_combo,453
+United States,2006,busiexecutive4,4,367.11373391284377,wvs_combo,453
+United States,2006,education4,1,12.941765034879408,wvs_combo,453
+United States,2006,education4,2,83.57597683004104,wvs_combo,453
+United States,2006,education4,3,719.4940740659484,wvs_combo,453
+United States,2006,education4,4,415.6979005635048,wvs_combo,453
+United States,2006,emopoli2,1,444.74529008466857,usgss,453
+United States,2006,emopoli2,2,1426.9048888760321,usgss,453
+United States,2006,job3a,1,84.05641358307601,wvs_combo,453
+United States,2006,job3a,2,331.77160526770905,wvs_combo,453
+United States,2006,job3a,3,823.3284673156306,wvs_combo,453
+United States,2006,job4,1,77.66659448058444,pewrel2006_10nat,453
+United States,2006,job4,2,107.56480937396279,pewrel2006_10nat,453
+United States,2006,job4,3,219.96901590958157,pewrel2006_10nat,453
+United States,2006,job4,4,637.058479197007,pewrel2006_10nat,453
+United States,2006,polileader4,1,144.7980912154504,"pewrel2006_10nat, wvs_combo",453
+United States,2006,polileader4,2,457.5276273268863,"pewrel2006_10nat, wvs_combo",453
+United States,2006,polileader4,3,978.3417673949807,"pewrel2006_10nat, wvs_combo",453
+United States,2006,polileader4,4,672.3224433702657,"pewrel2006_10nat, wvs_combo",453
+United States,2006,tradroles4,1,178.59810862084723,usgss,453
+United States,2006,tradroles4,2,514.1245553484669,usgss,453
+United States,2006,tradroles4,3,935.2900951460157,usgss,453
+United States,2006,tradroles4,4,345.5563405096303,usgss,453
+United States,2007,poliequal3,1,316.2969104264851,pew2007,453
+United States,2007,poliequal3,2,117.01649448618389,pew2007,453
+United States,2007,poliequal3,3,1521.984533849639,pew2007,453
+United States,2008,emopoli2,1,327.3304548907158,usgss,453
+United States,2008,emopoli2,2,933.9773856304696,usgss,453
+United States,2008,polileader4,1,108.69746326412192,amb_combo,453
+United States,2008,polileader4,2,329.1317332695003,amb_combo,453
+United States,2008,polileader4,3,627.8117632550852,amb_combo,453
+United States,2008,polileader4,4,427.121052029484,amb_combo,453
+United States,2008,president2,1,77.16809464006501,usgss,453
+United States,2008,president2,2,1239.3721800667397,usgss,453
+United States,2008,tradroles4,1,106.1024484579763,usgss,453
+United States,2008,tradroles4,2,353.28414560741567,usgss,453
+United States,2008,tradroles4,3,623.757806764467,usgss,453
+United States,2008,tradroles4,4,233.1805600423035,usgss,453
+United States,2008,tradroles5,1,152.26067775807718,issp2008,453
+United States,2008,tradroles5,2,200.4082911082818,issp2008,453
+United States,2008,tradroles5,3,277.65979275932096,issp2008,453
+United States,2008,tradroles5,4,429.3999943179956,issp2008,453
+United States,2008,tradroles5,5,285.2601712327873,issp2008,453
+United States,2010,emopoli2,1,290.2179153428686,usgss,453
+United States,2010,emopoli2,2,1067.64313070886,usgss,453
+United States,2010,equalright2,1,66.3419209708488,pew2010,453
+United States,2010,equalright2,2,3534.524348973707,pew2010,453
+United States,2010,job4,1,139.21751597670547,pew2010,453
+United States,2010,job4,2,357.4190322701033,pew2010,453
+United States,2010,job4,3,755.1226109572372,pew2010,453
+United States,2010,job4,4,2334.1067230151666,pew2010,453
+United States,2010,president2,1,52.51792146112666,usgss,453
+United States,2010,president2,2,1358.0639194685757,usgss,453
+United States,2010,tradroles4,1,95.50300288473446,usgss,453
+United States,2010,tradroles4,2,400.3506210028528,usgss,453
+United States,2010,tradroles4,3,615.7817962683878,usgss,453
+United States,2010,tradroles4,4,305.2101340594465,usgss,453
+United States,2010,veilpub2a,1,1033.6736252899677,pew2010,453
+United States,2010,veilpub2a,2,2369.094740776599,pew2010,453
+United States,2011,busiexecutive4,1,45.96811111813857,wvs_combo,453
+United States,2011,busiexecutive4,2,214.12752827619744,wvs_combo,453
+United States,2011,busiexecutive4,3,1201.1158178772146,wvs_combo,453
+United States,2011,busiexecutive4,4,733.5181432526659,wvs_combo,453
+United States,2011,education4,1,30.1349842318126,wvs_combo,453
+United States,2011,education4,2,115.99616979299502,wvs_combo,453
+United States,2011,education4,3,1132.478912576062,wvs_combo,453
+United States,2011,education4,4,931.9326442143679,wvs_combo,453
+United States,2011,job3a,1,127.34557933098088,wvs_combo,453
+United States,2011,job3a,2,538.7366543388376,wvs_combo,453
+United States,2011,job3a,3,1547.2628004881315,wvs_combo,453
+United States,2011,polileader4,1,76.22319492178171,wvs_combo,453
+United States,2011,polileader4,2,357.7866327808265,wvs_combo,453
+United States,2011,polileader4,3,1212.3151029504122,wvs_combo,453
+United States,2011,polileader4,4,562.5063612636317,wvs_combo,453
+United States,2012,emopoli2,1,250.20979757933085,usgss,453
+United States,2012,emopoli2,2,980.2847605125072,usgss,453
+United States,2012,income5,1,18.0741468397614,issp2012,453
+United States,2012,income5,2,116.16568059078698,issp2012,453
+United States,2012,income5,3,317.58098541031904,issp2012,453
+United States,2012,income5,4,585.294413476821,issp2012,453
+United States,2012,income5,5,248.34235985495516,issp2012,453
+United States,2012,jobs7,1,22.462108738771093,amb_us2012,453
+United States,2012,jobs7,2,14.689079177037284,amb_us2012,453
+United States,2012,jobs7,3,58.86956346813305,amb_us2012,453
+United States,2012,jobs7,4,98.48575187297757,amb_us2012,453
+United States,2012,jobs7,5,51.74276344765746,amb_us2012,453
+United States,2012,jobs7,6,81.99801867738425,amb_us2012,453
+United States,2012,jobs7,7,417.0183236365998,amb_us2012,453
+United States,2012,polileader4,1,23.614313777435566,amb_us2012,453
+United States,2012,polileader4,2,132.4599130902447,amb_us2012,453
+United States,2012,polileader4,3,331.9362479953539,amb_us2012,453
+United States,2012,polileader4,4,250.36899568603607,amb_us2012,453
+United States,2012,tradroles4,1,85.1948616586535,usgss,453
+United States,2012,tradroles4,2,326.6020410216494,usgss,453
+United States,2012,tradroles4,3,624.0684552563866,usgss,453
+United States,2012,tradroles4,4,260.1203616868435,usgss,453
+United States,2012,tradroles5,1,133.42192675452392,"issp2012, usgss",453
+United States,2012,tradroles5,2,435.56522573217796,"issp2012, usgss",453
+United States,2012,tradroles5,3,432.5254179710379,"issp2012, usgss",453
+United States,2012,tradroles5,4,1133.6852906209076,"issp2012, usgss",453
+United States,2012,tradroles5,5,451.4686426094597,"issp2012, usgss",453
+United States,2014,emopoli2,1,304.5194782335,usgss,453
+United States,2014,emopoli2,2,1278.8930692860363,usgss,453
+United States,2014,tradroles4,1,105.80121859678201,usgss,453
+United States,2014,tradroles4,2,405.8355185709392,usgss,453
+United States,2014,tradroles4,3,793.5169285217484,usgss,453
+United States,2014,tradroles4,4,345.7319478491628,usgss,453
+United States,2015,equalright4b,1,4.235904075018317,pew2015,453
+United States,2015,equalright4b,2,8.895398557538465,pew2015,453
+United States,2015,equalright4b,3,69.51015272371521,pew2015,453
+United States,2015,equalright4b,4,916.1330681662786,pew2015,453
+United States,2016,emopoli2,1,337.67474086136986,usgss,453
+United States,2016,emopoli2,2,1468.1774617967753,usgss,453
+United States,2016,tradroles4,1,104.78864153543586,usgss,453
+United States,2016,tradroles4,2,397.2141265234206,usgss,453
+United States,2016,tradroles4,3,861.8712713941304,usgss,453
+United States,2016,tradroles4,4,501.2996809330453,usgss,453
+United States,2017,busiexecutive4,1,56.458501417737,wvs7,453
+United States,2017,busiexecutive4,2,267.3763415180948,wvs7,453
+United States,2017,busiexecutive4,3,1261.6483132112185,wvs7,453
+United States,2017,busiexecutive4,4,942.2084573091231,wvs7,453
+United States,2017,education4,1,53.473552580546276,wvs7,453
+United States,2017,education4,2,198.89904822441414,wvs7,453
+United States,2017,education4,3,1251.7724866175172,wvs7,453
+United States,2017,education4,4,1036.0372347238165,wvs7,453
+United States,2017,job5,2,134.44312370233115,wvs7,453
+United States,2017,job5,3,440.5576924851808,wvs7,453
+United States,2017,job5,4,1970.9746727248562,wvs7,453
+United States,2017,polileader4,1,91.09248764502284,wvs7,453
+United States,2017,polileader4,2,331.6154203406211,wvs7,453
+United States,2017,polileader4,3,1316.285450962172,wvs7,453
+United States,2017,polileader4,4,799.4081636054948,wvs7,453
+United States,2018,tradroles5,1,69.48347137578426,issp2018,453
+United States,2018,tradroles5,2,145.88700749707675,issp2018,453
+United States,2018,tradroles5,3,210.84390715038526,issp2018,453
+United States,2018,tradroles5,4,359.35643650440755,issp2018,453
+United States,2018,tradroles5,5,374.88202073159044,issp2018,453
 Germany,1982,job4a,1,1086.9840703950156,allbus,310
 Germany,1982,job4a,2,896.8747198275437,allbus,310
 Germany,1982,job4a,3,544.2444468752153,allbus,310
@@ -976,6 +1010,234 @@ Poland,2017,unqualpol4,1,32.189630603810336,eb874,248
 Poland,2017,unqualpol4,2,174.30556571841223,eb874,248
 Poland,2017,unqualpol4,3,430.25020905395775,eb874,248
 Poland,2017,unqualpol4,4,325.6480096049795,eb874,248
+Australia,1984,earn5,1,128,nsss_combo,228
+Australia,1984,earn5,2,594,nsss_combo,228
+Australia,1984,earn5,3,413,nsss_combo,228
+Australia,1984,earn5,4,1564,nsss_combo,228
+Australia,1984,earn5,5,278,nsss_combo,228
+Australia,1984,jobpref5,1,482,nsss_combo,228
+Australia,1984,jobpref5,2,1721,nsss_combo,228
+Australia,1984,jobpref5,3,592,nsss_combo,228
+Australia,1984,jobpref5,4,153,nsss_combo,228
+Australia,1984,jobpref5,5,40,nsss_combo,228
+Australia,1986,businessopp5,1,46,issp1985,228
+Australia,1986,businessopp5,2,244,issp1985,228
+Australia,1986,businessopp5,3,475,issp1985,228
+Australia,1986,businessopp5,4,506,issp1985,228
+Australia,1986,businessopp5,5,179,issp1985,228
+Australia,1986,earn5,1,115,nsss_combo,228
+Australia,1986,earn5,2,218,nsss_combo,228
+Australia,1986,earn5,3,168,nsss_combo,228
+Australia,1986,earn5,4,656,nsss_combo,228
+Australia,1986,earn5,5,280,nsss_combo,228
+Australia,1986,jobpref5,1,410,nsss_combo,228
+Australia,1986,jobpref5,2,687,nsss_combo,228
+Australia,1986,jobpref5,3,261,nsss_combo,228
+Australia,1986,jobpref5,4,48,nsss_combo,228
+Australia,1986,jobpref5,5,38,nsss_combo,228
+Australia,1989,earn5,1,157,nsss1989,228
+Australia,1989,earn5,2,613,nsss1989,228
+Australia,1989,earn5,3,632,nsss1989,228
+Australia,1989,earn5,4,2208,nsss1989,228
+Australia,1989,earn5,5,813,nsss1989,228
+Australia,1989,income5,1,163,nsss1989,228
+Australia,1989,income5,2,1053,nsss1989,228
+Australia,1989,income5,3,1379,nsss1989,228
+Australia,1989,income5,4,1270,nsss1989,228
+Australia,1989,income5,5,546,nsss1989,228
+Australia,1989,tradroles5,1,415,nsss1989,228
+Australia,1989,tradroles5,2,876,nsss1989,228
+Australia,1989,tradroles5,3,904,nsss1989,228
+Australia,1989,tradroles5,4,1404,nsss1989,228
+Australia,1989,tradroles5,5,846,nsss1989,228
+Australia,1989,wifejob5,1,464,nsss1989,228
+Australia,1989,wifejob5,2,770,nsss1989,228
+Australia,1989,wifejob5,3,1068,nsss1989,228
+Australia,1989,wifejob5,4,756,nsss1989,228
+Australia,1989,wifejob5,5,478,nsss1989,228
+Australia,1989,wifejob7,1,244,nsss1989,228
+Australia,1989,wifejob7,2,215,nsss1989,228
+Australia,1989,wifejob7,3,464,nsss1989,228
+Australia,1989,wifejob7,4,770,nsss1989,228
+Australia,1989,wifejob7,5,1068,nsss1989,228
+Australia,1989,wifejob7,6,756,nsss1989,228
+Australia,1989,wifejob7,7,478,nsss1989,228
+Australia,1993,earn5,1,164,nsss1993,228
+Australia,1993,earn5,2,355,nsss1993,228
+Australia,1993,earn5,3,371,nsss1993,228
+Australia,1993,earn5,4,1150,nsss1993,228
+Australia,1993,earn5,5,494,nsss1993,228
+Australia,1993,govtact5,1,155.80334908535048,aes1993,228
+Australia,1993,govtact5,2,533.7648662116708,aes1993,228
+Australia,1993,govtact5,3,1040.2679314576817,aes1993,228
+Australia,1993,govtact5,4,939.4423992168323,aes1993,228
+Australia,1993,govtact5,5,259.8363765534564,aes1993,228
+Australia,1993,jobpref5,1,609.2917728679221,aes1993,228
+Australia,1993,jobpref5,2,1428.027513139775,aes1993,228
+Australia,1993,jobpref5,3,665.1869257135546,aes1993,228
+Australia,1993,jobpref5,4,145.48363715029345,aes1993,228
+Australia,1993,jobpref5,5,89.28058511981523,aes1993,228
+Australia,1993,tradroles5,1,233,"issp1991, nsss1993",228
+Australia,1993,tradroles5,2,470,"issp1991, nsss1993",228
+Australia,1993,tradroles5,3,554,"issp1991, nsss1993",228
+Australia,1993,tradroles5,4,668,"issp1991, nsss1993",228
+Australia,1993,tradroles5,5,596,"issp1991, nsss1993",228
+Australia,1994,income5,1,58.84891639663761,issp1994,228
+Australia,1994,income5,2,417.54707348090494,issp1994,228
+Australia,1994,income5,3,430.62461045793555,issp1994,228
+Australia,1994,income5,4,534.3107964901066,issp1994,228
+Australia,1994,income5,5,206.43826228026845,issp1994,228
+Australia,1994,tradroles5,1,85.00399035069877,issp1994,228
+Australia,1994,tradroles5,2,366.17103535685624,issp1994,228
+Australia,1994,tradroles5,3,290.50814284689363,issp1994,228
+Australia,1994,tradroles5,4,558.5976508760206,issp1994,228
+Australia,1994,tradroles5,5,350.29116902760484,issp1994,228
+Australia,1995,education4,1,32.92281629234651,wvs_combo,228
+Australia,1995,education4,2,185.68951607426035,wvs_combo,228
+Australia,1995,education4,3,1297.0338935897787,wvs_combo,228
+Australia,1995,education4,4,510.3697397732269,wvs_combo,228
+Australia,1995,income4,1,18.36088338790523,wvs_combo,228
+Australia,1995,income4,2,637.6026032715968,wvs_combo,228
+Australia,1995,income4,3,1052.1174177334785,wvs_combo,228
+Australia,1995,income4,4,281.06122284300255,wvs_combo,228
+Australia,1995,job3a,1,518.8644375059856,wvs_combo,228
+Australia,1995,job3a,2,129.5906857400708,wvs_combo,228
+Australia,1995,job3a,3,1383.223026818057,wvs_combo,228
+Australia,1995,polileader4,1,61.95572331673911,wvs_combo,228
+Australia,1995,polileader4,2,411.1422332807146,wvs_combo,228
+Australia,1995,polileader4,3,1150.3173742074557,wvs_combo,228
+Australia,1995,polileader4,4,333.687985825489,wvs_combo,228
+Australia,1996,govtact5,1,96,aes1996,228
+Australia,1996,govtact5,2,310,aes1996,228
+Australia,1996,govtact5,3,671,aes1996,228
+Australia,1996,govtact5,4,525,aes1996,228
+Australia,1996,govtact5,5,174,aes1996,228
+Australia,1996,jobpref5,1,386,aes1996,228
+Australia,1996,jobpref5,2,865,aes1996,228
+Australia,1996,jobpref5,3,368,aes1996,228
+Australia,1996,jobpref5,4,86,aes1996,228
+Australia,1996,jobpref5,5,70,aes1996,228
+Australia,1998,govtact5,1,113,aes1998,228
+Australia,1998,govtact5,2,300,aes1998,228
+Australia,1998,govtact5,3,653,aes1998,228
+Australia,1998,govtact5,4,593,aes1998,228
+Australia,1998,govtact5,5,174,aes1998,228
+Australia,1998,jobpref5,1,380,aes1998,228
+Australia,1998,jobpref5,2,880,aes1998,228
+Australia,1998,jobpref5,3,426,aes1998,228
+Australia,1998,jobpref5,4,96,aes1998,228
+Australia,1998,jobpref5,5,49,aes1998,228
+Australia,1998,tradroles5,1,89.98037886484586,issp1998,228
+Australia,1998,tradroles5,2,241.94724094769666,issp1998,228
+Australia,1998,tradroles5,3,325.92892788821945,issp1998,228
+Australia,1998,tradroles5,4,358.9217334719963,issp1998,228
+Australia,1998,tradroles5,5,284.93786640534523,issp1998,228
+Australia,2001,govtact5,1,101,aes2001,228
+Australia,2001,govtact5,2,297,aes2001,228
+Australia,2001,govtact5,3,736,aes2001,228
+Australia,2001,govtact5,4,627,aes2001,228
+Australia,2001,govtact5,5,210,aes2001,228
+Australia,2001,jobpref5,1,377,aes2001,228
+Australia,2001,jobpref5,2,890,aes2001,228
+Australia,2001,jobpref5,3,519,aes2001,228
+Australia,2001,jobpref5,4,116,aes2001,228
+Australia,2001,jobpref5,5,68,aes2001,228
+Australia,2002,income5,1,37.977240039238545,issp2002,228
+Australia,2002,income5,2,238.85685182573718,issp2002,228
+Australia,2002,income5,3,461.7232867928476,issp2002,228
+Australia,2002,income5,4,404.7574267339898,issp2002,228
+Australia,2002,income5,5,190.8856012498569,issp2002,228
+Australia,2002,tradroles5,1,60.96346427351451,issp2002,228
+Australia,2002,tradroles5,2,225.86463812810294,issp2002,228
+Australia,2002,tradroles5,3,291.8251076699383,issp2002,228
+Australia,2002,tradroles5,4,429.7424530755941,issp2002,228
+Australia,2002,tradroles5,5,317.8095350652068,issp2002,228
+Australia,2004,govtact5,1,85,aes2004,228
+Australia,2004,govtact5,2,256,aes2004,228
+Australia,2004,govtact5,3,619,aes2004,228
+Australia,2004,govtact5,4,581,aes2004,228
+Australia,2004,govtact5,5,184,aes2004,228
+Australia,2004,jobpref5,1,276,aes2004,228
+Australia,2004,jobpref5,2,786,aes2004,228
+Australia,2004,jobpref5,3,466,aes2004,228
+Australia,2004,jobpref5,4,122,aes2004,228
+Australia,2004,jobpref5,5,71,aes2004,228
+Australia,2005,busiexecutive4,1,35.74116291821948,wvs_combo,228
+Australia,2005,busiexecutive4,2,223.37665171781202,wvs_combo,228
+Australia,2005,busiexecutive4,3,764.8311702722635,wvs_combo,228
+Australia,2005,busiexecutive4,4,376.1640780785205,wvs_combo,228
+Australia,2005,education4,1,18.07405312183862,wvs_combo,228
+Australia,2005,education4,2,86.49324949110655,wvs_combo,228
+Australia,2005,education4,3,780.4658287521075,wvs_combo,228
+Australia,2005,education4,4,517.6129407730979,wvs_combo,228
+Australia,2005,job3a,1,195.50060672708366,wvs_combo,228
+Australia,2005,job3a,2,302.13997126661235,wvs_combo,228
+Australia,2005,job3a,3,911.7789736207206,wvs_combo,228
+Australia,2005,polileader4,1,52.437129805745755,wvs_combo,228
+Australia,2005,polileader4,2,292.75496792341283,wvs_combo,228
+Australia,2005,polileader4,3,806.5694929816458,wvs_combo,228
+Australia,2005,polileader4,4,248.3514722760112,wvs_combo,228
+Australia,2009,tradroles5,1,97.99179134212574,issp2008,228
+Australia,2009,tradroles5,2,191.1335540154198,issp2008,228
+Australia,2009,tradroles5,3,432.92729363135425,issp2008,228
+Australia,2009,tradroles5,4,447.12939888674674,issp2008,228
+Australia,2009,tradroles5,5,513.5977927598728,issp2008,228
+Australia,2010,govtact5,1,62.23632473699954,aes2010,228
+Australia,2010,govtact5,2,264.0154156476272,aes2010,228
+Australia,2010,govtact5,3,838.9124174497298,aes2010,228
+Australia,2010,govtact5,4,765.1422702300788,aes2010,228
+Australia,2010,govtact5,5,238.09439804008144,aes2010,228
+Australia,2010,jobpref5,1,331.58297540087045,aes2010,228
+Australia,2010,jobpref5,2,980.3631781793783,aes2010,228
+Australia,2010,jobpref5,3,626.1555043770513,aes2010,228
+Australia,2010,jobpref5,4,154.2436015805845,aes2010,228
+Australia,2010,jobpref5,5,74.39249791882501,aes2010,228
+Australia,2012,busiexecutive4,1,35.30850948423764,wvs_combo,228
+Australia,2012,busiexecutive4,2,165.38652721791266,wvs_combo,228
+Australia,2012,busiexecutive4,3,752.63700426662,wvs_combo,228
+Australia,2012,busiexecutive4,4,507.9355898750148,wvs_combo,228
+Australia,2012,education4,1,19.594641472739383,wvs_combo,228
+Australia,2012,education4,2,40.927355942372195,wvs_combo,228
+Australia,2012,education4,3,710.1615988715643,wvs_combo,228
+Australia,2012,education4,4,696.3828001821437,wvs_combo,228
+Australia,2012,income5,1,28.05228547586019,issp2012,228
+Australia,2012,income5,2,201.31444483131767,issp2012,228
+Australia,2012,income5,3,490.66121523378087,issp2012,228
+Australia,2012,income5,4,618.2984663846664,issp2012,228
+Australia,2012,income5,5,232.76520277435836,issp2012,228
+Australia,2012,job3a,1,102.24990807924296,wvs_combo,228
+Australia,2012,job3a,2,281.3967556666202,wvs_combo,228
+Australia,2012,job3a,3,1078.452218269411,wvs_combo,228
+Australia,2012,polileader4,1,72.87232579220105,wvs_combo,228
+Australia,2012,polileader4,2,251.19961189974717,wvs_combo,228
+Australia,2012,polileader4,3,767.1991754323898,wvs_combo,228
+Australia,2012,polileader4,4,347.75982578260295,wvs_combo,228
+Australia,2012,tradroles5,1,52.04330294883639,issp2012,228
+Australia,2012,tradroles5,2,210.98174800752835,issp2012,228
+Australia,2012,tradroles5,3,302.0184553503151,issp2012,228
+Australia,2012,tradroles5,4,589.5119563947267,issp2012,228
+Australia,2012,tradroles5,5,424.6954464153729,issp2012,228
+Australia,2015,equalright4b,1,6.000572993708935,pew2015,228
+Australia,2015,equalright4b,2,7.5814173431772565,pew2015,228
+Australia,2015,equalright4b,3,68.70651366475049,pew2015,228
+Australia,2015,equalright4b,4,919.2748951344983,pew2015,228
+Australia,2018,busiexecutive4,1,29.176576245798273,wvs7,228
+Australia,2018,busiexecutive4,2,165.3312159428004,wvs7,228
+Australia,2018,busiexecutive4,3,672.5377017907865,wvs7,228
+Australia,2018,busiexecutive4,4,923.7391758890931,wvs7,228
+Australia,2018,education4,1,18.949244999762698,wvs7,228
+Australia,2018,education4,2,23.597648953177465,wvs7,228
+Australia,2018,education4,3,578.9623851491239,wvs7,228
+Australia,2018,education4,4,1178.13418104955,wvs7,228
+Australia,2018,job5,1,32.68250247220025,wvs7,228
+Australia,2018,job5,2,89.68435681973187,wvs7,228
+Australia,2018,job5,3,272.7463381866212,wvs7,228
+Australia,2018,job5,4,537.0705564823215,wvs7,228
+Australia,2018,job5,5,871.7795581239542,wvs7,228
+Australia,2018,polileader4,1,45.71478101587117,wvs7,228
+Australia,2018,polileader4,2,178.52656265435482,wvs7,228
+Australia,2018,polileader4,3,733.823961562212,wvs7,228
+Australia,2018,polileader4,4,827.9061872254081,wvs7,228
 Spain,1990,income4,1,67.50511783162514,"evs_combo, wvs_combo",219
 Spain,1990,income4,2,543.8124611098475,"evs_combo, wvs_combo",219
 Spain,1990,income4,3,2078.725041827329,"evs_combo, wvs_combo",219
@@ -1195,214 +1457,218 @@ Spain,2017,unqualpol4,1,29.14652771062573,eb874,219
 Spain,2017,unqualpol4,2,69.18966578104094,eb874,219
 Spain,2017,unqualpol4,3,212.33350187290435,eb874,219
 Spain,2017,unqualpol4,4,675.9991426960845,eb874,219
-Australia,1984,jobpref5,1,482,nsss_combo,208
-Australia,1984,jobpref5,2,1721,nsss_combo,208
-Australia,1984,jobpref5,3,592,nsss_combo,208
-Australia,1984,jobpref5,4,153,nsss_combo,208
-Australia,1984,jobpref5,5,40,nsss_combo,208
-Australia,1986,businessopp5,1,46,issp1985,208
-Australia,1986,businessopp5,2,244,issp1985,208
-Australia,1986,businessopp5,3,475,issp1985,208
-Australia,1986,businessopp5,4,506,issp1985,208
-Australia,1986,businessopp5,5,179,issp1985,208
-Australia,1986,jobpref5,1,410,nsss_combo,208
-Australia,1986,jobpref5,2,687,nsss_combo,208
-Australia,1986,jobpref5,3,261,nsss_combo,208
-Australia,1986,jobpref5,4,48,nsss_combo,208
-Australia,1986,jobpref5,5,38,nsss_combo,208
-Australia,1989,income5,1,163,nsss1989,208
-Australia,1989,income5,2,1053,nsss1989,208
-Australia,1989,income5,3,1379,nsss1989,208
-Australia,1989,income5,4,1270,nsss1989,208
-Australia,1989,income5,5,546,nsss1989,208
-Australia,1989,tradroles5,1,415,nsss1989,208
-Australia,1989,tradroles5,2,876,nsss1989,208
-Australia,1989,tradroles5,3,904,nsss1989,208
-Australia,1989,tradroles5,4,1404,nsss1989,208
-Australia,1989,tradroles5,5,846,nsss1989,208
-Australia,1989,wifejob5,1,464,nsss1989,208
-Australia,1989,wifejob5,2,770,nsss1989,208
-Australia,1989,wifejob5,3,1068,nsss1989,208
-Australia,1989,wifejob5,4,756,nsss1989,208
-Australia,1989,wifejob5,5,478,nsss1989,208
-Australia,1989,wifejob7,1,244,nsss1989,208
-Australia,1989,wifejob7,2,215,nsss1989,208
-Australia,1989,wifejob7,3,464,nsss1989,208
-Australia,1989,wifejob7,4,770,nsss1989,208
-Australia,1989,wifejob7,5,1068,nsss1989,208
-Australia,1989,wifejob7,6,756,nsss1989,208
-Australia,1989,wifejob7,7,478,nsss1989,208
-Australia,1993,govtact5,1,155.80334908535048,aes1993,208
-Australia,1993,govtact5,2,533.7648662116708,aes1993,208
-Australia,1993,govtact5,3,1040.2679314576817,aes1993,208
-Australia,1993,govtact5,4,939.4423992168323,aes1993,208
-Australia,1993,govtact5,5,259.8363765534564,aes1993,208
-Australia,1993,jobpref5,1,609.2917728679221,aes1993,208
-Australia,1993,jobpref5,2,1428.027513139775,aes1993,208
-Australia,1993,jobpref5,3,665.1869257135546,aes1993,208
-Australia,1993,jobpref5,4,145.48363715029345,aes1993,208
-Australia,1993,jobpref5,5,89.28058511981523,aes1993,208
-Australia,1993,tradroles5,1,233,"issp1991, nsss1993",208
-Australia,1993,tradroles5,2,470,"issp1991, nsss1993",208
-Australia,1993,tradroles5,3,554,"issp1991, nsss1993",208
-Australia,1993,tradroles5,4,668,"issp1991, nsss1993",208
-Australia,1993,tradroles5,5,596,"issp1991, nsss1993",208
-Australia,1994,income5,1,58.84891639663761,issp1994,208
-Australia,1994,income5,2,417.54707348090494,issp1994,208
-Australia,1994,income5,3,430.62461045793555,issp1994,208
-Australia,1994,income5,4,534.3107964901066,issp1994,208
-Australia,1994,income5,5,206.43826228026845,issp1994,208
-Australia,1994,tradroles5,1,85.00399035069877,issp1994,208
-Australia,1994,tradroles5,2,366.17103535685624,issp1994,208
-Australia,1994,tradroles5,3,290.50814284689363,issp1994,208
-Australia,1994,tradroles5,4,558.5976508760206,issp1994,208
-Australia,1994,tradroles5,5,350.29116902760484,issp1994,208
-Australia,1995,education4,1,32.92281629234651,wvs_combo,208
-Australia,1995,education4,2,185.68951607426035,wvs_combo,208
-Australia,1995,education4,3,1297.0338935897787,wvs_combo,208
-Australia,1995,education4,4,510.3697397732269,wvs_combo,208
-Australia,1995,income4,1,18.36088338790523,wvs_combo,208
-Australia,1995,income4,2,637.6026032715968,wvs_combo,208
-Australia,1995,income4,3,1052.1174177334785,wvs_combo,208
-Australia,1995,income4,4,281.06122284300255,wvs_combo,208
-Australia,1995,job3a,1,518.8644375059856,wvs_combo,208
-Australia,1995,job3a,2,129.5906857400708,wvs_combo,208
-Australia,1995,job3a,3,1383.223026818057,wvs_combo,208
-Australia,1995,polileader4,1,61.95572331673911,wvs_combo,208
-Australia,1995,polileader4,2,411.1422332807146,wvs_combo,208
-Australia,1995,polileader4,3,1150.3173742074557,wvs_combo,208
-Australia,1995,polileader4,4,333.687985825489,wvs_combo,208
-Australia,1996,govtact5,1,96,aes1996,208
-Australia,1996,govtact5,2,310,aes1996,208
-Australia,1996,govtact5,3,671,aes1996,208
-Australia,1996,govtact5,4,525,aes1996,208
-Australia,1996,govtact5,5,174,aes1996,208
-Australia,1996,jobpref5,1,386,aes1996,208
-Australia,1996,jobpref5,2,865,aes1996,208
-Australia,1996,jobpref5,3,368,aes1996,208
-Australia,1996,jobpref5,4,86,aes1996,208
-Australia,1996,jobpref5,5,70,aes1996,208
-Australia,1998,govtact5,1,113,aes1998,208
-Australia,1998,govtact5,2,300,aes1998,208
-Australia,1998,govtact5,3,653,aes1998,208
-Australia,1998,govtact5,4,593,aes1998,208
-Australia,1998,govtact5,5,174,aes1998,208
-Australia,1998,jobpref5,1,380,aes1998,208
-Australia,1998,jobpref5,2,880,aes1998,208
-Australia,1998,jobpref5,3,426,aes1998,208
-Australia,1998,jobpref5,4,96,aes1998,208
-Australia,1998,jobpref5,5,49,aes1998,208
-Australia,1998,tradroles5,1,89.98037886484586,issp1998,208
-Australia,1998,tradroles5,2,241.94724094769666,issp1998,208
-Australia,1998,tradroles5,3,325.92892788821945,issp1998,208
-Australia,1998,tradroles5,4,358.9217334719963,issp1998,208
-Australia,1998,tradroles5,5,284.93786640534523,issp1998,208
-Australia,2001,govtact5,1,101,aes2001,208
-Australia,2001,govtact5,2,297,aes2001,208
-Australia,2001,govtact5,3,736,aes2001,208
-Australia,2001,govtact5,4,627,aes2001,208
-Australia,2001,govtact5,5,210,aes2001,208
-Australia,2001,jobpref5,1,377,aes2001,208
-Australia,2001,jobpref5,2,890,aes2001,208
-Australia,2001,jobpref5,3,519,aes2001,208
-Australia,2001,jobpref5,4,116,aes2001,208
-Australia,2001,jobpref5,5,68,aes2001,208
-Australia,2002,income5,1,37.977240039238545,issp2002,208
-Australia,2002,income5,2,238.85685182573718,issp2002,208
-Australia,2002,income5,3,461.7232867928476,issp2002,208
-Australia,2002,income5,4,404.7574267339898,issp2002,208
-Australia,2002,income5,5,190.8856012498569,issp2002,208
-Australia,2002,tradroles5,1,60.96346427351451,issp2002,208
-Australia,2002,tradroles5,2,225.86463812810294,issp2002,208
-Australia,2002,tradroles5,3,291.8251076699383,issp2002,208
-Australia,2002,tradroles5,4,429.7424530755941,issp2002,208
-Australia,2002,tradroles5,5,317.8095350652068,issp2002,208
-Australia,2004,govtact5,1,85,aes2004,208
-Australia,2004,govtact5,2,256,aes2004,208
-Australia,2004,govtact5,3,619,aes2004,208
-Australia,2004,govtact5,4,581,aes2004,208
-Australia,2004,govtact5,5,184,aes2004,208
-Australia,2004,jobpref5,1,276,aes2004,208
-Australia,2004,jobpref5,2,786,aes2004,208
-Australia,2004,jobpref5,3,466,aes2004,208
-Australia,2004,jobpref5,4,122,aes2004,208
-Australia,2004,jobpref5,5,71,aes2004,208
-Australia,2005,busiexecutive4,1,35.74116291821948,wvs_combo,208
-Australia,2005,busiexecutive4,2,223.37665171781202,wvs_combo,208
-Australia,2005,busiexecutive4,3,764.8311702722635,wvs_combo,208
-Australia,2005,busiexecutive4,4,376.1640780785205,wvs_combo,208
-Australia,2005,education4,1,18.07405312183862,wvs_combo,208
-Australia,2005,education4,2,86.49324949110655,wvs_combo,208
-Australia,2005,education4,3,780.4658287521075,wvs_combo,208
-Australia,2005,education4,4,517.6129407730979,wvs_combo,208
-Australia,2005,job3a,1,195.50060672708366,wvs_combo,208
-Australia,2005,job3a,2,302.13997126661235,wvs_combo,208
-Australia,2005,job3a,3,911.7789736207206,wvs_combo,208
-Australia,2005,polileader4,1,52.437129805745755,wvs_combo,208
-Australia,2005,polileader4,2,292.75496792341283,wvs_combo,208
-Australia,2005,polileader4,3,806.5694929816458,wvs_combo,208
-Australia,2005,polileader4,4,248.3514722760112,wvs_combo,208
-Australia,2009,tradroles5,1,97.99179134212574,issp2008,208
-Australia,2009,tradroles5,2,191.1335540154198,issp2008,208
-Australia,2009,tradroles5,3,432.92729363135425,issp2008,208
-Australia,2009,tradroles5,4,447.12939888674674,issp2008,208
-Australia,2009,tradroles5,5,513.5977927598728,issp2008,208
-Australia,2010,govtact5,1,62.23632473699954,aes2010,208
-Australia,2010,govtact5,2,264.0154156476272,aes2010,208
-Australia,2010,govtact5,3,838.9124174497298,aes2010,208
-Australia,2010,govtact5,4,765.1422702300788,aes2010,208
-Australia,2010,govtact5,5,238.09439804008144,aes2010,208
-Australia,2010,jobpref5,1,331.58297540087045,aes2010,208
-Australia,2010,jobpref5,2,980.3631781793783,aes2010,208
-Australia,2010,jobpref5,3,626.1555043770513,aes2010,208
-Australia,2010,jobpref5,4,154.2436015805845,aes2010,208
-Australia,2010,jobpref5,5,74.39249791882501,aes2010,208
-Australia,2012,busiexecutive4,1,35.30850948423764,wvs_combo,208
-Australia,2012,busiexecutive4,2,165.38652721791266,wvs_combo,208
-Australia,2012,busiexecutive4,3,752.63700426662,wvs_combo,208
-Australia,2012,busiexecutive4,4,507.9355898750148,wvs_combo,208
-Australia,2012,education4,1,19.594641472739383,wvs_combo,208
-Australia,2012,education4,2,40.927355942372195,wvs_combo,208
-Australia,2012,education4,3,710.1615988715643,wvs_combo,208
-Australia,2012,education4,4,696.3828001821437,wvs_combo,208
-Australia,2012,income5,1,28.05228547586019,issp2012,208
-Australia,2012,income5,2,201.31444483131767,issp2012,208
-Australia,2012,income5,3,490.66121523378087,issp2012,208
-Australia,2012,income5,4,618.2984663846664,issp2012,208
-Australia,2012,income5,5,232.76520277435836,issp2012,208
-Australia,2012,job3a,1,102.24990807924296,wvs_combo,208
-Australia,2012,job3a,2,281.3967556666202,wvs_combo,208
-Australia,2012,job3a,3,1078.452218269411,wvs_combo,208
-Australia,2012,polileader4,1,72.87232579220105,wvs_combo,208
-Australia,2012,polileader4,2,251.19961189974717,wvs_combo,208
-Australia,2012,polileader4,3,767.1991754323898,wvs_combo,208
-Australia,2012,polileader4,4,347.75982578260295,wvs_combo,208
-Australia,2012,tradroles5,1,52.04330294883639,issp2012,208
-Australia,2012,tradroles5,2,210.98174800752835,issp2012,208
-Australia,2012,tradroles5,3,302.0184553503151,issp2012,208
-Australia,2012,tradroles5,4,589.5119563947267,issp2012,208
-Australia,2012,tradroles5,5,424.6954464153729,issp2012,208
-Australia,2015,equalright4b,1,6.000572993708935,pew2015,208
-Australia,2015,equalright4b,2,7.5814173431772565,pew2015,208
-Australia,2015,equalright4b,3,68.70651366475049,pew2015,208
-Australia,2015,equalright4b,4,919.2748951344983,pew2015,208
-Australia,2018,busiexecutive4,1,29.176576245798273,wvs7,208
-Australia,2018,busiexecutive4,2,165.3312159428004,wvs7,208
-Australia,2018,busiexecutive4,3,672.5377017907865,wvs7,208
-Australia,2018,busiexecutive4,4,923.7391758890931,wvs7,208
-Australia,2018,education4,1,18.949244999762698,wvs7,208
-Australia,2018,education4,2,23.597648953177465,wvs7,208
-Australia,2018,education4,3,578.9623851491239,wvs7,208
-Australia,2018,education4,4,1178.13418104955,wvs7,208
-Australia,2018,job5,1,32.68250247220025,wvs7,208
-Australia,2018,job5,2,89.68435681973187,wvs7,208
-Australia,2018,job5,3,272.7463381866212,wvs7,208
-Australia,2018,job5,4,537.0705564823215,wvs7,208
-Australia,2018,job5,5,871.7795581239542,wvs7,208
-Australia,2018,polileader4,1,45.71478101587117,wvs7,208
-Australia,2018,polileader4,2,178.52656265435482,wvs7,208
-Australia,2018,polileader4,3,733.823961562212,wvs7,208
-Australia,2018,polileader4,4,827.9061872254081,wvs7,208
+Japan,1990,income4,1,23.019084600853198,wvs_combo,212
+Japan,1990,income4,2,340.2821201865255,wvs_combo,212
+Japan,1990,income4,3,280.2323342712563,wvs_combo,212
+Japan,1990,income4,4,28.023233427125632,wvs_combo,212
+Japan,1990,job3a,1,310.25722722889094,wvs_combo,212
+Japan,1990,job3a,2,369.30618337890564,wvs_combo,212
+Japan,1990,job3a,3,235.19499483480442,wvs_combo,212
+Japan,1994,income5,1,196.1630546554587,issp1994,212
+Japan,1994,income5,2,103.68618603217104,issp1994,212
+Japan,1994,income5,3,249.40731234765465,issp1994,212
+Japan,1994,income5,4,230.72511666618237,issp1994,212
+Japan,1994,income5,5,425.01995175349384,issp1994,212
+Japan,1994,tradroles5,1,243.80265364321298,issp1994,212
+Japan,1994,tradroles5,2,234.46155580247682,issp1994,212
+Japan,1994,tradroles5,3,243.80265364321298,issp1994,212
+Japan,1994,tradroles5,4,148.52345566770444,issp1994,212
+Japan,1994,tradroles5,5,329.74075377798533,issp1994,212
+Japan,1995,education4,1,75.06223239408652,wvs_combo,212
+Japan,1995,education4,2,240.19914366107685,wvs_combo,212
+Japan,1995,education4,3,438.36343718146526,wvs_combo,212
+Japan,1995,education4,4,87.07218957714036,wvs_combo,212
+Japan,1995,income4,1,8.006638122035895,wvs_combo,212
+Japan,1995,income4,2,327.2713332382172,wvs_combo,212
+Japan,1995,income4,3,415.34435258061205,wvs_combo,212
+Japan,1995,income4,4,57.04729661950575,wvs_combo,212
+Japan,1995,job3a,1,333.27631182974415,wvs_combo,212
+Japan,1995,job3a,2,481.3991170874082,wvs_combo,212
+Japan,1995,job3a,3,195.16180422462494,wvs_combo,212
+Japan,1995,polileader4,1,79.06555145510447,wvs_combo,212
+Japan,1995,polileader4,2,375.3111619704326,wvs_combo,212
+Japan,1995,polileader4,3,269.223206853457,wvs_combo,212
+Japan,1995,polileader4,4,36.02987154916153,wvs_combo,212
+Japan,1998,tradroles5,1,151.96686208285078,issp1998,212
+Japan,1998,tradroles5,2,330.92783782515534,issp1998,212
+Japan,1998,tradroles5,3,361.92107943415783,issp1998,212
+Japan,1998,tradroles5,4,162.96446394410972,issp1998,212
+Japan,1998,tradroles5,5,336.9265297494784,issp1998,212
+Japan,2000,earn4,1,530,jgss,212
+Japan,2000,earn4,2,921,jgss,212
+Japan,2000,earn4,3,1010,jgss,212
+Japan,2000,earn4,4,393,jgss,212
+Japan,2000,education4,1,41.03402037543396,wvs_combo,212
+Japan,2000,education4,2,202.16761258140633,wvs_combo,212
+Japan,2000,education4,3,655.5434962416889,wvs_combo,212
+Japan,2000,education4,4,159.13193267546342,wvs_combo,212
+Japan,2000,income4,1,14.011616713562816,wvs_combo,212
+Japan,2000,income4,2,389.3227786839954,wvs_combo,212
+Japan,2000,income4,3,487.4040956789351,wvs_combo,212
+Japan,2000,income4,4,41.03402037543396,wvs_combo,212
+Japan,2000,job3a,1,412.3418632848486,wvs_combo,212
+Japan,2000,job3a,2,615.5103056315094,wvs_combo,212
+Japan,2000,job3a,3,269.223206853457,wvs_combo,212
+Japan,2000,polileader4,1,51.04231802797883,wvs_combo,212
+Japan,2000,polileader4,2,365.3028643178877,wvs_combo,212
+Japan,2000,polileader4,3,461.38252178231846,wvs_combo,212
+Japan,2000,polileader4,4,82.06804075086792,wvs_combo,212
+Japan,2001,earn4,1,487,jgss,212
+Japan,2001,earn4,2,946,jgss,212
+Japan,2001,earn4,3,891,jgss,212
+Japan,2001,earn4,4,409,jgss,212
+Japan,2002,earn4,1,540,jgss,212
+Japan,2002,earn4,2,935,jgss,212
+Japan,2002,earn4,3,1023,jgss,212
+Japan,2002,earn4,4,416,jgss,212
+Japan,2002,income5,1,188.88679914252856,issp2002,212
+Japan,2002,income5,2,91.94489693710385,issp2002,212
+Japan,2002,income5,3,282.83049818696077,issp2002,212
+Japan,2002,income5,4,203.87781494749115,issp2002,212
+Japan,2002,income5,5,335.7987540311619,issp2002,212
+Japan,2002,tradroles5,1,163.90177280092425,issp2002,212
+Japan,2002,tradroles5,2,180.89159071321518,issp2002,212
+Japan,2002,tradroles5,3,229.86224234275963,issp2002,212
+Japan,2002,tradroles5,4,128.9227359226782,issp2002,212
+Japan,2002,tradroles5,5,412.7526351633032,issp2002,212
+Japan,2003,earn4,1,704,jgss,212
+Japan,2003,earn4,2,1121,jgss,212
+Japan,2003,earn4,3,1219,jgss,212
+Japan,2003,earn4,4,574,jgss,212
+Japan,2003,supervise4,1,12.987831286254893,asianb1,212
+Japan,2003,supervise4,2,181.05976656103917,asianb1,212
+Japan,2003,supervise4,3,509.4049393405701,asianb1,212
+Japan,2003,supervise4,4,552.1478021186607,asianb1,212
+Japan,2005,busiexecutive4,1,38.0315310796705,wvs_combo,212
+Japan,2005,busiexecutive4,2,239.19831389582237,wvs_combo,212
+Japan,2005,busiexecutive4,3,406.3368846933217,wvs_combo,212
+Japan,2005,busiexecutive4,4,91.07550863815831,wvs_combo,212
+Japan,2005,earn4,1,365,jgss2005,212
+Japan,2005,earn4,2,654,jgss2005,212
+Japan,2005,earn4,3,710,jgss2005,212
+Japan,2005,earn4,4,255,jgss2005,212
+Japan,2005,education4,1,39.03236084492499,wvs_combo,212
+Japan,2005,education4,2,162.13442197122686,wvs_combo,212
+Japan,2005,education4,3,531.4406053501325,wvs_combo,212
+Japan,2005,education4,4,111.09210394324805,wvs_combo,212
+Japan,2005,job3a,1,282.2339938017653,wvs_combo,212
+Japan,2005,job3a,2,573.475455490821,wvs_combo,212
+Japan,2005,job3a,3,187.15516610258905,wvs_combo,212
+Japan,2005,polileader4,1,48.03982873221537,wvs_combo,212
+Japan,2005,polileader4,2,281.2331640365108,wvs_combo,212
+Japan,2005,polileader4,3,371.3078429094146,wvs_combo,212
+Japan,2005,polileader4,4,50.04148826272434,wvs_combo,212
+Japan,2005,tradroles4,1,288,jgss2005,212
+Japan,2005,tradroles4,2,745,jgss2005,212
+Japan,2005,tradroles4,3,646,jgss2005,212
+Japan,2005,tradroles4,4,307,jgss2005,212
+Japan,2006,earn4,1,266,jgss2006,212
+Japan,2006,earn4,2,659,jgss2006,212
+Japan,2006,earn4,3,844,jgss2006,212
+Japan,2006,earn4,4,307,jgss2006,212
+Japan,2006,imperial2,1,96.59749052870858,pew2006,212
+Japan,2006,imperial2,2,377.7124193422209,pew2006,212
+Japan,2006,job4,1,22,jgss2006,212
+Japan,2006,job4,2,82,jgss2006,212
+Japan,2006,job4,3,158,jgss2006,212
+Japan,2006,job4,4,798,jgss2006,212
+Japan,2006,tradroles4,1,233,jgss2006,212
+Japan,2006,tradroles4,2,800,jgss2006,212
+Japan,2006,tradroles4,3,702,jgss2006,212
+Japan,2006,tradroles4,4,341,jgss2006,212
+Japan,2007,poliequal3,1,120.0001156058745,pew2007,212
+Japan,2007,poliequal3,2,28.00002697470405,pew2007,212
+Japan,2007,poliequal3,3,590.0005683955496,pew2007,212
+Japan,2008,earn4,1,234,jgss2008,212
+Japan,2008,earn4,2,645,jgss2008,212
+Japan,2008,earn4,3,883,jgss2008,212
+Japan,2008,earn4,4,270,jgss2008,212
+Japan,2008,tradroles4,1,184,jgss2008,212
+Japan,2008,tradroles4,2,804,jgss2008,212
+Japan,2008,tradroles4,3,742,jgss2008,212
+Japan,2008,tradroles4,4,303,jgss2008,212
+Japan,2008,tradroles5,1,88.14848549198271,issp2008,212
+Japan,2008,tradroles5,2,287.48426518408,issp2008,212
+Japan,2008,tradroles5,3,306.5163245516672,issp2008,212
+Japan,2008,tradroles5,4,152.25647494069742,issp2008,212
+Japan,2008,tradroles5,5,347.58550529225005,issp2008,212
+Japan,2010,busiexecutive4,1,63.05227521103267,wvs_combo,212
+Japan,2010,busiexecutive4,2,540.4480732374229,wvs_combo,212
+Japan,2010,busiexecutive4,3,877.727704128185,wvs_combo,212
+Japan,2010,busiexecutive4,4,166.13774103224483,wvs_combo,212
+Japan,2010,earn4,1,731,jgss2010,212
+Japan,2010,earn4,2,1510,jgss2010,212
+Japan,2010,earn4,3,1875,jgss2010,212
+Japan,2010,earn4,4,819,jgss2010,212
+Japan,2010,education4,1,69.05725380255959,wvs_combo,212
+Japan,2010,education4,2,327.2713332382172,wvs_combo,212
+Japan,2010,education4,3,1127.9351454418068,wvs_combo,212
+Japan,2010,education4,4,245.20329248734927,wvs_combo,212
+Japan,2010,equalright2,1,57.84325995131896,pew2010,212
+Japan,2010,equalright2,2,551.2992627049412,pew2010,212
+Japan,2010,job3a,1,733.6082179315389,wvs_combo,212
+Japan,2010,job3a,2,1197.9932290096208,wvs_combo,212
+Japan,2010,job3a,3,349.28958807381593,wvs_combo,212
+Japan,2010,job4,1,72.39880675063094,pew2010,212
+Japan,2010,job4,2,181.46995523361514,pew2010,212
+Japan,2010,job4,3,227.03283341132985,pew2010,212
+Japan,2010,job4,4,134.20767004818862,pew2010,212
+Japan,2010,polileader4,1,91.07550863815831,wvs_combo,212
+Japan,2010,polileader4,2,585.4854126738749,wvs_combo,212
+Japan,2010,polileader4,3,777.6447276027363,wvs_combo,212
+Japan,2010,polileader4,4,134.11118854410125,wvs_combo,212
+Japan,2010,tradroles4,1,563,jgss2010,212
+Japan,2010,tradroles4,2,1855,jgss2010,212
+Japan,2010,tradroles4,3,1630,jgss2010,212
+Japan,2010,tradroles4,4,886,jgss2010,212
+Japan,2011,politics4,1,23.971129189466875,asianb3,212
+Japan,2011,politics4,2,93.472390605608,asianb3,212
+Japan,2011,politics4,3,525.4131218376048,asianb3,212
+Japan,2011,politics4,4,1223.1281179953235,asianb3,212
+Japan,2012,earn4,1,641,jgss2012,212
+Japan,2012,earn4,2,1412,jgss2012,212
+Japan,2012,earn4,3,1801,jgss2012,212
+Japan,2012,earn4,4,745,jgss2012,212
+Japan,2012,income5,1,147.5009072265038,issp2012,212
+Japan,2012,income5,2,120.40890385837045,issp2012,212
+Japan,2012,income5,3,379.2880471538669,issp2012,212
+Japan,2012,income5,4,295.0018144530076,issp2012,212
+Japan,2012,income5,5,246.83825290965942,issp2012,212
+Japan,2012,tradroles4,1,519,jgss2012,212
+Japan,2012,tradroles4,2,1635,jgss2012,212
+Japan,2012,tradroles4,3,1581,jgss2012,212
+Japan,2012,tradroles4,4,850,jgss2012,212
+Japan,2012,tradroles5,1,94.32030802239018,issp2012,212
+Japan,2012,tradroles5,2,196.66787630200508,issp2012,212
+Japan,2012,tradroles5,3,303.0290747102323,issp2012,212
+Japan,2012,tradroles5,4,158.53839008018775,issp2012,212
+Japan,2012,tradroles5,5,440.49590661520523,issp2012,212
+Japan,2015,equalright4b,1,12.09020733056967,pew2015,212
+Japan,2015,equalright4b,2,70.31731783253547,pew2015,212
+Japan,2015,equalright4b,3,297.5936148933074,pew2015,212
+Japan,2015,equalright4b,4,598.4093274335286,pew2015,212
+Japan,2018,tradroles5,1,67.04482814549463,issp2018,212
+Japan,2018,tradroles5,2,245.1639238156147,issp2018,212
+Japan,2018,tradroles5,3,410.2743214873552,issp2018,212
+Japan,2018,tradroles5,4,209.13983705087134,issp2018,212
+Japan,2018,tradroles5,5,485.3245022472373,issp2018,212
+Japan,2019,busiexecutive4,1,21.005916797469137,wvs7,212
+Japan,2019,busiexecutive4,2,230.06480301990007,wvs7,212
+Japan,2019,busiexecutive4,3,652.1837024738037,wvs7,212
+Japan,2019,busiexecutive4,4,208.05860447017048,wvs7,212
+Japan,2019,education4,1,16.00450803616696,wvs7,212
+Japan,2019,education4,2,153.04310809584655,wvs7,212
+Japan,2019,education4,3,686.1932820506585,wvs7,212
+Japan,2019,education4,4,311.08762495299527,wvs7,212
+Japan,2019,job5,1,84.02366718987655,wvs7,212
+Japan,2019,job5,2,255.07184682641093,wvs7,212
+Japan,2019,job5,3,601.1693331085214,wvs7,212
+Japan,2019,job5,4,305.08593443943266,wvs7,212
+Japan,2019,job5,5,63.01775039240741,wvs7,212
+Japan,2019,polileader4,1,30.008452567813052,wvs7,212
+Japan,2019,polileader4,2,275.0774818716196,wvs7,212
+Japan,2019,polileader4,3,561.158063018104,wvs7,212
+Japan,2019,polileader4,4,175.04930664557614,wvs7,212
 Hungary,1988,income5,1,11.00495611095448,issp1988,196
 Hungary,1988,income5,2,118.05316555387533,issp1988,196
 Hungary,1988,income5,3,134.06037444253639,issp1988,196
@@ -3046,174 +3312,6 @@ Jordan,2018,tradroles5,2,47,issp2018ext,169
 Jordan,2018,tradroles5,3,220,issp2018ext,169
 Jordan,2018,tradroles5,4,186,issp2018ext,169
 Jordan,2018,tradroles5,5,905,issp2018ext,169
-Japan,1990,income4,1,23.019084600853198,wvs_combo,168
-Japan,1990,income4,2,340.2821201865255,wvs_combo,168
-Japan,1990,income4,3,280.2323342712563,wvs_combo,168
-Japan,1990,income4,4,28.023233427125632,wvs_combo,168
-Japan,1990,job3a,1,310.25722722889094,wvs_combo,168
-Japan,1990,job3a,2,369.30618337890564,wvs_combo,168
-Japan,1990,job3a,3,235.19499483480442,wvs_combo,168
-Japan,1994,income5,1,196.1630546554587,issp1994,168
-Japan,1994,income5,2,103.68618603217104,issp1994,168
-Japan,1994,income5,3,249.40731234765465,issp1994,168
-Japan,1994,income5,4,230.72511666618237,issp1994,168
-Japan,1994,income5,5,425.01995175349384,issp1994,168
-Japan,1994,tradroles5,1,243.80265364321298,issp1994,168
-Japan,1994,tradroles5,2,234.46155580247682,issp1994,168
-Japan,1994,tradroles5,3,243.80265364321298,issp1994,168
-Japan,1994,tradroles5,4,148.52345566770444,issp1994,168
-Japan,1994,tradroles5,5,329.74075377798533,issp1994,168
-Japan,1995,education4,1,75.06223239408652,wvs_combo,168
-Japan,1995,education4,2,240.19914366107685,wvs_combo,168
-Japan,1995,education4,3,438.36343718146526,wvs_combo,168
-Japan,1995,education4,4,87.07218957714036,wvs_combo,168
-Japan,1995,income4,1,8.006638122035895,wvs_combo,168
-Japan,1995,income4,2,327.2713332382172,wvs_combo,168
-Japan,1995,income4,3,415.34435258061205,wvs_combo,168
-Japan,1995,income4,4,57.04729661950575,wvs_combo,168
-Japan,1995,job3a,1,333.27631182974415,wvs_combo,168
-Japan,1995,job3a,2,481.3991170874082,wvs_combo,168
-Japan,1995,job3a,3,195.16180422462494,wvs_combo,168
-Japan,1995,polileader4,1,79.06555145510447,wvs_combo,168
-Japan,1995,polileader4,2,375.3111619704326,wvs_combo,168
-Japan,1995,polileader4,3,269.223206853457,wvs_combo,168
-Japan,1995,polileader4,4,36.02987154916153,wvs_combo,168
-Japan,1998,tradroles5,1,151.96686208285078,issp1998,168
-Japan,1998,tradroles5,2,330.92783782515534,issp1998,168
-Japan,1998,tradroles5,3,361.92107943415783,issp1998,168
-Japan,1998,tradroles5,4,162.96446394410972,issp1998,168
-Japan,1998,tradroles5,5,336.9265297494784,issp1998,168
-Japan,2000,education4,1,41.03402037543396,wvs_combo,168
-Japan,2000,education4,2,202.16761258140633,wvs_combo,168
-Japan,2000,education4,3,655.5434962416889,wvs_combo,168
-Japan,2000,education4,4,159.13193267546342,wvs_combo,168
-Japan,2000,income4,1,14.011616713562816,wvs_combo,168
-Japan,2000,income4,2,389.3227786839954,wvs_combo,168
-Japan,2000,income4,3,487.4040956789351,wvs_combo,168
-Japan,2000,income4,4,41.03402037543396,wvs_combo,168
-Japan,2000,job3a,1,412.3418632848486,wvs_combo,168
-Japan,2000,job3a,2,615.5103056315094,wvs_combo,168
-Japan,2000,job3a,3,269.223206853457,wvs_combo,168
-Japan,2000,polileader4,1,51.04231802797883,wvs_combo,168
-Japan,2000,polileader4,2,365.3028643178877,wvs_combo,168
-Japan,2000,polileader4,3,461.38252178231846,wvs_combo,168
-Japan,2000,polileader4,4,82.06804075086792,wvs_combo,168
-Japan,2000,suffjob4,1,530,jgss,168
-Japan,2000,suffjob4,2,921,jgss,168
-Japan,2000,suffjob4,3,1010,jgss,168
-Japan,2000,suffjob4,4,393,jgss,168
-Japan,2001,suffjob4,1,487,jgss,168
-Japan,2001,suffjob4,2,946,jgss,168
-Japan,2001,suffjob4,3,891,jgss,168
-Japan,2001,suffjob4,4,409,jgss,168
-Japan,2002,income5,1,188.88679914252856,issp2002,168
-Japan,2002,income5,2,91.94489693710385,issp2002,168
-Japan,2002,income5,3,282.83049818696077,issp2002,168
-Japan,2002,income5,4,203.87781494749115,issp2002,168
-Japan,2002,income5,5,335.7987540311619,issp2002,168
-Japan,2002,suffjob4,1,540,jgss,168
-Japan,2002,suffjob4,2,935,jgss,168
-Japan,2002,suffjob4,3,1023,jgss,168
-Japan,2002,suffjob4,4,416,jgss,168
-Japan,2002,tradroles5,1,163.90177280092425,issp2002,168
-Japan,2002,tradroles5,2,180.89159071321518,issp2002,168
-Japan,2002,tradroles5,3,229.86224234275963,issp2002,168
-Japan,2002,tradroles5,4,128.9227359226782,issp2002,168
-Japan,2002,tradroles5,5,412.7526351633032,issp2002,168
-Japan,2003,suffjob4,1,704,jgss,168
-Japan,2003,suffjob4,2,1121,jgss,168
-Japan,2003,suffjob4,3,1219,jgss,168
-Japan,2003,suffjob4,4,574,jgss,168
-Japan,2003,supervise4,1,12.987831286254893,asianb1,168
-Japan,2003,supervise4,2,181.05976656103917,asianb1,168
-Japan,2003,supervise4,3,509.4049393405701,asianb1,168
-Japan,2003,supervise4,4,552.1478021186607,asianb1,168
-Japan,2005,busiexecutive4,1,38.0315310796705,wvs_combo,168
-Japan,2005,busiexecutive4,2,239.19831389582237,wvs_combo,168
-Japan,2005,busiexecutive4,3,406.3368846933217,wvs_combo,168
-Japan,2005,busiexecutive4,4,91.07550863815831,wvs_combo,168
-Japan,2005,education4,1,39.03236084492499,wvs_combo,168
-Japan,2005,education4,2,162.13442197122686,wvs_combo,168
-Japan,2005,education4,3,531.4406053501325,wvs_combo,168
-Japan,2005,education4,4,111.09210394324805,wvs_combo,168
-Japan,2005,job3a,1,282.2339938017653,wvs_combo,168
-Japan,2005,job3a,2,573.475455490821,wvs_combo,168
-Japan,2005,job3a,3,187.15516610258905,wvs_combo,168
-Japan,2005,polileader4,1,48.03982873221537,wvs_combo,168
-Japan,2005,polileader4,2,281.2331640365108,wvs_combo,168
-Japan,2005,polileader4,3,371.3078429094146,wvs_combo,168
-Japan,2005,polileader4,4,50.04148826272434,wvs_combo,168
-Japan,2006,imperial2,1,96.59749052870858,pew2006,168
-Japan,2006,imperial2,2,377.7124193422209,pew2006,168
-Japan,2007,poliequal3,1,120.0001156058745,pew2007,168
-Japan,2007,poliequal3,2,28.00002697470405,pew2007,168
-Japan,2007,poliequal3,3,590.0005683955496,pew2007,168
-Japan,2008,tradroles5,1,88.14848549198271,issp2008,168
-Japan,2008,tradroles5,2,287.48426518408,issp2008,168
-Japan,2008,tradroles5,3,306.5163245516672,issp2008,168
-Japan,2008,tradroles5,4,152.25647494069742,issp2008,168
-Japan,2008,tradroles5,5,347.58550529225005,issp2008,168
-Japan,2010,busiexecutive4,1,63.05227521103267,wvs_combo,168
-Japan,2010,busiexecutive4,2,540.4480732374229,wvs_combo,168
-Japan,2010,busiexecutive4,3,877.727704128185,wvs_combo,168
-Japan,2010,busiexecutive4,4,166.13774103224483,wvs_combo,168
-Japan,2010,education4,1,69.05725380255959,wvs_combo,168
-Japan,2010,education4,2,327.2713332382172,wvs_combo,168
-Japan,2010,education4,3,1127.9351454418068,wvs_combo,168
-Japan,2010,education4,4,245.20329248734927,wvs_combo,168
-Japan,2010,equalright2,1,57.84325995131896,pew2010,168
-Japan,2010,equalright2,2,551.2992627049412,pew2010,168
-Japan,2010,job3a,1,733.6082179315389,wvs_combo,168
-Japan,2010,job3a,2,1197.9932290096208,wvs_combo,168
-Japan,2010,job3a,3,349.28958807381593,wvs_combo,168
-Japan,2010,job4,1,72.39880675063094,pew2010,168
-Japan,2010,job4,2,181.46995523361514,pew2010,168
-Japan,2010,job4,3,227.03283341132985,pew2010,168
-Japan,2010,job4,4,134.20767004818862,pew2010,168
-Japan,2010,polileader4,1,91.07550863815831,wvs_combo,168
-Japan,2010,polileader4,2,585.4854126738749,wvs_combo,168
-Japan,2010,polileader4,3,777.6447276027363,wvs_combo,168
-Japan,2010,polileader4,4,134.11118854410125,wvs_combo,168
-Japan,2011,politics4,1,23.971129189466875,asianb3,168
-Japan,2011,politics4,2,93.472390605608,asianb3,168
-Japan,2011,politics4,3,525.4131218376048,asianb3,168
-Japan,2011,politics4,4,1223.1281179953235,asianb3,168
-Japan,2012,income5,1,147.5009072265038,issp2012,168
-Japan,2012,income5,2,120.40890385837045,issp2012,168
-Japan,2012,income5,3,379.2880471538669,issp2012,168
-Japan,2012,income5,4,295.0018144530076,issp2012,168
-Japan,2012,income5,5,246.83825290965942,issp2012,168
-Japan,2012,tradroles5,1,94.32030802239018,issp2012,168
-Japan,2012,tradroles5,2,196.66787630200508,issp2012,168
-Japan,2012,tradroles5,3,303.0290747102323,issp2012,168
-Japan,2012,tradroles5,4,158.53839008018775,issp2012,168
-Japan,2012,tradroles5,5,440.49590661520523,issp2012,168
-Japan,2015,equalright4b,1,12.09020733056967,pew2015,168
-Japan,2015,equalright4b,2,70.31731783253547,pew2015,168
-Japan,2015,equalright4b,3,297.5936148933074,pew2015,168
-Japan,2015,equalright4b,4,598.4093274335286,pew2015,168
-Japan,2018,tradroles5,1,67.04482814549463,issp2018,168
-Japan,2018,tradroles5,2,245.1639238156147,issp2018,168
-Japan,2018,tradroles5,3,410.2743214873552,issp2018,168
-Japan,2018,tradroles5,4,209.13983705087134,issp2018,168
-Japan,2018,tradroles5,5,485.3245022472373,issp2018,168
-Japan,2019,busiexecutive4,1,21.005916797469137,wvs7,168
-Japan,2019,busiexecutive4,2,230.06480301990007,wvs7,168
-Japan,2019,busiexecutive4,3,652.1837024738037,wvs7,168
-Japan,2019,busiexecutive4,4,208.05860447017048,wvs7,168
-Japan,2019,education4,1,16.00450803616696,wvs7,168
-Japan,2019,education4,2,153.04310809584655,wvs7,168
-Japan,2019,education4,3,686.1932820506585,wvs7,168
-Japan,2019,education4,4,311.08762495299527,wvs7,168
-Japan,2019,job5,1,84.02366718987655,wvs7,168
-Japan,2019,job5,2,255.07184682641093,wvs7,168
-Japan,2019,job5,3,601.1693331085214,wvs7,168
-Japan,2019,job5,4,305.08593443943266,wvs7,168
-Japan,2019,job5,5,63.01775039240741,wvs7,168
-Japan,2019,polileader4,1,30.008452567813052,wvs7,168
-Japan,2019,polileader4,2,275.0774818716196,wvs7,168
-Japan,2019,polileader4,3,561.158063018104,wvs7,168
-Japan,2019,polileader4,4,175.04930664557614,wvs7,168
 Brazil,1991,income4,1,62.78236825708227,wvs_combo,165
 Brazil,1991,income4,2,58.05582573626453,wvs_combo,165
 Brazil,1991,income4,3,261.39923928306484,wvs_combo,165
