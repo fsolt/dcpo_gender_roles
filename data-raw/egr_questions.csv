@@ -26,6 +26,11 @@ pew2010,decveil4,q69a,c(4:1),Women should have the right to decide if they wear 
 arabb2,divorce4a,q60114,c(4:1),Women and men should have equal rights in making the decision to divorce.,1 Strongly Agree / 4 Strongly Disagree
 usgss,earn2,fework,"c(2,1)",Do you approve or disapprove of a married woman earning money in business or industry if she has a husband capable of supporting her?,1 Approve / 2 Disapprove
 jgss,earn4,q4wwjbia,c(1:4),"If the husband has enough income, the wife should not have a job","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2005,earn4,q4wwjbia,c(1:4),"If the husband has enough income, the wife should not have a job","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2006,earn4,q4wwjbia,c(1:4),"If the husband has enough income, the wife should not have a job","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2008,earn4,q4wwjbia,c(1:4),"If the husband has enough income, the wife should not have a job","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2010,earn4,q4wwjbia,c(1:4),"If the husband has enough income, the wife should not have a job","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2012,earn4,q4wwjbia,c(1:4),"If the husband has enough income, the wife should not have a job","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
 nsss_combo,earn5,wearnok,c(5:1),I approve of a married woman earning money in business or industry even if she has a husband capable of supporting her,1 Agree Strongly / 5 Disagree Strongly
 nsss1989,earn5,wearnok,c(5:1),I approve of a married woman earning money in business or industry even if she has a husband capable of supporting her,1 Agree Strongly / 5 Disagree Strongly
 nsss1993,earn5,wearnok3,c(5:1),I approve of a married woman earning money in business or industry even if she has a husband capable of supporting her,1 Agree Strongly / 5 Disagree Strongly
@@ -91,6 +96,11 @@ wvs_combo,havingwork5,d073,c(5:1),"In your opinion, how important are each of th
 wvs4_swe,havingwork5,iv89,c(5:1),"In your opinion, how important are each of the following traits in a woman?  Woman having work outside home.",1 Very important / 5 Not very important
 allbus,help4,fr02,c(1:4),It's more important for a wife to help her husband with his career than to pursue her own career.,1 Strongly Agree / 4 Strongly Disagree
 jgss,help4,q4wwhphh,c(1:4),"For a wife, helping her husband's work is more important than having her own",1 Strongly Agree / 4 Strongly Disagree
+jgss2005,help4,q4wwhphh,c(1:4),"For a wife, helping her husband's work is more important than having her own",1 Strongly Agree / 4 Strongly Disagree
+jgss2006,help4,q4wwhphh,c(1:4),"For a wife, helping her husband's work is more important than having her own",1 Strongly Agree / 4 Strongly Disagree
+jgss2008,help4,q4wwhphh,c(1:4),"For a wife, helping her husband's work is more important than having her own",1 Strongly Agree / 4 Strongly Disagree
+jgss2010,help4,q4wwhphh,c(1:4),"For a wife, helping her husband's work is more important than having her own",1 Strongly Agree / 4 Strongly Disagree
+jgss2012,help4,q4wwhphh,c(1:4),"For a wife, helping her husband's work is more important than having her own",1 Strongly Agree / 4 Strongly Disagree
 usgss,help4,fehelp,c(1:4),It is more important for a wife to help her husband's career than to have one herself ,1 Strongly Agree / 4 Strongly Disagree
 kgss,help7,sexrole1,c(1:7),It is more important for a wife to help her husband's career than to pursue her own career,1 Strongly Agree / 7 Strongly Disagree
 arabb1,hijab4,q5046,c(4:1),"In Islam a woman should dress modestly, but Islam does not require that she wear a hijab.",1 Strongly Agree / 4 Strongly Disagree
@@ -131,6 +141,7 @@ arabb4,islamclass4,q6074,c(4:1),It is acceptable in Islam for male and female un
 evs_combo,job3a,c001,"c(1,3,2)","When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Disagree / 3 Neither
 wvs_combo,job3a,c001,"c(1,3,2)","When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Disagree / 3 Neither
 wvs4_swe,job3a,v78,c(1:3),"When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Neither / 3 Disagree
+jgss2006,job4,q7wwloff,c(1:4),"When the economy is bad, women should be fired before men","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
 pew2010,job4,q69c,c(1:4),"When jobs are scarce, men should have more right to a job than women.",1 Completely Agree / 4 Completely Disagree
 pew2012,job4,q86b,c(1:4),"When jobs are scarce, men should have more right to a job than women.",1 Completely Agree / 4 Completely Disagree
 pewrel2006_10nat,job4,q27a,c(1:4),"When jobs are scarce, men should have more right to a job than women",1 Completely Agree / 4 Completely Disagree
@@ -164,6 +175,11 @@ amb_combo,jobs7,gen1,c(7:1),"Changing the subject again, some say that when ther
 amb_us2012,jobs7,gen1,c(7:1),"Changing the subject again, some say that when there is not enough work, men should have a greater right to jobs than women.",1 Strongly Agree / 7 Strongly Disagree
 evs_combo,manchildren5,d020,c(1:5),A man has to have children in order to be fulfilled,1 Agree strongly / 5 disagree strongly
 jgss,marrihap4,q4wnmga,c(1:4),"After all, women's happiness lies in marriage",1 Agree strongly / 4 Strongly disagree
+jgss2005,marrihap4,q4wnmga,c(1:4),"After all, women's happiness lies in marriage",1 Agree strongly / 4 Strongly disagree
+jgss2006,marrihap4,q4wnmga,c(1:4),"After all, women's happiness lies in marriage",1 Agree strongly / 4 Strongly disagree
+jgss2008,marrihap4,q4wnmga,c(1:4),"After all, women's happiness lies in marriage",1 Agree strongly / 4 Strongly disagree
+jgss2010,marrihap4,q4wnmga,c(1:4),"After all, women's happiness lies in marriage",1 Agree strongly / 4 Strongly disagree
+jgss2012,marrihap4,q4wnmga,c(1:4),"After all, women's happiness lies in marriage",1 Agree strongly / 4 Strongly disagree
 issp1994,maternity5,v42,c(5:1),Working women should receive paid maternity leave when they have a baby,1 Strongly agree / 5 Strongly disagree
 issp2002,maternity5,v27,c(5:1),Working women should receive paid maternity leave when they have a baby,1 Strongly agree / 5 Strongly disagree
 lb2004,moneyprob4,p57n_c,c(1:4),"If the woman earns more than the man, she will almost certainly have problems",1 Agree strongly / 4 Strongly disagree
@@ -203,6 +219,12 @@ allbus,preschoolwork4,fr03a,c(1:4),A small child is bound to suffer if his or he
 allbus,preschoolwork4,fr03b,c(1:4),A small child is bound to suffer if his or her mother goes out to work.,1 Strongly Agree / 4 Strongly Disagree
 eb653,preschoolwork4,v647,c(1:4),A pre-school child is likely to suffer if his or her mother works,1 Totally agree/ 4 Totally disagree
 evs_combo,preschoolwork4,d061,c(1:4),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 4 Strongly Disagree
+jgss,preschoolwork4,q4jbmmcc,c(1:4),"When a mother has a job, it has a negative effect on her child before going to elementary school.","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2005,preschoolwork4,q4jbmmcc,c(1:4),"When a mother has a job, it has a negative effect on her child before going to elementary school.","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2006,preschoolwork4,q4jbmmcc,c(1:4),"When a mother has a job, it has a negative effect on her child before going to elementary school.","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2008,preschoolwork4,q4jbmmcc,c(1:4),"When a mother has a job, it has a negative effect on her child before going to elementary school.","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2010,preschoolwork4,q4jbmmcc,c(1:4),"When a mother has a job, it has a negative effect on her child before going to elementary school.","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2012,preschoolwork4,q4jbmmcc,c(1:4),"When a mother has a job, it has a negative effect on her child before going to elementary school.","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
 nsss1989,preschoolwork4,pressuf,c(1:5),A pre-school child is likely to suffer if his or her mother works. ,1 Strongly Agree / 4 Strongly Disagree
 wvs_combo,preschoolwork4,d061,c(1:4),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 4 Strongly Disagree
 wvs7,preschoolwork4,q28,c(1:4),A pre-school child is likely to suffer if his or her mother works,1 Strongly Agree / 4 Strongly Disagree
@@ -230,6 +252,11 @@ asianb1,supervise4,q070,c(1:4),A man will lose face if he works under a female s
 allbus,tradroles4,fr04a,c(1:4),It is much better for everyone concerned if the man goes out to work and the woman stays at home and looks after the house and children.,1 Strongly Agree / 4 Strongly Disagree
 allbus,tradroles4,fr04b,c(1:4),It is much better for everyone concerned if the man goes out to work and the woman stays at home and looks after the house and children.,1 Strongly Agree / 4 Strongly Disagree
 eb653,tradroles4,v650,c(1:4),"Ideally, the woman should stay at home to look after the children while the man goes out to work ",1 Totally agree/ 4 Totally disagree
+jgss2005,tradroles4,q4wwhhx,c(1:4),Husbands should work outside and wives should keep their homes,"1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2006,tradroles4,q4wwhhx,c(1:4),Husbands should work outside and wives should keep their homes,"1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2008,tradroles4,q4wwhhx,c(1:4),Husbands should work outside and wives should keep their homes,"1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2010,tradroles4,q4wwhhx,c(1:4),Husbands should work outside and wives should keep their homes,"1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
+jgss2012,tradroles4,q4wwhhx,c(1:4),Husbands should work outside and wives should keep their homes,"1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
 pgss,tradroles4,q7d,c(4:1),It is much better for the family when the man earns money and the woman looks after the house and the children.,1 Strongly Agree / 4 Strongly Disagree
 usgss,tradroles4,fefam,c(1:4),It is much better for everyone involved if the man is the achiever outside the home and the woman takes care of the home and family.,1 Strongly Agree / 4 Strongly Disagree
 lb1997,tradroles4a,nsp68b,c(1:4),It is preferable that a woman concentrates on the home and a man on his work                                                                                                                       (1997 LB: nps67b / 2000LB: p69st  / 2004 LB: p57st_a / 2009 LB: p67st_c),1 Strongly Agree / 4 Strongly Disagree
