@@ -38,7 +38,8 @@ header-includes:
 ```{r setup, include=FALSE}
 options(tinytex.verbose = TRUE)
 
-knitr::opts_chunk$set(cache = TRUE, echo = FALSE, message = FALSE, fig.width=6.5, fig.height=2.5, cache.extra = tools::md5sum(here::here("data", "dcpo_input_raw.csv")))
+knitr::opts_chunk$set(cache = TRUE, echo = FALSE, message = FALSE, warning = FALSE,
+                      fig.width=7, fig.height=2.5)
 
 # If `DCPOtools` is not yet installed:
 # remotes::install_github("fsolt/DCPOtools")
@@ -46,6 +47,9 @@ knitr::opts_chunk$set(cache = TRUE, echo = FALSE, message = FALSE, fig.width=6.5
 library(DCPOtools)
 library(DCPO)
 library(tidyverse)
+library(countrycode)
+library(patchwork)
+library(rsdmx)
 
 set.seed(324)
 ```
@@ -185,6 +189,12 @@ n_cyi <- dcpo_input_raw_public1 %>%
   distinct(country, year, item) %>% 
   nrow() %>% 
   scales::comma()
+
+back_to_numeric <- function(string_number) {
+  string_number %>% 
+    str_replace(",", "") %>% 
+    as.numeric()
+}
 ```
 
 We classified the available survey items on gender egalitarian attitudes into four categories.  
@@ -196,17 +206,20 @@ The fourth and final category includes respondents' views on various forms of wo
 To avoid any potential multidimensionality in the Public Gender Egalitarianism index, we include only survey items corresponding to the first category, gender egalitarianism in the public sphere.^[Items that fell into both the first category and another, such as "A man's job is to earn money; a woman's job is to look after the home and family," which by explicitly counterposing the traditional gender roles suggests women unlike men should not earn money in the public sphere (while also suggesting that men unlike women should not look after home and family in the private sphere) were included in the PGE index.
 The complete list of gender egalitarianism items is included in the Appendix.]
 Thus, the "Public" in the name of the index does double duty, referring both to the fact that it measures the _public's_ attitudes on gender equality and to specifically its attitudes on this _public_ aspect of gender egalitarianism.
-In all, we identified `r n_items` of these survey items that were asked in no fewer than five country-years; these items were drawn from `r n_surveys` different survey datasets.
+In all, we identified `r n_items` of these survey items that were asked in no fewer than five country-years in countries surveyed at least twice; these items were drawn from `r n_surveys` different survey datasets.
 We describe these source data in detail in the next section.
 
 
 # The Source Data on Gender Egalitarian Attitudes
 
 Together, these survey items were asked in `r n_countries` different countries in at least two time points over `r n_years` years, `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
-Considering that observations for every year in each country surveyed would number `r total_cy` and so a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations, the available data is clearly very, very sparse.
+Considering that observations for every year in each country surveyed would number `r total_cy` and so a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations.
+Viewed from this perspective of complete data, the available data can be seen to be very, very sparse.
+From a more optimistic standpoint, we note there there are `r n_cy` country-years in which we have at least _some_ information about the public gender egalitarianism of the population, that is, some `r {back_to_numeric(n_cy)/back_to_numeric(spanned_cy) * 100} %>% round()`% of the `r spanned_cy` country-years spanned by the data we collected.
+But there is no gainsaying that the many different survey items employed renders these data difficult to use together.
 
-```{r obs_by_item, fig.height=3, fig.cap = "Items with the Most Observations in the Source Data \\label{items_by_obs}"}
-dcpo_input_raw_public1 %>%
+```{r item_and_country_plots, fig.height=3, fig.cap = "Items and Countries with the Most Observations in the Source Data \\label{item_country_plots}"}
+items_plot <- dcpo_input_raw_public1 %>%
   distinct(country, year, item) %>%
   count(item) %>%
   arrange(desc(n)) %>% 
@@ -215,25 +228,16 @@ dcpo_input_raw_public1 %>%
   geom_bar(stat = "identity") +
   theme_bw() +
   theme(axis.title.x = element_blank(),
-        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95)) +
-  ylab("Country-Years Observed")
+        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  ylab("Country-Years Observed") +
+  ggtitle("Items")
 
 polileader4_cy <- dcpo_input_raw_public1 %>% filter(item == "polileader4") %>% distinct(country, year) %>% nrow()
 
 polileader4_surveys <- dcpo_input_raw_public1 %>% filter(item == "polileader4") %>% distinct(survey) %>% pull(survey)
-```
 
-Figure&nbsp;\ref{items_by_obs} displays in how many country-years each of the twelve most-commonly asked items are available.
-The `polileader4` item, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do," was the most frequently asked question in the data we collected.
-Employed by the Americas Barometer, the Arab Barometer, the Eurobarometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years.
-That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the `r spanned_cy` country-years spanned by our data---and remember, `polileader4` is the _most common_ survey item---again underscores just how sparse the available public opinion data is on this topic.
-
-Which countries are the most data-rich?
-Figure&nbsp;\ref{countries_by_obs} below shows the dozen countries with the highest count of country-year-item observations.
-
-
-```{r obs_by_country, fig.cap = "Countries with the Most Observations in the Source Data \\label{countries_by_obs}"}
-dcpo_input_raw_public1 %>%
+countries_plot <- dcpo_input_raw_public1 %>%
   mutate(country = if_else(stringr::str_detect(country, "United"),
                            stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
                            country)) %>% 
@@ -245,21 +249,58 @@ dcpo_input_raw_public1 %>%
   geom_bar(stat = "identity") +
   theme_bw() +
   theme(axis.title.x = element_blank(),
-        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95)) +
-  ylab("Year-Items Observed")
+        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  ylab("Year-Items Observed") +
+  ggtitle("Countries")
 
-# uk_nas <- {1 + max(swiid_source$year) - min(swiid_source$year) - 
-# {swiid_source %>% filter(country == "United Kingdom") %>% pull(year) %>% unique() %>% length()}} %>%
-# wordify_numeral()
-# 
-# iran_obs <- swiid_source %>% filter(country == "Iran") %>% pull(year) %>% unique() %>% length()
-# 
-# med_cy <- swiid_source %>% count(country, year) %>% count(country, name = "nn") %>% pull(nn) %>% median() %>% wordify_numeral()
+us_obs <- dcpo_input_raw_public1 %>% 
+  distinct(country, year, item) %>%
+  count(country) %>%
+  filter(country == "United States") %>%
+  pull(n)
+
+others <- dcpo_input_raw_public1 %>%
+  distinct(country, year, item) %>%
+  count(country) %>%
+  arrange(desc(n)) %>%
+  slice(2:5) %>%
+  pull(country) %>% 
+  paste(collapse = ", ") %>% 
+  str_replace(", (\\w+)$", ", and \\1")
+
+data_poorest <- dcpo_input_raw_public1 %>%
+  distinct(country, year, item) %>%
+  count(country) %>%
+  arrange(n) %>%
+  filter(n == 2) %>%
+  pull(country) %>% 
+  paste(collapse = ", ") %>% 
+  str_replace(", (\\w+)$", ", and \\1")
+
+wordify_numeral <- function(x) setNames(c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", " seventeen", "eighteen", "nineteen"), 1:19)[x]
+
+n_data_poorest <- {data_poorest %>%
+    str_split(",") %>% 
+    first()} %>% 
+  length() %>% 
+  wordify_numeral()
+
+items_plot + countries_plot
 ```
 
-```{r years_by_country, fig.cap="Country-Year Coverage in the Source Data \\label{countries_by_years}"}
-library(patchwork)
+The left panel of Figure&nbsp;\ref{item_country_plots} displays in how many country-years each of the twelve most-commonly asked survey items are available.
+The `polileader4` item, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do," was the most frequently asked question in the data we collected.
+Employed by the Americas Barometer, the Arab Barometer, the Eurobarometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years.
+That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the country-years spanned by our data---and remember, `polileader4` is the _most common_ survey item---again underscores just how sparse and incomparable the available public opinion data is on this topic.
 
+Which countries are the most data-rich?
+The right panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
+The United States, with `r us_obs` observations, is far and away the best represented country in the source data, followed by `r others`.
+At the other end of the spectrum, `r n_data_poorest` countries---`r data_poorest`---have only the minimum two observations required to be included in the source dataset at all.
+
+
+```{r years_by_country, fig.cap="Country-Year Coverage in the Source Data \\label{countries_by_years}"}
 cby_plot <- dcpo_input_raw_public1 %>%
   mutate(country = if_else(stringr::str_detect(country, "United"),
                            stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
@@ -273,8 +314,10 @@ cby_plot <- dcpo_input_raw_public1 %>%
   geom_bar(stat = "identity") +
   theme_bw() +
   theme(axis.title.x = element_blank(),
-        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95)) +
-  ylab("Years Observed")
+        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  ylab("Years Observed") +
+  ggtitle("Countries")
 
 
 ybc_plot <- dcpo_input_raw_public1 %>%
@@ -284,8 +327,10 @@ ybc_plot <- dcpo_input_raw_public1 %>%
   geom_bar(stat = "identity") +
   theme_bw() +
   theme(axis.title.x = element_blank(),
-        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95)) +
-  ylab("Countries Observed")
+        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  ylab("Countries Observed") +
+  ggtitle("Years")
 
 cby_plot + ybc_plot
 ```
@@ -303,7 +348,7 @@ save(dcpo_input_public, file = here::here("data", "dcpo_input_public.rda"))
 The DCPO model is estimated using the `DCPO` package for R [@Solt2020a], which is written in the Stan probabilistic programming language [@StanDevTeam2019a; @StanDevTeam2019b].
 
 ```{r dcpo, eval=FALSE}
-iter <- 3000
+iter <- 4000
 
 dcpo_input <- dcpo_input_public
 
@@ -312,6 +357,10 @@ dcpo_output <- dcpo(dcpo_input,
                     chains = 4,
                     thin = iter/500, # this yields 250 draws per chain, 1000 draws total
                     pars = c("sd_delta","sd_theta_evolve", "sd_sigma_evolve", "sigma","phi","beta","alpha","delta","theta","y_r_pred","log_lik"))
+```
+
+```{r dcpo_results}
+load(here::here("data", "polileader4_2_4k_11-27.rda"))
 
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 
@@ -330,7 +379,7 @@ dcpo_y_r_pred <- rstan::extract(dcpo_output, pars = "y_r_pred")
 save(dcpo_input, dcpo_y_r_pred, file = here::here("data", "dcpo_y_r_pred.rda"))
 ```
 
-```{r cs_plot, fig.cap="Public Gender Egalitarianism, Most Recent Available Year \\label{cs_mry}", fig.height=8, warning=FALSE}
+```{r cs_plot, fig.cap="PGE Mean and Polarization Scores, Most Recent Available Year \\label{cs_mry}", fig.height=8}
 load(here::here("data", "dcpo_input.rda"))
 load(here::here("data", "dcpo_output.rda"))
 
@@ -398,14 +447,569 @@ p1a + p1b
 ```
 
 # Validating Public Gender Egalitarianism
+We turn now to the validity of the PGE Mean scores.
+Like @Caughey2019 [684-685], we provide evidence of our new measure's validity through tests of both convergent validation and construct validation.
+
+```{r extract_res}
+dat <- dcpo_input$data
+
+qcodes <- dat %>%
+  dplyr::group_by(question) %>%
+  dplyr::summarize(qq = first(qq) %>%
+                     as.numeric())
+
+kcodes <- dat %>%
+  dplyr::group_by(country) %>%
+  dplyr::summarize(kk = first(kk) %>%
+                     as.numeric())
+
+tcodes <- dat %>%
+  dplyr::group_by(year) %>%
+  dplyr::summarize(tt = first(tt))
+
+ktcodes <- dat %>%
+  dplyr::group_by(country) %>%
+  dplyr::summarize(first_yr = min(year),
+                   last_yr = max(year))
+
+theta_res <- rstan::extract(dcpo_output, pars = "theta") %>%
+        dplyr::first() %>%
+        purrr::array_branch(1) %>%
+        purrr::map(function(x) {
+          tibble::as_tibble(x) %>%
+          dplyr::mutate(tt = row_number()) %>%
+            dplyr::left_join(tcodes, by = "tt") %>%
+            tidyr::pivot_longer(cols = starts_with("V"),
+                                names_to = "kk",
+                                values_to = "pge_mean") %>%
+            dplyr::mutate(year = if_else(tt == 1,
+                                         year, min(year, na.rm = TRUE) + tt - 1),
+                          kk = str_replace(kk, "V", "") %>% as.numeric()) %>%
+            dplyr::left_join(kcodes, by = "kk") %>%
+            dplyr::left_join(ktcodes, by = "country") %>%
+            dplyr::filter(year >= first_yr & year <= last_yr) %>%
+            dplyr::arrange(kk, tt) %>%
+            dplyr::select(country, year, pge_mean)
+        })
+
+sigma_res <- rstan::extract(dcpo_output, pars = "sigma") %>%
+        dplyr::first() %>%
+        purrr::array_branch(1) %>%
+        purrr::map(function(x) {
+          tibble::as_tibble(x) %>%
+          dplyr::mutate(tt = row_number()) %>%
+            dplyr::left_join(tcodes, by = "tt") %>%
+            tidyr::pivot_longer(cols = starts_with("V"),
+                                names_to = "kk",
+                                values_to = "pge_polarization") %>%
+            dplyr::mutate(year = if_else(tt == 1,
+                                         year, min(year, na.rm = TRUE) + tt - 1),
+                          kk = str_replace(kk, "V", "") %>% as.numeric()) %>%
+            dplyr::left_join(kcodes, by = "kk") %>%
+            dplyr::left_join(ktcodes, by = "country") %>%
+            dplyr::filter(year >= first_yr & year <= last_yr) %>%
+            dplyr::arrange(kk, tt) %>%
+            dplyr::select(country, year, pge_polarization)
+        })
+
+pge <- map2(theta_res, sigma_res, function(theta, sigma) {
+  left_join(theta, sigma, by = c("country", "year"))
+})
+
+save(pge, file = here::here("data", "pge.rda"))
+```
+
+```{r convergent, fig.cap="Convergent Validation: Correlations Between PGE Mean Scores and Individual Public Gender Equality Survey Items \\label{conv_plot}", fig.height=4}
+
+internal_dat <- dcpo_input$data %>% 
+  filter(item == "polileader4 3 or higher") %>% 
+  mutate(prop = 1 - y_r/n_r,
+         se = sqrt((prop*(1-prop))/n),
+         prop_90 = prop + qnorm(.9)*se,
+         prop_10 = prop - qnorm(.9)*se) %>% 
+  left_join(theta_results %>% select(-kk, -tt), by = c("country", "year"))
+
+pge_polileader <- pge %>% 
+  map(. %>% right_join(dcpo_input$data %>% 
+                         filter(item == "polileader4 3 or higher") %>% 
+                         rowwise() %>% 
+                         transmute(country = country,
+                                   year = year,
+                                   prop = 1 - y_r/n_r,
+                                   se = sqrt((prop*(1-prop))/n),
+                                   polileader = rnorm(1, mean = prop, sd = se)), 
+                       by = c("country", "year")))
+
+internal_cor <- map(pge_polileader, function(x) with(x, cor(pge_mean, polileader))) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2) %>% 
+  paste0("R = ", .)
+
+internal_label <- tibble(mean = .78, prop = .99, label = internal_cor)
+
+internal_plot <- internal_dat %>% 
+  ggplot(aes(x = mean,
+             y = prop * 100)) +
+  geom_segment(aes(x = `10%`, xend = `90%`,
+                   y = prop * 100, yend = prop * 100),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_segment(aes(x = mean, xend = mean,
+                   y = prop_90 * 100, yend = prop_10 * 100),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_smooth(method = 'lm', se = FALSE) +
+  theme_bw() +
+  theme(legend.position="none",
+        axis.text  = element_text(size=8),
+        axis.title = element_text(size=9),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  coord_cartesian(ylim=c(0,100)) +
+  scale_x_continuous(breaks=seq(.1, .9, 0.2)) +
+  labs(x = "PGE Mean Score", 
+       y = '% Agreeing That "On the Whole, Men\nMake Better Political Leaders than Women Do"') + 
+  ggtitle("All Country-Years") +
+  geom_label(data = internal_label, aes(label = label), size = 3)
+
+## Cross-sectional
+internal_poliequal <- dcpo_input$data %>% 
+  filter(item == "poliequal3 2 or higher" & year == 2007) %>% 
+  mutate(iso2c = countrycode::countrycode(country,
+                             origin = "country.name",
+                             destination = "iso2c"),
+         prop = 1 - y_r/n_r,
+         se = sqrt((prop*(1-prop))/n),
+         prop_90 = prop + qnorm(.9)*se,
+         prop_10 = prop - qnorm(.9)*se) %>% 
+  left_join(theta_results %>% select(-kk, -tt), by = c("country", "year"))
+
+pge_poliequal <- pge %>% 
+  map(. %>% right_join(dcpo_input$data %>% 
+                         filter(item == "poliequal3 2 or higher" & year == 2007) %>% 
+                         rowwise() %>% 
+                         transmute(country = country,
+                                   year = year,
+                                   prop = 1 - y_r/n_r,
+                                   se = sqrt((prop*(1-prop))/n),
+                                   poliequal = rnorm(1, mean = prop, sd = se)), 
+                       by = c("country", "year")))
+
+internal_cs_cor <- map(pge_poliequal, 
+                       function(x) with(x, cor(pge_mean, poliequal))) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2) %>% 
+  paste0("R = ", .)
+
+internal_cs_label <- tibble(mean = .7, prop = .77, label = internal_cs_cor)
+
+internal_cs_plot <- internal_poliequal %>% 
+  ggplot(aes(x = mean,
+             y = prop * 100)) +
+  geom_segment(aes(x = `10%`, xend = `90%`,
+                   y = prop * 100, yend = prop * 100),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_segment(aes(x = mean, xend = mean,
+                   y = prop_90 * 100, yend = prop_10 * 100),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_text(aes(label = iso2c), size = 2) +
+  geom_smooth(method = 'lm', se = FALSE) +
+  theme_bw() +
+  theme(legend.position="none",
+        axis.text  = element_text(size=8),
+        axis.title = element_text(size=9),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  labs(x = "PGE Mean Score", 
+       y = '% Opining That "Men Generally Make\nBetter Political Leaders Than Women"') + 
+  ggtitle("Pew Global Spring 2007") +
+  geom_label(data = internal_cs_label, aes(label = label), size = 3)
+
+# Longitudinal
+internal_us <- dcpo_input$data %>% 
+  filter(item == "emopoli2 2 or higher") %>% 
+  mutate(prop = y_r/n_r,
+         se = sqrt((prop*(1-prop))/n),
+         prop_90 = prop + qnorm(.9)*se,
+         prop_10 = prop - qnorm(.9)*se) %>% 
+  right_join(theta_results %>% 
+               select(-kk, -tt) %>%
+               filter(country == "United States"),
+             by = c("country", "year"))
+
+pge_emopoli <- pge %>% 
+  map(. %>% right_join(dcpo_input$data %>% 
+                         filter(item == "emopoli2 2 or higher") %>% 
+                         rowwise() %>% 
+                         transmute(country = country,
+                                   year = year,
+                                   prop = y_r/n_r,
+                                   se = sqrt((prop*(1-prop))/n),
+                                   emopoli = rnorm(1, mean = prop, sd = se)), 
+                       by = c("country", "year")))
+
+internal_us_cor <- map(pge_emopoli, function(x) with(x, cor(pge_mean, emopoli))) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2) %>% 
+  paste0("R = ", .)
+
+internal_us_label <- tibble(year = 1980, mean = .82, label = internal_us_cor)
+
+internal_us_plot <- internal_us %>% 
+  ggplot(aes(x = year,
+             y = mean)) +
+  geom_line() +
+  geom_ribbon(aes(ymin = `10%`,
+                  ymax = `90%`,
+                  linetype = NA),
+               alpha = .2) +
+  geom_point(aes(y = prop),
+             na.rm = TRUE) +
+  geom_path(aes(y = prop),
+            linetype = 3,
+            na.rm = TRUE,
+            alpha = .7) +
+  geom_segment(aes(x = year, xend = year,
+                   y = prop_90, yend = prop_10),
+               na.rm = TRUE,
+               alpha = .2) +
+  annotate("text", x = 1979, y = .72, size = 2,
+           label = 'emopoli2,\nU.S. GSS') +
+  annotate("text", x = 2012, y = .60, size = 2,
+           label = "PGE Mean") +
+  labs(x = "Year", 
+       y = "Score") +
+  theme_bw() +
+  theme(legend.position="none",
+        axis.text  = element_text(size=8),
+        axis.title = element_text(size=9),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  ggtitle("United States") +
+  geom_label(data = internal_us_label, aes(label = label), size = 3)
+
+internal_plot + internal_cs_plot + internal_us_plot
+```
+
+Figure&nbsp;\ref{conv_plot} displays our tests of convergent validation.
+Convergent validation refers to demonstrating that a measure is empirically associated with alternative indicators of the same concept [@Adcock2001, 540].
+Here, we compare PGE Mean scores to responses to individual survey items that were included in the source data, that is, we provide an "internal" validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
+In the left panel, we examine the `polileader4` question mentioned above, the most common item in the source data across all country-years, combining for this purpose all those who agreed or strongly agreed that "on the whole, men make better political leaders than women."
+Then, in the center panel, we look at the question that provides most data-rich cross-section: the `poliequal3` item in Pew Global's Spring 2007 survey that asked whether respondents felt "men generally make better political leaders than women," vice versa, or whether "in general, women and men make equally good political leaders."
+Finally, in the right panel, to evaluate how well the PGE Mean score captures change over time, we focus on the `emopoli2` survey item, the item with the largest number of observations for a single country.
+The U.S. General Social Survey asked this question 25 times from 1972 to 2016.
+It asks whether respondents agreed or disagreed that "most men are better suited emotionally for politics than are most women"; to facilitate visual comparison of the longitudinal relationship, we plot the estimated population proportion that disagreed with the statement.
+In every case, the correlations---estimated taking into account the uncertainty in the measures^[The uncertainty in the PGE Mean score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the `polileader4` question, but failing to account for this uncertainty would overstate the correlation with the Pew `poliequal3` item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS `emopoli2` item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`.
+We take up the issue of the importance of taking uncertainty into account when working with the PGE data in a subsequent section.]---are in the expected direction and very strong.
+
+```{r construct_validation_survey, fig.cap="Construct Validation: Correlations Between PGE Mean Scores and Individual 'Balancing' Gender Equality Survey Items \\label{surv_const_plot}", fig.height=4}
+dcpo_input_balance <- DCPOtools::format_dcpo(dcpo_input_raw_balance1,
+                                            scale_q = "familywoman4",
+                                            scale_cp = 2)
+
+wantch <- dcpo_input_balance$data %>% 
+  filter(item == "wantch4 3 or higher") %>% 
+  mutate(iso2c = countrycode::countrycode(country,
+                             origin = "country.name",
+                             destination = "iso2c"),
+         prop = 1 - y_r/n_r,
+         se = sqrt((prop*(1-prop))/n),
+         prop_90 = prop + qnorm(.9)*se,
+         prop_10 = prop - qnorm(.9)*se) %>% 
+  left_join(theta_results %>% select(-kk, -tt), by = c("country", "year"))
+
+pge_wantch <- pge %>% 
+  map(. %>% right_join(wantch %>% 
+                         rowwise() %>% 
+                         transmute(country = country,
+                                   year = year,
+                                   prop = 1 - y_r/n_r,
+                                   se = sqrt((prop*(1-prop))/n),
+                                   wantch = rnorm(1, mean = prop, sd = se)), 
+                       by = c("country", "year")))
+
+wantch_cor <- map(pge_wantch, function(x) 
+  with(x, cor(pge_mean, wantch))) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2) %>% 
+  paste0("R = ", .)
+
+wantch_label <- tibble(mean = .76, prop = .97, label = wantch_cor)
+
+wantch_plot <- wantch %>% 
+  ggplot(aes(x = mean,
+             y = prop * 100)) +
+  geom_segment(aes(x = `10%`, xend = `90%`,
+                   y = prop * 100, yend = prop * 100),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_segment(aes(x = mean, xend = mean,
+                   y = prop_90 * 100, yend = prop_10 * 100),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_smooth(method = 'lm', se = FALSE) +
+  theme_bw() +
+  theme(legend.position="none",
+        axis.text  = element_text(size=8),
+        axis.title = element_text(size=9),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  coord_cartesian(ylim=c(0,100)) +
+  labs(x = "PGE Mean Score", 
+       y = '% Agreeing That "A Job is Alright But What\nMost Women Really Want is a Home and Children"') + 
+  ggtitle("All Country-Years") +
+  geom_label(data = wantch_label, aes(label = label), size = 3)
+
+# cross-section
+familywoman <- dcpo_input_balance$data %>% 
+  filter(item == "familywoman4 3 or higher") %>% 
+  mutate(iso2c = countrycode::countrycode(country,
+                             origin = "country.name",
+                             destination = "iso2c"),
+         prop = 1 - y_r/n_r,
+         se = sqrt((prop*(1-prop))/n),
+         prop_90 = prop + qnorm(.9)*se,
+         prop_10 = prop - qnorm(.9)*se) %>% 
+  left_join(theta_results %>% select(-kk, -tt), by = c("country", "year"))
+
+pge_familywoman <- pge %>% 
+  map(. %>% right_join(familywoman %>% 
+                         rowwise() %>% 
+                         transmute(country = country,
+                                   year = year,
+                                   prop = 1 - y_r/n_r,
+                                   se = sqrt((prop*(1-prop))/n),
+                                   familywoman = rnorm(1, mean = prop, sd = se)), 
+                       by = c("country", "year")))
+
+familywoman_cor <- map(pge_familywoman, function(x) 
+  with(x, cor(pge_mean, familywoman))) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2) %>% 
+  paste0("R = ", .)
+
+familywoman_label <- tibble(mean = .8, prop = .97, label = familywoman_cor)
+
+familywoman_plot <- familywoman %>% 
+  ggplot(aes(x = mean,
+             y = prop * 100)) +
+  geom_segment(aes(x = `10%`, xend = `90%`,
+                   y = prop * 100, yend = prop * 100),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_segment(aes(x = mean, xend = mean,
+                   y = prop_90 * 100, yend = prop_10 * 100),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_text(aes(label = iso2c), size = 2) +
+  geom_smooth(method = 'lm', se = FALSE) +
+  theme_bw() +
+  theme(legend.position="none",
+        axis.text  = element_text(size=8),
+        axis.title = element_text(size=9),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  coord_cartesian(ylim=c(0,100)) +
+  labs(x = "PGE Mean Score", 
+       y = '% Agreeing That "The Most Important Role of a\nWoman is to Take Care of Her Home and Family"') + 
+  ggtitle("Eurobarometer 87.4") +
+  geom_label(data = familywoman_label, aes(label = label), size = 3)
+
+# time series
+psw_de <- dcpo_input_balance$data %>% 
+  filter(item == "preschoolwork4 3 or higher" & country == "Germany") %>% 
+  mutate(prop = y_r/n_r,
+         se = sqrt((prop*(1-prop))/n),
+         prop_90 = prop + qnorm(.9)*se,
+         prop_10 = prop - qnorm(.9)*se) %>% 
+  right_join(theta_results %>% 
+               select(-kk, -tt) %>%
+               filter(country == "Germany"),
+             by = c("country", "year"))
+
+pge_de <- pge %>% 
+  map(. %>% right_join(psw_de %>% 
+                         rowwise() %>% 
+                         transmute(country = country,
+                                   year = year,
+                                   prop = y_r/n_r,
+                                   se = sqrt((prop*(1-prop))/n),
+                                   var = rnorm(1, mean = prop, sd = se)), 
+                       by = c("country", "year")))
+
+psw_de_cor <- map(pge_de, function(x) 
+  with(x, cor(pge_mean, var, use = "pairwise.complete.obs"))) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2) %>% 
+  paste0("R = ", .)
+
+psw_de_label <- tibble(year = 1990, mean = .8, label = psw_de_cor)
+
+psw_de_plot <- psw_de %>% 
+  ggplot(aes(x = year,
+             y = mean)) +
+  geom_line() +
+  geom_ribbon(aes(ymin = `10%`,
+                  ymax = `90%`,
+                  linetype = NA),
+               alpha = .2) +
+  geom_point(aes(y = prop),
+             na.rm = TRUE) +
+  geom_path(aes(y = prop),
+            linetype = 3,
+            na.rm = TRUE,
+            alpha = .7) +
+  geom_segment(aes(x = year, xend = year,
+                   y = prop_90, yend = prop_10),
+               na.rm = TRUE,
+               alpha = .2) +
+  annotate("text", x = 2010, y = .30, size = 2,
+           label = 'preschoolwork4,\nALLBUS, EVS, WVS') +
+  annotate("text", x = 1986, y = .66, size = 2,
+           label = "PGE Mean") +
+  labs(x = "Year", 
+       y = "Score") +
+  theme_bw() +
+  theme(legend.position="none",
+        axis.text  = element_text(size=8),
+        axis.title = element_text(size=9),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  ggtitle("Germany") +
+  geom_label(data = psw_de_label, aes(label = label), size = 3)
+
+
+wantch_plot + familywoman_plot + psw_de_plot
+```
+
+In Figure&nbsp;\ref{surv_const_plot}, we move on to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
+For purposes of construct validation, we turn first to individual survey items from our third category of gender egalitarianism, that is, questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
+Although many of the items in this category are on their face at best only very tangentially related to public gender egalitarianism, others are plausibly causally related.
+Consider `wantch4`, an item asked by the World Values Survey and the European Values Survey, which asked respondents the extent to which they agree with the statement, "a job is alright but what most women really want is a home and children."
+As agreement suggests that women do not truly care about opportunities in the workplace, those who do should be expected to be less likely to believe women should enjoy equal access to such opportunities which men implicitly value more.
+Or, similarly, `familywoman4`, an item from Eurobarometer 87.4, which asked respondents the extent of their agreement with the statement, "the most important role of a woman is to take care of her home and family." 
+Though not directly implying that women should not enjoy equal opportunities in education, politics, and the workplace, it may still be fairly surmised that those holding this position would consequently consider that, since opportunities beyond the home are of secondary importance for women, men should have priority.^[One might argue that these two questions, particularly the latter, rather than tapping a distinct concept causally related to public gender egalitarianism are in fact tapping aspects of public gender egalitarianism itself.
+Indeed, the `tradroles` family of questions, which couple the `familywoman` stem with the idea that the most important role of a man is to earn money---and so more explicitly indicates that the public sphere is appropriately segregated by gender---is included among the items used to estimate the PGE data.
+If these two questions are thought of as indicators of public gender egalitarianism, then, because they are not included in the PGE source data, these plots constitute not construct validation but rather "external" convergent validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
+In either case, they provide evidence of the validity of the PGE Mean scores.]
+In a slightly different vein, 
+With regard to both the internal and external items, the correlations are negative (as expected given the polarity of these questions) and are very strong.
+
+
+```{r cons_valid_plot, fig.cap="Construct Validation: Correlations Between PGE Mean Scores and Indicators of Workplace Gender Equality \\label{construct_plot}", fig.height=4}
+
+# https://genderstats.un.org/#/downloads
+lfpr_un <- read_csv(here::here("data", "3b - Labour force participation rate for persons aged 15+  by sex_data.csv"), skip = 1, col_types = "ccdcdcdccccccdddcc") %>% 
+  select(Country, Year, Sex, Value) %>% 
+  pivot_wider(names_from = Sex,
+              values_from = Value) %>% 
+  transmute(country = countrycode::countrycode(Country, 
+                                               origin = "country.name",
+                                               destination = "country.name"),
+            iso2c = countrycode::countrycode(country,
+                                             origin = "country.name",
+                                             destination = "iso2c"),
+            year = Year,
+            flfpr = Female,
+            f2m_ratio = round(Female/Male*100, 2)) %>% 
+  filter(!is.na(country) & !is.na(flfpr)) %>% 
+  left_join(theta_results, by = c("country", "year")) %>% 
+  filter(!is.na(mean))
+
+pge_lfpr <- pge %>% 
+  map(. %>% right_join(lfpr_un, 
+                       by = c("country", "year")))
+
+lfpr_cor <- map(pge_lfpr, function(x) {
+  x %>% 
+    filter(year == 2016) %>% 
+    with(cor(pge_mean, f2m_ratio))
+  }) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2) %>% 
+  paste0("R = ", .)
+
+lfpr_label <- tibble(mean = .15, f2m_ratio = 90, label = lfpr_cor)
+
+# https://stats.oecd.org/index.aspx?queryid=54753
+directors <- rsdmx::readSDMX("https://stats.oecd.org/restsdmx/sdmx.ashx/GetData/GENDER_EMP/.EMP11.WOMEN.TOTAL.2017/all?") %>% 
+  as_tibble() %>% 
+  transmute(country = countrycode::countrycode(COU, "iso3c", "country.name"),
+            iso2c = countrycode::countrycode(country,
+                                          origin = "country.name",
+                                          destination = "iso2c"),
+            year = as.numeric(TIME),
+            directors = obsValue) %>% 
+  filter(!is.na(country)) %>% 
+  inner_join(theta_results, by = c("country", "year"))
+
+directors_cor <- map(pge, function(x) {
+  x %>% 
+    inner_join(directors %>% select(country, year, directors),
+               by = c("country", "year")) %>% 
+    with(cor(pge_mean, directors))
+}) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2) %>% 
+  paste0("R = ", .)
+
+directors_label <- tibble(mean = .37, directors = 40, label = directors_cor)
+
+lfpr_plot <- ggplot(lfpr_un %>% filter(year==2016),
+       aes(x = mean,
+           y = f2m_ratio)) +
+  geom_segment(aes(x = `10%`, xend = `90%`,
+                   y = f2m_ratio, yend = f2m_ratio),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_text(aes(label = iso2c), size = 2) +
+  geom_smooth(method = 'lm', se = FALSE) +
+  theme_bw() + theme(legend.position="none",
+                     axis.text  = element_text(size=8),
+                     axis.title = element_text(size=9)) +
+  coord_cartesian(xlim=c(0, 1)) +
+  labs(x = "Mean Public Gender Egalitarianism, 2016", y = "Female to Male Labor Force Participation Ratio, 2016") +
+  geom_label(data = lfpr_label, aes(label = label))
+
+dir_plot <- ggplot(directors,
+       aes(x = mean,
+           y = directors)) +
+  geom_segment(aes(x = `10%`, xend = `90%`,
+                   y = directors, yend = directors),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_text(aes(label = iso2c), size = 2) +
+  geom_smooth(method = 'lm', se = FALSE) +
+  theme_bw() + theme(legend.position="none",
+                     axis.text  = element_text(size=8),
+                     axis.title = element_text(size=9)) +
+  coord_cartesian(xlim=c(.2, 1)) +
+  labs(x = "Mean Public Gender Egalitarianism, 2017", y = "% Women, Boards of Directors of the \n Largest Publicly Listed Companies, 2017") +
+  geom_label(data = directors_label, aes(label = label))
+
+lfpr_plot + dir_plot
+```
+
+Figure&nbsp;\ref{construct_plot} shows our tests of construct validation.
+Construct validation refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
+Assuming that attitudes toward gender egalitarianism in the public sphere both cause and are caused by women's gains in the workplace, assessing the relationships between the mean PGE and measures of workplace gender equality provides construct validation of our measure.
+In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the mean PGE index to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2016))` countries in 2016, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
+In the right panel, we plot the mean PGE index against the percentage of women on the boards of directors of the largest publicly listed companies in `r nrow(directors)` countries in 2017 [see @OECD2020].
+Both correlations are strong.
+As with our tests of convergent validation, these tests of construct validation provide reassuring evidence of the validity of the mean PGE.
+
 
 # Using the Public Gender Egalitarianism Index
 
 One aspect of latent-variable estimates of public opinion like the PGE that is easy for researchers to overlook is the uncertainty in the estimates.
-But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2020] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
-Therefore, taking the uncertainty in the PGE index into account is crucial to reaching well-grounded conclusions.
+But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year---that is, for example, the mean of the mean PGE index---in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2020] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
+Therefore, taking the uncertainty in the mean and polarization PGE indexes into account is crucial to reaching well-grounded conclusions.
 
-The PGE download includes pre-formatted data to facilitate incorporating the uncertainty in the index.
+The PGE download includes pre-formatted data to facilitate incorporating the uncertainty in the indexes.
 In R, the functions of the \texttt{purrr} package [@Henry2019, also included in the widely-used \texttt{tidyverse} package [@Wickham2017a]] make it entirely straightforward to incorporate the uncertainty of the PGE estimates.
 In Stata, the \texttt{mi estimate:} command prefix originally developed for analyzing multiply imputed data can be used to automate the process of building uncertainty into nearly any analysis.
 Step-by-step instructions on how to use these tools, complete with examples, are included in the data download.
