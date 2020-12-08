@@ -216,9 +216,9 @@ Together, these survey items were asked in `r n_countries` different countries i
 Considering that observations for every year in each country surveyed would number `r total_cy` and so a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations.
 Viewed from this perspective of complete data, the available data can be seen to be very, very sparse.
 From a more optimistic standpoint, we note there there are `r n_cy` country-years in which we have at least _some_ information about the public gender egalitarianism of the population, that is, some `r {back_to_numeric(n_cy)/back_to_numeric(spanned_cy) * 100} %>% round()`% of the `r spanned_cy` country-years spanned by the data we collected.
-But there is no gainsaying that the many different survey items employed renders these data difficult to use together.
+But there can be no gainsaying that the many different survey items employed renders these data difficult to use together.
 
-```{r item_and_country_plots, fig.height=3, fig.cap = "Items and Countries with the Most Observations in the Source Data \\label{item_country_plots}"}
+```{r item_and_country_plots, fig.height = 3.5, fig.cap = "Items, Countries, and Years with the Most Observations in the PGE Source Data \\label{item_country_plots}"}
 items_plot <- dcpo_input_raw_public1 %>%
   distinct(country, year, item) %>%
   count(item) %>%
@@ -229,8 +229,9 @@ items_plot <- dcpo_input_raw_public1 %>%
   theme_bw() +
   theme(axis.title.x = element_blank(),
         axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
+        axis.title.y = element_text(size = 9),
         plot.title = element_text(hjust = 0.5, size = 11)) +
-  ylab("Country-Years Observed") +
+  ylab("Country-Years\nObserved") +
   ggtitle("Items")
 
 polileader4_cy <- dcpo_input_raw_public1 %>% filter(item == "polileader4") %>% distinct(country, year) %>% nrow()
@@ -250,9 +251,43 @@ countries_plot <- dcpo_input_raw_public1 %>%
   theme_bw() +
   theme(axis.title.x = element_blank(),
         axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
+        axis.title.y = element_text(size = 9),
         plot.title = element_text(hjust = 0.5, size = 11)) +
-  ylab("Year-Items Observed") +
+  ylab("Year-Items\nObserved") +
   ggtitle("Countries")
+
+cby_plot <- dcpo_input_raw_public1 %>%
+  mutate(country = if_else(stringr::str_detect(country, "United"),
+                           stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
+                           country),
+         country = stringr::str_replace(country, "South", "S.")) %>% 
+  distinct(country, year) %>%
+  count(country) %>% 
+  arrange(desc(n)) %>% 
+  head(12) %>% 
+  ggplot(aes(forcats::fct_reorder(country, n, .desc = TRUE), n)) +
+  geom_bar(stat = "identity") +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
+        axis.title.y = element_text(size = 9),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  ylab("Years\nObserved") +
+  ggtitle("Countries")
+
+
+ybc_plot <- dcpo_input_raw_public1 %>%
+  distinct(country, year) %>%
+  count(year, name = "nn") %>%
+  ggplot(aes(year, nn)) +
+  geom_bar(stat = "identity") +
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
+        axis.title.y = element_text(size = 9),
+        plot.title = element_text(hjust = 0.5, size = 11)) +
+  ylab("Countries\nObserved") +
+  ggtitle("Years")
 
 us_obs <- dcpo_input_raw_public1 %>% 
   distinct(country, year, item) %>%
@@ -286,7 +321,7 @@ n_data_poorest <- {data_poorest %>%
   length() %>% 
   wordify_numeral()
 
-items_plot + countries_plot
+(items_plot + countries_plot) / (cby_plot + ybc_plot)
 ```
 
 The left panel of Figure&nbsp;\ref{item_country_plots} displays in how many country-years each of the twelve most-commonly asked survey items are available.
@@ -298,43 +333,6 @@ Which countries are the most data-rich?
 The right panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
 The United States, with `r us_obs` observations, is far and away the best represented country in the source data, followed by `r others`.
 At the other end of the spectrum, `r n_data_poorest` countries---`r data_poorest`---have only the minimum two observations required to be included in the source dataset at all.
-
-
-```{r years_by_country, fig.cap="Country-Year Coverage in the Source Data \\label{countries_by_years}"}
-cby_plot <- dcpo_input_raw_public1 %>%
-  mutate(country = if_else(stringr::str_detect(country, "United"),
-                           stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
-                           country),
-         country = stringr::str_replace(country, "South", "S.")) %>% 
-  distinct(country, year) %>%
-  count(country) %>% 
-  arrange(desc(n)) %>% 
-  head(12) %>% 
-  ggplot(aes(forcats::fct_reorder(country, n, .desc = TRUE), n)) +
-  geom_bar(stat = "identity") +
-  theme_bw() +
-  theme(axis.title.x = element_blank(),
-        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
-        plot.title = element_text(hjust = 0.5, size = 11)) +
-  ylab("Years Observed") +
-  ggtitle("Countries")
-
-
-ybc_plot <- dcpo_input_raw_public1 %>%
-  distinct(country, year) %>%
-  count(year, name = "nn") %>%
-  ggplot(aes(year, nn)) +
-  geom_bar(stat = "identity") +
-  theme_bw() +
-  theme(axis.title.x = element_blank(),
-        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
-        plot.title = element_text(hjust = 0.5, size = 11)) +
-  ylab("Countries Observed") +
-  ggtitle("Years")
-
-cby_plot + ybc_plot
-```
-
 
 ```{r dcpo_input_public}
 dcpo_input_public <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
@@ -519,7 +517,7 @@ pge <- map2(theta_res, sigma_res, function(theta, sigma) {
 save(pge, file = here::here("data", "pge.rda"))
 ```
 
-```{r convergent, fig.cap="Convergent Validation: Correlations Between PGE Mean Scores and Individual Public Gender Equality Survey Items \\label{conv_plot}", fig.height=4}
+```{r convergent, fig.cap="Convergent Validation: Correlations Between PGE Mean Scores and Individual PGE Source Data Survey Items \\label{conv_plot}", fig.height=4}
 
 internal_dat <- dcpo_input$data %>% 
   filter(item == "polileader4 3 or higher") %>% 
@@ -705,7 +703,7 @@ It asks whether respondents agreed or disagreed that "most men are better suited
 In every case, the correlations---estimated taking into account the uncertainty in the measures^[The uncertainty in the PGE Mean score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the `polileader4` question, but failing to account for this uncertainty would overstate the correlation with the Pew `poliequal3` item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS `emopoli2` item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`.
 We take up the issue of the importance of taking uncertainty into account when working with the PGE data in a subsequent section.]---are in the expected direction and very strong.
 
-```{r construct_validation_survey, fig.cap="Construct Validation: Correlations Between PGE Mean Scores and Individual 'Balancing' Gender Equality Survey Items \\label{surv_const_plot}", fig.height=4}
+```{r construct_validation_survey, fig.cap="Construct Validation: Correlations Between PGE Mean Scores and Individual 'Balancing' Gender Egalitarianism Survey Items \\label{surv_const_plot}", fig.height=4}
 dcpo_input_balance <- DCPOtools::format_dcpo(dcpo_input_raw_balance1,
                                             scale_q = "familywoman4",
                                             scale_cp = 2)
