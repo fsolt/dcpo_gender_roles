@@ -203,7 +203,7 @@ The fourth and final category includes respondents' views on various forms of wo
 
 To avoid any potential multidimensionality in the Public Gender Egalitarianism data, we include only survey items corresponding to the first category, gender egalitarianism in the public sphere.^[Items that fell into both the first category and another, such as the `tradroles` questions, "A man's job is to earn money; a woman's job is to look after the home and family," which by explicitly counterposing the traditional gender roles suggests women unlike men should not earn money in the public sphere (while also suggesting that men unlike women should not look after home and family in the private sphere) were included in the PGE source data.
 The complete list of gender egalitarianism items is included in the Appendix.]
-Thus, the "Public" in the name of the dataset does double duty, referring both to the fact that it measures the _public's_ attitudes on gender equality and to specifically its attitudes on this _public_ aspect of gender egalitarianism.
+Thus, the "Public" in the name of the dataset does double duty, referring both to the fact that it measures the _public's_ attitudes on gender equality and to its attitudes specifically on this _public_ aspect of gender egalitarianism.
 In all, we identified `r n_items` of these survey items that were asked in no fewer than five country-years in countries surveyed at least twice; these items were drawn from `r n_surveys` different survey datasets.
 We describe these source data in detail in the next section.
 
@@ -1007,6 +1007,9 @@ Together, this evidence of construct validation and convergent validation attest
 
 
 # Using the Public Gender Egalitarianism Dataset
+Version 1.0 of the PGE dataset includes PGE Mean and Polarization scores for `r pge[[1]] %>% distinct(country) %>% nrow()` countries for as many years as possible from 1972 to the present, a total of `r pge[[1]] %>% nrow()` country-years.
+It can be accessed in two ways: via a user-friendly web application on the PGE website, which plots scores for as many as four countries for easy comparison of levels and trends, and via the Harvard Dataverse, where the entire dataset is available for download for use in statistical analysis.
+We will revise and update the dataset as new survey data on public gender egalitarianism becomes available.
 
 One aspect of latent-variable estimates of public opinion like the PGE dataset that is easy for researchers to overlook is the uncertainty in the estimates.
 But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year---that is, for example, the mean of the PGE Mean scores---in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2020] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
