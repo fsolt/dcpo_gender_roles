@@ -445,8 +445,8 @@ p1a + p1b
 ```
 
 # Validating Public Gender Egalitarianism
-We turn now to the validity of the PGE Mean scores.
-Like @Caughey2019 [684-685], we provide evidence of our new measure's validity through tests of both convergent validation and construct validation.
+We consider now the validity of the PGE Mean scores.
+Like @Caughey2019 [684-685], we provide evidence of our new measures' validity with both convergent validation and construct validation tests.
 
 ```{r extract_res}
 dat <- dcpo_input$data
@@ -695,11 +695,14 @@ internal_plot + internal_cs_plot + internal_us_plot +
 Figure&nbsp;\ref{conv_plot} displays our tests of convergent validation.
 Convergent validation refers to demonstrating that a measure is empirically associated with alternative indicators of the same concept [@Adcock2001, 540].
 Here, we compare PGE Mean scores to responses to individual survey items that were included in the source data, that is, we provide an "internal" validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
-In the left panel, we examine the `polileader4` question mentioned above, the most common item in the source data across all country-years, combining for this purpose all those who agreed or strongly agreed that "on the whole, men make better political leaders than women."
-Then, in the center panel, we look at the question that provides most data-rich cross-section: the `poliequal3` item in Pew Global's Spring 2007 survey that asked whether respondents felt "men generally make better political leaders than women," vice versa, or whether "in general, women and men make equally good political leaders."
-Finally, in the right panel, to evaluate how well the PGE Mean score captures change over time, we focus on the `emopoli2` survey item, the item with the largest number of observations for a single country.
-The U.S. General Social Survey asked this question 25 times from 1972 to 2016.
-It asks whether respondents agreed or disagreed that "most men are better suited emotionally for politics than are most women"; to facilitate visual comparison of the longitudinal relationship, we plot the estimated population proportion that disagreed with the statement.
+In the left panel, we examine the `polileader4` question mentioned above, the most common item in the source data across all country-years.
+<!-- In the left panel, we examine the `polileader4` question mentioned above, the most common item in the source data across all country-years, combining for this purpose all those who agreed or strongly agreed that "on the whole, men make better political leaders than women." -->
+Then, in the center panel, we look at the question that provides most data-rich cross-section.
+<!-- Then, in the center panel, we look at the question that provides most data-rich cross-section: the `poliequal3` item in Pew Global's Spring 2007 survey that asked whether respondents felt "men generally make better political leaders than women," vice versa, or whether "in general, women and men make equally good political leaders." -->
+Finally, in the right panel, to evaluate how well the PGE Mean score captures change over time, we focus on the item with the largest number of observations for a single country. 
+<!-- Finally, in the right panel, to evaluate how well the PGE Mean score captures change over time, we focus on the `emopoli2` survey item, the item with the largest number of observations for a single country. -->
+<!-- The U.S. General Social Survey asked this question 25 times from 1972 to 2016. -->
+<!-- It asks whether respondents agreed or disagreed that "most men are better suited emotionally for politics than are most women"; to facilitate visual comparison of the longitudinal relationship, we plot the estimated population proportion that disagreed with the statement. -->
 In every case, the correlations---estimated taking into account the uncertainty in the measures^[The uncertainty in the PGE Mean score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the `polileader4` question, but failing to account for this uncertainty would overstate the correlation with the Pew `poliequal3` item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS `emopoli2` item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`.
 We take up the issue of the importance of taking uncertainty into account when working with the PGE data in a subsequent section.]---are in the expected direction and very strong.
 
@@ -884,7 +887,7 @@ wantch_plot + familywoman_plot + psw_de_plot +
   plot_annotation(caption = "Note: Gray whiskers and shading represent 80% credible intervals.")
 ```
 
-In Figure&nbsp;\ref{surv_const_plot}, we move on to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
+In Figure&nbsp;\ref{surv_const_plot}, we turn to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
 For purposes of construct validation, we look first to individual survey items from our third category of gender egalitarianism, that is, questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
 Although many of the items in this category are on their face at best only very tangentially related to public gender egalitarianism, others are plausibly causally related.
 Consider `wantch4`, an item depicted in the left pane asked by the World Values Survey and the European Values Survey, which asked respondents the extent to which they agree with the statement, "a job is alright but what most women really want is a home and children."
@@ -996,8 +999,7 @@ lfpr_plot + dir_plot +
   plot_annotation(caption = "Note: Gray whiskers represent 80% credible intervals.")
 ```
 
-Figure&nbsp;\ref{construct_plot} shows our tests of construct validation.
-Construct validation refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
+Figure&nbsp;\ref{construct_plot} shows additional tests of construct validation.
 Assuming that attitudes toward gender egalitarianism in the public sphere both cause and are caused by women's gains in the workplace, assessing the relationships between the mean PGE and measures of workplace gender equality provides construct validation of our measure.
 In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the mean PGE index to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2016))` countries in 2016, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
 In the right panel, we plot the mean PGE index against the percentage of women on the boards of directors of the largest publicly listed companies in `r nrow(directors)` countries in 2017 [see @OECD2020].
