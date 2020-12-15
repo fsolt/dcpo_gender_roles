@@ -198,10 +198,12 @@ back_to_numeric <- function(string_number) {
 We classified the available survey items on gender egalitarian attitudes into four categories.
 The first of these categories consists of questions asking respondents' views of gender equality in the traditionally masculine public sphere of education, paid work, and politics.
 The second category, in turn, encompasses questions focusing on gender equality in the traditionally feminine private sphere of housework and childcare.
-A third category we identified comprises questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere, such as whether mothers in the workforce can have similarly warm relationships with their children as mothers who are not; it is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is only rarely included in surveys.^[One laudable example of this mostly unasked sort of question, apparently first included in Australia's 1989 National Social Science Survey and slowly becoming more common, is the item querying respondents the extent to which they agree with the statement, "Family life often suffers when men concentrate too much on their work."]
+A third category we identified comprises questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere, such as whether mothers in the workforce can have similarly warm relationships with their children as mothers who are not; it is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is only rarely included in surveys.^[
+One laudable example of this mostly unasked sort of question, apparently first included in Australia's 1989 National Social Science Survey and slowly becoming more common, is the item querying respondents the extent to which they agree with the statement, "Family life often suffers when men concentrate too much on their work."]
 The fourth and final category includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames through the recognition that various forms of sexual harassment are not "flattering" to the justifiability of intimate partner violence committed by husbands.
 
-To avoid any potential multidimensionality in the Public Gender Egalitarianism data, we include only survey items corresponding to the first category, gender egalitarianism in the public sphere.^[Items that fell into both the first category and another, such as the `tradroles` questions, "A man's job is to earn money; a woman's job is to look after the home and family," which by explicitly counterposing the traditional gender roles suggests women unlike men should not earn money in the public sphere (while also suggesting that men unlike women should not look after home and family in the private sphere) were included in the PGE source data.
+To avoid any potential multidimensionality in the Public Gender Egalitarianism data, we include only survey items corresponding to the first category, gender egalitarianism in the public sphere.^[
+Items that fell into both the first category and another, such as the `tradroles` questions---those with stems of the form "A man's job is to earn money; a woman's job is to look after the home and family"---which by explicitly counterposing the traditional gender roles suggests women unlike men should not earn money in the public sphere (while also suggesting that men unlike women should not look after home and family in the private sphere) were included in the PGE source data.
 The complete list of gender egalitarianism items is included in the Appendix.]
 Thus, the "Public" in the name of the dataset does double duty, referring both to the fact that it measures the _public's_ attitudes on gender equality and to its attitudes specifically on this _public_ aspect of gender egalitarianism.
 In all, we identified `r n_items` of these survey items that were asked in no fewer than five country-years in countries surveyed at least twice; these items were drawn from `r n_surveys` different survey datasets.
@@ -375,7 +377,7 @@ dcpo_y_r_pred <- rstan::extract(dcpo_output, pars = "y_r_pred")
 save(dcpo_input, dcpo_y_r_pred, file = here::here("data", "dcpo_y_r_pred.rda"))
 ```
 
-```{r cs_plot, fig.cap="PGE Mean and Polarization Scores, Most Recent Available Year \\label{cs_mry}", fig.height=8}
+```{r cs_plot, fig.cap="PGE Scores, Most Recent Available Year \\label{cs_mry}", fig.height=4}
 load(here::here("data", "dcpo_input.rda"))
 load(here::here("data", "dcpo_output.rda"))
 
@@ -383,68 +385,54 @@ theta_results <- DCPO::summarize_dcpo_results(dcpo_input,
                                               dcpo_output,
                                               "theta")
 
-sigma_results <- DCPO::summarize_dcpo_results(dcpo_input,
-                                              dcpo_output,
-                                              "sigma")
+n_panes <- 3
 
 p1_data <- theta_results %>%
-    group_by(country) %>%
-    top_n(1, year) %>%
-    ungroup() %>%
-    arrange(-mean) %>%
-    mutate(half = ntile(mean, 2),
-           country = paste0(country, " (", year, ")"))
+  group_by(country) %>%
+  top_n(1, year) %>%
+  ungroup() %>%
+  arrange(mean) %>%
+  transmute(country_year = paste0(country, " (", year, ")") %>% 
+              str_replace("’", "'"),
+            estimate = mean,
+            conf.high = `90%`,
+            conf.low = `10%`,
+            pane = n_panes - (ntile(mean, n_panes) - 1),
+            ranked = as.factor(ceiling(row_number())))
 
-p1_data_a <- p1_data %>% 
-  filter(half==2) %>% 
-  mutate(ranked = as.factor(row_number(mean)))
-p1_data_b <- p1_data %>%
-  filter(half==1) %>%
-  mutate(ranked = as.factor(row_number(mean)),
-         country = str_replace(country, "’", "'"))
+p_theta <- ggplot(p1_data,
+                  aes(x = estimate, y = ranked)) +
+  geom_segment(aes(x = conf.low, xend = conf.high,
+                   y = ranked, yend = ranked),
+               na.rm = TRUE,
+               alpha = .2) +
+  geom_point(fill = "black", shape = 21, size = .5, na.rm = TRUE) +
+  theme_bw() + theme(legend.position="none",
+                     axis.text.x  = element_text(size=7,
+                                                 angle = 90,
+                                                 vjust = .45,
+                                                 hjust = .95),
+                     axis.text.y  = element_text(size=7),
+                     axis.title = element_blank(),
+                     strip.background = element_blank(), 
+                     strip.text = element_blank(),
+                     panel.grid.major = element_line(size = .3),
+                     panel.grid.minor = element_line(size = .15)) +
+  scale_y_discrete(breaks = p1_data$ranked, labels=p1_data$country_year) +
+  coord_cartesian(xlim=c(0, 1)) +
+  facet_wrap(vars(pane), scales = "free", nrow = 1)
 
-p1a <- ggplot(p1_data_a, aes(x = mean,
-                             y = ranked)) +
-    geom_segment(aes(x = `10%`, xend = `90%`,
-                     y = ranked, yend = as.factor(ranked)),
-                 na.rm = TRUE) +
-    geom_point(fill = "black", shape = 21, size = 1.1, na.rm = TRUE) +
-    theme_bw() + theme(legend.position="none",
-                       axis.text.x  = element_text(size=8),
-                       axis.text.y  = element_text(size=8),
-                       axis.title.x = element_text(face="bold", size=8),
-                       legend.text = element_text(size = 7),
-                       legend.title = element_text(size=7, face = "bold"),
-                       legend.key.size = unit(.5, "line"),
-                       legend.background = element_rect(linetype = "solid",
-                                                        color = "grey80",
-                                                        size = .25),
-                       legend.key = element_rect(colour = "white")) +
-    scale_y_discrete(breaks = p1_data_a$ranked, labels=p1_data_a$country) +
-    coord_cartesian(xlim=c(0, 1)) +
-    labs(x = NULL, y = NULL)
 
-p1b <- ggplot(p1_data_b, aes(x = mean,
-                             y = ranked)) +
-    geom_segment(aes(x = `10%`, xend = `90%`,
-                     y = ranked, yend = ranked),
-                 na.rm = TRUE) +
-    geom_point(fill = "black", shape = 21, size = 1.1, na.rm = TRUE) +
-    theme_bw() + theme(legend.position="none",
-                       axis.text.x  = element_text(size=8),
-                       axis.text.y  = element_text(size=8),
-                       axis.title.x = element_text(face="bold", size=8)) +
-    scale_y_discrete(breaks = p1_data_b$ranked, labels=p1_data_b$country) +
-    coord_cartesian(xlim=c(0, 1)) +
-    labs(x = NULL, y = NULL)
-
-p1a + p1b
+p_theta +
+  plot_annotation(caption = "Note: Gray whiskers represent 80% credible intervals.")
 
 ```
 
+
+
 # Validating Public Gender Egalitarianism
-We consider now the validity of the PGE Mean scores.
-Like @Caughey2019 [684-685], we provide evidence of our new measures' validity with both convergent validation and construct validation tests.
+We consider now the validity of the PGE scores.
+Like @Caughey2019 [684-685], we provide evidence of our measure's validity with  convergent validation and construct validation.
 
 ```{r extract_res}
 dat <- dcpo_input$data
@@ -515,7 +503,7 @@ pge <- map2(theta_res, sigma_res, function(theta, sigma) {
 save(pge, file = here::here("data", "pge.rda"))
 ```
 
-```{r convergent, fig.cap="Convergent Validation: Correlations Between PGE Mean Scores and Individual PGE Source Data Survey Items \\label{conv_plot}", fig.height=4}
+```{r convergent, fig.cap="Convergent Validation: Correlations Between PGE Scores and Individual PGE Source Data Survey Items \\label{conv_plot}", fig.height=4}
 
 internal_dat <- dcpo_input$data %>% 
   filter(item == "polileader4 3 or higher") %>% 
@@ -563,7 +551,7 @@ internal_plot <- internal_dat %>%
         plot.title = element_text(hjust = 0.5, size = 11)) +
   coord_cartesian(ylim=c(0,100)) +
   scale_x_continuous(breaks=seq(.1, .9, 0.2)) +
-  labs(x = "PGE Mean Score", 
+  labs(x = "PGE Score", 
        y = '% Agreeing That "On the Whole, Men\nMake Better Political Leaders than Women Do"') + 
   ggtitle("All Country-Years") +
   geom_label(data = internal_label, aes(label = label), size = 3)
@@ -618,7 +606,7 @@ internal_cs_plot <- internal_poliequal %>%
         axis.text  = element_text(size=8),
         axis.title = element_text(size=9),
         plot.title = element_text(hjust = 0.5, size = 11)) +
-  labs(x = "PGE Mean Score", 
+  labs(x = "PGE Score", 
        y = '% Opining That "Men Generally Make\nBetter Political Leaders Than Women"') + 
   ggtitle("Pew Global Spring 2007") +
   geom_label(data = internal_cs_label, aes(label = label), size = 3)
@@ -663,6 +651,9 @@ internal_us_plot <- internal_us %>%
                   linetype = NA),
                alpha = .2) +
   geom_point(aes(y = prop),
+             fill = "black",
+             shape = 21,
+             size = .5,
              na.rm = TRUE) +
   geom_path(aes(y = prop),
             linetype = 3,
@@ -690,21 +681,22 @@ internal_plot + internal_cs_plot + internal_us_plot +
   plot_annotation(caption = "Note: Gray whiskers and shading represent 80% credible intervals.")
 ```
 
-Figure&nbsp;\ref{conv_plot} displays our tests of convergent validation.
-Convergent validation refers to demonstrating that a measure is empirically associated with alternative indicators of the same concept [@Adcock2001, 540].
-Here, we compare PGE Mean scores to responses to individual survey items that were included in the source data, that is, we provide an "internal" validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
+Figure&nbsp;\ref{conv_plot} displays our demonstrations of convergent validation.
+Convergent validation refers to showing that a measure is empirically associated with alternative indicators of the same concept [@Adcock2001, 540].
+Here, we compare PGE scores to responses to individual survey items that were included in the source data, that is, we provide an "internal" validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
 In the left panel, we examine the `polileader4` question mentioned above, the most common item in the source data across all country-years.
 <!-- In the left panel, we examine the `polileader4` question mentioned above, the most common item in the source data across all country-years, combining for this purpose all those who agreed or strongly agreed that "on the whole, men make better political leaders than women." -->
 Then, in the center panel, we look at the question that provides most data-rich cross-section, the `poliequal3` item in Pew Global's Spring 2007 survey.
 <!-- Then, in the center panel, we look at the question that provides most data-rich cross-section: the `poliequal3` item in Pew Global's Spring 2007 survey that asked whether respondents felt "men generally make better political leaders than women," vice versa, or whether "in general, women and men make equally good political leaders." -->
-Finally, in the right panel, to evaluate how well the PGE Mean score captures change over time, we focus on the item with the largest number of observations for a single country, the `emopoli2` survey item, which asks whether respondents agreed or disagreed that "most men are better suited emotionally for politics than are most women." 
-<!-- Finally, in the right panel, to evaluate how well the PGE Mean score captures change over time, we focus on the `emopoli2` survey item, the item with the largest number of observations for a single country. -->
+Finally, in the right panel, to evaluate how well the PGE score captures change over time, we focus on the item with the largest number of observations for a single country, the `emopoli2` survey item, which asks whether respondents agreed or disagreed that "most men are better suited emotionally for politics than are most women." 
+<!-- Finally, in the right panel, to evaluate how well the PGE score captures change over time, we focus on the `emopoli2` survey item, the item with the largest number of observations for a single country. -->
 <!-- The U.S. General Social Survey asked this question 25 times from 1972 to 2016. -->
 <!-- It asks whether respondents agreed or disagreed that "most men are better suited emotionally for politics than are most women"; to facilitate visual comparison of the longitudinal relationship, we plot the estimated population proportion that disagreed with the statement. -->
-In every case, the correlations---estimated taking into account the uncertainty in the measures^[The uncertainty in the PGE Mean score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the `polileader4` question, but failing to account for this uncertainty would overstate the correlation with the Pew `poliequal3` item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS `emopoli2` item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`.
+In every case, the correlations---estimated taking into account the uncertainty in the measures^[
+The uncertainty in the PGE score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the `polileader4` question, but failing to account for this uncertainty would overstate the correlation with the Pew `poliequal3` item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS `emopoli2` item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`.
 We take up the issue of the importance of taking uncertainty into account when working with the PGE data in a subsequent section.]---are in the expected direction and very strong.
 
-```{r construct_validation_survey, fig.cap="Construct Validation: Correlations Between PGE Mean Scores and Individual 'Balancing' Gender Egalitarianism Survey Items \\label{surv_const_plot}", fig.height=4}
+```{r construct_validation_survey, fig.cap="Construct Validation: Correlations Between PGE Scores and Individual 'Balancing' Gender Egalitarianism Survey Items \\label{surv_const_plot}", fig.height=4}
 dcpo_input_balance <- DCPOtools::format_dcpo(dcpo_input_raw_balance1,
                                             scale_q = "familywoman4",
                                             scale_cp = 2)
@@ -757,7 +749,7 @@ wantch_plot <- wantch %>%
         axis.title = element_text(size=9),
         plot.title = element_text(hjust = 0.5, size = 11)) +
   coord_cartesian(ylim=c(0,100)) +
-  labs(x = "PGE Mean Score", 
+  labs(x = "PGE Score", 
        y = '% Agreeing That "A Job is Alright But What\nMost Women Really Want is a Home and Children"') + 
   ggtitle("All Country-Years") +
   geom_label(data = wantch_label, aes(label = label), size = 3)
@@ -812,7 +804,7 @@ familywoman_plot <- familywoman %>%
         axis.title = element_text(size=9),
         plot.title = element_text(hjust = 0.5, size = 11)) +
   coord_cartesian(ylim=c(0,100)) +
-  labs(x = "PGE Mean Score", 
+  labs(x = "PGE Score", 
        y = '% Agreeing That "The Most Important Role of a\nWoman is to Take Care of Her Home and Family"') + 
   ggtitle("Eurobarometer 87.4") +
   geom_label(data = familywoman_label, aes(label = label), size = 3)
@@ -857,6 +849,9 @@ psw_de_plot <- psw_de %>%
                   linetype = NA),
                alpha = .2) +
   geom_point(aes(y = prop),
+             fill = "black",
+             shape = 21,
+             size = .5,
              na.rm = TRUE) +
   geom_path(aes(y = prop),
             linetype = 3,
@@ -885,23 +880,24 @@ wantch_plot + familywoman_plot + psw_de_plot +
   plot_annotation(caption = "Note: Gray whiskers and shading represent 80% credible intervals.")
 ```
 
-We turn to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
+We move on, then, to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
 In Figure&nbsp;\ref{surv_const_plot}, we look to individual survey items from our third category of gender egalitarianism, that is, questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
-Assuming that attitudes that women should prioritize housework and childcare over education, politics, and paid employment---or convictions that there will be negative consequences if they do not---will lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, evidence for this theoretical relationship will provide construct validation for the PGE Mean score.
-Exemplars of such items across all available country-years ("a job is alright but what most women really want is a home and children" from the WVS and EVS), in cross-section ("the most important role of a woman is to take care of her home and family" from the Eurobarometer 87.4), and in time series ("a pre-school child is likely to suffer if his or her mother works" from the German ALLBUS, WVS, and EVS) all show strong correlations with the PGE Mean scores.
+Assuming that attitudes that women should prioritize housework and childcare over education, politics, and paid employment---or convictions that there will be negative consequences if they do not---will lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, evidence for this theoretical relationship will provide construct validation for the PGE score.
+Exemplars of such items across all available country-years ("a job is alright but what most women really want is a home and children" from the WVS and EVS), in cross-section ("the most important role of a woman is to take care of her home and family" from the Eurobarometer 87.4), and in time series ("a pre-school child is likely to suffer if his or her mother works" from the German ALLBUS, WVS, and EVS) all show strong correlations with the PGE scores.
 <!-- Consider `wantch4`, an item depicted in the left pane asked by the World Values Survey and the European Values Survey, which asked respondents the extent to which they agree with the statement, "a job is alright but what most women really want is a home and children." -->
 <!-- As agreement suggests that women do not truly care about opportunities in the workplace, those who do should be expected to be less likely to believe women should enjoy equal access to such opportunities which men implicitly value more. -->
 <!-- Or, similarly, `familywoman4`, an item plotted in the center pane from Eurobarometer 87.4, which asked respondents the extent of their agreement with the statement, "the most important role of a woman is to take care of her home and family."  -->
-<!-- Though not directly implying that women should not enjoy equal opportunities in education, politics, and the workplace, it may still be fairly surmised that those holding this position would consequently consider that, since opportunities beyond the home are of secondary importance for women, men should have priority.^[One might argue that these two questions, particularly the latter, rather than tapping a distinct concept causally related to public gender egalitarianism are in fact tapping aspects of public gender egalitarianism itself. -->
+<!-- Though not directly implying that women should not enjoy equal opportunities in education, politics, and the workplace, it may still be fairly surmised that those holding this position would consequently consider that, since opportunities beyond the home are of secondary importance for women, men should have priority.^[
+One might argue that these two questions, particularly the latter, rather than tapping a distinct concept causally related to public gender egalitarianism are in fact tapping aspects of public gender egalitarianism itself. -->
 <!-- (Indeed, the `tradroles` series of questions, which couple the `familywoman4` stem with the idea that the most important role of a man is to earn money---and so more explicitly indicates that the public sphere is appropriately segregated by gender---is included among the items used to estimate the PGE data.) -->
 <!-- If these two questions are thought of as indicators of public gender egalitarianism, then, because they are not included in the PGE source data, these plots constitute not construct validation but rather "external" convergent validation [see, e.g., @Caughey2019, 689; @Solt2020c, 10]. -->
-<!-- In either case, though, they provide evidence of the validity of the PGE Mean scores.] -->
+<!-- In either case, though, they provide evidence of the validity of the PGE scores.] -->
 <!-- In a slightly different vein, `preschoolwork4`, included in the German ALLBUS, the World Values Survey, and the European Values Survey, asked respondents the extent to which they agreed that "a pre-school child is likely to suffer if his or her mother works;" we plot the time series of the proportion of the population of Germany estimated to disagree or disagree strongly with this statement in the right pane. -->
 <!-- The belief that mothers working cause harm to their children should be expected to lead to disfavoring gender equality in workforce to avoid this purported negative consequence.  -->
-<!-- With regard to all of these items, too, the correlations with the PGE Mean scores are strong. -->
+<!-- With regard to all of these items, too, the correlations with the PGE scores are strong. -->
 
 
-```{r cons_valid_plot, fig.cap="Construct Validation: Correlations Between PGE Mean Scores and Indicators of Workplace Gender Equality \\label{construct_plot}", fig.height=4}
+```{r cons_valid_plot, fig.cap="Construct Validation: Correlations Between PGE Scores and Indicators of Workplace Gender Equality \\label{construct_plot}", fig.height=4}
 
 # https://genderstats.un.org/#/downloads
 lfpr_un <- read_csv(here::here("data", "3b - Labour force participation rate for persons aged 15+  by sex_data.csv"), skip = 1, col_types = "ccdcdcdccccccdddcc") %>% 
@@ -975,7 +971,7 @@ lfpr_plot <- ggplot(lfpr_un %>% filter(year==2016),
                      axis.text  = element_text(size=8),
                      axis.title = element_text(size=9)) +
   coord_cartesian(xlim=c(0, 1)) +
-  labs(x = "Mean Public Gender Egalitarianism, 2016", y = "Female to Male Labor Force Participation Ratio, 2016") +
+  labs(x = "Public Gender Egalitarianism, 2016", y = "Female to Male Labor Force Participation Ratio, 2016") +
   geom_label(data = lfpr_label, aes(label = label))
 
 dir_plot <- ggplot(directors,
@@ -991,7 +987,7 @@ dir_plot <- ggplot(directors,
                      axis.text  = element_text(size=8),
                      axis.title = element_text(size=9)) +
   coord_cartesian(xlim=c(.2, 1)) +
-  labs(x = "Mean Public Gender Egalitarianism, 2017", y = "% Women, Boards of Directors of the \n Largest Publicly Listed Companies, 2017") +
+  labs(x = "Public Gender Egalitarianism, 2017", y = "% Women, Boards of Directors of the \n Largest Publicly Listed Companies, 2017") +
   geom_label(data = directors_label, aes(label = label))
 
 lfpr_plot + dir_plot +
@@ -999,27 +995,27 @@ lfpr_plot + dir_plot +
 ```
 
 Finally, Figure&nbsp;\ref{construct_plot} shows additional tests of construct validation.
-As attitudes toward gender egalitarianism in the public sphere plausibly both cause and are caused by women's gains in the workplace, strong relationships between the PGE Mean scores and measures of workplace gender equality provide construct validation for our measure.
-In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the PGE Mean scores to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2016))` countries in 2016, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
-In the right panel, we plot the PGE Mean scores against the percentage of women on the boards of directors of the largest publicly listed companies in `r nrow(directors)` countries in 2017 [see @OECD2020].
+As attitudes toward gender egalitarianism in the public sphere plausibly both cause and are caused by women's gains in the workplace, strong relationships between the PGE scores and measures of workplace gender equality provide construct validation for our measure.
+In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the PGE scores to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2016))` countries in 2016, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
+In the right panel, we plot the PGE scores against the percentage of women on the boards of directors of the largest publicly listed companies in `r nrow(directors)` countries in 2017 [see @OECD2020].
 Both correlations are strong.
-Together, this evidence of construct validation and convergent validation attests to the validity of the PGE Mean scores as measures of public opinion towards gender equality in the public sphere.
+Together, this evidence of construct validation and convergent validation attests to the validity of the PGE scores as measures of public opinion towards gender equality in the public sphere.
 
 
 # Using the Public Gender Egalitarianism Dataset
-Version 1.0 of the PGE dataset includes PGE Mean and Polarization scores for `r pge[[1]] %>% distinct(country) %>% nrow()` countries for as many years as possible from 1972 to the present, a total of `r pge[[1]] %>% nrow()` country-years.
+Version 1.0 of the PGE dataset includes PGE scores for `r pge[[1]] %>% distinct(country) %>% nrow()` countries for as many years as possible from 1972 to the present, a total of `r pge[[1]] %>% nrow()` country-years.
 It can be accessed in two ways: via a user-friendly web application on the PGE website, which plots scores for as many as four countries for easy comparison of levels and trends, and via the Harvard Dataverse, where the entire dataset is available for download for use in statistical analysis.
 We will revise and update the dataset as new survey data on public gender egalitarianism becomes available.
 
 One aspect of latent-variable estimates of public opinion like the PGE dataset that is easy for researchers to overlook is the uncertainty in the estimates.
-But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year---that is, for example, the mean of the PGE Mean scores---in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2020] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
-Therefore, taking the uncertainty in the PGE Mean and Polarization scores into account is crucial to reaching well-grounded conclusions.
+But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year---that is, for example, the mean of the PGE scores---in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2020] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
+Therefore, taking the uncertainty in the PGE scores into account is crucial to reaching well-grounded conclusions.
 
-The download includes pre-formatted data to facilitate incorporating the uncertainty in the PGE Mean and Polarization scores.
+The download includes pre-formatted data to facilitate incorporating the uncertainty in the PGE scores.
 In R, the functions of the \texttt{purrr} package [@Henry2019, also included in the widely-used \texttt{tidyverse} package [@Wickham2017a]] make it entirely straightforward to incorporate the uncertainty of the PGE estimates.
 In Stata, the \texttt{mi estimate:} command prefix originally developed for analyzing multiply imputed data can be used to automate the process of building uncertainty into nearly any analysis.
 Step-by-step instructions on how to use these tools, complete with examples, are included in the data download.
 
-# Conclusion
+
 
 \pagebreak
