@@ -170,7 +170,7 @@ n_years <- as.integer(summary(dcpo_input_raw_public1$year)[6]-summary(dcpo_input
 
 spanned_cy <- dcpo_input_raw_public1 %>% 
   group_by(country) %>% 
-  summarize(years = max(year) - min(year)) %>% 
+  summarize(years = max(year) - min(year) + 1) %>% 
   summarize(n = sum(years)) %>% 
   pull(n) %>% 
   scales::comma()
@@ -212,8 +212,8 @@ We describe these source data in detail in the next section.
 
 # Examining the Source Data on Public Gender Egalitarianism
 
-Together, these survey items were asked in `r n_countries` different countries in at least two time points over `r n_years` years, `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
-Considering that observations for every year in each country surveyed would number `r total_cy` and so a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations.
+Together, the survey items in the source data were asked in `r n_countries` different countries in at least two time points over `r n_years` years, `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
+Considering that observations for every year in each country surveyed would number `r total_cy`, a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations.
 Viewed from this perspective of complete data, the available data can be seen to be very, very sparse.
 From a more optimistic standpoint, we note there there are `r n_cy` country-years in which we have at least _some_ information about the public gender egalitarianism of the population, that is, some `r {back_to_numeric(n_cy)/back_to_numeric(spanned_cy) * 100} %>% round()`% of the `r spanned_cy` country-years spanned by the data we collected.
 But there can be no gainsaying that the many different survey items employed renders these data difficult to use together.
@@ -343,7 +343,17 @@ save(dcpo_input_public, file = here::here("data", "dcpo_input_public.rda"))
 
 # Estimating Public Gender Egalitarianism
 
-The DCPO model is estimated using the `DCPO` package for R [@Solt2020a], which is written in the Stan probabilistic programming language [@StanDevTeam2019a; @StanDevTeam2019b].
+There has been a recent blossoming of scholarship developing latent variable models of public opinion based on cross-national survey data [see @Claassen2019; @Caughey2019; @McGann2019; @Kolczynska2020].
+To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion  (DCPO) model presented in @Solt2020c.^[
+@Solt2020 demonstrates that the DCPO model provides a better fit to survey data than the models put forward by @Claassen2019 or @Caughey2019.
+The @McGann2019 model depends on dense survey data unlike the sparse data on public gender egalitarianism described in the preceding section.
+@Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable only when the available survey data are dense and ancillary data on population characteristics are also available, so it is similarly inappropriate to this application.
+]
+
+The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item bias.
+That is, $\eta_{ktqr}$, the expected probability that a random person in country $k$ at time $t$ answers question $q$ with a response at least as positive as response $r$, is estimated as varying with the mean and standard deviation of the unbounded latent trait of public opinion, $\bar{\theta'}_{kt}$ and $\sigma_{kt}$; with the dispersion, $\alpha_{q}$, of the question and the difficulty, $\beta_{qr}$, of the question's response category; as well as with a term to capture how responses to particular questions in particular questions may be biased, $\delta_{kq}$: $\eta_{ktqr} = \textrm{logit}^{-1}(\frac{\bar{\theta'}_{kt} - (\beta_{qr} + \delta_{kq})}{\sqrt{\alpha_{q}^2 + (1.7*\sigma_{kt})^2}}) \label{eq:dcpo}$.
+A beta-binomial distribution is used to model the observed survey data given $\eta_{ktqr}$, random-walk priors are used to account for the dynamics in $\bar{\theta'}_{kt}$ and $\sigma_{kt}$, and weakly informative priors are placed on the other parameters.
+Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the unit interval and so give the bounded mean of latent public opinion, $\bar{\theta}_{kt}$, which is our parameter of interest here [see @Solt2020c, 3-8].
 
 ```{r dcpo, eval=FALSE}
 iter <- 4000
@@ -363,27 +373,32 @@ load(here::here("data", "polileader4_2_4k_11-27.rda"))
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 
 save(dcpo_output, file = here::here("data", "dcpo_output.rda"))
-
-dcpo_theta <- rstan::extract(dcpo_output, pars = "theta")
-
-save(dcpo_theta, file = here::here("data", "dcpo_theta.rda"))
-
-dcpo_sigma <- rstan::extract(dcpo_output, pars = "sigma")
-
-save(dcpo_theta, file = here::here("data", "dcpo_sigma.rda"))
-
-dcpo_y_r_pred <- rstan::extract(dcpo_output, pars = "y_r_pred")
-
-save(dcpo_input, dcpo_y_r_pred, file = here::here("data", "dcpo_y_r_pred.rda"))
 ```
 
-```{r cs_plot, fig.cap="PGE Scores, Most Recent Available Year \\label{cs_mry}", fig.height=4}
+```{r dcpo_results_summary}
 load(here::here("data", "dcpo_input.rda"))
 load(here::here("data", "dcpo_output.rda"))
 
 theta_results <- DCPO::summarize_dcpo_results(dcpo_input,
                                               dcpo_output,
                                               "theta")
+
+res_cy <- nrow(theta_results) %>% 
+  scales::comma()
+
+res_c <- theta_results %>% 
+  pull(country) %>% 
+  unique() %>% 
+  length()
+```
+
+We used the `DCPO` package for R [@Solt2020a] to estimate this model on the public gender egalitarianism source data described above.
+The result is estimates, in all `r res_cy` country-years spanned by the source data, of mean public gender egalitarianism, what we call PGE scores.
+Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries in the dataset.
+
+
+```{r cs_plot, fig.cap="PGE Scores, Most Recent Available Year \\label{cs_mry}", fig.height=4}
+
 
 n_panes <- 3
 
@@ -428,7 +443,8 @@ p_theta +
 
 ```
 
-
+The Scandinavian countries, France, and Spain are at the top of this list, followed by Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
+The latest scores for Egypt, Yemen, Pakistan, the Palestinian Territories, and Burkina Faso have them as the places where public opinion is least favorable to gender equality in the public sphere.
 
 # Validating Public Gender Egalitarianism
 We consider now the validity of the PGE scores.
