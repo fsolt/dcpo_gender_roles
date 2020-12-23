@@ -446,6 +446,27 @@ p_theta +
 The Scandinavian countries, France, and Spain are at the top of this list, followed by Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
 The latest scores for Egypt, Yemen, Pakistan, the Palestinian Territories, and Burkina Faso have them as the places where public opinion is least favorable to gender equality in the public sphere.
 
+```{r ts_plots, fig.cap="PGE Scores Over Time, Selected Countries \\label{ts}", fig.height=3.5}
+countries <- c("Norway", "Australia", "United States", "Mexico", "Taiwan",
+                "Japan", "Turkey", "Nigeria", "Philippines", "Egypt")
+
+theta_results %>%
+  filter(country %in% countries) %>%
+  mutate(country = factor(country, levels = countries)) %>% 
+  ggplot(aes(x = year, y = mean)) +
+  geom_ribbon(aes(ymin = `10%`, ymax = `90%`, linetype=NA), alpha = .25) +
+  geom_line() +
+  theme_bw() +
+  theme(legend.position="none") +
+  coord_cartesian(xlim = c(1985, 2020), ylim = c(0, 1)) +
+  labs(x = NULL, y = "PGE Scores") +
+  facet_wrap(~country, nrow = 2) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        strip.background = element_rect(fill = "white", colour = "white"))
+```
+
+Figure&nbsp;\ref{ts} shows the time series of the PGE scores for ten countries.
+
 # Validating Public Gender Egalitarianism
 We consider now the validity of the PGE scores.
 Like @Caughey2019 [684-685], we provide evidence of our measure's validity with  convergent validation and construct validation.
@@ -682,7 +703,7 @@ internal_us_plot <- internal_us %>%
   annotate("text", x = 1979, y = .72, size = 2,
            label = 'emopoli2,\nU.S. GSS') +
   annotate("text", x = 2012, y = .60, size = 2,
-           label = "PGE Mean") +
+           label = "PGE") +
   labs(x = "Year", 
        y = "Score") +
   theme_bw() +
@@ -880,7 +901,7 @@ psw_de_plot <- psw_de %>%
   annotate("text", x = 2010, y = .30, size = 2,
            label = 'preschoolwork4,\nALLBUS, EVS, WVS') +
   annotate("text", x = 1986, y = .66, size = 2,
-           label = "PGE Mean") +
+           label = "PGE") +
   labs(x = "Year", 
        y = "Score") +
   theme_bw() +
