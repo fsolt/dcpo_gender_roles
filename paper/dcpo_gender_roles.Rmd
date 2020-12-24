@@ -446,29 +446,45 @@ p_theta +
 The Scandinavian countries, France, and Spain are at the top of this list, followed by Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
 The latest scores for Egypt, Yemen, Pakistan, the Palestinian Territories, and Burkina Faso have them as the places where public opinion is least favorable to gender equality in the public sphere.
 
-```{r ts_plots, fig.cap="PGE Scores Over Time, Selected Countries \\label{ts}", fig.height=3.5}
-countries <- c("Norway", "Australia", "United States", "Mexico", "Taiwan",
-                "Japan", "Turkey", "Nigeria", "Philippines", "Egypt")
+```{r ts_plots, fig.cap="PGE Scores Over Time Within Selected Countries \\label{ts}", fig.height=3.6}
+countries <- c("Norway", "Australia", "United States", "Argentina",
+               "Brazil", "Poland", "South Africa", "Japan",
+               "Turkey", "China", "South Korea", "India", 
+               "Nigeria", "Philippines", "Indonesia", "Egypt")
+
+countries2 <- c("Norway", "Australia", "U.S.", "Argentina",
+               "Brazil", "Poland", "South Africa", "Japan",
+               "Turkey", "China", "South Korea", "India", 
+               "Nigeria", "Philippines", "Indonesia", "Egypt")
 
 theta_results %>%
   filter(country %in% countries) %>%
-  mutate(country = factor(country, levels = countries)) %>% 
+  mutate(country = str_replace(country, "United States", "U.S.") %>% 
+           factor(levels = countries2)) %>% 
   ggplot(aes(x = year, y = mean)) +
   geom_ribbon(aes(ymin = `10%`, ymax = `90%`, linetype=NA), alpha = .25) +
   geom_line() +
   theme_bw() +
   theme(legend.position="none") +
-  coord_cartesian(xlim = c(1985, 2020), ylim = c(0, 1)) +
+  coord_cartesian(xlim = c(1980, 2020), ylim = c(0, 1)) +
   labs(x = NULL, y = "PGE Scores") +
   facet_wrap(~country, nrow = 2) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        strip.background = element_rect(fill = "white", colour = "white"))
+  theme(axis.text.x  = element_text(size=7,
+                                    angle = 90,
+                                    vjust = .45,
+                                    hjust = .95),
+        strip.background = element_rect(fill = "white", colour = "white")) +
+  plot_annotation(caption = "Note: Countries are ordered by their PGE scores in their most recent\navailable year; gray shading represents 80% credible intervals.")
 ```
 
-Figure&nbsp;\ref{ts} shows the time series of the PGE scores for ten countries.
+Figure&nbsp;\ref{ts} displays how PGE scores have changed over time in sixteen countries.
+Like Figure&nbsp;\ref{cs_mry}, it underscores the geographic breadth of the PGE dataset, which allows the study of countries and regions too often neglected in political science research [see @Wilson2020].
+The figure also shows that while public opinion favoring gender equality in the public sphere has risen steadily in some countries, such as Norway and Australia, attitudes have changed little over time in others, like South Korea and the Philippines, or fallen, as in Indonesia. 
+They have even advanced and retreated as in Brazil or have declined and recovered as in Nigeria.
+There is much to do to explain the causes and consequences of these trends in public gender egalitarianism.
 
 # Validating Public Gender Egalitarianism
-We consider now the validity of the PGE scores.
+Such future research, however, depends on the validity of the PGE scores.
 Like @Caughey2019 [684-685], we provide evidence of our measure's validity with  convergent validation and construct validation.
 
 ```{r extract_res}
