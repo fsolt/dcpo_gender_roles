@@ -70,7 +70,7 @@ set.seed(324)
 <!-- The newly developed gender egalitarian index provides opportunities for scholars to evaluate the generalizability of existing theories with large-N analysis, test the cause and effect of gender egalitarian attitudes, and build new theories with the preliminary statistical analysis. -->
 <!-- The index provides an opportunity to descriptively examine how the attitudes have been changed over decades and why there are variations among countries with different political institutions, culture, religion, and other country specific factors. -->
 <!-- We also can test the long-lasting question suggested by @krauss1974political about whether the differences in political behavior such as protests, voting, political volunteerism, and feminist movement of men and women are attributed to biological differences or public opinion on the gender role. -->
-<!-- Moreover, the index makes it possible to unveil the relationship between gender egalitarianism and women's mobilization and representation [@erickson2002gender; @erickson2002gender; @klein2013gender; @paxton1997women]. -->
+<!-- Moreover, the index makes it possible to unveil the relationship between gender egalitarianism and women's mobilization and representation [@erickson2002gender; @klein2013gender; @paxton1997women]. -->
 <!-- Furthermore, by measuring cross-national time-variant attitudes toward gender egalitarianism, our index positions researchers to ask questions about how public opinion relates to the macrolevel processes of gender, such as the relationship between public opinion about gender roles and policy decisions [@stimson1995dynamic; @lax2009gay; @Wwlezien2017public], public opinion and political institutions [@bartels2009explaining; @grieco2011let; @nir2015institutions], and the public opinion and the makeup of national militaries [@brooks2011war; @eichenberg2016gender; @lizotte2017gender]. -->
 
 
@@ -446,7 +446,7 @@ p_theta +
 The Scandinavian countries, France, and Spain are at the top of this list, followed by Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
 The latest scores for Egypt, Yemen, Pakistan, the Palestinian Territories, and Burkina Faso have them as the places where public opinion is least favorable to gender equality in the public sphere.
 
-```{r ts_plots, fig.cap="PGE Scores Over Time Within Selected Countries \\label{ts}", fig.height=3.6}
+```{r ts_plots, fig.cap="PGE Scores Over Time Within Selected Countries \\label{ts}", fig.height=3.5}
 countries <- c("Norway", "Australia", "United States", "Argentina",
                "Brazil", "Poland", "South Africa", "Japan",
                "Turkey", "China", "South Korea", "India", 
@@ -478,7 +478,7 @@ theta_results %>%
 ```
 
 Figure&nbsp;\ref{ts} displays how PGE scores have changed over time in sixteen countries.
-Like Figure&nbsp;\ref{cs_mry}, it underscores the geographic breadth of the PGE dataset, which allows the study of countries and regions too often neglected in political science research [see @Wilson2020].
+Like Figure&nbsp;\ref{cs_mry}, it underscores the geographic breadth of the PGE dataset, which allows the study of countries and regions too often neglected in political science research [see @Wilson2021].
 The figure also shows that while public opinion favoring gender equality in the public sphere has risen steadily in some countries, such as Norway and Australia, attitudes have changed little over time in others, like South Korea and the Philippines, or fallen, as in Indonesia. 
 They have even advanced and retreated as in Brazil or have declined and recovered as in Nigeria.
 There is much to do to explain the causes and consequences of these trends in public gender egalitarianism.
@@ -933,7 +933,7 @@ wantch_plot + familywoman_plot + psw_de_plot +
   plot_annotation(caption = "Note: Gray whiskers and shading represent 80% credible intervals.")
 ```
 
-We move on, then, to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
+We continue, then, to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
 In Figure&nbsp;\ref{surv_const_plot}, we look to individual survey items from our third category of gender egalitarianism, that is, questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
 Assuming that attitudes that women should prioritize housework and childcare over education, politics, and paid employment---or convictions that there will be negative consequences if they do not---will lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, evidence for this theoretical relationship will provide construct validation for the PGE score.
 Exemplars of such items across all available country-years ("a job is alright but what most women really want is a home and children" from the WVS and EVS), in cross-section ("the most important role of a woman is to take care of her home and family" from the Eurobarometer 87.4), and in time series ("a pre-school child is likely to suffer if his or her mother works" from the German ALLBUS, WVS, and EVS) all show strong correlations with the PGE scores.
