@@ -55,9 +55,9 @@ set.seed(324)
 ```
 
 Collective attitudes toward the appropriate roles of women and men in society---whether labeled culture or ideology or public opinion---constitute one of the primary explanations for women's exclusion from political power and policy influence [see, e.g., @Yates2017, 103-104; @Paxton2021, 113-114].
-Yet even a half century after @RuleKrauss1974 [, 1719] called in the pages of the _APSR_ for more data to be collected on these collective attitudes, what we have available to us remains inadequate for fully examining their causes and consequences.
+Yet even a half century after @RuleKrauss1974 [, 1719] called in the pages of the _APSR_ for more and better data on these collective attitudes, what we have available to us remains inadequate for fully examining their causes and consequences.
 In the decades since, national and cross-national surveys have included a plethora of relevant questions, but sustained focus has been scant and the variety of these survey items renders the resulting data incomparable.
-As a consequence, cross-national research has been constrained to study countries at just one or a few time points [see, e.g., @Paxton2003; @Alexander2012; @Ruedin2012; @Glas2020] or to rely on proxies such as predominant religion or the percentage of women in other offices [see, e.g., @Claveria2014; @Barnes2018].
+As a consequence, cross-national research has been constrained to study countries at just one or a few time points [see, e.g., @Paxton2003; @Alexander2012; @Ruedin2012; @Glas2020] or to rely on proxies such as predominant religion or the percentage of women in office [see, e.g., @Burns2001, 340-341; @Claveria2014; @Barnes2018].
 Broadly cross-national and longitudinal investigation of, for example, the argument that such "attitudes influence both the supply of, and demand for, female candidates" has remained a topic for future research [@Paxton2010, 47].
 
 ```{r dcpo_input_raw, include=FALSE, cache.extra = tools::md5sum(here::here("data-raw", "surveys_egr.csv"))}
@@ -166,30 +166,22 @@ back_to_numeric <- function(string_number) {
 }
 ```
 
-In this letter, we present the Public Gender Egalitarianism (PGE) database, 
-
-We classified the available survey items on gender egalitarian attitudes into four categories.
-The first of these categories consists of questions asking respondents' views of gender equality in the traditionally masculine public sphere of education, paid work, and politics.
-The second category, in turn, encompasses questions focusing on gender equality in the traditionally feminine private sphere of housework and childcare.
-A third category we identified comprises questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere, such as whether mothers in the workforce can have similarly warm relationships with their children as mothers who are not; it is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is only rarely included in surveys.^[
-One laudable example of this mostly unasked sort of question, apparently first included in Australia's 1989 National Social Science Survey and slowly becoming more common, is the item querying respondents the extent to which they agree with the statement, "Family life often suffers when men concentrate too much on their work."]
-The fourth and final category includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames through the recognition that various forms of sexual harassment are not "flattering" to the justifiability of intimate partner violence committed by husbands.
-
-To avoid any potential multidimensionality in the Public Gender Egalitarianism data, we include only survey items corresponding to the first category, gender egalitarianism in the public sphere.^[
-Items that fell into both the first category and another, such as the `tradroles` questions---those with stems of the form "A man's job is to earn money; a woman's job is to look after the home and family"---which by explicitly counterposing the traditional gender roles suggests women unlike men should not earn money in the public sphere (while also suggesting that men unlike women should not look after home and family in the private sphere) were included in the PGE source data.
-The complete list of gender egalitarianism items is included in the Appendix.]
-Thus, the "Public" in the name of the dataset does double duty, referring both to the fact that it measures the _public's_ attitudes on gender equality and to its attitudes specifically on this _public_ aspect of gender egalitarianism.
-In all, we identified `r n_items` of these survey items that were asked in no fewer than five country-years in countries surveyed at least twice; these items were drawn from `r n_surveys` different survey datasets.
-We describe these source data in detail in the next section.
+In this letter, we present the Public Gender Egalitarianism (PGE) dataset, which is based on the host of available survey data and recent advances in latent variable modeling of public opinion.
+It provides comparable estimates of the public's attitudes on gender equality in the public sphere of politics, paid work, and education across countries and over time.
+We show that these PGE scores are strongly correlated with responses to single survey items as well as with measures of women's participation in the workforce and in the boardroom.
+We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and effects of collective attitudes toward gender equality in the public sphere.
 
 
 # Examining the Source Data on Public Gender Egalitarianism
 
+First, we consider the available survey data on attitudes toward equality for women and men in the public sphere.
+In all, we identified `r n_items` such survey items that were asked in no fewer than five country-years in countries surveyed at least twice; these items were drawn from `r n_surveys` different survey datasets.^[
+The complete list of public gender egalitarianism survey items is included in the Appendix.]
 Together, the survey items in the source data were asked in `r n_countries` different countries in at least two time points over `r n_years` years, `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
-Considering that observations for every year in each country surveyed would number `r total_cy`, a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations.
+Observations for every year in each country surveyed would number `r total_cy`, and a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations.
 Viewed from this perspective of complete data, the available data can be seen to be very, very sparse.
 From a more optimistic standpoint, we note there there are `r n_cy` country-years in which we have at least _some_ information about the public gender egalitarianism of the population, that is, some `r {back_to_numeric(n_cy)/back_to_numeric(spanned_cy) * 100} %>% round()`% of the `r spanned_cy` country-years spanned by the data we collected.
-But there can be no gainsaying that the many different survey items employed renders these data difficult to use together.
+But there can be no gainsaying Claveria's [-@Claveria2014] observation that the many different survey items employed renders these data difficult to use together.
 
 ```{r item_and_country_plots, fig.height = 3.5, fig.cap = "Items, Countries, and Years with the Most Observations in the PGE Source Data \\label{item_country_plots}"}
 items_plot <- dcpo_input_raw_public1 %>%
@@ -320,7 +312,7 @@ There has been a recent blossoming of scholarship developing latent variable mod
 To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion  (DCPO) model presented in @Solt2020c.^[
 @Solt2020 demonstrates that the DCPO model provides a better fit to survey data than the models put forward by @Claassen2019 or @Caughey2019.
 The @McGann2019 model depends on dense survey data unlike the sparse data on public gender egalitarianism described in the preceding section.
-@Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable only when the available survey data are dense and ancillary data on population characteristics are also available, so it is similarly inappropriate to this application.
+@Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable not only when the available survey data are dense but also when ancillary data on population characteristics are available, so it is similarly inappropriate to this application.
 ]
 
 The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item bias.
@@ -907,20 +899,9 @@ wantch_plot + familywoman_plot + psw_de_plot +
 ```
 
 We continue, then, to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
-In Figure&nbsp;\ref{surv_const_plot}, we look to individual survey items from our third category of gender egalitarianism, that is, questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
+In Figure&nbsp;\ref{surv_const_plot}, we look to individual survey items from a related category of gender egalitarianism, namely questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
 Assuming that attitudes that women should prioritize housework and childcare over education, politics, and paid employment---or convictions that there will be negative consequences if they do not---will lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, evidence for this theoretical relationship will provide construct validation for the PGE score.
 Exemplars of such items across all available country-years ("a job is alright but what most women really want is a home and children" from the WVS and EVS), in cross-section ("the most important role of a woman is to take care of her home and family" from the Eurobarometer 87.4), and in time series ("a pre-school child is likely to suffer if his or her mother works" from the German ALLBUS, WVS, and EVS) all show strong correlations with the PGE scores.
-<!-- Consider `wantch4`, an item depicted in the left pane asked by the World Values Survey and the European Values Survey, which asked respondents the extent to which they agree with the statement, "a job is alright but what most women really want is a home and children." -->
-<!-- As agreement suggests that women do not truly care about opportunities in the workplace, those who do should be expected to be less likely to believe women should enjoy equal access to such opportunities which men implicitly value more. -->
-<!-- Or, similarly, `familywoman4`, an item plotted in the center pane from Eurobarometer 87.4, which asked respondents the extent of their agreement with the statement, "the most important role of a woman is to take care of her home and family."  -->
-<!-- Though not directly implying that women should not enjoy equal opportunities in education, politics, and the workplace, it may still be fairly surmised that those holding this position would consequently consider that, since opportunities beyond the home are of secondary importance for women, men should have priority.^[
-One might argue that these two questions, particularly the latter, rather than tapping a distinct concept causally related to public gender egalitarianism are in fact tapping aspects of public gender egalitarianism itself. -->
-<!-- (Indeed, the `tradroles` series of questions, which couple the `familywoman4` stem with the idea that the most important role of a man is to earn money---and so more explicitly indicates that the public sphere is appropriately segregated by gender---is included among the items used to estimate the PGE data.) -->
-<!-- If these two questions are thought of as indicators of public gender egalitarianism, then, because they are not included in the PGE source data, these plots constitute not construct validation but rather "external" convergent validation [see, e.g., @Caughey2019, 689; @Solt2020c, 10]. -->
-<!-- In either case, though, they provide evidence of the validity of the PGE scores.] -->
-<!-- In a slightly different vein, `preschoolwork4`, included in the German ALLBUS, the World Values Survey, and the European Values Survey, asked respondents the extent to which they agreed that "a pre-school child is likely to suffer if his or her mother works;" we plot the time series of the proportion of the population of Germany estimated to disagree or disagree strongly with this statement in the right pane. -->
-<!-- The belief that mothers working cause harm to their children should be expected to lead to disfavoring gender equality in workforce to avoid this purported negative consequence.  -->
-<!-- With regard to all of these items, too, the correlations with the PGE scores are strong. -->
 
 
 ```{r cons_valid_plot, fig.cap="Construct Validation: Correlations Between PGE Scores and Indicators of Workplace Gender Equality \\label{construct_plot}", fig.height=4}
@@ -1029,7 +1010,7 @@ Together, this evidence of construct validation and convergent validation attest
 
 
 # Using the Public Gender Egalitarianism Dataset
-Version 1.0 of the PGE dataset includes PGE scores for `r pge[[1]] %>% distinct(country) %>% nrow()` countries for as many years as possible from 1972 to the present, a total of `r pge[[1]] %>% nrow()` country-years.
+Version 1.0 of the PGE dataset includes PGE scores for `r pge[[1]] %>% distinct(country) %>% nrow()` countries for as many years as possible from 1972 to the present, a total of `r pge[[1]] %>% nrow() %>% scales::comma()` country-years.
 It can be accessed in two ways: via a user-friendly web application on the PGE website, which plots scores for as many as four countries for easy comparison of levels and trends, and via the Harvard Dataverse, where the entire dataset is available for download for use in statistical analysis.
 We will revise and update the dataset as new survey data on public gender egalitarianism becomes available.
 
@@ -1042,6 +1023,6 @@ In R, the functions of the \texttt{purrr} package [@Henry2019, also included in 
 In Stata, the \texttt{mi estimate:} command prefix originally developed for analyzing multiply imputed data can be used to automate the process of building uncertainty into nearly any analysis.
 Step-by-step instructions on how to use these tools, complete with examples, are included in the data download.
 
-
+The PGE dataset will allow researchers to not only better address such long-standing questions as how collective attitudes on gender roles have influenced the election of women to national legislatures and vice versa [see, e.g., @Paxton2003; @Alexander2012] but also pursue new and more nuanced lines of inquiry on issues of policy responsiveness and policy feedback [cf., @Kittilson2008; @Busemeyer2021].
 
 \pagebreak
