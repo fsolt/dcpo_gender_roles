@@ -310,7 +310,7 @@ save(dcpo_input_public, file = here::here("data", "dcpo_input_public.rda"))
 
 There has been a recent blossoming of scholarship developing latent variable models of public opinion based on cross-national survey data [see @Claassen2019; @Caughey2019; @McGann2019; @Kolczynska2020].
 To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion  (DCPO) model presented in @Solt2020c.^[
-@Solt2020 demonstrates that the DCPO model provides a better fit to survey data than the models put forward by @Claassen2019 or @Caughey2019.
+@Solt2020a demonstrates that the DCPO model provides a better fit to survey data than the models put forward by @Claassen2019 or @Caughey2019.
 The @McGann2019 model depends on dense survey data unlike the sparse data on public gender egalitarianism described in the preceding section.
 @Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable not only when the available survey data are dense but also when ancillary data on population characteristics are available, so it is similarly inappropriate to this application.
 ]
@@ -449,8 +449,6 @@ They have even advanced and retreated as in Brazil or have declined and recovere
 There is much to do to explain the causes and consequences of these trends in public gender egalitarianism.
 
 # Validating Public Gender Egalitarianism
-Such future research, however, depends on the validity of the PGE scores.
-Like @Caughey2019 [684-685], we provide evidence of our measure's validity with  convergent validation and construct validation.
 
 ```{r extract_res}
 dat <- dcpo_input$data
@@ -699,6 +697,8 @@ internal_plot + internal_cs_plot + internal_us_plot +
   plot_annotation(caption = "Note: Gray whiskers and shading represent 80% credible intervals.")
 ```
 
+Such future research, however, depends on the validity of the PGE scores.
+Like @Caughey2019 [684-685], we provide evidence of our measure's validity with  convergent validation and construct validation.
 Figure&nbsp;\ref{conv_plot} displays our demonstrations of convergent validation.
 Convergent validation refers to showing that a measure is empirically associated with alternative indicators of the same concept [@Adcock2001, 540].
 Here, we compare PGE scores to responses to individual survey items that were included in the source data, that is, we provide an "internal" validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
@@ -900,7 +900,7 @@ wantch_plot + familywoman_plot + psw_de_plot +
 
 We continue, then, to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
 In Figure&nbsp;\ref{surv_const_plot}, we look to individual survey items from a related category of gender egalitarianism, namely questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
-Assuming that attitudes that women should prioritize housework and childcare over education, politics, and paid employment---or convictions that there will be negative consequences if they do not---will lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, evidence for this theoretical relationship will provide construct validation for the PGE score.
+Assuming that attitudes that women should prioritize housework and childcare over education, paid employment, and politics---or convictions that there will be negative consequences if they do not---will lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, evidence for this theoretical relationship will provide construct validation for the PGE score.
 Exemplars of such items across all available country-years ("a job is alright but what most women really want is a home and children" from the WVS and EVS), in cross-section ("the most important role of a woman is to take care of her home and family" from the Eurobarometer 87.4), and in time series ("a pre-school child is likely to suffer if his or her mother works" from the German ALLBUS, WVS, and EVS) all show strong correlations with the PGE scores.
 
 
