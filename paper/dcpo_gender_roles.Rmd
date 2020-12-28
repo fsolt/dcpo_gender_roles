@@ -269,6 +269,48 @@ others <- dcpo_input_raw_public1 %>%
   paste(collapse = ", ") %>% 
   str_replace(", (\\w+)$", ", and \\1")
 
+countries_cp <- dcpo_input_raw_public1 %>%
+  mutate(country = if_else(stringr::str_detect(country, "United"),
+                           stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
+                           country),
+         country = stringr::str_replace(country, "South", "S.")) %>% 
+  distinct(country, year, item) %>%
+  count(country) %>% 
+  arrange(desc(n)) %>% 
+  head(12) %>% 
+  pull(country)
+
+countries_cbyp <- dcpo_input_raw_public1 %>%
+  mutate(country = if_else(stringr::str_detect(country, "United"),
+                           stringr::str_replace(country, "((.).*) ((.).*)", "\\2.\\4."),
+                           country),
+         country = stringr::str_replace(country, "South", "S.")) %>% 
+  distinct(country, year) %>%
+  count(country) %>% 
+  arrange(desc(n)) %>% 
+  head(12) %>% 
+  pull(country)
+
+adding <- setdiff(countries_cbyp, countries_cp) %>% 
+  paste(collapse = ", ") %>% 
+  str_replace(", (\\w*)$", ", and \\1")
+
+dropping <- setdiff(countries_cp, countries_cbyp) %>% 
+  paste(collapse = ", ") %>% 
+  str_replace(", (\\w*)$", ", and \\1")
+
+y_peak_year <- dcpo_input_raw_public1 %>%
+  distinct(country, year) %>%
+  count(year, name = "nn") %>% 
+  filter(nn == max(nn)) %>% 
+  pull(year)
+
+y_peak_nn <- dcpo_input_raw_public1 %>%
+  distinct(country, year) %>%
+  count(year, name = "nn") %>% 
+  filter(nn == max(nn)) %>% 
+  pull(nn)
+
 data_poorest <- dcpo_input_raw_public1 %>%
   distinct(country, year, item) %>%
   count(country) %>%
@@ -289,15 +331,20 @@ n_data_poorest <- {data_poorest %>%
 (items_plot + countries_plot) / (cby_plot + ybc_plot)
 ```
 
-The left panel of Figure&nbsp;\ref{item_country_plots} displays in how many country-years each of the twelve most-commonly asked survey items are available.
+The upper left panel of Figure&nbsp;\ref{item_country_plots} displays in how many country-years each of the twelve most-commonly asked survey items are available.
 The `polileader4` item, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do," was the most frequently asked question in the data we collected.
 Employed by the Americas Barometer, the Arab Barometer, the Eurobarometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years.
 That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the country-years spanned by our data---and remember, `polileader4` is the _most common_ survey item---again underscores just how sparse and incomparable the available public opinion data is on this topic.
 
 Which countries are the most data-rich?
-The right panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
+The upper right panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
 The United States, with `r us_obs` observations, is far and away the best represented country in the source data, followed by `r others`.
 At the other end of the spectrum, `r n_data_poorest` countries---`r data_poorest`---have only the minimum two observations required to be included in the source dataset at all.
+The lower left panel shows the twelve countries with the most years observed; this group is similar, but with `r adding` joining the list and `r dropping` dropping off.  
+
+The lower right panel of Figure&nbsp;\ref{item_country_plots} counts the countries observed in each year and reveals just how few relevant survey items asked before 1990.
+Country coverage reached its peak in `r y_peak_year`, when surveys in `r y_peak_nn` countries included items on gender egalitarianism in the public sphere.
+In the next section, we describe how we are able to make use of all of this sparse and incomparable survey data to generate the PGE scores using a latent variable model.
 
 ```{r dcpo_input_public}
 dcpo_input_public <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
