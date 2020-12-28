@@ -1015,7 +1015,7 @@ It can be accessed in two ways: via a user-friendly web application on the PGE w
 We will revise and update the dataset as new survey data on public gender egalitarianism becomes available.
 
 One aspect of latent-variable estimates of public opinion like the PGE dataset that is easy for researchers to overlook is the uncertainty in the estimates.
-But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year---that is, for example, the mean of the PGE scores---in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2020] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
+But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year---that is, for example, the mean of the PGE scores---in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2021] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
 Therefore, taking the uncertainty in the PGE scores into account is crucial to reaching well-grounded conclusions.
 
 The download includes pre-formatted data to facilitate incorporating the uncertainty in the PGE scores.
