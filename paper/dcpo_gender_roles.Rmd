@@ -9,13 +9,18 @@ output:
 title: "Public Gender Egalitarianism: A Dataset of Dynamic Comparative Public Opinion Toward Egalitarian Gender Roles in the Public Sphere"
 thanks: "Corresponding author: [frederick-solt@uiowa.edu](mailto:frederick-solt@uiowa.edu).  Current version: `r format(Sys.time(), '%B %d, %Y')`."
 author:
-
+- name: Byung-Deuk Woo
+  affiliation: University of Iowa
+- name: Lindsey Allemang
+  affiliation: University of Iowa
+- name: Frederick Solt
+  affiliation: University of Iowa
 abstract: "Societal attitudes toward gender roles in education, the workplace, and politics play a central part in theorizing on the difficulty women face in achieving political equality, but shortcomings in the available data have prevented direct examination of many implications of these theories. Drawing on recent advances in latent variable modeling of public opinion and a comprehensive collection of survey data, we present the Public Gender Egalitarianism dataset to address this need: comparable estimates of the public's attitudes on gender equality in the public sphere across more than one hundred countries over time. These PGE scores are strongly correlated with responses to single survey items as well as with measures of women's rates of participation in the labor force and on corporate boards. We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and consequences of collective attitudes toward gender equality in the public sphere."
 keywords: "gender inequality, public opinion, measurement"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 fontsize: 11pt
 spacing: double
-bibliography: \dummy{`r file.path(getwd(), list.files(getwd(), "s.bib$", recursive = TRUE))`}
+bibliography: \dummy{`r file.path(getwd(), list.files(getwd(), ".bib$", recursive = TRUE))`}
 # csl: https://raw.githubusercontent.com/citation-style-language/styles/master/american-political-science-association.csl
 biblio-style: apsr
 citecolor: black
