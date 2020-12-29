@@ -15,8 +15,8 @@ author:
   affiliation: University of Iowa
 - name: Frederick Solt
   affiliation: University of Iowa
-abstract: "Societal attitudes toward gender roles in education, the workplace, and politics play a central part in theorizing on the difficulty women face in achieving political equality, but shortcomings in the available data have prevented direct examination of many implications of these theories. Drawing on recent advances in latent variable modeling of public opinion and a comprehensive collection of survey data, we present the Public Gender Egalitarianism dataset to address this need: comparable estimates of the public's attitudes on gender equality in the public sphere across more than one hundred countries over time. These PGE scores are strongly correlated with responses to single survey items as well as with measures of women's rates of participation in the labor force and on corporate boards. We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and consequences of collective attitudes toward gender equality in the public sphere."
-keywords: "gender inequality, public opinion, measurement"
+abstract: "Societal attitudes toward gender roles in education, the workplace, and politics play a central part in theorizing on the difficulty women face in achieving political equality, but shortcomings in the available data have prevented direct examination of many implications of these theories. Drawing on recent advances in latent variable modeling of public opinion and a comprehensive collection of survey data, we present the Public Gender Egalitarianism dataset to address this need: comparable estimates of the public's attitudes on gender equality in the public sphere across more than one hundred countries over time. These PGE scores are strongly correlated with responses to individual survey items and with rates of participation in the labor force and corporate boards. We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and consequences of collective attitudes toward gender equality in the public sphere. [148/150 words]"
+keywords: "gender roles, gender inequality, public opinion, political culture, measurement"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 fontsize: 11pt
 spacing: double
@@ -63,7 +63,7 @@ Collective attitudes toward the appropriate roles of women and men in society---
 Yet even a half century after @RuleKrauss1974 [, 1719] called in the pages of the _APSR_ for more and better data on these collective attitudes, what we have available to us remains inadequate for fully examining their causes and consequences.
 In the decades since, national and cross-national surveys have included a plethora of relevant questions, but sustained focus has been scant and the variety of these survey items renders the resulting data incomparable.
 As a consequence, cross-national research has been constrained to study countries at just one or a few time points [see, e.g., @Paxton2003; @Alexander2012; @Ruedin2012; @Glas2020] or to rely on proxies such as predominant religion or the percentage of women in office [see, e.g., @Burns2001, 340-341; @Claveria2014; @Barnes2018].
-Cross-national and longitudinal investigation of, for example, the argument that such "attitudes influence both the supply of, and demand for, female candidates" has remained a topic for future research [@Paxton2010, 47].
+Cross-national and longitudinal investigation of, for example, the argument that such "attitudes influence both the supply of, and demand for, female candidates" has remained persistently a topic for future research [@Paxton2010, 47].
 
 ```{r dcpo_input_raw, include=FALSE, cache.extra = tools::md5sum(here::here("data-raw", "surveys_egr.csv"))}
 surveys_egr <- read_csv(here::here("data-raw", "surveys_egr_classification.csv"),
@@ -1064,7 +1064,6 @@ Together, this evidence of construct validation and convergent validation attest
 # Using the Public Gender Egalitarianism Dataset
 Version 1.0 of the PGE dataset includes PGE scores for `r pge[[1]] %>% distinct(country) %>% nrow()` countries for as many years as possible from 1972 to the present, a total of `r pge[[1]] %>% nrow() %>% scales::comma()` country-years.
 It can be accessed in two ways: via a user-friendly web application on the PGE website, which plots scores for as many as four countries for easy comparison of levels and trends, and via the Harvard Dataverse, where the entire dataset is available for download for use in statistical analysis.
-We will revise and update the dataset as new survey data on public gender egalitarianism becomes available.
 
 One aspect of latent-variable estimates of public opinion like the PGE dataset that is easy for researchers to overlook is the uncertainty in the estimates.
 But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year---that is, for example, the mean of the PGE scores---in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2021] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
@@ -1075,6 +1074,7 @@ In R, the functions of the \texttt{purrr} package [@Henry2019, also included in 
 In Stata, the \texttt{mi estimate:} command prefix originally developed for analyzing multiply imputed data can be used to automate the process of building uncertainty into nearly any analysis.
 Step-by-step instructions on how to use these tools, complete with examples, are included in the data download.
 
-The PGE dataset will allow researchers to not only better address such long-standing questions as how collective attitudes on gender roles have influenced the election of women to national legislatures and vice versa [see, e.g., @Paxton2003; @Alexander2012] but also pursue new and more nuanced lines of inquiry on issues of policy responsiveness and policy feedback [cf., @Kittilson2008; @Busemeyer2021].
+The PGE dataset will allow researchers to not only better address such long-standing questions as how collective attitudes on gender roles have influenced the election of women to national legislatures and vice versa [see, e.g., @Paxton2003; @Alexander2012] but also, for example, to pursue both new and more nuanced lines of inquiry on issues of policy responsiveness and policy feedback [cf., @Kittilson2008; @Busemeyer2021].
+We will revise and update the dataset as new survey data on public gender egalitarianism becomes available, and we look forward to a rapid growth in research that advances our understanding of the relationships between collective attitudes on gender roles and a wide range of other political phenomena.
 
 \pagebreak
