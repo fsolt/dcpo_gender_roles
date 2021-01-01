@@ -362,7 +362,7 @@ save(dcpo_input_public, file = here::here("data", "dcpo_input_public.rda"))
 
 There has been a recent blossoming of scholarship developing latent variable models of public opinion based on cross-national survey data [see @Claassen2019; @Caughey2019; @McGann2019; @Kolczynska2020].
 To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion  (DCPO) model presented in @Solt2020c.^[
-@Solt2020a demonstrates that the DCPO model provides a better fit to survey data than the models put forward by @Claassen2019 or @Caughey2019.
+@Solt2020c demonstrates that the DCPO model provides a better fit to survey data than the models put forward by @Claassen2019 or @Caughey2019.
 The @McGann2019 model depends on dense survey data unlike the sparse data on public gender egalitarianism described in the preceding section.
 @Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable not only when the available survey data are dense but also when ancillary data on population characteristics are available, so it is similarly inappropriate to this application.
 ]
@@ -1067,12 +1067,7 @@ It can be accessed in two ways: via a user-friendly web application on the PGE w
 
 One aspect of latent-variable estimates of public opinion like the PGE dataset that is easy for researchers to overlook is the uncertainty in the estimates.
 But neglecting to incorporate this uncertainty by using only the mean estimate for each country-year---that is, for example, the mean of the PGE scores---in an analysis can lead one to mistakenly conclude that the analysis supports the hypothesis [see @Tai2021] as well as to mistakenly conclude that it does _not_ support the hypothesis [see @Crabtree2015].
-Therefore, taking the uncertainty in the PGE scores into account is crucial to reaching well-grounded conclusions.
-
-The download includes pre-formatted data to facilitate incorporating the uncertainty in the PGE scores.
-In R, the functions of the \texttt{purrr} package [@Henry2019, also included in the widely-used \texttt{tidyverse} package [@Wickham2017a]] make it entirely straightforward to incorporate the uncertainty of the PGE estimates.
-In Stata, the \texttt{mi estimate:} command prefix originally developed for analyzing multiply imputed data can be used to automate the process of building uncertainty into nearly any analysis.
-Step-by-step instructions on how to use these tools, complete with examples, are included in the data download.
+Therefore, taking the uncertainty in the PGE scores into account (e.g., via the \texttt{purrr} package [@Henry2019] in R or the \texttt{mi estimate:} command prefix in Stata) is crucial to reaching well-grounded conclusions.
 
 The PGE dataset will allow researchers to not only better address such long-standing questions as how collective attitudes on gender roles have influenced the election of women to national legislatures and vice versa [see, e.g., @Paxton2003; @Alexander2012] but also, for example, to pursue both new and more nuanced lines of inquiry on issues of policy responsiveness and policy feedback [cf., @Kittilson2008; @Busemeyer2021].
 We will revise and update the dataset as new survey data on public gender egalitarianism becomes available, and we look forward to a rapid growth in research that advances our understanding of the relationships between collective attitudes on gender roles and a wide range of other political phenomena.
