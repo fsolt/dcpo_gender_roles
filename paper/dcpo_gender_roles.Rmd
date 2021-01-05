@@ -341,7 +341,6 @@ The `polileader4` item, which asks respondents whether they strongly agree, agre
 Employed by the Americas Barometer, the Arab Barometer, the Eurobarometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years.
 That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the country-years spanned by our data---and remember, `polileader4` is the _most common_ survey item---again underscores just how sparse and incomparable the available public opinion data is on this topic.
 
-Which countries are the most data-rich?
 The upper right panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
 The United States, with `r us_obs` observations, is far and away the best represented country in the source data, followed by `r others`.
 At the other end of the spectrum, `r n_data_poorest` countries---`r data_poorest`---have only the minimum two observations required to be included in the source dataset at all.
