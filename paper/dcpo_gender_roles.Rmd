@@ -15,6 +15,7 @@ author:
   affiliation: University of Iowa
 - name: Frederick Solt
   affiliation: University of Iowa
+anonymous: false
 abstract: "Societal attitudes toward gender roles in education, the workplace, and politics play a central part in theorizing on the difficulty women face in achieving political equality, but shortcomings in the available data have prevented direct examination of many implications of these theories. Drawing on recent advances in latent variable modeling of public opinion and a comprehensive collection of survey data, we present the Public Gender Egalitarianism dataset to address this need: comparable estimates of the public's attitudes on gender equality in the public sphere across more than one hundred countries over time. These PGE scores are strongly correlated with responses to individual survey items and with rates of participation in the labor force and corporate boards. We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and consequences of collective attitudes toward gender equality in the public sphere. [148/150 words]"
 keywords: "gender roles, gender inequality, public opinion, political culture, measurement"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -188,7 +189,7 @@ Viewed from this complete-data perspective, the available data can be seen to be
 From a more optimistic standpoint, we note there there are `r n_cy` country-years in which we have at least _some_ information about the public gender egalitarianism of the population, that is, some `r {back_to_numeric(n_cy)/back_to_numeric(spanned_cy) * 100} %>% round()`% of the `r spanned_cy` country-years spanned by the data we collected.
 But there can be no denying Claveria's [-@Claveria2014] observation that the many different survey items employed renders these data incomparable and difficult to use together.
 
-```{r item_and_country_plots, fig.height = 3.5, fig.cap = "Items, Countries, and Years with the Most Observations in the PGE Source Data \\label{item_country_plots}"}
+```{r item_and_country_plots, fig.height = 3.5, fig.cap = "Countries and Years with the Most Observations in the PGE Source Data \\label{item_country_plots}"}
 items_plot <- dcpo_input_raw_public1 %>%
   distinct(country, year, item) %>%
   count(item) %>%
@@ -253,7 +254,7 @@ ybc_plot <- dcpo_input_raw_public1 %>%
   geom_bar(stat = "identity") +
   theme_bw() +
   theme(axis.title.x = element_blank(),
-        axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
+        # axis.text.x  = element_text(angle = 90, vjust = .45, hjust = .95),
         axis.title.y = element_text(size = 9),
         plot.title = element_text(hjust = 0.5, size = 11)) +
   ylab("Countries\nObserved") +
@@ -333,20 +334,18 @@ n_data_poorest <- {data_poorest %>%
   length() %>% 
   wordify_numeral()
 
-(items_plot + countries_plot) / (cby_plot + ybc_plot)
+(countries_plot + cby_plot) / (ybc_plot)
 ```
 
-The upper left panel of Figure&nbsp;\ref{item_country_plots} displays in how many country-years each of the twelve most-commonly asked survey items are available.
-The `polileader4` item, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do," was the most frequently asked question in the data we collected.
+Consider the most frequently asked item in the data we collected, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do."
 Employed by the Americas Barometer, the Arab Barometer, the Eurobarometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years.
-That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the country-years spanned by our data---and remember, `polileader4` is the _most common_ survey item---again underscores just how sparse and incomparable the available public opinion data is on this topic.
+That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the country-years spanned by our data---and remember, this is the _most common_ survey item---again underscores just how sparse and incomparable the available public opinion data is on this topic.
 
-The upper right panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
+The upper left panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
 The United States, with `r us_obs` observations, is far and away the best represented country in the source data, followed by `r others`.
 At the other end of the spectrum, `r n_data_poorest` countries---`r data_poorest`---have only the minimum two observations required to be included in the source dataset at all.
-The lower left panel shows the twelve countries with the most years observed; this group is similar, but with `r adding` joining the list and `r dropping` dropping off.  
-
-The lower right panel of Figure&nbsp;\ref{item_country_plots} counts the countries observed in each year and reveals just how few relevant survey items asked before 1990.
+The upper left panel shows the twelve countries with the most years observed; this group is similar, but with `r adding` joining the list and `r dropping` dropping off.
+The bottom panel counts the countries observed in each year and reveals just how few relevant survey items were asked before 1990.
 Country coverage reached its peak in `r y_peak_year`, when surveys in `r y_peak_nn` countries included items on gender egalitarianism in the public sphere.
 In the next section, we describe how we are able to make use of all of this sparse and incomparable survey data to generate the PGE scores using a latent variable model.
 
@@ -413,8 +412,7 @@ The result is estimates, in all `r res_cy` country-years spanned by the source d
 Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries in the dataset.
 
 
-```{r cs_plot, fig.cap="PGE Scores, Most Recent Available Year \\label{cs_mry}", fig.height=4}
-
+```{r cs_plot, fig.cap="PGE Scores, Most Recent Available Year \\label{cs_mry}", fig.height=4.5}
 
 n_panes <- 3
 
@@ -730,8 +728,8 @@ internal_us_plot <- internal_us %>%
                    y = prop_90, yend = prop_10),
                na.rm = TRUE,
                alpha = .2) +
-  annotate("text", x = 1979, y = .72, size = 2,
-           label = 'emopoli2,\nU.S. GSS') +
+  annotate("text", x = 1979, y = .7, size = 2,
+           label = 'U.S. GSS') +
   annotate("text", x = 2012, y = .60, size = 2,
            label = "PGE") +
   labs(x = "Year", 
@@ -753,16 +751,16 @@ Like @Caughey2019 [684-685], we provide evidence of our measure's validity with 
 Figure&nbsp;\ref{conv_plot} displays our demonstrations of convergent validation.
 Convergent validation refers to showing that a measure is empirically associated with alternative indicators of the same concept [@Adcock2001, 540].
 Here, we compare PGE scores to responses to individual survey items that were included in the source data, that is, we provide an "internal" validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
-In the left panel, we examine the `polileader4` question mentioned above, the most common item in the source data across all country-years.
+In the left panel, we examine the four-point question on political leaders mentioned above, the most common item in the source data across all country-years.
 <!-- In the left panel, we examine the `polileader4` question mentioned above, the most common item in the source data across all country-years, combining for this purpose all those who agreed or strongly agreed that "on the whole, men make better political leaders than women." -->
-Then, in the center panel, we look at the question that provides most data-rich cross-section, the `poliequal3` item in Pew Global's Spring 2007 survey.
+Then, in the center panel, we look at the question that provides most data-rich cross-section, which asked whether respondents felt "men generally make better political leaders than women," included in Pew Global's Spring 2007 survey.
 <!-- Then, in the center panel, we look at the question that provides most data-rich cross-section: the `poliequal3` item in Pew Global's Spring 2007 survey that asked whether respondents felt "men generally make better political leaders than women," vice versa, or whether "in general, women and men make equally good political leaders." -->
-Finally, in the right panel, to evaluate how well the PGE score captures change over time, we focus on the item with the largest number of observations for a single country, the `emopoli2` survey item, which asks whether respondents agreed or disagreed that "most men are better suited emotionally for politics than are most women." 
+Finally, in the right panel, to evaluate how well the PGE score captures change over time, we focus on the item with the largest number of observations for a single country, which asked respondents to the U.S. General Social Survey whether they agreed or disagreed that "most men are better suited emotionally for politics than are most women." 
 <!-- Finally, in the right panel, to evaluate how well the PGE score captures change over time, we focus on the `emopoli2` survey item, the item with the largest number of observations for a single country. -->
 <!-- The U.S. General Social Survey asked this question 25 times from 1972 to 2016. -->
 <!-- It asks whether respondents agreed or disagreed that "most men are better suited emotionally for politics than are most women"; to facilitate visual comparison of the longitudinal relationship, we plot the estimated population proportion that disagreed with the statement. -->
 In every case, the correlations---estimated taking into account the uncertainty in the measures^[
-The uncertainty in the PGE score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the `polileader4` question, but failing to account for this uncertainty would overstate the correlation with the Pew `poliequal3` item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS `emopoli2` item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`.
+The uncertainty in the PGE score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the political leadership question, but failing to account for this uncertainty would overstate the correlation with the Pew item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`.
 We take up the issue of the importance of taking uncertainty into account when working with the PGE data in a subsequent section.]---are in the expected direction and very strong.
 
 ```{r construct_validation_survey, fig.cap="Construct Validation: Correlations Between PGE Scores and Individual 'Balancing' Gender Egalitarianism Survey Items \\label{surv_const_plot}", fig.height=4}
@@ -931,7 +929,7 @@ psw_de_plot <- psw_de %>%
                na.rm = TRUE,
                alpha = .2) +
   annotate("text", x = 2010, y = .30, size = 2,
-           label = 'preschoolwork4,\nALLBUS, EVS, WVS') +
+           label = 'ALLBUS, EVS, WVS') +
   annotate("text", x = 1986, y = .66, size = 2,
            label = "PGE") +
   labs(x = "Year", 
