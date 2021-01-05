@@ -436,8 +436,8 @@ p_theta <- ggplot(p1_data,
   geom_segment(aes(x = conf.low, xend = conf.high,
                    y = ranked, yend = ranked),
                na.rm = TRUE,
-               alpha = .2) +
-  geom_point(fill = "black", shape = 21, size = .5, na.rm = TRUE) +
+               alpha = .4) +
+  geom_point(fill = "black", shape = 21, size = .4, na.rm = TRUE) +
   theme_bw() + theme(legend.position="none",
                      axis.text.x  = element_text(size=7,
                                                  angle = 90,
