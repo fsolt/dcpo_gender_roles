@@ -407,14 +407,11 @@ res_c <- theta_results %>%
   length()
 ```
 
-We used the `DCPO` package for R [@Solt2020a] to estimate this model on the public gender egalitarianism source data described above.
-The result is estimates, in all `r res_cy` country-years spanned by the source data, of mean public gender egalitarianism, what we call PGE scores.
-Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries in the dataset.
 
+```{r cs_plot, fig.cap="PGE Scores, Most Recent Available Year \\label{cs_mry}", fig.height=10, fig.width=8}
 
-```{r cs_plot, fig.cap="PGE Scores, Most Recent Available Year \\label{cs_mry}", fig.height=4.5}
-
-n_panes <- 3
+n_panes <- 2
+axis_text_size <- 10
 
 p1_data <- theta_results %>%
   group_by(country) %>%
@@ -435,13 +432,13 @@ p_theta <- ggplot(p1_data,
                    y = ranked, yend = ranked),
                na.rm = TRUE,
                alpha = .4) +
-  geom_point(fill = "black", shape = 21, size = .4, na.rm = TRUE) +
+  geom_point(fill = "black", shape = 21, size = .5, na.rm = TRUE) +
   theme_bw() + theme(legend.position="none",
-                     axis.text.x  = element_text(size=7,
+                     axis.text.x  = element_text(size = axis_text_size,
                                                  angle = 90,
                                                  vjust = .45,
                                                  hjust = .95),
-                     axis.text.y  = element_text(size=7),
+                     axis.text.y  = element_text(size = axis_text_size),
                      axis.title = element_blank(),
                      strip.background = element_blank(), 
                      strip.text = element_blank(),
@@ -456,6 +453,10 @@ p_theta +
   plot_annotation(caption = "Note: Gray whiskers represent 80% credible intervals.")
 
 ```
+
+We used the `DCPO` package for R [@Solt2020a] to estimate this model on the public gender egalitarianism source data described above.
+The result is estimates, in all `r res_cy` country-years spanned by the source data, of mean public gender egalitarianism, what we call PGE scores.
+Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries in the dataset.
 
 The Scandinavian countries, France, and Spain are at the top of this list, followed by Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
 The latest scores for Egypt, Yemen, Pakistan, the Palestinian Territories, and Burkina Faso have them as the places where public opinion is least favorable to gender equality in the public sphere.
