@@ -73,7 +73,7 @@ eb653,work4,v646,c(4:1),3,3,3
 eb653,preschoolwork4,v647,c(1:4),3,3,3
 eb653,familywork4,v648,c(1:4),3,3,3
 eb653,income4,v649,c(4:1),1,1,1
-eb653,tradroles4,v650,c(4:1),1,1,1
+eb653,tradroles4,v650,c(1:4),1,1,1
 eb722,womenmp4,v248,c(4:1),,,1
 eb722,unqualified4,v254,c(1:4),,,1
 eb722,childcareer4,v232,c(1:4),,,3
@@ -266,7 +266,7 @@ pew2002,decveil4,q53b,c(4:1),4,4,4
 pew2002,samework4,q53c,c(1:4),1,1,1
 pew2006,imperial2,q64_allowempress,c(2:1),1,1,1
 pew2007,decveil4,q74a,c(4:1),4,4,4
-pew2007,poliequal3,q47,c(1:3),1,1,1
+pew2007,poliequal3,q47,"c(1,3,2)",1,1,1
 pew2007,samework4,q74b,c(1:4),1,1,1
 pew2008,decveil4,q55aa,c(4:1),4,4,4
 pew2008,samework4,q55ab,c(1:4),1,1,1
@@ -278,7 +278,7 @@ pew2010,veilpub2b,q59fra,c(1:2),1,1,1
 pew2010,wifelife2,q93,c(1:2),1,2,2
 pew2012,equalright2,q85,c(2:1),1,1,1
 pew2012,job4,q86b,c(1:4),1,1,1
-pew2012,poliequal3,q101,c(1:3),1,1,1
+pew2012,poliequal3,q101,"c(1,3,2)",1,1,1
 pew2015,equalright4b,q56c,c(4:1),1,1,1
 pew2016,equalright4b,q33c,c(4:1),1,1,1
 pew2017,organright4,humanrights_priority_gender,c(4:1),1,1,1
@@ -290,7 +290,7 @@ pewrel2009_afr,job4,q11d,c(1:4),1,1,1
 pewrel2014_latam,job4,q19d,c(1:4),1,1,1
 pewrel2015_ee,bearchild4,q16d,c(1:4),1,3,3
 pewrel2015_ee,job4,q16c,c(1:4),1,1,1
-pgss,tradroles4,q7d,c(4:1),2,1,1
+pgss,tradroles4,q7d,c(1:4),2,1,1
 tcmeg2004,beat5,m710q,c(1:5),4,4,4
 tcmeg2004,divorce5,m710p,c(5:1),4,4,4
 tcmeg2004,family5b,m710i,c(1:5),3,3,3
@@ -380,7 +380,7 @@ wvs4_swe,sparent3,v112,"c(2,3,1)",3,3,4
 wvs4_swe,work4,v115,c(4:1),3,3,3
 wvs4_swe,education4,v119,c(1:4),1,1,1
 wvs4_swe,income4,v117,c(4:1),1,1,1
-wvs4_swe,job3a,v78,c(1:3),1,1,1
+wvs4_swe,job3a,v78,"c(1,3,2)",1,1,1
 wvs4_swe,polileader4,v118,c(1:4),1,1,1
 wvs7,beat10,q189,c(10:1),4,4,4
 wvs7,housewifefull4,q32,c(1:4),3,3,3
