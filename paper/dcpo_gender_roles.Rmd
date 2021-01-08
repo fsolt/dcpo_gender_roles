@@ -383,7 +383,7 @@ dcpo_output <- dcpo(dcpo_input,
 ```
 
 ```{r dcpo_results}
-load(here::here("data", "polileader4_2_4k_11-27.rda"))
+load(here::here("data", "polileader4_2_4k_01-08.rda"))
 
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 
@@ -458,7 +458,7 @@ We used the `DCPO` package for R [@Solt2020a] to estimate this model on the publ
 The result is estimates, in all `r res_cy` country-years spanned by the source data, of mean public gender egalitarianism, what we call PGE scores.
 Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries in the dataset.
 
-The Scandinavian countries, France, and Spain are at the top of this list, followed by Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
+The Scandinavian countries and France are at the top of this list, along with Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
 The latest scores for Egypt, Yemen, Pakistan, the Palestinian Territories, and Burkina Faso have them as the places where public opinion is least favorable to gender equality in the public sphere.
 
 ```{r ts_plots, fig.cap="PGE Scores Over Time Within Selected Countries \\label{ts}", fig.height=3.5}
