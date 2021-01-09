@@ -42,7 +42,6 @@ set.seed(324)
 ```
 
 # Appendix A: Survey Items Used to Estimate Public Gender Egalitarianism 
-
 ```{r pge_items}
 load(here::here("data", "dcpo_input.rda"))
 load(here::here("data", "dcpo_output.rda"))
@@ -107,85 +106,58 @@ items_summary <- dcpo_input_raw_public1 %>%
     select(-survey, -n_cy)
 ```
 
-```{r pge_items_table1}    
-items_summary[1:9,] %>% 
-    transmute(`Survey\nItem\nCode` = item,
-              `Country\nYears` = as.character(total_cy),
-              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
-              `Dispersion` = dispersion,
-             ` Difficulties`= difficulties,
-              `Survey Dataset Codes` = all_surveys) %>% 
-    modelsummary::datasummary_df(output = "kableExtra") %>% 
-    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
-    kableExtra::column_spec(5, width = "5em")
+```{r pge_items_table1}  
+pge_items_table <- function(x) {
+    items_summary %>% 
+        slice(x) %>% 
+        transmute(`Survey\nItem\nCode` = item,
+                  `Country-Years` = as.character(total_cy),
+                  `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
+                  `Dispersion` = dispersion,
+                  `Difficulties`= difficulties,
+                  `Survey Dataset Codes` = all_surveys) %>% 
+        modelsummary::datasummary_df(output = "kableExtra",
+                                     note = "") %>% 
+        kableExtra::column_spec(c(3, 6), width = "10em") %>% 
+        kableExtra::column_spec(5, width = "5em")
+}
+
+pge_items_table(1:9)
 ```
 
 
 ```{r pge_items_table2}    
-items_summary[10:17,] %>% 
-    transmute(`Survey\nItem\nCode` = item,
-              `Country\nYears` = as.character(total_cy),
-              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
-              `Dispersion` = dispersion,
-             ` Difficulties`= difficulties,
-              `Survey Dataset Codes` = all_surveys) %>% 
-    modelsummary::datasummary_df(output = "kableExtra") %>% 
-    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
-    kableExtra::column_spec(5, width = "5em")
+pge_items_table(10:17)
 ```
 
 ```{r pge_items_table3}    
-items_summary[18:27,] %>% 
-    transmute(`Survey\nItem\nCode` = item,
-              `Country\nYears` = as.character(total_cy),
-              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
-              `Dispersion` = dispersion,
-             ` Difficulties`= difficulties,
-              `Survey Dataset Codes` = all_surveys) %>% 
-    modelsummary::datasummary_df(output = "kableExtra") %>% 
-    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
-    kableExtra::column_spec(5, width = "5em")
+pge_items_table(18:27)
 ```
 
 ```{r pge_items_table4}    
-items_summary[28:34,] %>% 
-    transmute(`Survey\nItem\nCode` = item,
-              `Country\nYears` = as.character(total_cy),
-              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
-              `Dispersion` = dispersion,
-             ` Difficulties`= difficulties,
-              `Survey Dataset Codes` = all_surveys) %>% 
-    modelsummary::datasummary_df(output = "kableExtra") %>% 
-    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
-    kableExtra::column_spec(5, width = "5em")
+pge_items_table(28:34)
 ```
 
 ```{r pge_items_table5}    
-items_summary[35:46,] %>% 
-    transmute(`Survey\nItem\nCode` = item,
-              `Country\nYears` = as.character(total_cy),
-              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
-              `Dispersion` = dispersion,
-             ` Difficulties`= difficulties,
-              `Survey Dataset Codes` = all_surveys) %>% 
-    modelsummary::datasummary_df(output = "kableExtra") %>% 
-    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
-    kableExtra::column_spec(5, width = "5em")
+pge_items_table(35:46)
 ```
 
 ```{r pge_items_table6}    
-items_summary[47:49,] %>% 
-    transmute(`Survey\nItem\nCode` = item,
-              `Country\nYears` = as.character(total_cy),
-              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
-              `Dispersion` = dispersion,
-              `Difficulties`= difficulties,
-              `Survey Dataset Codes` = all_surveys) %>% 
-    modelsummary::datasummary_df(output = "kableExtra",
-                                 note = "") %>% 
-    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
-    kableExtra::column_spec(5, width = "5em")
+pge_items_table(47:49)
 ```
 
 \vspace{-.45in}
-Notes: Question text may vary slightly across survey datasets, but not, roughly speaking, by more than the translation differences across languages found in the cross-national survey dataset.  Lower values of dispersion ($\alpha$) indicate questions that better identify publics with more public gender egalitarianism from those with less.  Items have one difficulty score ($\beta$) for each cutpoint; that is, one less than the number of response categories.  Survey dataset codes correspond to those used in the `DCPOtools` package.
+Notes: Question text may vary slightly across survey datasets, but not, roughly speaking, by more than the translation differences across languages found in the cross-national survey dataset.  Lower values of dispersion ($\alpha$) indicate questions that better identify publics with more public gender egalitarianism from those with less.  Items have one difficulty score ($\beta$) for each cutpoint; that is, one less than the number of response categories.  Survey dataset codes correspond to those used in the `DCPOtools` R package; they appear in decreasing order of country-years contributed.
+
+# Appendix B: Excluded Survey Items
+To estimate the Public Gender Egalitarianism scores, we collected survey data on questions asking respondents' views of gender equality in the traditionally masculine public sphere of education, paid work, and politics.
+These included questions are nearly always explicit in comparing men and women (but see, for example, `unequalpol4`, which asked responses to the statement "Women do not have the necessary qualities and skills to fill positions of responsibility in politics") and nearly always explicitly invoke education, paid work, or politics, though they may also be broader (see, for example, `equalright2`, which asked "On a different subject, do you think women should have equal rights with men, or shouldn’t they?").
+
+We carefully distinguished these questions from three other categories of questions on gender equality.
+First, the PGE source data do not include the small set of questions focusing on gender equality in the traditionally feminine private sphere of housework and childcare, such as "Men should take as much responsibility as women for the home and children," asked (with differing response categories) in the European Values Survey and the European Social Survey.
+Second, as noted in the text, we also excluded questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere, such as whether mothers in the workforce can have similarly warm relationships with their children as mothers who are not, asked in the World Values Survey and many others.
+Given that attitudes that women should prioritize housework and childcare over education, paid employment, and politics---or convictions that there will be negative consequences if they do not---can be expected to lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, this is clearly a very closely related set of items to those we sought, and there are many of them.^[
+It is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is only rarely included in surveys; one laudable example of this mostly unasked sort of question, apparently first included in Australia's 1989 National Social Science Survey and slowly becoming more common, is the item querying respondents the extent to which they agree with the statement, "Family life often suffers when men concentrate too much on their work."]
+The third and final category of excluded survey items includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames through the recognition that various forms of sexual harassment are not "flattering" to the justifiability of intimate partner violence committed by husbands.
+In each case, as the included questions are not _directly_ relevant to gender egalitarianism in the public sphere, we concluded that to ensure that the PGE scores tap only a single dimension of attitudes, we would exclude these others.
+Usefully, this decision also allows, when the available survey data permits, future research to take up the estimation of dynamic comparative public opinion of those concepts separately and their relationships to public gender egalitarianism.
