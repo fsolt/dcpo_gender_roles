@@ -1,0 +1,191 @@
+---
+title: 'Appendix to Public Gender Egalitarianism: A Dataset of Dynamic Comparative
+  Public Opinion Toward Egalitarian Gender Roles in the Public Sphere'
+author: ""
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+    pdf_document:
+        toc: true
+header-includes:
+      - \usepackage{float}
+      - \usepackage{array}
+      - \usepackage{caption}
+      - \usepackage{graphicx}
+      - \usepackage{siunitx}
+      - \usepackage{colortbl}
+      - \usepackage{multirow}
+      - \usepackage{hhline}
+      - \usepackage{calc}
+      - \usepackage{tabularx}
+      - \usepackage{threeparttable}
+      - \usepackage{wrapfig}
+      - \usepackage{booktabs}
+---
+
+```{r setup, include=FALSE}
+options(tinytex.verbose = TRUE)
+
+knitr::opts_chunk$set(cache = TRUE, echo = FALSE, message = FALSE, warning = FALSE)
+
+# If `DCPOtools` is not yet installed:
+# remotes::install_github("fsolt/DCPOtools")
+
+library(DCPOtools)
+library(DCPO)
+library(tidyverse)
+library(glue)
+library(countrycode)
+library(patchwork)
+library(modelsummary)
+
+set.seed(324)
+```
+
+# Appendix A: Survey Items Used to Estimate Public Gender Egalitarianism 
+
+```{r pge_items}
+load(here::here("data", "dcpo_input.rda"))
+load(here::here("data", "dcpo_output.rda"))
+
+dcpo_input_raw_public <- read_csv(here::here("data", "dcpo_input_raw_public.csv"),
+                                  col_types = "cdcddcd")
+
+process_dcpo_input_raw <- function(dcpo_input_raw_df) {
+  dcpo_input_raw_df %>% 
+  DCPOtools::with_min_yrs(2) %>% 
+  DCPOtools::with_min_cy(5) %>% 
+  group_by(country) %>% 
+  mutate(cc_rank = n()) %>% 
+  ungroup() %>% 
+  arrange(-cc_rank)
+} 
+
+dcpo_input_raw_public1 <- process_dcpo_input_raw(dcpo_input_raw_public)
+
+pge_items <- read_csv(here::here("data-raw", "egr_questions.csv"),
+                      col_types = "cccccc")
+
+alpha_results <- DCPO::summarize_dcpo_results(dcpo_input,
+                                              dcpo_output,
+                                              "alpha") %>% 
+    transmute(item = question,
+              dispersion = mean)
+
+beta_results <- DCPO::summarize_dcpo_results(dcpo_input,
+                                              dcpo_output,
+                                              "beta") %>% 
+    group_by(question) %>% 
+    summarize(difficulties0 = paste0(round(mean, 2), collapse = ", ")) %>% 
+    mutate(item = question,
+           cp = as.numeric(str_extract(item, "\\d")) - 1,
+           term = str_glue("(( ?-?[0-9].[0-9][0-9]?,?){{{cp}}})"),
+           difficulties = str_extract(difficulties0, 
+                                      term) %>%
+               str_replace(",$", "") %>% 
+               str_trim()) %>% 
+    transmute(item, difficulties)
+                                    
+items_summary <- dcpo_input_raw_public1 %>%
+    dplyr::select(country, year, item, survey) %>%
+    distinct() %>%
+    separate(survey, c("surv1", "surv2", "surv3"), sep=", ", fill = "left") %>%
+    pivot_longer(cols = starts_with("surv"), values_to = "survey") %>%
+    filter(!is.na(survey)) %>% 
+    group_by(item, survey) %>% 
+    summarize(n_cy = n()) %>% 
+    arrange(item, -n_cy) %>% 
+    group_by(item) %>% 
+    mutate(total_cy = sum(n_cy),
+           all_surveys = paste0(survey, collapse = ", ")) %>% 
+    slice(1) %>% 
+    ungroup() %>% 
+    left_join(pge_items %>% select(item, survey, question_text),
+              by = c("item", "survey")) %>% 
+    left_join(alpha_results, by = "item") %>% 
+    left_join(beta_results, by = "item") %>% 
+    arrange(-total_cy) %>% 
+    select(-survey, -n_cy)
+```
+
+```{r pge_items_table1}    
+items_summary[1:9,] %>% 
+    transmute(`Survey\nItem\nCode` = item,
+              `Country\nYears` = as.character(total_cy),
+              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
+              `Dispersion` = dispersion,
+             ` Difficulties`= difficulties,
+              `Survey Dataset Codes` = all_surveys) %>% 
+    modelsummary::datasummary_df(output = "kableExtra") %>% 
+    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
+    kableExtra::column_spec(5, width = "5em")
+```
+
+
+```{r pge_items_table2}    
+items_summary[10:17,] %>% 
+    transmute(`Survey\nItem\nCode` = item,
+              `Country\nYears` = as.character(total_cy),
+              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
+              `Dispersion` = dispersion,
+             ` Difficulties`= difficulties,
+              `Survey Dataset Codes` = all_surveys) %>% 
+    modelsummary::datasummary_df(output = "kableExtra") %>% 
+    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
+    kableExtra::column_spec(5, width = "5em")
+```
+
+```{r pge_items_table3}    
+items_summary[18:27,] %>% 
+    transmute(`Survey\nItem\nCode` = item,
+              `Country\nYears` = as.character(total_cy),
+              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
+              `Dispersion` = dispersion,
+             ` Difficulties`= difficulties,
+              `Survey Dataset Codes` = all_surveys) %>% 
+    modelsummary::datasummary_df(output = "kableExtra") %>% 
+    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
+    kableExtra::column_spec(5, width = "5em")
+```
+
+```{r pge_items_table4}    
+items_summary[28:34,] %>% 
+    transmute(`Survey\nItem\nCode` = item,
+              `Country\nYears` = as.character(total_cy),
+              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
+              `Dispersion` = dispersion,
+             ` Difficulties`= difficulties,
+              `Survey Dataset Codes` = all_surveys) %>% 
+    modelsummary::datasummary_df(output = "kableExtra") %>% 
+    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
+    kableExtra::column_spec(5, width = "5em")
+```
+
+```{r pge_items_table5}    
+items_summary[35:46,] %>% 
+    transmute(`Survey\nItem\nCode` = item,
+              `Country\nYears` = as.character(total_cy),
+              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
+              `Dispersion` = dispersion,
+             ` Difficulties`= difficulties,
+              `Survey Dataset Codes` = all_surveys) %>% 
+    modelsummary::datasummary_df(output = "kableExtra") %>% 
+    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
+    kableExtra::column_spec(5, width = "5em")
+```
+
+```{r pge_items_table6}    
+items_summary[47:49,] %>% 
+    transmute(`Survey\nItem\nCode` = item,
+              `Country\nYears` = as.character(total_cy),
+              `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
+              `Dispersion` = dispersion,
+              `Difficulties`= difficulties,
+              `Survey Dataset Codes` = all_surveys) %>% 
+    modelsummary::datasummary_df(output = "kableExtra",
+                                 note = "") %>% 
+    kableExtra::column_spec(c(3, 6), width = "10em") %>% 
+    kableExtra::column_spec(5, width = "5em")
+```
+
+\vspace{-.45in}
+Notes: Question text may vary slightly across survey datasets, but not, roughly speaking, by more than the translation differences across languages found in the cross-national survey dataset.  Lower values of dispersion ($\alpha$) indicate questions that better identify publics with more public gender egalitarianism from those with less.  Items have one difficulty score ($\beta$) for each cutpoint; that is, one less than the number of response categories.  Survey dataset codes correspond to those used in the `DCPOtools` package.
