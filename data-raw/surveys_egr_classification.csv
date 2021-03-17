@@ -282,8 +282,8 @@ pew2012,poliequal3,q101,"c(1,3,2)",1,1,1
 pew2015,equalright4b,q56c,c(4:1),1,1,1
 pew2016,equalright4b,q33c,c(4:1),1,1,1
 pew2017,organright4,humanrights_priority_gender,c(4:1),1,1,1
-pew2019,equalright4b,q55c,c(4:1),,,
-pew2019,job4,q62,c(1:4),,,
+pew2019,equalright4b,gender_equality,c(4:1),1,1,1
+pew2019,job4,women_job,c(1:4),1,1,1
 pewrel2006_10nat,obey4,q27c,c(1:4),4,4,4
 pewrel2006_10nat,job4,q27a,c(1:4),1,1,1
 pewrel2006_10nat,polileader4,q27b,c(1:4),1,1,1
