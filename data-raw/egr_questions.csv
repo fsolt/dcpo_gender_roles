@@ -35,6 +35,7 @@ jgss2012,earn4,q4wwjbia,c(1:4),"If the husband has enough income, the wife shoul
 nsss_combo,earn5,wearnok,c(5:1),I approve of a married woman earning money in business or industry even if she has a husband capable of supporting her,1 Agree Strongly / 5 Disagree Strongly
 nsss1989,earn5,wearnok,c(5:1),I approve of a married woman earning money in business or industry even if she has a husband capable of supporting her,1 Agree Strongly / 5 Disagree Strongly
 nsss1993,earn5,wearnok3,c(5:1),I approve of a married woman earning money in business or industry even if she has a husband capable of supporting her,1 Agree Strongly / 5 Disagree Strongly
+wvs_combo,earn5,e213,c(1:5),Do you agree or disagree that a married woman should not work outside the home unless forced to do so by economic circumstances?,1 Agree Strongly / 5 Disagree Strongly
 arabb1,education4,q5054,c(1:4),A university education is more important for a boy than a girl,1 Strongly Agree / 4 Strongly Disagree
 arabb2,education4,q60104,c(1:4),University education for males is more important than university education for females.,1 Strongly Agree / 4 Strongly Disagree
 arabb3,education4,q6014,c(1:4),University education for males is more important than university education for females.,1 Strongly Agree / 4 Strongly Disagree
@@ -145,6 +146,7 @@ wvs4_swe,job3a,v78,"c(1,3,2)","When jobs are scarce, men should have more right 
 jgss2006,job4,q7wwloff,c(1:4),"When the economy is bad, women should be fired before men","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
 pew2010,job4,q69c,c(1:4),"When jobs are scarce, men should have more right to a job than women.",1 Completely Agree / 4 Completely Disagree
 pew2012,job4,q86b,c(1:4),"When jobs are scarce, men should have more right to a job than women.",1 Completely Agree / 4 Completely Disagree
+pew2019,job4,women_job,c(1:4),"When jobs are scarce, men should have more right to a job than women.",1 Completely Agree / 4 Completely Disagree
 pewrel2006_10nat,job4,q27a,c(1:4),"When jobs are scarce, men should have more right to a job than women",1 Completely Agree / 4 Completely Disagree
 pewrel2009_afr,job4,q11d,c(1:4),"When jobs are scarce, men should have more right to a job than women",1 Completely Agree / 4 Completely Disagree
 pewrel2014_latam,job4,q19d,c(1:4),"When jobs are scarce, men should have more right to a job than women",1 Completely Agree / 4 Completely Disagree
