@@ -142,7 +142,7 @@ arabb1,islamclass4,q5044,c(4:1),It is acceptable in Islam for male and female un
 arabb4,islamclass4,q6074,c(4:1),It is acceptable in Islam for male and female university students to attend classes together,1 Strongly Agree / 4 Strongly Disagree
 evs_combo,job3a,c001,"c(1,3,2)","When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Disagree / 3 Neither
 wvs_combo,job3a,c001,"c(1,3,2)","When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Disagree / 3 Neither
-wvs4_swe,job3a,v78,"c(1,3,2)","When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Neither / 3 Disagree
+wvs4_swe,job3a,v78,c(1:3),"When jobs are scarce, men should have more right to a job than women",1 Agree / 2 Neither / 3 Disagree
 jgss2006,job4,q7wwloff,c(1:4),"When the economy is bad, women should be fired before men","1 Agree / 2 If anything, I agree / 3 If anything, I disagree / 4 Disagree"
 pew2010,job4,q69c,c(1:4),"When jobs are scarce, men should have more right to a job than women.",1 Completely Agree / 4 Completely Disagree
 pew2012,job4,q86b,c(1:4),"When jobs are scarce, men should have more right to a job than women.",1 Completely Agree / 4 Completely Disagree
