@@ -369,7 +369,7 @@ wvs_combo,wantch4,d062,c(1:4),1,3,3
 wvs_combo,job3a,c001,"c(1,3,2)",1,1,1
 wvs_combo,polileader4,d059,c(1:4),1,1,1
 wvs_combo,work4,d056,c(4:1),3,3,3
-wvs_combo,work5b,e213,c(1:5),3,3,3
+wvs_combo,earn5,e213,c(1:5),3,3,1
 wvs4_swe,childfull2,v110,c(1:0),3,3,3
 wvs4_swe,educimp5,iv85,c(5:1),1,3,3
 wvs4_swe,goodmother5,iv82,c(1:5),1,3,3
