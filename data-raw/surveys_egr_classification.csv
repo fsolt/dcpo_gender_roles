@@ -69,6 +69,7 @@ cdcee,household4,v232,c(1:4),1,1,1
 eb443,polileader3,v421,"c(1,3,2)",,,1
 eb443,businessleader3,v414,"c(1,3,2)",,,1
 eb631,polileader4,v324,c(1:4),1,1,1
+eb631,education4,v326,c(1:4),1,1,1
 eb653,work4,v646,c(4:1),3,3,3
 eb653,preschoolwork4,v647,c(1:4),3,3,3
 eb653,familywork4,v648,c(1:4),3,3,3
@@ -273,6 +274,7 @@ pew2008,samework4,q55ab,c(1:4),1,1,1
 pew2010,decveil4,q69a,c(4:1),4,4,4
 pew2010,equalright2,q80,c(2:1),1,1,1
 pew2010,job4,q69c,c(1:4),1,1,1
+pew2010,education4,q33,c(1:4),1,1,1
 pew2010,veilpub2a,q59,c(1:2),1,1,1
 pew2010,veilpub2b,q59fra,c(1:2),1,1,1
 pew2010,wifelife2,q93,c(1:2),1,2,2
