@@ -355,14 +355,14 @@ Germany,2017,familywoman4,1,158.72281390334376,eb874,364
 Germany,2017,familywoman4,2,288.49344328083066,eb874,364
 Germany,2017,familywoman4,3,548.2423822332534,eb874,364
 Germany,2017,familywoman4,4,563.1815294364244,eb874,364
-Germany,2018,housewifefull4,1,275.0774818716196,wvs7,364
-Germany,2018,housewifefull4,2,561.158063018104,wvs7,364
-Germany,2018,housewifefull4,3,439.12368924233095,wvs7,364
-Germany,2018,housewifefull4,4,156.04395335262785,wvs7,364
-Germany,2018,preschoolwork4,1,82.02310368535568,wvs7,364
-Germany,2018,preschoolwork4,2,353.0994585479336,wvs7,364
-Germany,2018,preschoolwork4,3,707.1991988481276,wvs7,364
-Germany,2018,preschoolwork4,4,352.09917679567315,wvs7,364
+Germany,2018,housewifefull4,1,275.07607216405876,wvs7,364
+Germany,2018,housewifefull4,2,561.1551872146798,wvs7,364
+Germany,2018,housewifefull4,3,439.12143883644285,wvs7,364
+Germany,2018,housewifefull4,4,156.04315366397515,wvs7,364
+Germany,2018,preschoolwork4,1,82.02268333619206,wvs7,364
+Germany,2018,preschoolwork4,2,353.0976489960463,wvs7,364
+Germany,2018,preschoolwork4,3,707.1955746181437,wvs7,364
+Germany,2018,preschoolwork4,4,352.0973723699952,wvs7,364
 Australia,1981,childfull2,1,322.29242028799183,wvs_combo,261
 Australia,1981,childfull2,2,89.08082424109092,wvs_combo,261
 Australia,1984,career5,1,118,nsss_combo,261
@@ -616,14 +616,14 @@ Australia,2012,preschoolwork4,1,37.28831189350321,wvs_combo,261
 Australia,2012,preschoolwork4,2,275.5547171650255,wvs_combo,261
 Australia,2012,preschoolwork4,3,865.3753360600338,wvs_combo,261
 Australia,2012,preschoolwork4,4,288.9999322878784,wvs_combo,261
-Australia,2018,housewifefull4,1,397.55783464458955,wvs7,261
-Australia,2018,housewifefull4,2,758.9898388077982,wvs7,261
-Australia,2018,housewifefull4,3,461.9851874227866,wvs7,261
-Australia,2018,housewifefull4,4,154.3761349223765,wvs7,261
-Australia,2018,preschoolwork4,1,93.43679640426593,wvs7,261
-Australia,2018,preschoolwork4,2,367.2807460202798,wvs7,261
-Australia,2018,preschoolwork4,3,842.2609673779403,wvs7,261
-Australia,2018,preschoolwork4,4,478.7001794840482,wvs7,261
+Australia,2018,housewifefull4,1,397.5557972539547,wvs7,261
+Australia,2018,housewifefull4,2,758.9859491629345,wvs7,261
+Australia,2018,housewifefull4,3,461.9828198570836,wvs7,261
+Australia,2018,housewifefull4,4,154.37534378090197,wvs7,261
+Australia,2018,preschoolwork4,1,93.4363175626048,wvs7,261
+Australia,2018,preschoolwork4,2,367.2788637926211,wvs7,261
+Australia,2018,preschoolwork4,3,842.2566509880785,wvs7,261
+Australia,2018,preschoolwork4,4,478.69772625793223,wvs7,261
 Hungary,1982,childfull2,1,1236.606272632669,wvs_combo,239
 Hungary,1982,childfull2,2,152.3098700675779,wvs_combo,239
 Hungary,1988,familywork5a,1,353.15904610608465,issp1988,239
@@ -1333,19 +1333,19 @@ United States,1981,childfull2,1,362.8554792370944,wvs_combo,227
 United States,1981,childfull2,2,1805.7773254352946,wvs_combo,227
 United States,1982,childfull2,1,393.96216799779813,evs_combo,227
 United States,1982,childfull2,2,1781.870641849077,evs_combo,227
-United States,1988,familywork5a,1,234.05147596495846,"issp1988, usgss",227
-United States,1988,familywork5a,2,724.1592675155125,"issp1988, usgss",227
-United States,1988,familywork5a,3,420.09239275761774,"issp1988, usgss",227
-United States,1988,familywork5a,4,902.1984244461219,"issp1988, usgss",227
-United States,1988,familywork5a,5,466.10251196440447,"issp1988, usgss",227
-United States,1988,fullpart3a,1,66.99929046806699,usgss,227
-United States,1988,fullpart3a,2,214.99772314379703,usgss,227
-United States,1988,fullpart3a,3,930.9901406831398,usgss,227
-United States,1988,happywork5,1,135.99855975607628,usgss,227
-United States,1988,happywork5,2,466.9950544565266,usgss,227
-United States,1988,happywork5,3,508.99460967531485,usgss,227
-United States,1988,happywork5,4,180.99808320477797,usgss,227
-United States,1988,happywork5,5,46.99950226864401,usgss,227
+United States,1988,familywork5a,1,234.0515208506418,"issp1988, usgss",227
+United States,1988,familywork5a,2,724.159406392584,"issp1988, usgss",227
+United States,1988,familywork5a,3,420.09247332166467,"issp1988, usgss",227
+United States,1988,familywork5a,4,902.1985974670038,"issp1988, usgss",227
+United States,1988,familywork5a,5,466.10260135213275,"issp1988, usgss",227
+United States,1988,fullpart3a,1,66.99931617183437,usgss,227
+United States,1988,fullpart3a,2,214.99780562603564,usgss,227
+United States,1988,fullpart3a,3,930.9904978504147,usgss,227
+United States,1988,happywork5,1,135.99861193088765,usgss,227
+United States,1988,happywork5,2,466.9952336156216,usgss,227
+United States,1988,happywork5,3,508.9948049472192,usgss,227
+United States,1988,happywork5,4,180.99815264331372,usgss,227
+United States,1988,happywork5,5,46.999520299645,usgss,227
 United States,1988,housewifefull5,1,225.10137499679618,issp1988,227
 United States,1988,housewifefull5,2,498.2243766595755,issp1988,227
 United States,1988,housewifefull5,3,314.1414744399733,issp1988,227
@@ -1356,11 +1356,11 @@ United States,1988,preschoolwork5,2,452.203651104675,issp1988,227
 United States,1988,preschoolwork5,3,175.07884721973036,issp1988,227
 United States,1988,preschoolwork5,4,400.18022221652654,issp1988,227
 United States,1988,preschoolwork5,5,208.0937155525938,issp1988,227
-United States,1988,wantch5,1,216.04751627534625,"issp1988, usgss",227
-United States,1988,wantch5,2,708.1557477914128,"issp1988, usgss",227
-United States,1988,wantch5,3,716.1575076534625,"issp1988, usgss",227
-United States,1988,wantch5,4,718.1579476189752,"issp1988, usgss",227
-United States,1988,wantch5,5,328.0721543440443,"issp1988, usgss",227
+United States,1988,wantch5,1,216.04755770828473,"issp1988, usgss",227
+United States,1988,wantch5,2,708.1558835993777,"issp1988, usgss",227
+United States,1988,wantch5,3,716.1576449959807,"issp1988, usgss",227
+United States,1988,wantch5,4,718.1580853451317,"issp1988, usgss",227
+United States,1988,wantch5,5,328.0722172607286,"issp1988, usgss",227
 United States,1988,work3a,1,62.02793444356161,issp1988,227
 United States,1988,work3a,2,236.10633110775066,issp1988,227
 United States,1988,work3a,3,888.4000933206889,issp1988,227
@@ -1396,24 +1396,24 @@ United States,1990,work4,1,47.94393955411416,evs_combo,227
 United States,1990,work4,2,455.40419383872387,evs_combo,227
 United States,1990,work4,3,821.8956130194663,evs_combo,227
 United States,1990,work4,4,471.1900898433472,evs_combo,227
-United States,1991,familywork5a,1,248.2873298728258,"issp1991, usgss",227
-United States,1991,familywork5a,2,664.1181425053633,"issp1991, usgss",227
-United States,1991,familywork5a,3,458.2213323669224,"issp1991, usgss",227
-United States,1991,familywork5a,4,789.2711055306902,"issp1991, usgss",227
-United States,1991,familywork5a,5,468.3143132560617,"issp1991, usgss",227
-United States,1994,familywork5a,1,257.23519280795335,"issp1994, usgss",227
-United States,1994,familywork5a,2,709.8144042144277,"issp1994, usgss",227
-United States,1994,familywork5a,3,379.0834420327733,"issp1994, usgss",227
-United States,1994,familywork5a,4,974.78599379856,"issp1994, usgss",227
-United States,1994,familywork5a,5,437.1064178541162,"issp1994, usgss",227
+United States,1991,familywork5a,1,248.28737706033905,"issp1991, usgss",227
+United States,1991,familywork5a,2,664.1182687223703,"issp1991, usgss",227
+United States,1991,familywork5a,3,458.22141945282084,"issp1991, usgss",227
+United States,1991,familywork5a,4,789.2712555332729,"issp1991, usgss",227
+United States,1991,familywork5a,5,468.3144022601517,"issp1991, usgss",227
+United States,1994,familywork5a,1,257.23524383184974,"issp1994, usgss",227
+United States,1994,familywork5a,2,709.8145450096907,"issp1994, usgss",227
+United States,1994,familywork5a,3,379.08351722588384,"issp1994, usgss",227
+United States,1994,familywork5a,4,974.7861871522728,"issp1994, usgss",227
+United States,1994,familywork5a,5,437.1065045563763,"issp1994, usgss",227
 United States,1994,familywork5b,1,38.29850114701813,issp1994,227
 United States,1994,familywork5b,2,226.98867752988792,issp1994,227
 United States,1994,familywork5b,3,267.1553982450533,issp1994,227
 United States,1994,familywork5b,4,649.206299931161,issp1994,227
 United States,1994,familywork5b,5,113.96139365698077,issp1994,227
-United States,1994,fullpart3a,1,33.99963993901907,usgss,227
-United States,1994,fullpart3a,2,167.99822087515304,usgss,227
-United States,1994,fullpart3a,3,1066.988700439216,usgss,227
+United States,1994,fullpart3a,1,33.99965298272191,usgss,227
+United States,1994,fullpart3a,2,167.99828532639063,usgss,227
+United States,1994,fullpart3a,3,1066.9891097813024,usgss,227
 United States,1994,housewifefull5,1,219.51579925729902,issp1994,227
 United States,1994,housewifefull5,2,503.48517361567735,issp1994,227
 United States,1994,housewifefull5,3,283.03526457430473,issp1994,227
@@ -1429,11 +1429,11 @@ United States,1994,preschoolwork5,2,427.8222811057147,issp1994,227
 United States,1994,preschoolwork5,3,163.46921221288227,issp1994,227
 United States,1994,preschoolwork5,4,428.7563908897883,issp1994,227
 United States,1994,preschoolwork5,5,182.15140789435452,issp1994,227
-United States,1994,wantch5,1,195.34401859852096,"issp1994, usgss",227
-United States,1994,wantch5,2,694.3416106620696,"issp1994, usgss",227
-United States,1994,wantch5,3,632.4504364526372,"issp1994, usgss",227
-United States,1994,wantch5,4,827.7944550511581,"issp1994, usgss",227
-United States,1994,wantch5,5,346.20375573401236,"issp1994, usgss",227
+United States,1994,wantch5,1,195.3440573459912,"issp1994, usgss",227
+United States,1994,wantch5,2,694.341748388226,"issp1994, usgss",227
+United States,1994,wantch5,3,632.4505619023676,"issp1994, usgss",227
+United States,1994,wantch5,4,827.7946192483587,"issp1994, usgss",227
+United States,1994,wantch5,5,346.20382440527146,"issp1994, usgss",227
 United States,1994,work3a,1,28.023293522208387,issp1994,227
 United States,1994,work3a,2,189.62428616694342,issp1994,227
 United States,1994,work3a,3,921.0322470965823,issp1994,227
@@ -1461,11 +1461,11 @@ United States,1995,work4,1,45.261735502501665,wvs_combo,227
 United States,1995,work4,2,320.21138438347657,wvs_combo,227
 United States,1995,work4,3,776.6985902594427,wvs_combo,227
 United States,1995,work4,4,386.52951403745726,wvs_combo,227
-United States,1998,familywork5a,1,271.9689100407322,"issp1998, usgss",227
-United States,1998,familywork5a,2,487.9442209554314,"issp1998, usgss",227
-United States,1998,familywork5a,3,479.94513536599806,"issp1998, usgss",227
-United States,1998,familywork5a,4,675.922732307114,"issp1998, usgss",227
-United States,1998,familywork5a,5,545.9375914788228,"issp1998, usgss",227
+United States,1998,familywork5a,1,271.9689622155436,"issp1998, usgss",227
+United States,1998,familywork5a,2,487.94431456318125,"issp1998, usgss",227
+United States,1998,familywork5a,3,479.94522743919464,"issp1998, usgss",227
+United States,1998,familywork5a,4,675.9228619768658,"issp1998, usgss",227
+United States,1998,familywork5a,5,545.9376962120839,"issp1998, usgss",227
 United States,1999,childfull2,1,172.01054836557987,wvs_combo,227
 United States,1999,childfull2,2,973.0608331908527,wvs_combo,227
 United States,1999,housewifefull4,1,303.9265640666746,wvs_combo,227
@@ -1476,16 +1476,16 @@ United States,1999,work4,1,40.00676807685649,wvs_combo,227
 United States,1999,work4,2,212.09007088849714,wvs_combo,227
 United States,1999,work4,3,597.9619734693988,wvs_combo,227
 United States,1999,work4,4,332.7652973632423,wvs_combo,227
-United States,2002,familywork5a,1,315.90369325438076,"issp2002, usgss",227
-United States,2002,familywork5a,2,597.817748626961,"issp2002, usgss",227
-United States,2002,familywork5a,3,525.8396919360896,"issp2002, usgss",227
-United States,2002,familywork5a,5,867.7354612177294,"issp2002, usgss",227
-United States,2002,fullpart3a,1,19.99978819942298,usgss,227
-United States,2002,fullpart3a,2,167.99822087515304,usgss,227
-United States,2002,fullpart3a,3,795.9915703370347,usgss,227
-United States,2002,fullpart3b,1,21.99976701936528,usgss,227
-United States,2002,fullpart3b,2,96.99897276720145,usgss,227
-United States,2002,fullpart3b,3,840.9910937857363,usgss,227
+United States,2002,familywork5a,1,315.9037538692352,"issp2002, usgss",227
+United States,2002,familywork5a,2,597.8178633348184,"issp2002, usgss",227
+United States,2002,familywork5a,3,525.8397928329674,"issp2002, usgss",227
+United States,2002,familywork5a,5,867.7356277167598,"issp2002, usgss",227
+United States,2002,fullpart3a,1,19.99979587218936,usgss,227
+United States,2002,fullpart3a,2,167.99828532639063,usgss,227
+United States,2002,fullpart3a,3,795.9918757131366,usgss,227
+United States,2002,fullpart3b,1,21.999775459408298,usgss,227
+United States,2002,fullpart3b,2,96.9990099801184,usgss,227
+United States,2002,fullpart3b,3,840.9914164255626,usgss,227
 United States,2002,housewifefull5,1,325.80474349452015,issp2002,227
 United States,2002,housewifefull5,2,377.7735982850571,issp2002,227
 United States,2002,housewifefull5,3,234.8592476110805,issp2002,227
@@ -1499,10 +1499,10 @@ United States,2002,preschoolwork5,1,136.9179443519916,issp2002,227
 United States,2002,preschoolwork5,2,304.81732136757256,issp2002,227
 United States,2002,preschoolwork5,3,284.8293002942891,issp2002,227
 United States,2002,preschoolwork5,5,422.7466456999449,issp2002,227
-United States,2002,wantch5,1,285.91283629985094,"issp2002, usgss",227
-United States,2002,wantch5,2,613.8128723360437,"issp2002, usgss",227
-United States,2002,wantch5,3,669.7958053178327,"issp2002, usgss",227
-United States,2002,wantch5,5,707.7842241269037,"issp2002, usgss",227
+United States,2002,wantch5,1,285.9128911601306,"issp2002, usgss",227
+United States,2002,wantch5,2,613.8129901130076,"issp2002, usgss",227
+United States,2002,wantch5,3,669.7959338366695,"issp2002, usgss",227
+United States,2002,wantch5,5,707.7843599348687,"issp2002, usgss",227
 United States,2002,work3a,1,27.983229502596824,issp2002,227
 United States,2002,work3a,2,202.87841389382697,issp2002,227
 United States,2002,work3a,3,734.5597744431667,issp2002,227
@@ -1538,24 +1538,24 @@ United States,2011,preschoolwork4,1,82.85869626541896,wvs_combo,227
 United States,2011,preschoolwork4,2,474.1631178846182,wvs_combo,227
 United States,2011,preschoolwork4,3,1294.9235917745177,wvs_combo,227
 United States,2011,preschoolwork4,4,360.81914696954755,wvs_combo,227
-United States,2012,familywork5a,1,67.1650785154952,usgss,227
-United States,2012,familywork5a,2,300.298155494601,usgss,227
-United States,2012,familywork5a,3,158.5644512723323,usgss,227
-United States,2012,familywork5a,4,516.5962041466796,usgss,227
-United States,2012,familywork5a,5,242.65964961015644,usgss,227
-United States,2012,wantch5,1,81.22181301116987,usgss,227
-United States,2012,wantch5,2,348.41562657048075,usgss,227
-United States,2012,wantch5,3,316.64846362944746,usgss,227
-United States,2012,wantch5,4,385.4118335900799,usgss,227
-United States,2012,wantch5,5,117.76062398909562,usgss,227
-United States,2017,housewifefull4,1,573.1645761464573,wvs7,227
-United States,2017,housewifefull4,2,1206.7255796476643,wvs7,227
-United States,2017,housewifefull4,3,604.527643083426,wvs7,227
-United States,2017,housewifefull4,4,150.45930849452384,wvs7,227
-United States,2017,preschoolwork4,1,81.82957357716916,wvs7,227
-United States,2017,preschoolwork4,2,446.10315431548787,wvs7,227
-United States,2017,preschoolwork4,3,1445.5839630208304,wvs7,227
-United States,2017,preschoolwork4,4,557.9533224465384,wvs7,227
+United States,2012,familywork5a,1,67.16510428286463,usgss,227
+United States,2012,familywork5a,2,300.29827070168864,usgss,227
+United States,2012,familywork5a,3,158.56451210437905,usgss,227
+United States,2012,familywork5a,4,516.596402334875,usgss,227
+United States,2012,familywork5a,5,242.65974270468143,usgss,227
+United States,2012,wantch5,1,81.22184417129712,usgss,227
+United States,2012,wantch5,2,348.41576023748,usgss,227
+United States,2012,wantch5,3,316.6485851092159,usgss,227
+United States,2012,wantch5,4,385.41198145039175,usgss,227
+United States,2012,wantch5,5,117.76066916705682,usgss,227
+United States,2017,housewifefull4,1,580.2885911729403,wvs7,227
+United States,2017,housewifefull4,2,1234.2681626093347,wvs7,227
+United States,2017,housewifefull4,3,614.9231981809337,wvs7,227
+United States,2017,housewifefull4,4,151.011898915737,wvs7,227
+United States,2017,preschoolwork4,1,85.15971192203678,wvs7,227
+United States,2017,preschoolwork4,2,450.6331738615873,wvs7,227
+United States,2017,preschoolwork4,3,1476.6444364488714,wvs7,227
+United States,2017,preschoolwork4,4,564.647452094962,wvs7,227
 Spain,1981,childfull2,1,1034.0155343255879,evs_combo,216
 Spain,1981,childfull2,2,1073.2381019364545,evs_combo,216
 Spain,1990,childfull2,1,1812.1662419617578,"evs_combo, wvs_combo",216
@@ -2984,14 +2984,14 @@ Russia,2015,bearchild4,1,242.88626343621482,pewrel2015_ee,195
 Russia,2015,bearchild4,2,415.53860588208255,pewrel2015_ee,195
 Russia,2015,bearchild4,3,253.74977139412164,pewrel2015_ee,195
 Russia,2015,bearchild4,4,121.19871017124326,pewrel2015_ee,195
-Russia,2017,housewifefull4,1,273.45895354005324,wvs7,195
-Russia,2017,housewifefull4,2,693.612868190992,wvs7,195
-Russia,2017,housewifefull4,3,578.140772750178,wvs7,195
-Russia,2017,housewifefull4,4,161.75265690370355,wvs7,195
-Russia,2017,preschoolwork4,1,164.94198185010535,wvs7,195
-Russia,2017,preschoolwork4,2,498.9345179498123,wvs7,195
-Russia,2017,preschoolwork4,3,844.7460049096647,wvs7,195
-Russia,2017,preschoolwork4,4,225.94490369391556,wvs7,195
+Russia,2017,housewifefull4,1,273.4575521270703,wvs7,195
+Russia,2017,housewifefull4,2,693.6093135877653,wvs7,195
+Russia,2017,housewifefull4,3,578.1378099143504,wvs7,195
+Russia,2017,housewifefull4,4,161.75182795928436,wvs7,195
+Russia,2017,preschoolwork4,1,164.94113656114402,wvs7,195
+Russia,2017,preschoolwork4,2,498.9319610274587,wvs7,195
+Russia,2017,preschoolwork4,3,844.7416757845685,wvs7,195
+Russia,2017,preschoolwork4,4,225.9437457792912,wvs7,195
 Austria,1988,familywork5a,1,283.55099793835313,issp1988,194
 Austria,1988,familywork5a,2,445.75624749948895,issp1988,194
 Austria,1988,familywork5a,3,104.8412155173967,issp1988,194
@@ -3371,14 +3371,14 @@ Japan,2012,preschoolwork4,1,229,jgss2012,193
 Japan,2012,preschoolwork4,2,770,jgss2012,193
 Japan,2012,preschoolwork4,3,841,jgss2012,193
 Japan,2012,preschoolwork4,4,447,jgss2012,193
-Japan,2019,housewifefull4,1,210.05916797469135,wvs7,193
-Japan,2019,housewifefull4,2,694.195536068742,wvs7,193
-Japan,2019,housewifefull4,3,184.05184241592005,wvs7,193
-Japan,2019,housewifefull4,4,15.004226283906526,wvs7,193
-Japan,2019,preschoolwork4,1,14.003944531646091,wvs7,193
-Japan,2019,preschoolwork4,2,168.0473343797531,wvs7,193
-Japan,2019,preschoolwork4,3,721.2031433797737,wvs7,193
-Japan,2019,preschoolwork4,4,206.0580409656496,wvs7,193
+Japan,2019,housewifefull4,1,210.05809147073575,wvs7,193
+Japan,2019,housewifefull4,2,694.1919784794791,wvs7,193
+Japan,2019,housewifefull4,3,184.05089919340656,wvs7,193
+Japan,2019,housewifefull4,4,15.00414939076684,wvs7,193
+Japan,2019,preschoolwork4,1,14.003872764715718,wvs7,193
+Japan,2019,preschoolwork4,2,168.04647317658862,wvs7,193
+Japan,2019,preschoolwork4,3,721.1994473828595,wvs7,193
+Japan,2019,preschoolwork4,4,206.05698496653127,wvs7,193
 Czechia,1991,childfull2,1,2144.32407698147,"evs_combo, wvs_combo",192
 Czechia,1991,childfull2,2,757.373794936404,"evs_combo, wvs_combo",192
 Czechia,1991,housewifefull4,1,683.2752418302339,"evs_combo, wvs_combo",192
@@ -4212,14 +4212,14 @@ Philippines,2012,preschoolwork4,1,209.0147697193736,wvs_combo,146
 Philippines,2012,preschoolwork4,2,324.5375233051303,wvs_combo,146
 Philippines,2012,preschoolwork4,3,562.8288421610422,wvs_combo,146
 Philippines,2012,preschoolwork4,4,104.61458311986169,wvs_combo,146
-Philippines,2019,housewifefull4,1,325.80299696748256,wvs7,146
-Philippines,2019,housewifefull4,2,685.1315646756481,wvs7,146
-Philippines,2019,housewifefull4,3,170.76032542180343,wvs7,146
-Philippines,2019,housewifefull4,4,16.855706916822843,wvs7,146
-Philippines,2019,preschoolwork4,1,158.2682790158846,wvs7,146
-Philippines,2019,preschoolwork4,2,397.85893150541506,wvs7,146
-Philippines,2019,preschoolwork4,3,577.395823047036,wvs7,146
-Philippines,2019,preschoolwork4,4,63.22767566866844,wvs7,146
+Philippines,2019,housewifefull4,1,325.801327303557,wvs7,146
+Philippines,2019,housewifefull4,2,685.1280535371122,wvs7,146
+Philippines,2019,housewifefull4,3,170.7594503151963,wvs7,146
+Philippines,2019,housewifefull4,4,16.85562053527927,wvs7,146
+Philippines,2019,preschoolwork4,1,158.2674679280846,wvs7,146
+Philippines,2019,preschoolwork4,2,397.8568925717294,wvs7,146
+Philippines,2019,preschoolwork4,3,577.3928640289008,wvs7,146
+Philippines,2019,preschoolwork4,4,63.22735164166395,wvs7,146
 Finland,1981,childfull2,1,94.07799793392176,wvs_combo,142
 Finland,1981,childfull2,2,882.7318529544574,wvs_combo,142
 Finland,1990,childfull2,1,110.21897894384318,evs_combo,142
@@ -5170,14 +5170,14 @@ New Zealand,2011,preschoolwork4,1,28.023233427125632,wvs_combo,132
 New Zealand,2011,preschoolwork4,2,152.126124318682,wvs_combo,132
 New Zealand,2011,preschoolwork4,3,496.4115635662255,wvs_combo,132
 New Zealand,2011,preschoolwork4,4,80.06638122035895,wvs_combo,132
-New Zealand,2020,housewifefull4,1,142.04000882098177,wvs7,132
-New Zealand,2020,housewifefull4,2,492.13862211213404,wvs7,132
-New Zealand,2020,housewifefull4,3,192.05409643400353,wvs7,132
-New Zealand,2020,housewifefull4,4,27.007607311031745,wvs7,132
-New Zealand,2020,preschoolwork4,1,14.003944531646091,wvs7,132
-New Zealand,2020,preschoolwork4,2,152.0428263435861,wvs7,132
-New Zealand,2020,preschoolwork4,3,565.1591900271458,wvs7,132
-New Zealand,2020,preschoolwork4,4,209.0588862224309,wvs7,132
+New Zealand,2020,housewifefull4,1,142.0392808992594,wvs7,132
+New Zealand,2020,housewifefull4,2,492.13610001715233,wvs7,132
+New Zealand,2020,housewifefull4,3,192.05311220181557,wvs7,132
+New Zealand,2020,housewifefull4,4,27.00746890338031,wvs7,132
+New Zealand,2020,preschoolwork4,1,14.003872764715718,wvs7,132
+New Zealand,2020,preschoolwork4,2,152.04204715977065,wvs7,132
+New Zealand,2020,preschoolwork4,3,565.1562937188843,wvs7,132
+New Zealand,2020,preschoolwork4,4,209.05781484468463,wvs7,132
 Belgium,1981,childfull2,1,438.7062624726865,evs_combo,128
 Belgium,1981,childfull2,2,486.05498102510086,evs_combo,128
 Belgium,1990,childfull2,1,1148.260294132669,evs_combo,128
@@ -5416,14 +5416,14 @@ South Korea,2016,housewifefull4,2,433,kgss,118
 South Korea,2016,housewifefull4,3,151,kgss,118
 South Korea,2016,housewifefull4,4,33,kgss,118
 South Korea,2016,housewifefull4,5,14,kgss,118
-South Korea,2018,housewifefull4,1,52.01465111754262,wvs7,118
-South Korea,2018,housewifefull4,2,567.1597535316666,wvs7,118
-South Korea,2018,housewifefull4,3,579.1631345587919,wvs7,118
-South Korea,2018,housewifefull4,4,47.01324235624045,wvs7,118
-South Korea,2018,preschoolwork4,1,132.03719129837742,wvs7,118
-South Korea,2018,preschoolwork4,2,674.1899010235333,wvs7,118
-South Korea,2018,preschoolwork4,3,383.1079111157466,wvs7,118
-South Korea,2018,preschoolwork4,4,56.015778126584365,wvs7,118
+South Korea,2018,housewifefull4,1,52.01438455465838,wvs7,118
+South Korea,2018,housewifefull4,2,567.1568469709865,wvs7,118
+South Korea,2018,housewifefull4,3,579.1601664836,wvs7,118
+South Korea,2018,housewifefull4,4,47.013001424402766,wvs7,118
+South Korea,2018,preschoolwork4,1,132.0365146387482,wvs7,118
+South Korea,2018,preschoolwork4,2,674.1864459584567,wvs7,118
+South Korea,2018,preschoolwork4,3,383.10594777757996,wvs7,118
+South Korea,2018,preschoolwork4,4,56.01549105886287,wvs7,118
 Romania,1993,childfull2,1,919.8274788222549,evs_combo,117
 Romania,1993,childfull2,2,164.32647769809347,evs_combo,117
 Romania,1993,housewifefull4,1,167.33244985110738,evs_combo,117
@@ -5533,14 +5533,14 @@ Romania,2017,familywoman4,1,358.8616411823435,eb874,117
 Romania,2017,familywoman4,2,370.0598518288749,eb874,117
 Romania,2017,familywoman4,3,202.12619216845715,eb874,117
 Romania,2017,familywoman4,4,101.44189644436736,eb874,117
-Romania,2018,housewifefull4,1,163.25829246443598,wvs7,117
-Romania,2018,housewifefull4,2,260.57955188965997,wvs7,117
-Romania,2018,housewifefull4,3,376.57095847334875,wvs7,117
-Romania,2018,housewifefull4,4,367.91880678170384,wvs7,117
-Romania,2018,preschoolwork4,1,149.47720387426887,wvs7,117
-Romania,2018,preschoolwork4,2,287.9660738226716,wvs7,117
-Romania,2018,preschoolwork4,3,450.27965746723606,wvs7,117
-Romania,2018,preschoolwork4,4,328.0073941604292,wvs7,117
+Romania,2018,housewifefull4,1,163.25745580398777,wvs7,117
+Romania,2018,housewifefull4,2,260.578216480589,wvs7,117
+Romania,2018,housewifefull4,3,376.56902863553074,wvs7,117
+Romania,2018,housewifefull4,4,367.9169212841335,wvs7,117
+Romania,2018,preschoolwork4,1,149.47643783866658,wvs7,117
+Romania,2018,preschoolwork4,2,287.9645980641005,wvs7,117
+Romania,2018,preschoolwork4,3,450.2773498896279,wvs7,117
+Romania,2018,preschoolwork4,4,328.00571319948523,wvs7,117
 Chile,1990,childfull2,1,921.7642137993824,wvs_combo,112
 Chile,1990,childfull2,2,525.4356267586056,wvs_combo,112
 Chile,1990,housewifefull4,1,432.3584585899383,wvs_combo,112
@@ -5645,14 +5645,14 @@ Chile,2012,preschoolwork4,1,77.06389192459548,wvs_combo,112
 Chile,2012,preschoolwork4,2,283.23482356701976,wvs_combo,112
 Chile,2012,preschoolwork4,3,411.3410335195941,wvs_combo,112
 Chile,2012,preschoolwork4,4,181.15018751106211,wvs_combo,112
-Chile,2018,housewifefull4,1,136.98583690872996,wvs7,112
-Chile,2018,housewifefull4,2,378.39839206886637,wvs7,112
-Chile,2018,housewifefull4,3,283.48634243274665,wvs7,112
-Chile,2018,housewifefull4,4,120.20598604450132,wvs7,112
-Chile,2018,preschoolwork4,1,128.70148626267164,wvs7,112
-Chile,2018,preschoolwork4,2,379.75331886802513,wvs7,112
-Chile,2018,preschoolwork4,3,319.7340148416965,wvs7,112
-Chile,2018,preschoolwork4,4,124.01864791001982,wvs7,112
+Chile,2018,housewifefull4,1,136.9851348884529,wvs7,112
+Chile,2018,housewifefull4,2,378.39645286587995,wvs7,112
+Chile,2018,housewifefull4,3,283.48488963174805,wvs7,112
+Chile,2018,housewifefull4,4,120.20537001702337,wvs7,112
+Chile,2018,preschoolwork4,1,128.7008266977481,wvs7,112
+Chile,2018,preschoolwork4,2,379.7513727213567,wvs7,112
+Chile,2018,preschoolwork4,3,319.73237627988055,wvs7,112
+Chile,2018,preschoolwork4,4,124.01801234354426,wvs7,112
 Israel,1991,familywork5a,1,112.04674446423734,issp1991,112
 Israel,1991,familywork5a,2,199.6469264999138,issp1991,112
 Israel,1991,familywork5a,3,247.52144458917883,issp1991,112
@@ -5865,14 +5865,14 @@ Cyprus,2017,familywoman4,1,172.17136368935155,eb874,108
 Cyprus,2017,familywoman4,2,131.4920250140781,eb874,108
 Cyprus,2017,familywoman4,3,102.48449743560467,eb874,108
 Cyprus,2017,familywoman4,4,94.67089000693416,eb874,108
-Cyprus,2019,housewifefull4,1,129.6427200307152,wvs7,108
-Cyprus,2019,housewifefull4,2,433.7988810201653,wvs7,108
-Cyprus,2019,housewifefull4,3,315.19968519692287,wvs7,108
-Cyprus,2019,housewifefull4,4,75.10715206621751,wvs7,108
-Cyprus,2019,preschoolwork4,1,100.71022829890946,wvs7,108
-Cyprus,2019,preschoolwork4,2,382.269329093918,wvs7,108
-Cyprus,2019,preschoolwork4,3,406.10404985479863,wvs7,108
-Cyprus,2019,preschoolwork4,4,75.38495581300407,wvs7,108
+Cyprus,2019,housewifefull4,1,129.64205564218943,wvs7,108
+Cyprus,2019,housewifefull4,2,433.79665790267006,wvs7,108
+Cyprus,2019,housewifefull4,3,315.1980698724826,wvs7,108
+Cyprus,2019,housewifefull4,4,75.10676715968343,wvs7,108
+Cyprus,2019,preschoolwork4,1,100.7097121826162,wvs7,108
+Cyprus,2019,preschoolwork4,2,382.2673700532874,wvs7,108
+Cyprus,2019,preschoolwork4,3,406.1019686668158,wvs7,108
+Cyprus,2019,preschoolwork4,4,75.38456948279097,wvs7,108
 Mexico,1981,childfull2,1,956.0462909003426,wvs_combo,105
 Mexico,1981,childfull2,2,796.9519885313398,wvs_combo,105
 Mexico,1990,childfull2,1,737.6115369925568,wvs_combo,105
@@ -5970,14 +5970,14 @@ Mexico,2012,preschoolwork4,1,219.18171859073263,wvs_combo,105
 Mexico,2012,preschoolwork4,2,653.5418367111799,wvs_combo,105
 Mexico,2012,preschoolwork4,3,879.729363658694,wvs_combo,105
 Mexico,2012,preschoolwork4,4,232.19250553904095,wvs_combo,105
-Mexico,2018,housewifefull4,1,436.1938818559926,wvs7,105
-Mexico,2018,housewifefull4,2,540.2226230670525,wvs7,105
-Mexico,2018,housewifefull4,3,502.21963557641595,wvs7,105
-Mexico,2018,housewifefull4,4,227.25792975577218,wvs7,105
-Mexico,2018,preschoolwork4,1,371.89833176404017,wvs7,105
-Mexico,2018,preschoolwork4,2,547.642502394969,wvs7,105
-Mexico,2018,preschoolwork4,3,633.9206409283235,wvs7,105
-Mexico,2018,preschoolwork4,4,176.72278919325586,wvs7,105
+Mexico,2018,housewifefull4,1,436.19164646467993,wvs7,105
+Mexico,2018,housewifefull4,2,540.2198545528465,wvs7,105
+Mexico,2018,housewifefull4,3,502.2170618186052,wvs7,105
+Mexico,2018,housewifefull4,4,227.25676511219723,wvs7,105
+Mexico,2018,preschoolwork4,1,371.89642587233783,wvs7,105
+Mexico,2018,preschoolwork4,2,547.6396958556222,wvs7,105
+Mexico,2018,preschoolwork4,3,633.9173922337576,wvs7,105
+Mexico,2018,preschoolwork4,4,176.72188353042074,wvs7,105
 Turkey,1990,childfull2,1,720.5974309832202,wvs_combo,105
 Turkey,1990,childfull2,2,282.23399380176124,wvs_combo,105
 Turkey,1990,housewifefull4,1,303.25141887210515,wvs_combo,105
@@ -6075,14 +6075,14 @@ Turkey,2012,preschoolwork4,1,288.63693397059825,wvs_combo,105
 Turkey,2012,preschoolwork4,2,770.0958167536163,wvs_combo,105
 Turkey,2012,preschoolwork4,3,368.6206163229606,wvs_combo,105
 Turkey,2012,preschoolwork4,4,131.1569961039825,wvs_combo,105
-Turkey,2018,housewifefull4,1,433.12199872876835,wvs7,105
-Turkey,2018,housewifefull4,2,1060.2986573960611,wvs7,105
-Turkey,2018,housewifefull4,3,656.1848294828454,wvs7,105
-Turkey,2018,housewifefull4,4,170.04789788427397,wvs7,105
-Turkey,2018,preschoolwork4,1,319.08987897107875,wvs7,105
-Turkey,2018,preschoolwork4,2,925.2606208409024,wvs7,105
-Turkey,2018,preschoolwork4,3,837.2358266419841,wvs7,105
-Turkey,2018,preschoolwork4,4,266.0749461012757,wvs7,105
+Turkey,2018,housewifefull4,1,433.11977908013614,wvs7,105
+Turkey,2018,housewifefull4,2,1060.29322361419,wvs7,105
+Turkey,2018,housewifefull4,3,656.1814666895365,wvs7,105
+Turkey,2018,housewifefull4,4,170.04702642869086,wvs7,105
+Turkey,2018,preschoolwork4,1,319.0882437103081,wvs7,105
+Turkey,2018,preschoolwork4,2,925.2558790972885,wvs7,105
+Turkey,2018,preschoolwork4,3,837.2315360047896,wvs7,105
+Turkey,2018,preschoolwork4,4,266.07358252959864,wvs7,105
 Estonia,1990,childfull2,1,849.6881285852638,evs_combo,103
 Estonia,1990,childfull2,2,86.17120171973194,evs_combo,103
 Estonia,1990,housewifefull4,1,290.5773081246775,evs_combo,103
@@ -6275,14 +6275,14 @@ Brazil,2014,preschoolwork4,1,242.11724364446425,wvs_combo,97
 Brazil,2014,preschoolwork4,2,656.006060662697,wvs_combo,97
 Brazil,2014,preschoolwork4,3,477.0051302811409,wvs_combo,97
 Brazil,2014,preschoolwork4,4,99.04655496167888,wvs_combo,97
-Brazil,2018,housewifefull4,1,189.50462901912726,wvs7,97
-Brazil,2018,housewifefull4,2,623.4810114046167,wvs7,97
-Brazil,2018,housewifefull4,3,673.3813581429165,wvs7,97
-Brazil,2018,housewifefull4,4,150.9778822326917,wvs7,97
-Brazil,2018,preschoolwork4,1,212.08653137601686,wvs7,97
-Brazil,2018,preschoolwork4,2,734.2078531510685,wvs7,97
-Brazil,2018,preschoolwork4,3,602.4126484977709,wvs7,97
-Brazil,2018,preschoolwork4,4,167.80149974179807,wvs7,97
+Brazil,2018,housewifefull4,1,189.50365785236164,wvs7,97
+Brazil,2018,housewifefull4,2,623.4778162107029,wvs7,97
+Brazil,2018,housewifefull4,3,673.3779072214325,wvs7,97
+Brazil,2018,housewifefull4,4,150.97710850646496,wvs7,97
+Brazil,2018,preschoolwork4,1,212.0854444822994,wvs7,97
+Brazil,2018,preschoolwork4,2,734.2040905080677,wvs7,97
+Brazil,2018,preschoolwork4,3,602.4095612742743,wvs7,97
+Brazil,2018,preschoolwork4,4,167.80063979847844,wvs7,97
 Switzerland,1989,childfull2,1,401.24268918959456,wvs_combo,91
 Switzerland,1989,childfull2,2,885.8205571541555,wvs_combo,91
 Switzerland,1996,childfull2,1,384.7316936662239,wvs_combo,91
@@ -6545,6 +6545,91 @@ Lithuania,2017,familywoman4,1,346.0298289826897,eb874,85
 Lithuania,2017,familywoman4,2,391.20257193000015,eb874,85
 Lithuania,2017,familywoman4,3,202.83109283863092,eb874,85
 Lithuania,2017,familywoman4,4,65.76946252933381,eb874,85
+Ukraine,1996,childfull2,1,2115.7541237479854,wvs_combo,85
+Ukraine,1996,childfull2,2,535.4439244111504,wvs_combo,85
+Ukraine,1996,housewifefull4,1,643.533539058635,wvs_combo,85
+Ukraine,1996,housewifefull4,2,1107.918550136717,wvs_combo,85
+Ukraine,1996,housewifefull4,3,770.6389192459549,wvs_combo,85
+Ukraine,1996,housewifefull4,4,84.0697002813769,wvs_combo,85
+Ukraine,1996,work4,1,67.05559427205063,wvs_combo,85
+Ukraine,1996,work4,2,528.4381160543691,wvs_combo,85
+Ukraine,1996,work4,3,1150.95423004266,wvs_combo,85
+Ukraine,1996,work4,4,915.7592352078555,wvs_combo,85
+Ukraine,1999,childfull2,1,984.8890607391174,evs_combo,85
+Ukraine,1999,childfull2,2,165.5141072360277,evs_combo,85
+Ukraine,1999,housewifefull4,1,226.9903258872902,evs_combo,85
+Ukraine,1999,housewifefull4,2,409.75421434329536,evs_combo,85
+Ukraine,1999,housewifefull4,3,430.4885585626753,evs_combo,85
+Ukraine,1999,housewifefull4,4,33.25488957046365,evs_combo,85
+Ukraine,1999,preschoolwork4,1,282.51659339822714,evs_combo,85
+Ukraine,1999,preschoolwork4,2,554.6870715216962,evs_combo,85
+Ukraine,1999,preschoolwork4,3,295.6614691455847,evs_combo,85
+Ukraine,1999,preschoolwork4,4,14.502803627667241,evs_combo,85
+Ukraine,1999,wantch4,1,305.0663944994198,evs_combo,85
+Ukraine,1999,wantch4,2,581.6669541431147,evs_combo,85
+Ukraine,1999,wantch4,3,205.43157376513187,evs_combo,85
+Ukraine,1999,wantch4,4,13.401225052566591,evs_combo,85
+Ukraine,1999,work4,1,14.445179141493965,evs_combo,85
+Ukraine,1999,work4,2,180.20916282269454,evs_combo,85
+Ukraine,1999,work4,3,526.5279560445576,evs_combo,85
+Ukraine,1999,work4,4,441.52022586655687,evs_combo,85
+Ukraine,2005,family5a,1,599.8985311705425,ess2,85
+Ukraine,2005,family5a,2,800.052175872544,ess2,85
+Ukraine,2005,family5a,3,373.61975010838466,ess2,85
+Ukraine,2005,family5a,4,157.12012008850843,ess2,85
+Ukraine,2005,family5a,5,32.56186995668887,ess2,85
+Ukraine,2006,housewifefull4,1,228.18638215302073,wvs_combo,85
+Ukraine,2006,housewifefull4,2,308.0738700569893,wvs_combo,85
+Ukraine,2006,housewifefull4,3,280.0706141928079,wvs_combo,85
+Ukraine,2006,housewifefull4,4,81.48567992872115,wvs_combo,85
+Ukraine,2008,childfull2,1,1328.3672088260087,evs_combo,85
+Ukraine,2008,childfull2,2,141.00368567444494,evs_combo,85
+Ukraine,2008,housewifefull4,1,323.5212616192576,evs_combo,85
+Ukraine,2008,housewifefull4,2,600.3625267522661,evs_combo,85
+Ukraine,2008,housewifefull4,3,386.67859556465095,evs_combo,85
+Ukraine,2008,housewifefull4,4,95.37727749327946,evs_combo,85
+Ukraine,2008,preschoolwork4,1,400.6433376117159,evs_combo,85
+Ukraine,2008,preschoolwork4,2,627.4491780425572,evs_combo,85
+Ukraine,2008,preschoolwork4,3,344.88605346011377,evs_combo,85
+Ukraine,2008,preschoolwork4,4,72.48875111251941,evs_combo,85
+Ukraine,2008,wantch4,1,501.8954702566749,evs_combo,85
+Ukraine,2008,wantch4,2,734.8376912256476,evs_combo,85
+Ukraine,2008,wantch4,3,145.27041647536882,evs_combo,85
+Ukraine,2008,wantch4,4,25.36510280062597,evs_combo,85
+Ukraine,2008,work4,1,18.663397158495787,evs_combo,85
+Ukraine,2008,work4,2,126.00007360783397,evs_combo,85
+Ukraine,2008,work4,3,583.3446127970568,evs_combo,85
+Ukraine,2008,work4,4,746.5225781759302,evs_combo,85
+Ukraine,2009,family5a,1,709.0889389739459,ess4,85
+Ukraine,2009,family5a,2,591.6685516554988,ess4,85
+Ukraine,2009,family5a,3,327.6040806224255,ess4,85
+Ukraine,2009,family5a,4,118.66959143902449,ess4,85
+Ukraine,2009,family5a,5,39.57233053179228,ess4,85
+Ukraine,2011,family5a,1,682.000775489926,ess5,85
+Ukraine,2011,family5a,2,658.6217631945776,ess5,85
+Ukraine,2011,family5a,3,359.9280564597675,ess5,85
+Ukraine,2011,family5a,4,133.65567575223966,ess5,85
+Ukraine,2011,family5a,5,44.894993768758,ess5,85
+Ukraine,2011,housewifefull4,1,737.0704329996622,wvs_combo,85
+Ukraine,2011,housewifefull4,2,607.4933973923335,wvs_combo,85
+Ukraine,2011,housewifefull4,3,131.5602474326885,wvs_combo,85
+Ukraine,2011,housewifefull4,4,25.120925393022215,wvs_combo,85
+Ukraine,2011,preschoolwork4,1,161.13381998979366,wvs_combo,85
+Ukraine,2011,preschoolwork4,2,382.4460658756745,wvs_combo,85
+Ukraine,2011,preschoolwork4,3,806.1563915743459,wvs_combo,85
+Ukraine,2011,preschoolwork4,4,151.50872577789238,wvs_combo,85
+Ukraine,2015,bearchild4,1,194.16106851945187,pewrel2015_ee,85
+Ukraine,2015,bearchild4,2,231.21163276748285,pewrel2015_ee,85
+Ukraine,2015,bearchild4,3,107.60216453354883,pewrel2015_ee,85
+Ukraine,2015,bearchild4,4,66.70291512538653,pewrel2015_ee,85
+Ukraine,2020,housewifefull4,1,444.40023213735634,wvs7,85
+Ukraine,2020,housewifefull4,2,577.0311313318862,wvs7,85
+Ukraine,2020,housewifefull4,3,158.21085833372675,wvs7,85
+Ukraine,2020,housewifefull4,4,39.6503448080264,wvs7,85
+Ukraine,2020,preschoolwork4,1,177.87254486429515,wvs7,85
+Ukraine,2020,preschoolwork4,2,529.2121455288659,wvs7,85
+Ukraine,2020,preschoolwork4,3,437.7425776269954,wvs7,85
+Ukraine,2020,preschoolwork4,4,70.44921928491311,wvs7,85
 Croatia,1996,childfull2,1,588.4879019696383,wvs_combo,80
 Croatia,1996,childfull2,2,516.4281588713152,wvs_combo,80
 Croatia,1996,housewifefull4,1,440.3650967119742,wvs_combo,80
@@ -6696,14 +6781,14 @@ Greece,2017,familywoman4,1,295.9722813912243,eb874,79
 Greece,2017,familywoman4,2,391.7155724177277,eb874,79
 Greece,2017,familywoman4,3,214.8525042678082,eb874,79
 Greece,2017,familywoman4,4,103.28849819999638,eb874,79
-Greece,2017,housewifefull4,1,171.3457471882492,wvs7,79
-Greece,2017,housewifefull4,2,575.6161483128952,wvs7,79
-Greece,2017,housewifefull4,3,353.433738327488,wvs7,79
-Greece,2017,housewifefull4,4,76.54904884346203,wvs7,79
-Greece,2017,preschoolwork4,1,108.38667843486911,wvs7,79
-Greece,2017,preschoolwork4,2,368.6854327674673,wvs7,79
-Greece,2017,preschoolwork4,3,543.8021912784059,wvs7,79
-Greece,2017,preschoolwork4,4,158.76655988110014,wvs7,79
+Greece,2017,housewifefull4,1,171.34486908149285,wvs7,79
+Greece,2017,housewifefull4,2,575.6131984151757,wvs7,79
+Greece,2017,housewifefull4,3,353.4319270624952,wvs7,79
+Greece,2017,housewifefull4,4,76.54865654754525,wvs7,79
+Greece,2017,preschoolwork4,1,108.38612297856986,wvs7,79
+Greece,2017,preschoolwork4,2,368.6835433411186,wvs7,79
+Greece,2017,preschoolwork4,3,543.7994044197525,wvs7,79
+Greece,2017,preschoolwork4,4,158.76574623972763,wvs7,79
 Taiwan,1994,childfull2,1,403.3343953975582,wvs_combo,79
 Taiwan,1994,childfull2,2,337.27963089076206,wvs_combo,79
 Taiwan,1994,housewifefull4,1,155.12861361444547,wvs_combo,79
@@ -6775,91 +6860,14 @@ Taiwan,2012,preschoolwork4,1,22.6788691919755,wvs_combo,79
 Taiwan,2012,preschoolwork4,2,184.4959550570355,wvs_combo,79
 Taiwan,2012,preschoolwork4,3,855.6113718047659,wvs_combo,79
 Taiwan,2012,preschoolwork4,4,129.07964800398022,wvs_combo,79
-Taiwan,2019,housewifefull4,1,199.42101396601748,wvs7,79
-Taiwan,2019,housewifefull4,2,791.4696577585435,wvs7,79
-Taiwan,2019,housewifefull4,3,202.06535543034227,wvs7,79
-Taiwan,2019,housewifefull4,4,25.164528738748203,wvs7,79
-Taiwan,2019,preschoolwork4,1,4.6962509206086995,wvs7,79
-Taiwan,2019,preschoolwork4,2,121.65733584540641,wvs7,79
-Taiwan,2019,preschoolwork4,3,854.5205735407424,wvs7,79
-Taiwan,2019,preschoolwork4,4,237.33493788585997,wvs7,79
-Ukraine,1996,childfull2,1,2115.7541237479854,wvs_combo,77
-Ukraine,1996,childfull2,2,535.4439244111504,wvs_combo,77
-Ukraine,1996,housewifefull4,1,643.533539058635,wvs_combo,77
-Ukraine,1996,housewifefull4,2,1107.918550136717,wvs_combo,77
-Ukraine,1996,housewifefull4,3,770.6389192459549,wvs_combo,77
-Ukraine,1996,housewifefull4,4,84.0697002813769,wvs_combo,77
-Ukraine,1996,work4,1,67.05559427205063,wvs_combo,77
-Ukraine,1996,work4,2,528.4381160543691,wvs_combo,77
-Ukraine,1996,work4,3,1150.95423004266,wvs_combo,77
-Ukraine,1996,work4,4,915.7592352078555,wvs_combo,77
-Ukraine,1999,childfull2,1,984.8890607391174,evs_combo,77
-Ukraine,1999,childfull2,2,165.5141072360277,evs_combo,77
-Ukraine,1999,housewifefull4,1,226.9903258872902,evs_combo,77
-Ukraine,1999,housewifefull4,2,409.75421434329536,evs_combo,77
-Ukraine,1999,housewifefull4,3,430.4885585626753,evs_combo,77
-Ukraine,1999,housewifefull4,4,33.25488957046365,evs_combo,77
-Ukraine,1999,preschoolwork4,1,282.51659339822714,evs_combo,77
-Ukraine,1999,preschoolwork4,2,554.6870715216962,evs_combo,77
-Ukraine,1999,preschoolwork4,3,295.6614691455847,evs_combo,77
-Ukraine,1999,preschoolwork4,4,14.502803627667241,evs_combo,77
-Ukraine,1999,wantch4,1,305.0663944994198,evs_combo,77
-Ukraine,1999,wantch4,2,581.6669541431147,evs_combo,77
-Ukraine,1999,wantch4,3,205.43157376513187,evs_combo,77
-Ukraine,1999,wantch4,4,13.401225052566591,evs_combo,77
-Ukraine,1999,work4,1,14.445179141493965,evs_combo,77
-Ukraine,1999,work4,2,180.20916282269454,evs_combo,77
-Ukraine,1999,work4,3,526.5279560445576,evs_combo,77
-Ukraine,1999,work4,4,441.52022586655687,evs_combo,77
-Ukraine,2005,family5a,1,599.8985311705425,ess2,77
-Ukraine,2005,family5a,2,800.052175872544,ess2,77
-Ukraine,2005,family5a,3,373.61975010838466,ess2,77
-Ukraine,2005,family5a,4,157.12012008850843,ess2,77
-Ukraine,2005,family5a,5,32.56186995668887,ess2,77
-Ukraine,2006,housewifefull4,1,228.18638215302073,wvs_combo,77
-Ukraine,2006,housewifefull4,2,308.0738700569893,wvs_combo,77
-Ukraine,2006,housewifefull4,3,280.0706141928079,wvs_combo,77
-Ukraine,2006,housewifefull4,4,81.48567992872115,wvs_combo,77
-Ukraine,2008,childfull2,1,1328.3672088260087,evs_combo,77
-Ukraine,2008,childfull2,2,141.00368567444494,evs_combo,77
-Ukraine,2008,housewifefull4,1,323.5212616192576,evs_combo,77
-Ukraine,2008,housewifefull4,2,600.3625267522661,evs_combo,77
-Ukraine,2008,housewifefull4,3,386.67859556465095,evs_combo,77
-Ukraine,2008,housewifefull4,4,95.37727749327946,evs_combo,77
-Ukraine,2008,preschoolwork4,1,400.6433376117159,evs_combo,77
-Ukraine,2008,preschoolwork4,2,627.4491780425572,evs_combo,77
-Ukraine,2008,preschoolwork4,3,344.88605346011377,evs_combo,77
-Ukraine,2008,preschoolwork4,4,72.48875111251941,evs_combo,77
-Ukraine,2008,wantch4,1,501.8954702566749,evs_combo,77
-Ukraine,2008,wantch4,2,734.8376912256476,evs_combo,77
-Ukraine,2008,wantch4,3,145.27041647536882,evs_combo,77
-Ukraine,2008,wantch4,4,25.36510280062597,evs_combo,77
-Ukraine,2008,work4,1,18.663397158495787,evs_combo,77
-Ukraine,2008,work4,2,126.00007360783397,evs_combo,77
-Ukraine,2008,work4,3,583.3446127970568,evs_combo,77
-Ukraine,2008,work4,4,746.5225781759302,evs_combo,77
-Ukraine,2009,family5a,1,709.0889389739459,ess4,77
-Ukraine,2009,family5a,2,591.6685516554988,ess4,77
-Ukraine,2009,family5a,3,327.6040806224255,ess4,77
-Ukraine,2009,family5a,4,118.66959143902449,ess4,77
-Ukraine,2009,family5a,5,39.57233053179228,ess4,77
-Ukraine,2011,family5a,1,682.000775489926,ess5,77
-Ukraine,2011,family5a,2,658.6217631945776,ess5,77
-Ukraine,2011,family5a,3,359.9280564597675,ess5,77
-Ukraine,2011,family5a,4,133.65567575223966,ess5,77
-Ukraine,2011,family5a,5,44.894993768758,ess5,77
-Ukraine,2011,housewifefull4,1,737.0704329996622,wvs_combo,77
-Ukraine,2011,housewifefull4,2,607.4933973923335,wvs_combo,77
-Ukraine,2011,housewifefull4,3,131.5602474326885,wvs_combo,77
-Ukraine,2011,housewifefull4,4,25.120925393022215,wvs_combo,77
-Ukraine,2011,preschoolwork4,1,161.13381998979366,wvs_combo,77
-Ukraine,2011,preschoolwork4,2,382.4460658756745,wvs_combo,77
-Ukraine,2011,preschoolwork4,3,806.1563915743459,wvs_combo,77
-Ukraine,2011,preschoolwork4,4,151.50872577789238,wvs_combo,77
-Ukraine,2015,bearchild4,1,194.16106851945187,pewrel2015_ee,77
-Ukraine,2015,bearchild4,2,231.21163276748285,pewrel2015_ee,77
-Ukraine,2015,bearchild4,3,107.60216453354883,pewrel2015_ee,77
-Ukraine,2015,bearchild4,4,66.70291512538653,pewrel2015_ee,77
+Taiwan,2019,housewifefull4,1,199.41999198010544,wvs7,79
+Taiwan,2019,housewifefull4,2,791.4656016622275,wvs7,79
+Taiwan,2019,housewifefull4,3,202.06431989280057,wvs7,79
+Taiwan,2019,housewifefull4,4,25.164399776442057,wvs7,79
+Taiwan,2019,preschoolwork4,1,4.696226853424481,wvs7,79
+Taiwan,2019,preschoolwork4,2,121.65671238010121,wvs7,79
+Taiwan,2019,preschoolwork4,3,854.5161943232748,wvs7,79
+Taiwan,2019,preschoolwork4,4,237.33372159998248,wvs7,79
 Nigeria,1990,childfull2,1,855.7094492925862,wvs_combo,73
 Nigeria,1990,childfull2,2,128.10620995257432,wvs_combo,73
 Nigeria,1990,housewifefull4,1,308.2555676983819,wvs_combo,73
@@ -6925,14 +6933,14 @@ Nigeria,2012,preschoolwork4,1,303.94649514407877,wvs_combo,73
 Nigeria,2012,preschoolwork4,2,420.3497024026027,wvs_combo,73
 Nigeria,2012,preschoolwork4,3,720.715428812554,wvs_combo,73
 Nigeria,2012,preschoolwork4,4,315.44753039150066,wvs_combo,73
-Nigeria,2018,housewifefull4,1,195.51672246191308,wvs7,73
-Nigeria,2018,housewifefull4,2,276.5436573535173,wvs7,73
-Nigeria,2018,housewifefull4,3,431.9653948448,wvs7,73
-Nigeria,2018,housewifefull4,4,322.90662304444464,wvs7,73
-Nigeria,2018,preschoolwork4,1,215.32040292198846,wvs7,73
-Nigeria,2018,preschoolwork4,2,290.9147281946951,wvs7,73
-Nigeria,2018,preschoolwork4,3,386.48489942183085,wvs7,73
-Nigeria,2018,preschoolwork4,4,337.98727615571715,wvs7,73
+Nigeria,2018,housewifefull4,1,195.51572048457905,wvs7,73
+Nigeria,2018,housewifefull4,2,276.54224013215094,wvs7,73
+Nigeria,2018,housewifefull4,3,431.9631811234912,wvs7,73
+Nigeria,2018,housewifefull4,4,322.904968223756,wvs7,73
+Nigeria,2018,preschoolwork4,1,215.319299455438,wvs7,73
+Nigeria,2018,preschoolwork4,2,290.91323732496215,wvs7,73
+Nigeria,2018,preschoolwork4,3,386.4829187773913,wvs7,73
+Nigeria,2018,preschoolwork4,4,337.98554405021923,wvs7,73
 Belarus,1990,childfull2,1,982.814829479906,wvs_combo,68
 Belarus,1990,childfull2,2,26.02157389661666,wvs_combo,68
 Belarus,1990,housewifefull4,1,351.2912476043249,wvs_combo,68
@@ -7123,14 +7131,14 @@ China,2013,preschoolwork4,1,132.01175506454115,wvs_combo,62
 China,2013,preschoolwork4,2,845.1218299329881,wvs_combo,62
 China,2013,preschoolwork4,3,994.5800012923316,wvs_combo,62
 China,2013,preschoolwork4,4,89.90323604624908,wvs_combo,62
-China,2018,housewifefull4,1,338.5649955856235,wvs7,62
-China,2018,housewifefull4,2,1838.0840364731653,wvs7,62
-China,2018,housewifefull4,3,751.3049787149815,wvs7,62
-China,2018,housewifefull4,4,100.08428247093381,wvs7,62
-China,2018,preschoolwork4,1,405.47363196216355,wvs7,62
-China,2018,preschoolwork4,2,1382.3179738162771,wvs7,62
-China,2018,preschoolwork4,3,1075.6320969524245,wvs7,62
-China,2018,preschoolwork4,4,168.92300001202983,wvs7,62
+China,2018,housewifefull4,1,338.563260519449,wvs7,62
+China,2018,housewifefull4,2,1838.0746167236957,wvs7,62
+China,2018,housewifefull4,3,751.3011284532231,wvs7,62
+China,2018,housewifefull4,4,100.08376956246609,wvs7,62
+China,2018,preschoolwork4,1,405.4715540049246,wvs7,62
+China,2018,preschoolwork4,2,1382.3108897609554,wvs7,62
+China,2018,preschoolwork4,3,1075.6265845902726,wvs7,62
+China,2018,preschoolwork4,4,168.92213432128437,wvs7,62
 Iceland,1984,childfull2,1,432.4036800704656,evs_combo,61
 Iceland,1984,childfull2,2,446.50380007276414,evs_combo,61
 Iceland,1990,childfull2,1,271.53948448892277,evs_combo,61
@@ -7240,14 +7248,14 @@ Argentina,2013,housewifefull4,1,179.06676612036557,wvs_combo,56
 Argentina,2013,housewifefull4,2,376.1009144826281,wvs_combo,56
 Argentina,2013,housewifefull4,3,277.19946682356107,wvs_combo,56
 Argentina,2013,housewifefull4,4,134.7648559079218,wvs_combo,56
-Argentina,2017,housewifefull4,1,196.04904897886604,wvs7,56
-Argentina,2017,housewifefull4,2,329.46142180761103,wvs7,56
-Argentina,2017,housewifefull4,3,280.90480025327844,wvs7,56
-Argentina,2017,housewifefull4,4,114.81904806006541,wvs7,56
-Argentina,2017,preschoolwork4,1,92.43920448765931,wvs7,56
-Argentina,2017,preschoolwork4,2,271.00143271003805,wvs7,56
-Argentina,2017,preschoolwork4,3,401.86041022352373,wvs7,56
-Argentina,2017,preschoolwork4,4,189.2639183904668,wvs7,56
+Argentina,2017,housewifefull4,1,196.04804427348347,wvs7,56
+Argentina,2017,housewifefull4,2,329.45973339511653,wvs7,56
+Argentina,2017,housewifefull4,3,280.9033606820779,wvs7,56
+Argentina,2017,housewifefull4,4,114.81845963938085,wvs7,56
+Argentina,2017,preschoolwork4,1,92.43873075842271,wvs7,56
+Argentina,2017,preschoolwork4,2,271.0000438912728,wvs7,56
+Argentina,2017,preschoolwork4,3,401.85835078319843,wvs7,56
+Argentina,2017,preschoolwork4,4,189.26294845728668,wvs7,56
 India,1990,childfull2,1,2179.8072287242726,wvs_combo,54
 India,1990,childfull2,2,280.2323342712563,wvs_combo,54
 India,1990,housewifefull4,1,269.223206853457,wvs_combo,54
@@ -7348,14 +7356,14 @@ Serbia,2015,bearchild4,1,409.8245393213678,pewrel2015_ee,54
 Serbia,2015,bearchild4,2,223.82899151324003,pewrel2015_ee,54
 Serbia,2015,bearchild4,3,125.55679140733135,pewrel2015_ee,54
 Serbia,2015,bearchild4,4,168.10987519505287,pewrel2015_ee,54
-Serbia,2017,housewifefull4,1,84.02366718987655,wvs7,54
-Serbia,2017,housewifefull4,2,242.06818404702528,wvs7,54
-Serbia,2017,housewifefull4,3,397.1118556473927,wvs7,54
-Serbia,2017,housewifefull4,4,260.0732555877131,wvs7,54
-Serbia,2017,preschoolwork4,1,97.0273299692622,wvs7,54
-Serbia,2017,preschoolwork4,2,275.0774818716196,wvs7,54
-Serbia,2017,preschoolwork4,3,452.12735202171666,wvs7,54
-Serbia,2017,preschoolwork4,4,172.04846138879483,wvs7,54
+Serbia,2017,housewifefull4,1,84.02323658829431,wvs7,54
+Serbia,2017,housewifefull4,2,242.0669435043717,wvs7,54
+Serbia,2017,housewifefull4,3,397.1098205422957,wvs7,54
+Serbia,2017,housewifefull4,4,260.0719227732919,wvs7,54
+Serbia,2017,preschoolwork4,1,97.0268327269589,wvs7,54
+Serbia,2017,preschoolwork4,2,275.07607216405876,wvs7,54
+Serbia,2017,preschoolwork4,3,452.12503497510744,wvs7,54
+Serbia,2017,preschoolwork4,4,172.0475796807931,wvs7,54
 Luxembourg,1999,childfull2,1,406.6429689358431,evs_combo,53
 Luxembourg,1999,childfull2,2,668.3932895630164,evs_combo,53
 Luxembourg,1999,housewifefull4,1,325.12652269377566,evs_combo,53
@@ -7450,14 +7458,14 @@ Jordan,2014,preschoolwork4,1,683.5667296688146,wvs_combo,49
 Jordan,2014,preschoolwork4,2,384.31862985772295,wvs_combo,49
 Jordan,2014,preschoolwork4,3,100.08297652544869,wvs_combo,49
 Jordan,2014,preschoolwork4,4,28.023233427125632,wvs_combo,49
-Jordan,2018,housewifefull4,1,451.1270702694562,wvs7,49
-Jordan,2018,housewifefull4,2,412.1160819312992,wvs7,49
-Jordan,2018,housewifefull4,3,277.0780453761405,wvs7,49
-Jordan,2018,housewifefull4,4,52.01465111754262,wvs7,49
-Jordan,2018,preschoolwork4,1,626.1763769150323,wvs7,49
-Jordan,2018,preschoolwork4,2,388.1093198770488,wvs7,49
-Jordan,2018,preschoolwork4,3,145.04085407776307,wvs7,49
-Jordan,2018,preschoolwork4,4,40.0112700904174,wvs7,49
+Jordan,2018,housewifefull4,1,451.1247583490563,wvs7,49
+Jordan,2018,housewifefull4,2,412.11396993306255,wvs7,49
+Jordan,2018,housewifefull4,3,277.076625416161,wvs7,49
+Jordan,2018,housewifefull4,4,52.01438455465838,wvs7,49
+Jordan,2018,preschoolwork4,1,626.1731679080028,wvs7,49
+Jordan,2018,preschoolwork4,2,388.1073309078356,wvs7,49
+Jordan,2018,preschoolwork4,3,145.0401107774128,wvs7,49
+Jordan,2018,preschoolwork4,4,40.011065042044905,wvs7,49
 Pakistan,1997,housewifefull4,1,269.1413716110973,wvs_combo,47
 Pakistan,1997,housewifefull4,2,165.44951172693519,wvs_combo,47
 Pakistan,1997,housewifefull4,3,237.88132561660726,wvs_combo,47
@@ -7497,14 +7505,14 @@ Pakistan,2012,preschoolwork4,1,398.55512401207056,wvs_combo,47
 Pakistan,2012,preschoolwork4,2,442.17943093532045,wvs_combo,47
 Pakistan,2012,preschoolwork4,3,211.59092823864924,wvs_combo,47
 Pakistan,2012,preschoolwork4,4,135.7778873662855,wvs_combo,47
-Pakistan,2018,housewifefull4,1,739.2082149204615,wvs7,47
-Pakistan,2018,housewifefull4,2,528.1487651935097,wvs7,47
-Pakistan,2018,housewifefull4,3,303.0853709349118,wvs7,47
-Pakistan,2018,housewifefull4,4,373.10509359314227,wvs7,47
-Pakistan,2018,preschoolwork4,1,1117.314717274906,wvs7,47
-Pakistan,2018,preschoolwork4,2,462.130169544321,wvs7,47
-Pakistan,2018,preschoolwork4,3,166.04677087523223,wvs7,47
-Pakistan,2018,preschoolwork4,4,225.0633942585979,wvs7,47
+Pakistan,2018,housewifefull4,1,739.2044266517796,wvs7,47
+Pakistan,2018,housewifefull4,2,528.1460585549928,wvs7,47
+Pakistan,2018,housewifefull4,3,303.0838176934902,wvs7,47
+Pakistan,2018,housewifefull4,4,373.1031815170688,wvs7,47
+Pakistan,2018,preschoolwork4,1,1117.308991299104,wvs7,47
+Pakistan,2018,preschoolwork4,2,462.1278012356187,wvs7,47
+Pakistan,2018,preschoolwork4,3,166.04591992448636,wvs7,47
+Pakistan,2018,preschoolwork4,4,225.0622408615026,wvs7,47
 Moldova,1996,childfull2,1,819.6795777434247,wvs_combo,46
 Moldova,1996,childfull2,2,139.11533737037368,wvs_combo,46
 Moldova,1996,housewifefull4,1,190.15765539835252,wvs_combo,46
@@ -7630,14 +7638,14 @@ Iraq,2013,preschoolwork4,1,245.20329248734927,wvs_combo,43
 Iraq,2013,preschoolwork4,2,589.4887317348928,wvs_combo,43
 Iraq,2013,preschoolwork4,3,298.24727004583707,wvs_combo,43
 Iraq,2013,preschoolwork4,4,44.03650967119742,wvs_combo,43
-Iraq,2018,housewifefull4,1,551.1552454954997,wvs7,43
-Iraq,2018,housewifefull4,2,296.08339866908875,wvs7,43
-Iraq,2018,housewifefull4,3,219.06170374503526,wvs7,43
-Iraq,2018,housewifefull4,4,94.0264847124809,wvs7,43
-Iraq,2018,preschoolwork4,1,403.1135461609553,wvs7,43
-Iraq,2018,preschoolwork4,2,361.10171256601706,wvs7,43
-Iraq,2018,preschoolwork4,3,301.0848074303909,wvs7,43
-Iraq,2018,preschoolwork4,4,128.03606428933568,wvs7,43
+Iraq,2018,housewifefull4,1,551.1524209541686,wvs7,43
+Iraq,2018,housewifefull4,2,296.0818813111323,wvs7,43
+Iraq,2018,housewifefull4,3,219.06058110519587,wvs7,43
+Iraq,2018,housewifefull4,4,94.02600284880553,wvs7,43
+Iraq,2018,preschoolwork4,1,403.11148029860243,wvs7,43
+Iraq,2018,preschoolwork4,2,361.0998620044553,wvs7,43
+Iraq,2018,preschoolwork4,3,301.08326444138794,wvs7,43
+Iraq,2018,preschoolwork4,4,128.0354081345437,wvs7,43
 Bosnia & Herzegovina,1998,childfull2,1,630.5227521103267,wvs_combo,42
 Bosnia & Herzegovina,1998,childfull2,2,151.12529455342752,wvs_combo,42
 Bosnia & Herzegovina,1998,housewifefull4,1,398.3302465712858,wvs_combo,42
@@ -7680,47 +7688,6 @@ Bosnia & Herzegovina,2015,bearchild4,1,416.16453658289163,pewrel2015_ee,42
 Bosnia & Herzegovina,2015,bearchild4,2,247.40983937458157,pewrel2015_ee,42
 Bosnia & Herzegovina,2015,bearchild4,3,160.1374871348099,pewrel2015_ee,42
 Bosnia & Herzegovina,2015,bearchild4,4,129.9319315053372,pewrel2015_ee,42
-Algeria,2002,childfull2,1,1009.8372331417772,wvs_combo,41
-Algeria,2002,childfull2,2,234.1941650695499,wvs_combo,41
-Algeria,2002,educimp5,1,22.01825483559871,wvs_combo,41
-Algeria,2002,educimp5,2,99.0821467601942,wvs_combo,41
-Algeria,2002,educimp5,3,161.13359220597238,wvs_combo,41
-Algeria,2002,educimp5,4,302.25058910685505,wvs_combo,41
-Algeria,2002,educimp5,5,678.562580842542,wvs_combo,41
-Algeria,2002,goodmother5,1,987.8189783061786,wvs_combo,41
-Algeria,2002,goodmother5,2,211.17508046869673,wvs_combo,41
-Algeria,2002,goodmother5,3,24.019914366107685,wvs_combo,41
-Algeria,2002,goodmother5,4,36.02987154916153,wvs_combo,41
-Algeria,2002,goodmother5,5,9.007467887290382,wvs_combo,41
-Algeria,2002,goodwife5,1,1009.8372331417772,wvs_combo,41
-Algeria,2002,goodwife5,2,182.15101727631662,wvs_combo,41
-Algeria,2002,goodwife5,3,30.024892957634606,wvs_combo,41
-Algeria,2002,goodwife5,4,30.024892957634606,wvs_combo,41
-Algeria,2002,goodwife5,5,10.008297652544869,wvs_combo,41
-Algeria,2002,housewifefull4,1,455.3775431907915,wvs_combo,41
-Algeria,2002,housewifefull4,2,361.29954525686975,wvs_combo,41
-Algeria,2002,housewifefull4,3,270.22403661871147,wvs_combo,41
-Algeria,2002,housewifefull4,4,142.11782666613715,wvs_combo,41
-Algeria,2002,work4,1,91.07550863815831,wvs_combo,41
-Algeria,2002,work4,2,344.2854392475435,wvs_combo,41
-Algeria,2002,work4,3,344.2854392475435,wvs_combo,41
-Algeria,2002,work4,4,458.38003248655497,wvs_combo,41
-Algeria,2002,work5b,1,396.3285870407768,wvs_combo,41
-Algeria,2002,work5b,2,374.3103322051781,wvs_combo,41
-Algeria,2002,work5b,3,343.284609482289,wvs_combo,41
-Algeria,2002,work5b,4,145.1203159619006,wvs_combo,41
-Algeria,2004,family5b,1,307,tcmeg2004,41
-Algeria,2004,family5b,2,370,tcmeg2004,41
-Algeria,2004,family5b,4,374,tcmeg2004,41
-Algeria,2004,family5b,5,237,tcmeg2004,41
-Algeria,2014,housewifefull4,1,414.3435228153576,wvs_combo,41
-Algeria,2014,housewifefull4,2,354.29373690008833,wvs_combo,41
-Algeria,2014,housewifefull4,3,236.1958246000589,wvs_combo,41
-Algeria,2014,housewifefull4,4,89.07384910764932,wvs_combo,41
-Algeria,2014,preschoolwork4,1,406.3368846933217,wvs_combo,41
-Algeria,2014,preschoolwork4,2,496.4115635662255,wvs_combo,41
-Algeria,2014,preschoolwork4,3,181.15018751106211,wvs_combo,41
-Algeria,2014,preschoolwork4,4,59.048956150014725,wvs_combo,41
 Armenia,1997,childfull2,1,1608.3334327639604,wvs_combo,40
 Armenia,1997,childfull2,2,327.2713332382172,wvs_combo,40
 Armenia,1997,housewifefull4,1,470.38998966960884,wvs_combo,40
@@ -7793,14 +7760,14 @@ Egypt,2012,preschoolwork4,1,530.6420076829228,wvs_combo,40
 Egypt,2012,preschoolwork4,2,433.3922679518282,wvs_combo,40
 Egypt,2012,preschoolwork4,3,448.518858575967,wvs_combo,40
 Egypt,2012,preschoolwork4,4,111.71059814976407,wvs_combo,40
-Egypt,2018,housewifefull4,1,467.1315783056232,wvs7,40
-Egypt,2018,housewifefull4,2,502.1414396347384,wvs7,40
-Egypt,2018,housewifefull4,3,183.05156066365961,wvs7,40
-Egypt,2018,housewifefull4,4,25.007043806510875,wvs7,40
-Egypt,2018,preschoolwork4,1,503.1417213869988,wvs7,40
-Egypt,2018,preschoolwork4,2,415.1169271880805,wvs7,40
-Egypt,2018,preschoolwork4,3,223.062830754077,wvs7,40
-Egypt,2018,preschoolwork4,4,47.01324235624045,wvs7,40
+Egypt,2018,housewifefull4,1,467.12918436587427,wvs7,40
+Egypt,2018,housewifefull4,2,502.13886627766357,wvs7,40
+Egypt,2018,housewifefull4,3,183.05062256735545,wvs7,40
+Egypt,2018,housewifefull4,4,25.006915651278067,wvs7,40
+Egypt,2018,preschoolwork4,1,503.1391429037147,wvs7,40
+Egypt,2018,preschoolwork4,2,415.1147998112159,wvs7,40
+Egypt,2018,preschoolwork4,3,223.06168760940037,wvs7,40
+Egypt,2018,preschoolwork4,4,47.013001424402766,wvs7,40
 Peru,1996,childfull2,1,584.4845829086203,wvs_combo,40
 Peru,1996,childfull2,2,559.4638387772582,wvs_combo,40
 Peru,1996,housewifefull4,1,195.16180422462494,wvs_combo,40
@@ -7833,14 +7800,14 @@ Peru,2012,preschoolwork4,1,86.12039988574075,wvs_combo,40
 Peru,2012,preschoolwork4,2,354.0379577131263,wvs_combo,40
 Peru,2012,preschoolwork4,3,541.2815386215203,wvs_combo,40
 Peru,2012,preschoolwork4,4,166.72267723545022,wvs_combo,40
-Peru,2018,housewifefull4,1,201.2527107263531,wvs7,40
-Peru,2018,housewifefull4,2,610.8138141504508,wvs7,40
-Peru,2018,housewifefull4,3,471.3388195104479,wvs7,40
-Peru,2018,housewifefull4,4,62.21333531648141,wvs7,40
-Peru,2018,preschoolwork4,1,102.88882453742653,wvs7,40
-Peru,2018,preschoolwork4,2,517.4580724560999,wvs7,40
-Peru,2018,preschoolwork4,3,658.5975396859214,wvs7,40
-Peru,2018,preschoolwork4,4,102.81012891000105,wvs7,40
+Peru,2018,housewifefull4,1,201.25167935342483,wvs7,40
+Peru,2018,housewifefull4,2,610.8106838729511,wvs7,40
+Peru,2018,housewifefull4,3,471.3364040095748,wvs7,40
+Peru,2018,housewifefull4,4,62.21301648773327,wvs7,40
+Peru,2018,preschoolwork4,1,102.88829725633866,wvs7,40
+Peru,2018,preschoolwork4,2,517.4554206048751,wvs7,40
+Peru,2018,preschoolwork4,3,658.5941645280386,wvs7,40
+Peru,2018,preschoolwork4,4,102.80960203220982,wvs7,40
 South Africa,1982,childfull2,1,770.6389192459549,wvs_combo,40
 South Africa,1982,childfull2,2,728.6040691052665,wvs_combo,40
 South Africa,1990,childfull2,1,1804.2699378528948,wvs_combo,40
@@ -7912,14 +7879,14 @@ Bangladesh,2002,work4,1,52.04314779323332,wvs_combo,39
 Bangladesh,2002,work4,2,542.4497327679319,wvs_combo,39
 Bangladesh,2002,work4,3,599.4970293874376,wvs_combo,39
 Bangladesh,2002,work4,4,274.2273556797294,wvs_combo,39
-Bangladesh,2018,housewifefull4,1,307.08649794395353,wvs7,39
-Bangladesh,2018,housewifefull4,2,383.1079111157466,wvs7,39
-Bangladesh,2018,housewifefull4,3,342.0963592730688,wvs7,39
-Bangladesh,2018,housewifefull4,4,129.03634604159612,wvs7,39
-Bangladesh,2018,preschoolwork4,1,359.1011490614962,wvs7,39
-Bangladesh,2018,preschoolwork4,2,693.1952543164815,wvs7,39
-Bangladesh,2018,preschoolwork4,3,119.03352851899177,wvs7,39
-Bangladesh,2018,preschoolwork4,4,21.005916797469137,wvs7,39
+Bangladesh,2018,housewifefull4,1,307.08492419769465,wvs7,39
+Bangladesh,2018,housewifefull4,2,383.10594777757996,wvs7,39
+Bangladesh,2018,housewifefull4,3,342.09460610948395,wvs7,39
+Bangladesh,2018,housewifefull4,4,129.03568476059482,wvs7,39
+Bangladesh,2018,preschoolwork4,1,359.099308752353,wvs7,39
+Bangladesh,2018,preschoolwork4,2,693.191701853428,wvs7,39
+Bangladesh,2018,preschoolwork4,3,119.0329185000836,wvs7,39
+Bangladesh,2018,preschoolwork4,4,21.005809147073577,wvs7,39
 Albania,1998,childfull2,1,967.8023830010887,wvs_combo,38
 Albania,1998,childfull2,2,11.009127417799355,wvs_combo,38
 Albania,1998,housewifefull4,1,102.08463605595766,wvs_combo,38
@@ -7988,14 +7955,14 @@ Iran,2000,work4,1,85.07053004663138,wvs_combo,38
 Iran,2000,work4,2,449.3725645992646,wvs_combo,38
 Iran,2000,work4,3,799.662982438335,wvs_combo,38
 Iran,2000,work4,4,1012.8397224375407,wvs_combo,38
-Iran,2020,housewifefull4,1,356.1003038047149,wvs7,38
-Iran,2020,housewifefull4,2,812.2287828354732,wvs7,38
-Iran,2020,housewifefull4,3,276.07776362388006,wvs7,38
-Iran,2020,housewifefull4,4,51.014369365282185,wvs7,38
-Iran,2020,preschoolwork4,1,290.08170815552614,wvs7,38
-Iran,2020,preschoolwork4,2,535.1507374593327,wvs7,38
-Iran,2020,preschoolwork4,3,528.1487651935097,wvs7,38
-Iran,2020,preschoolwork4,4,136.03831830741916,wvs7,38
+Iran,2020,housewifefull4,1,356.09847887419966,wvs7,38
+Iran,2020,housewifefull4,2,812.2246203535116,wvs7,38
+Iran,2020,housewifefull4,3,276.0763487901099,wvs7,38
+Iran,2020,housewifefull4,4,51.01410792860725,wvs7,38
+Iran,2020,preschoolwork4,1,290.0802215548256,wvs7,38
+Iran,2020,preschoolwork4,2,535.1479949373506,wvs7,38
+Iran,2020,preschoolwork4,3,528.1460585549928,wvs7,38
+Iran,2020,preschoolwork4,4,136.03762114295267,wvs7,38
 Montenegro,1996,childfull2,1,193.16014469411596,wvs_combo,38
 Montenegro,1996,childfull2,2,41.03402037543396,wvs_combo,38
 Montenegro,1996,housewifefull4,1,62.051445445778185,wvs_combo,38
@@ -8072,6 +8039,43 @@ North Macedonia,2008,work4,1,37.109376190488256,evs_combo,38
 North Macedonia,2008,work4,2,316.1945420578979,evs_combo,38
 North Macedonia,2008,work4,3,571.9474995011271,evs_combo,38
 North Macedonia,2008,work4,4,469.3923392907726,evs_combo,38
+Algeria,2002,childfull2,1,1009.8372331417772,wvs_combo,37
+Algeria,2002,childfull2,2,234.1941650695499,wvs_combo,37
+Algeria,2002,educimp5,1,22.01825483559871,wvs_combo,37
+Algeria,2002,educimp5,2,99.0821467601942,wvs_combo,37
+Algeria,2002,educimp5,3,161.13359220597238,wvs_combo,37
+Algeria,2002,educimp5,4,302.25058910685505,wvs_combo,37
+Algeria,2002,educimp5,5,678.562580842542,wvs_combo,37
+Algeria,2002,goodmother5,1,987.8189783061786,wvs_combo,37
+Algeria,2002,goodmother5,2,211.17508046869673,wvs_combo,37
+Algeria,2002,goodmother5,3,24.019914366107685,wvs_combo,37
+Algeria,2002,goodmother5,4,36.02987154916153,wvs_combo,37
+Algeria,2002,goodmother5,5,9.007467887290382,wvs_combo,37
+Algeria,2002,goodwife5,1,1009.8372331417772,wvs_combo,37
+Algeria,2002,goodwife5,2,182.15101727631662,wvs_combo,37
+Algeria,2002,goodwife5,3,30.024892957634606,wvs_combo,37
+Algeria,2002,goodwife5,4,30.024892957634606,wvs_combo,37
+Algeria,2002,goodwife5,5,10.008297652544869,wvs_combo,37
+Algeria,2002,housewifefull4,1,455.3775431907915,wvs_combo,37
+Algeria,2002,housewifefull4,2,361.29954525686975,wvs_combo,37
+Algeria,2002,housewifefull4,3,270.22403661871147,wvs_combo,37
+Algeria,2002,housewifefull4,4,142.11782666613715,wvs_combo,37
+Algeria,2002,work4,1,91.07550863815831,wvs_combo,37
+Algeria,2002,work4,2,344.2854392475435,wvs_combo,37
+Algeria,2002,work4,3,344.2854392475435,wvs_combo,37
+Algeria,2002,work4,4,458.38003248655497,wvs_combo,37
+Algeria,2004,family5b,1,307,tcmeg2004,37
+Algeria,2004,family5b,2,370,tcmeg2004,37
+Algeria,2004,family5b,4,374,tcmeg2004,37
+Algeria,2004,family5b,5,237,tcmeg2004,37
+Algeria,2014,housewifefull4,1,414.3435228153576,wvs_combo,37
+Algeria,2014,housewifefull4,2,354.29373690008833,wvs_combo,37
+Algeria,2014,housewifefull4,3,236.1958246000589,wvs_combo,37
+Algeria,2014,housewifefull4,4,89.07384910764932,wvs_combo,37
+Algeria,2014,preschoolwork4,1,406.3368846933217,wvs_combo,37
+Algeria,2014,preschoolwork4,2,496.4115635662255,wvs_combo,37
+Algeria,2014,preschoolwork4,3,181.15018751106211,wvs_combo,37
+Algeria,2014,preschoolwork4,4,59.048956150014725,wvs_combo,37
 Indonesia,2000,rolehome4,1,87,ases2000,37
 Indonesia,2000,rolehome4,2,171,ases2000,37
 Indonesia,2000,rolehome4,3,238,ases2000,37
@@ -8101,14 +8105,14 @@ Indonesia,2006,housewifefull4,1,503.4173719230069,wvs_combo,37
 Indonesia,2006,housewifefull4,2,1187.984931357076,wvs_combo,37
 Indonesia,2006,housewifefull4,3,270.22403661871147,wvs_combo,37
 Indonesia,2006,housewifefull4,4,16.01327624407179,wvs_combo,37
-Indonesia,2018,housewifefull4,1,719.6621243274707,wvs7,37
-Indonesia,2018,housewifefull4,2,1620.3791857408505,wvs7,37
-Indonesia,2018,housewifefull4,3,769.4275068700143,wvs7,37
-Indonesia,2018,housewifefull4,4,84.21622884227531,wvs7,37
-Indonesia,2018,preschoolwork4,1,91.83724099085639,wvs7,37
-Indonesia,2018,preschoolwork4,2,263.97975474665407,wvs7,37
-Indonesia,2018,preschoolwork4,3,2480.9823694730358,wvs7,37
-Indonesia,2018,preschoolwork4,4,364.10224185879986,wvs7,37
+Indonesia,2018,housewifefull4,1,719.6584362279175,wvs7,37
+Indonesia,2018,housewifefull4,2,1620.3708816776675,wvs7,37
+Indonesia,2018,housewifefull4,3,769.4235637345507,wvs7,37
+Indonesia,2018,housewifefull4,4,84.21579725385978,wvs7,37
+Indonesia,2018,preschoolwork4,1,91.8367703465415,wvs7,37
+Indonesia,2018,preschoolwork4,2,263.97840191234104,wvs7,37
+Indonesia,2018,preschoolwork4,3,2480.9696550204353,wvs7,37
+Indonesia,2018,preschoolwork4,4,364.10037592022934,wvs7,37
 Colombia,1998,childfull2,1,1664.3798996182115,wvs_combo,30
 Colombia,1998,childfull2,2,1299.077035300324,wvs_combo,30
 Colombia,1998,housewifefull4,1,538.446413706914,wvs_combo,30
@@ -8131,14 +8135,14 @@ Colombia,2012,preschoolwork4,1,152.126124318682,wvs_combo,30
 Colombia,2012,preschoolwork4,2,489.40575520944407,wvs_combo,30
 Colombia,2012,preschoolwork4,3,624.5177735187998,wvs_combo,30
 Colombia,2012,preschoolwork4,4,221.1833781212416,wvs_combo,30
-Colombia,2018,housewifefull4,1,267.07522785353615,wvs7,30
-Colombia,2018,housewifefull4,2,646.1820119602411,wvs7,30
-Colombia,2018,housewifefull4,3,536.1510192115932,wvs7,30
-Colombia,2018,housewifefull4,4,71.02000441049088,wvs7,30
-Colombia,2018,preschoolwork4,1,191.0538146817431,wvs7,30
-Colombia,2018,preschoolwork4,2,555.1563725045414,wvs7,30
-Colombia,2018,preschoolwork4,3,683.1924367938772,wvs7,30
-Colombia,2018,preschoolwork4,4,91.02563945569959,wvs7,30
+Colombia,2018,housewifefull4,1,267.07385915564976,wvs7,30
+Colombia,2018,housewifefull4,2,646.1787004290252,wvs7,30
+Colombia,2018,housewifefull4,3,536.1482715634017,wvs7,30
+Colombia,2018,housewifefull4,4,71.0196404496297,wvs7,30
+Colombia,2018,preschoolwork4,1,191.05283557576442,wvs7,30
+Colombia,2018,preschoolwork4,2,555.1535274583731,wvs7,30
+Colombia,2018,preschoolwork4,3,683.1889355929168,wvs7,30
+Colombia,2018,preschoolwork4,4,91.02517297065216,wvs7,30
 Puerto Rico,1995,childfull2,1,311.2580569941454,wvs_combo,28
 Puerto Rico,1995,childfull2,2,813.6745991518978,wvs_combo,28
 Puerto Rico,1995,housewifefull4,1,296.2456105153281,wvs_combo,28
@@ -8159,14 +8163,14 @@ Puerto Rico,2001,work4,1,33.027382253398066,wvs_combo,28
 Puerto Rico,2001,work4,2,122.1012313610474,wvs_combo,28
 Puerto Rico,2001,work4,3,229.19001624327748,wvs_combo,28
 Puerto Rico,2001,work4,4,331.27465229923513,wvs_combo,28
-Puerto Rico,2018,housewifefull4,1,613.1727141356466,wvs7,28
-Puerto Rico,2018,housewifefull4,2,306.0862161916931,wvs7,28
-Puerto Rico,2018,housewifefull4,3,129.03634604159612,wvs7,28
-Puerto Rico,2018,housewifefull4,4,72.02028616275132,wvs7,28
-Puerto Rico,2018,preschoolwork4,1,262.073819092234,wvs7,28
-Puerto Rico,2018,preschoolwork4,2,393.11072863835096,wvs7,28
-Puerto Rico,2018,preschoolwork4,3,290.08170815552614,wvs7,28
-Puerto Rico,2018,preschoolwork4,4,173.04874314105527,wvs7,28
+Puerto Rico,2018,housewifefull4,1,613.1695717693382,wvs7,28
+Puerto Rico,2018,housewifefull4,2,306.08464757164353,wvs7,28
+Puerto Rico,2018,housewifefull4,3,129.03568476059482,wvs7,28
+Puerto Rico,2018,housewifefull4,4,72.01991707568084,wvs7,28
+Puerto Rico,2018,preschoolwork4,1,262.0724760253941,wvs7,28
+Puerto Rico,2018,preschoolwork4,2,393.1087140380912,wvs7,28
+Puerto Rico,2018,preschoolwork4,3,290.0802215548256,wvs7,28
+Puerto Rico,2018,preschoolwork4,4,173.0478563068442,wvs7,28
 Morocco,2001,childfull2,1,947.5004170198487,wvs_combo,27
 Morocco,2001,childfull2,2,204.15830616384102,wvs_combo,27
 Morocco,2001,housewifefull4,1,409.89978279736164,wvs_combo,27
@@ -8212,14 +8216,14 @@ Kyrgyzstan,2011,preschoolwork4,1,194.16097445937044,wvs_combo,26
 Kyrgyzstan,2011,preschoolwork4,2,388.3219489187409,wvs_combo,26
 Kyrgyzstan,2011,preschoolwork4,3,670.5559427205062,wvs_combo,26
 Kyrgyzstan,2011,preschoolwork4,4,244.2024627220948,wvs_combo,26
-Kyrgyzstan,2020,housewifefull4,1,520.3356543819415,wvs7,26
-Kyrgyzstan,2020,housewifefull4,2,437.9736028241561,wvs7,26
-Kyrgyzstan,2020,housewifefull4,3,154.56964410967018,wvs7,26
-Kyrgyzstan,2020,housewifefull4,4,64.21259953902975,wvs7,26
-Kyrgyzstan,2020,preschoolwork4,1,188.23742865212694,wvs7,26
-Kyrgyzstan,2020,preschoolwork4,2,223.4234107496895,wvs7,26
-Kyrgyzstan,2020,preschoolwork4,3,507.38195783668976,wvs7,26
-Kyrgyzstan,2020,preschoolwork4,4,255.56823458538977,wvs7,26
+Kyrgyzstan,2020,housewifefull4,1,520.3329877837843,wvs7,26
+Kyrgyzstan,2020,housewifefull4,2,437.971358312191,wvs7,26
+Kyrgyzstan,2020,housewifefull4,3,154.56885197650644,wvs7,26
+Kyrgyzstan,2020,housewifefull4,4,64.21227046452151,wvs7,26
+Kyrgyzstan,2020,preschoolwork4,1,188.23646397946595,wvs7,26
+Kyrgyzstan,2020,preschoolwork4,2,223.42226575712496,wvs7,26
+Kyrgyzstan,2020,preschoolwork4,3,507.3793576231885,wvs7,26
+Kyrgyzstan,2020,preschoolwork4,4,255.5669248581443,wvs7,26
 Zimbabwe,2001,childfull2,1,753.4299971552427,wvs_combo,26
 Zimbabwe,2001,childfull2,2,223.34028487101043,wvs_combo,26
 Zimbabwe,2001,housewifefull4,1,156.9871994072568,wvs_combo,26
@@ -8238,14 +8242,14 @@ Zimbabwe,2012,preschoolwork4,1,146.0155581869207,wvs_combo,26
 Zimbabwe,2012,preschoolwork4,2,236.85957490037566,wvs_combo,26
 Zimbabwe,2012,preschoolwork4,3,817.3695625622407,wvs_combo,26
 Zimbabwe,2012,preschoolwork4,4,300.0611739123843,wvs_combo,26
-Zimbabwe,2020,housewifefull4,1,270.07607311031745,wvs7,26
-Zimbabwe,2020,housewifefull4,2,369.10396658410053,wvs7,26
-Zimbabwe,2020,housewifefull4,3,402.1132644086949,wvs7,26
-Zimbabwe,2020,housewifefull4,4,171.0481796365344,wvs7,26
-Zimbabwe,2020,preschoolwork4,1,72.02028616275132,wvs7,26
-Zimbabwe,2020,preschoolwork4,2,143.0402905732422,wvs7,26
-Zimbabwe,2020,preschoolwork4,3,674.1899010235333,wvs7,26
-Zimbabwe,2020,preschoolwork4,4,320.0901607233392,wvs7,26
+Zimbabwe,2020,housewifefull4,1,270.0746890338031,wvs7,26
+Zimbabwe,2020,housewifefull4,2,369.10207501286425,wvs7,26
+Zimbabwe,2020,housewifefull4,3,402.1112036725513,wvs7,26
+Zimbabwe,2020,housewifefull4,4,171.04730305474197,wvs7,26
+Zimbabwe,2020,preschoolwork4,1,72.01991707568084,wvs7,26
+Zimbabwe,2020,preschoolwork4,2,143.03955752531053,wvs7,26
+Zimbabwe,2020,preschoolwork4,3,674.1864459584567,wvs7,26
+Zimbabwe,2020,preschoolwork4,4,320.08852033635924,wvs7,26
 Saudi Arabia,2003,childfull2,1,974.8081913578702,wvs_combo,25
 Saudi Arabia,2003,childfull2,2,468.3883301390998,wvs_combo,25
 Saudi Arabia,2003,educimp5,1,10.008297652544869,wvs_combo,25
@@ -8287,14 +8291,14 @@ Malaysia,2012,preschoolwork4,1,95.07882769917626,wvs_combo,24
 Malaysia,2012,preschoolwork4,2,177.14686845004417,wvs_combo,24
 Malaysia,2012,preschoolwork4,3,735.6098774620478,wvs_combo,24
 Malaysia,2012,preschoolwork4,4,293.24312121956467,wvs_combo,24
-Malaysia,2018,housewifefull4,1,210.05916797469135,wvs7,24
-Malaysia,2018,housewifefull4,2,612.1724323833862,wvs7,24
-Malaysia,2018,housewifefull4,3,403.1135461609553,wvs7,24
-Malaysia,2018,housewifefull4,4,88.02479419891829,wvs7,24
-Malaysia,2018,preschoolwork4,1,123.03465552803351,wvs7,24
-Malaysia,2018,preschoolwork4,2,287.08086289874484,wvs7,24
-Malaysia,2018,preschoolwork4,3,650.1831389692828,wvs7,24
-Malaysia,2018,preschoolwork4,4,253.07128332189006,wvs7,24
+Malaysia,2018,housewifefull4,1,210.05809147073575,wvs7,24
+Malaysia,2018,housewifefull4,2,612.1692951432871,wvs7,24
+Malaysia,2018,housewifefull4,3,403.11148029860243,wvs7,24
+Malaysia,2018,housewifefull4,4,88.0243430924988,wvs7,24
+Malaysia,2018,preschoolwork4,1,123.03402500428808,wvs7,24
+Malaysia,2018,preschoolwork4,2,287.07939167667223,wvs7,24
+Malaysia,2018,preschoolwork4,3,650.1798069332298,wvs7,24
+Malaysia,2018,preschoolwork4,4,253.06998639093405,wvs7,24
 Thailand,2000,rolehome4,1,57,ases2000,24
 Thailand,2000,rolehome4,2,178,ases2000,24
 Thailand,2000,rolehome4,3,93,ases2000,24
@@ -8311,14 +8315,14 @@ Thailand,2013,preschoolwork4,1,401.89017042315726,wvs_combo,24
 Thailand,2013,preschoolwork4,2,470.2723982078439,wvs_combo,24
 Thailand,2013,preschoolwork4,3,262.36950526705726,wvs_combo,24
 Thailand,2013,preschoolwork4,4,59.39970904683547,wvs_combo,24
-Thailand,2018,housewifefull4,1,213.96741724959253,wvs7,24
-Thailand,2018,housewifefull4,2,440.9402492350494,wvs7,24
-Thailand,2018,housewifefull4,3,476.5112044611089,wvs7,24
-Thailand,2018,housewifefull4,4,255.22151200303503,wvs7,24
-Thailand,2018,preschoolwork4,1,131.33182765855653,wvs7,24
-Thailand,2018,preschoolwork4,2,403.4820497064171,wvs7,24
-Thailand,2018,preschoolwork4,3,607.4078614288757,wvs7,24
-Thailand,2018,preschoolwork4,4,242.78498267777326,wvs7,24
+Thailand,2018,housewifefull4,1,213.96632071677624,wvs7,24
+Thailand,2018,housewifefull4,2,440.9379895197174,wvs7,24
+Thailand,2018,housewifefull4,3,476.5087624529763,wvs7,24
+Thailand,2018,housewifefull4,4,255.22020405266142,wvs7,24
+Thailand,2018,preschoolwork4,1,131.33115461375047,wvs7,24
+Thailand,2018,preschoolwork4,2,403.4799819555699,wvs7,24
+Thailand,2018,preschoolwork4,3,607.4047486060848,wvs7,24
+Thailand,2018,preschoolwork4,4,242.78373846169475,wvs7,24
 Singapore,2000,rolehome4,1,33,ases2000,22
 Singapore,2000,rolehome4,2,199,ases2000,22
 Singapore,2000,rolehome4,3,220,ases2000,22
@@ -8377,14 +8381,14 @@ Vietnam,2006,housewifefull4,1,308.2555676983819,wvs_combo,22
 Vietnam,2006,housewifefull4,2,789.6546847857901,wvs_combo,22
 Vietnam,2006,housewifefull4,3,252.2091008441307,wvs_combo,22
 Vietnam,2006,housewifefull4,4,82.06804075086792,wvs_combo,22
-Vietnam,2020,housewifefull4,1,103.0290204828248,wvs7,22
-Vietnam,2020,housewifefull4,2,650.1831389692828,wvs7,22
-Vietnam,2020,housewifefull4,3,406.1143914177366,wvs7,22
-Vietnam,2020,housewifefull4,4,41.01155184267784,wvs7,22
-Vietnam,2020,preschoolwork4,1,191.0538146817431,wvs7,22
-Vietnam,2020,preschoolwork4,2,749.2110324430658,wvs7,22
-Vietnam,2020,preschoolwork4,3,244.06874755154615,wvs7,22
-Vietnam,2020,preschoolwork4,4,16.00450803616696,wvs7,22
+Vietnam,2020,housewifefull4,1,103.02849248326564,wvs7,22
+Vietnam,2020,housewifefull4,2,650.1798069332298,wvs7,22
+Vietnam,2020,housewifefull4,3,406.1123101767558,wvs7,22
+Vietnam,2020,housewifefull4,4,41.01134166809603,wvs7,22
+Vietnam,2020,preschoolwork4,1,191.05283557576442,wvs7,22
+Vietnam,2020,preschoolwork4,2,749.2071929122909,wvs7,22
+Vietnam,2020,preschoolwork4,3,244.06749675647393,wvs7,22
+Vietnam,2020,preschoolwork4,4,16.004426016817963,wvs7,22
 Hong Kong SAR China,2005,housewifefull4,1,114.0945932390115,wvs_combo,20
 Hong Kong SAR China,2005,housewifefull4,2,992.823127132451,wvs_combo,20
 Hong Kong SAR China,2005,housewifefull4,3,110.09127417799355,wvs_combo,20
@@ -8397,14 +8401,14 @@ Hong Kong SAR China,2014,preschoolwork4,1,116.09625276952048,wvs_combo,20
 Hong Kong SAR China,2014,preschoolwork4,2,537.4455839416595,wvs_combo,20
 Hong Kong SAR China,2014,preschoolwork4,3,317.26303558567236,wvs_combo,20
 Hong Kong SAR China,2014,preschoolwork4,4,28.023233427125632,wvs_combo,20
-Hong Kong SAR China,2018,housewifefull4,1,420.0295474520694,wvs7,20
-Hong Kong SAR China,2018,housewifefull4,2,1389.790694214091,wvs7,20
-Hong Kong SAR China,2018,housewifefull4,3,239.23613125850778,wvs7,20
-Hong Kong SAR China,2018,housewifefull4,4,21.26105997238674,wvs7,20
-Hong Kong SAR China,2018,preschoolwork4,1,103.5961279726352,wvs7,20
-Hong Kong SAR China,2018,preschoolwork4,2,489.06700933405995,wvs7,20
-Hong Kong SAR China,2018,preschoolwork4,3,1279.145813749911,wvs7,20
-Hong Kong SAR China,2018,preschoolwork4,4,189.29856542859847,wvs7,20
+Hong Kong SAR China,2018,housewifefull4,1,420.0273948991784,wvs7,20
+Hong Kong SAR China,2018,housewifefull4,2,1389.7835718628303,wvs7,20
+Hong Kong SAR China,2018,housewifefull4,3,239.23490522946025,wvs7,20
+Hong Kong SAR China,2018,housewifefull4,4,21.260951014442263,wvs7,20
+Hong Kong SAR China,2018,preschoolwork4,1,103.59559706678317,wvs7,20
+Hong Kong SAR China,2018,preschoolwork4,2,489.06450298037305,wvs7,20
+Hong Kong SAR China,2018,preschoolwork4,3,1279.1392584277053,wvs7,20
+Hong Kong SAR China,2018,preschoolwork4,4,189.29759531786038,wvs7,20
 Kazakhstan,2011,housewifefull4,1,635.6886389353883,wvs_combo,20
 Kazakhstan,2011,housewifefull4,2,615.9138908988784,wvs_combo,20
 Kazakhstan,2011,housewifefull4,3,198.70360990217318,wvs_combo,20
@@ -8417,14 +8421,14 @@ Kazakhstan,2015,bearchild4,1,251.50047032378674,pewrel2015_ee,20
 Kazakhstan,2015,bearchild4,2,278.8001965962017,pewrel2015_ee,20
 Kazakhstan,2015,bearchild4,3,191.28862835980337,pewrel2015_ee,20
 Kazakhstan,2015,bearchild4,4,56.522099099562226,pewrel2015_ee,20
-Kazakhstan,2018,housewifefull4,1,185.05212416818048,wvs7,20
-Kazakhstan,2018,housewifefull4,2,445.12537975589356,wvs7,20
-Kazakhstan,2018,housewifefull4,3,427.12030821520574,wvs7,20
-Kazakhstan,2018,housewifefull4,4,141.03972706872133,wvs7,20
-Kazakhstan,2018,preschoolwork4,1,98.02761172152263,wvs7,20
-Kazakhstan,2018,preschoolwork4,2,323.09100598012054,wvs7,20
-Kazakhstan,2018,preschoolwork4,3,654.1842659783246,wvs7,20
-Kazakhstan,2018,preschoolwork4,4,144.04057232550264,wvs7,20
+Kazakhstan,2018,housewifefull4,1,185.05117581945768,wvs7,20
+Kazakhstan,2018,housewifefull4,2,445.1230985927496,wvs7,20
+Kazakhstan,2018,housewifefull4,3,427.1181193238294,wvs7,20
+Kazakhstan,2018,housewifefull4,4,141.0390042732083,wvs7,20
+Kazakhstan,2018,preschoolwork4,1,98.02710935301002,wvs7,20
+Kazakhstan,2018,preschoolwork4,2,323.0893502145126,wvs7,20
+Kazakhstan,2018,preschoolwork4,3,654.1809134374342,wvs7,20
+Kazakhstan,2018,preschoolwork4,4,144.03983415136167,wvs7,20
 Venezuela,1996,childfull2,1,676.5609213120331,wvs_combo,20
 Venezuela,1996,childfull2,2,447.37090506875563,wvs_combo,20
 Venezuela,1996,housewifefull4,1,319.2646951161813,wvs_combo,20
@@ -8489,14 +8493,14 @@ Ecuador,2013,preschoolwork4,1,386.3202893882319,wvs_combo,16
 Ecuador,2013,preschoolwork4,2,331.27465229923513,wvs_combo,16
 Ecuador,2013,preschoolwork4,3,370.3070131441601,wvs_combo,16
 Ecuador,2013,preschoolwork4,4,112.09293370850253,wvs_combo,16
-Ecuador,2018,housewifefull4,1,278.07832712840093,wvs7,16
-Ecuador,2018,housewifefull4,2,409.1152366745179,wvs7,16
-Ecuador,2018,housewifefull4,3,395.11129214287183,wvs7,16
-Ecuador,2018,housewifefull4,4,98.02761172152263,wvs7,16
-Ecuador,2018,preschoolwork4,1,205.05775921338918,wvs7,16
-Ecuador,2018,preschoolwork4,2,454.12791552623753,wvs7,16
-Ecuador,2018,preschoolwork4,3,450.1267885171958,wvs7,16
-Ecuador,2018,preschoolwork4,4,75.02113141953262,wvs7,16
+Ecuador,2018,housewifefull4,1,278.0769020422121,wvs7,16
+Ecuador,2018,housewifefull4,2,409.1131400549092,wvs7,16
+Ecuador,2018,housewifefull4,3,395.10926729019343,wvs7,16
+Ecuador,2018,housewifefull4,4,98.02710935301002,wvs7,16
+Ecuador,2018,preschoolwork4,1,205.05670834048016,wvs7,16
+Ecuador,2018,preschoolwork4,2,454.1255882272097,wvs7,16
+Ecuador,2018,preschoolwork4,3,450.1244817230052,wvs7,16
+Ecuador,2018,preschoolwork4,4,75.0207469538342,wvs7,16
 Guatemala,2004,housewifefull4,1,307.36817042676495,wvs_combo,16
 Guatemala,2004,housewifefull4,2,388.709383977147,wvs_combo,16
 Guatemala,2004,housewifefull4,3,205.99226200176292,wvs_combo,16
@@ -8505,14 +8509,14 @@ Guatemala,2006,work4,1,280.0903301822637,pewrel2006_10nat,16
 Guatemala,2006,work4,2,213.06297055975114,pewrel2006_10nat,16
 Guatemala,2006,work4,3,295.10379285365883,pewrel2006_10nat,16
 Guatemala,2006,work4,4,505.17544900785833,pewrel2006_10nat,16
-Guatemala,2020,housewifefull4,1,263.0741008444944,wvs7,16
-Guatemala,2020,housewifefull4,2,369.10396658410053,wvs7,16
-Guatemala,2020,housewifefull4,3,416.11720894034096,wvs7,16
-Guatemala,2020,housewifefull4,4,128.03606428933568,wvs7,16
-Guatemala,2020,preschoolwork4,1,212.05973147921222,wvs7,16
-Guatemala,2020,preschoolwork4,2,483.13608634179013,wvs7,16
-Guatemala,2020,preschoolwork4,3,422.11889945390357,wvs7,16
-Guatemala,2020,preschoolwork4,4,66.01859564918871,wvs7,16
+Guatemala,2020,housewifefull4,1,263.0727526514453,wvs7,16
+Guatemala,2020,housewifefull4,2,369.10207501286425,wvs7,16
+Guatemala,2020,housewifefull4,3,416.115076437267,wvs7,16
+Guatemala,2020,housewifefull4,4,128.0354081345437,wvs7,16
+Guatemala,2020,preschoolwork4,1,212.058644722838,wvs7,16
+Guatemala,2020,preschoolwork4,2,483.13361038269227,wvs7,16
+Guatemala,2020,preschoolwork4,3,422.1167361935738,wvs7,16
+Guatemala,2020,preschoolwork4,4,66.0182573193741,wvs7,16
 Lebanon,2013,housewifefull4,1,281.2331640365108,wvs_combo,16
 Lebanon,2013,housewifefull4,2,401.3327358670492,wvs_combo,16
 Lebanon,2013,housewifefull4,3,317.26303558567236,wvs_combo,16
@@ -8521,14 +8525,14 @@ Lebanon,2013,preschoolwork4,1,304.252248637364,wvs_combo,16
 Lebanon,2013,preschoolwork4,2,528.4381160543691,wvs_combo,16
 Lebanon,2013,preschoolwork4,3,284.2356533322743,wvs_combo,16
 Lebanon,2013,preschoolwork4,4,62.051445445778185,wvs_combo,16
-Lebanon,2018,housewifefull4,1,185.05212416818048,wvs7,16
-Lebanon,2018,housewifefull4,2,415.1169271880805,wvs7,16
-Lebanon,2018,housewifefull4,3,411.1158001790388,wvs7,16
-Lebanon,2018,housewifefull4,4,175.04930664557614,wvs7,16
-Lebanon,2018,preschoolwork4,1,248.0698745605879,wvs7,16
-Lebanon,2018,preschoolwork4,2,508.143130148301,wvs7,16
-Lebanon,2018,preschoolwork4,3,292.082271660047,wvs7,16
-Lebanon,2018,preschoolwork4,4,143.0402905732422,wvs7,16
+Lebanon,2018,housewifefull4,1,185.05117581945768,wvs7,16
+Lebanon,2018,housewifefull4,2,415.1147998112159,wvs7,16
+Lebanon,2018,housewifefull4,3,411.11369330701143,wvs7,16
+Lebanon,2018,housewifefull4,4,175.04840955894647,wvs7,16
+Lebanon,2018,preschoolwork4,1,248.06860326067843,wvs7,16
+Lebanon,2018,preschoolwork4,2,508.14052603397033,wvs7,16
+Lebanon,2018,preschoolwork4,3,292.0807748069278,wvs7,16
+Lebanon,2018,preschoolwork4,4,143.03955752531053,wvs7,16
 Tunisia,2013,housewifefull4,1,569.4721364298031,wvs_combo,16
 Tunisia,2013,housewifefull4,2,394.3269275102678,wvs_combo,16
 Tunisia,2013,housewifefull4,3,142.11782666613715,wvs_combo,16
@@ -8537,38 +8541,38 @@ Tunisia,2013,preschoolwork4,1,489.40575520944407,wvs_combo,16
 Tunisia,2013,preschoolwork4,2,435.36094788570176,wvs_combo,16
 Tunisia,2013,preschoolwork4,3,206.1709316424243,wvs_combo,16
 Tunisia,2013,preschoolwork4,4,44.03650967119742,wvs_combo,16
-Tunisia,2019,housewifefull4,1,383.1079111157466,wvs7,16
-Tunisia,2019,housewifefull4,2,494.1391856166549,wvs7,16
-Tunisia,2019,housewifefull4,3,267.07522785353615,wvs7,16
-Tunisia,2019,housewifefull4,4,55.015496374323924,wvs7,16
-Tunisia,2019,preschoolwork4,1,451.1270702694562,wvs7,16
-Tunisia,2019,preschoolwork4,2,406.1143914177366,wvs7,16
-Tunisia,2019,preschoolwork4,3,294.0828351645679,wvs7,16
-Tunisia,2019,preschoolwork4,4,48.01352410850088,wvs7,16
+Tunisia,2019,housewifefull4,1,383.10594777757996,wvs7,16
+Tunisia,2019,housewifefull4,2,494.1366532692546,wvs7,16
+Tunisia,2019,housewifefull4,3,267.07385915564976,wvs7,16
+Tunisia,2019,housewifefull4,4,55.015214432811746,wvs7,16
+Tunisia,2019,preschoolwork4,1,451.1247583490563,wvs7,16
+Tunisia,2019,preschoolwork4,2,406.1123101767558,wvs7,16
+Tunisia,2019,preschoolwork4,3,294.08132805903006,wvs7,16
+Tunisia,2019,preschoolwork4,4,48.01327805045389,wvs7,16
 Andorra,2005,housewifefull4,1,75.55247775543036,wvs_combo,12
 Andorra,2005,housewifefull4,2,384.7879195395155,wvs_combo,12
 Andorra,2005,housewifefull4,3,426.42970151831753,wvs_combo,12
 Andorra,2005,housewifefull4,4,91.09671476412447,wvs_combo,12
-Andorra,2018,housewifefull4,1,167.04705262749266,wvs7,12
-Andorra,2018,housewifefull4,2,281.07917238518223,wvs7,12
-Andorra,2018,housewifefull4,3,351.0988950434127,wvs7,12
-Andorra,2018,housewifefull4,4,188.0529694249618,wvs7,12
-Andorra,2018,preschoolwork4,1,103.0290204828248,wvs7,12
-Andorra,2018,preschoolwork4,2,273.07691836709876,wvs7,12
-Andorra,2018,preschoolwork4,3,429.1208717197266,wvs7,12
-Andorra,2018,preschoolwork4,4,196.05522344304526,wvs7,12
+Andorra,2018,housewifefull4,1,167.04619655053747,wvs7,12
+Andorra,2018,housewifefull4,2,281.07773192036547,wvs7,12
+Andorra,2018,housewifefull4,3,351.09709574394407,wvs7,12
+Andorra,2018,housewifefull4,4,188.05200569761107,wvs7,12
+Andorra,2018,preschoolwork4,1,103.02849248326564,wvs7,12
+Andorra,2018,preschoolwork4,2,273.07551891195646,wvs7,12
+Andorra,2018,preschoolwork4,3,429.1186725759316,wvs7,12
+Andorra,2018,preschoolwork4,4,196.05421870602004,wvs7,12
 Ethiopia,2007,housewifefull4,1,92.07633840341279,wvs_combo,12
 Ethiopia,2007,housewifefull4,2,153.12695408393648,wvs_combo,12
 Ethiopia,2007,housewifefull4,3,653.5418367111799,wvs_combo,12
 Ethiopia,2007,housewifefull4,4,567.470476899294,wvs_combo,12
-Ethiopia,2020,housewifefull4,1,277.0780453761405,wvs7,12
-Ethiopia,2020,housewifefull4,2,354.099740300194,wvs7,12
-Ethiopia,2020,housewifefull4,3,380.1070658589653,wvs7,12
-Ethiopia,2020,housewifefull4,4,209.0588862224309,wvs7,12
-Ethiopia,2020,preschoolwork4,1,305.08593443943266,wvs7,12
-Ethiopia,2020,preschoolwork4,2,447.12594326041443,wvs7,12
-Ethiopia,2020,preschoolwork4,3,359.1011490614962,wvs7,12
-Ethiopia,2020,preschoolwork4,4,115.03240150995003,wvs7,12
+Ethiopia,2020,housewifefull4,1,277.076625416161,wvs7,12
+Ethiopia,2020,housewifefull4,2,354.0979256220974,wvs7,12
+Ethiopia,2020,housewifefull4,3,380.1051178994266,wvs7,12
+Ethiopia,2020,housewifefull4,4,209.05781484468463,wvs7,12
+Ethiopia,2020,preschoolwork4,1,305.0843709455924,wvs7,12
+Ethiopia,2020,preschoolwork4,2,447.12365184485185,wvs7,12
+Ethiopia,2020,preschoolwork4,3,359.099308752353,wvs7,12
+Ethiopia,2020,preschoolwork4,4,115.03181199587911,wvs7,12
 Ghana,2007,housewifefull4,1,140.11616713562816,wvs_combo,12
 Ghana,2007,housewifefull4,2,233.19333530429543,wvs_combo,12
 Ghana,2007,housewifefull4,3,795.6596633773171,wvs_combo,12
@@ -8691,14 +8695,14 @@ Uganda,2001,work4,1,60.426641201895954,wvs_combo,10
 Uganda,2001,work4,2,343.28684309378224,wvs_combo,10
 Uganda,2001,work4,3,358.12897521506284,wvs_combo,10
 Uganda,2001,work4,4,198.50036614199144,wvs_combo,10
-Bolivia,2017,housewifefull4,1,438.1234074900705,wvs7,8
-Bolivia,2017,housewifefull4,2,1151.3242968517607,wvs7,8
-Bolivia,2017,housewifefull4,3,392.11044688609053,wvs7,8
-Bolivia,2017,housewifefull4,4,49.013805860761316,wvs7,8
-Bolivia,2017,preschoolwork4,1,466.13129655336274,wvs7,8
-Bolivia,2017,preschoolwork4,2,1193.336130446699,wvs7,8
-Bolivia,2017,preschoolwork4,3,341.09607752080836,wvs7,8
-Bolivia,2017,preschoolwork4,4,51.014369365282185,wvs7,8
+Bolivia,2017,housewifefull4,1,438.12116221039173,wvs7,8
+Bolivia,2017,housewifefull4,2,1151.3183965848423,wvs7,8
+Bolivia,2017,housewifefull4,3,392.1084374120401,wvs7,8
+Bolivia,2017,housewifefull4,4,49.01355467650501,wvs7,8
+Bolivia,2017,preschoolwork4,1,466.12890773982315,wvs7,8
+Bolivia,2017,preschoolwork4,2,1193.3300148789892,wvs7,8
+Bolivia,2017,preschoolwork4,3,341.09432948343283,wvs7,8
+Bolivia,2017,preschoolwork4,4,51.01410792860725,wvs7,8
 Haiti,2016,housewifefull4,1,171.14188985851726,wvs_combo,8
 Haiti,2016,housewifefull4,2,207.1717614076788,wvs_combo,8
 Haiti,2016,housewifefull4,3,1038.8612963341573,wvs_combo,8
@@ -8715,30 +8719,30 @@ Libya,2014,preschoolwork4,1,722.46274526788,wvs_combo,8
 Libya,2014,preschoolwork4,2,619.0338457452317,wvs_combo,8
 Libya,2014,preschoolwork4,3,496.15496858567826,wvs_combo,8
 Libya,2014,preschoolwork4,4,168.15028098243732,wvs_combo,8
-Macao SAR China,2020,housewifefull4,1,134.0377548028983,wvs7,8
-Macao SAR China,2020,housewifefull4,2,536.1510192115932,wvs7,8
-Macao SAR China,2020,housewifefull4,3,321.0904424755997,wvs7,8
-Macao SAR China,2020,housewifefull4,4,26.00732555877131,wvs7,8
-Macao SAR China,2020,preschoolwork4,1,69.01944090597001,wvs7,8
-Macao SAR China,2020,preschoolwork4,2,422.11889945390357,wvs7,8
-Macao SAR China,2020,preschoolwork4,3,476.1341140759671,wvs7,8
-Macao SAR China,2020,preschoolwork4,4,52.01465111754262,wvs7,8
-Myanmar (Burma),2020,housewifefull4,1,878.2473784846619,wvs7,8
-Myanmar (Burma),2020,housewifefull4,2,311.08762495299527,wvs7,8
-Myanmar (Burma),2020,housewifefull4,3,3.000845256781305,wvs7,8
-Myanmar (Burma),2020,housewifefull4,4,8.00225401808348,wvs7,8
-Myanmar (Burma),2020,preschoolwork4,1,363.1022760705379,wvs7,8
-Myanmar (Burma),2020,preschoolwork4,2,292.082271660047,wvs7,8
-Myanmar (Burma),2020,preschoolwork4,3,232.06536652442094,wvs7,8
-Myanmar (Burma),2020,preschoolwork4,4,313.08818845751614,wvs7,8
-Nicaragua,2020,housewifefull4,1,207.05832271791004,wvs7,8
-Nicaragua,2020,housewifefull4,2,610.1718688788653,wvs7,8
-Nicaragua,2020,housewifefull4,3,348.0980497866314,wvs7,8
-Nicaragua,2020,housewifefull4,4,35.009861329115225,wvs7,8
-Nicaragua,2020,preschoolwork4,1,153.04310809584655,wvs7,8
-Nicaragua,2020,preschoolwork4,2,622.1752499059905,wvs7,8
-Nicaragua,2020,preschoolwork4,3,394.1110103906114,wvs7,8
-Nicaragua,2020,preschoolwork4,4,31.008734320073486,wvs7,8
+Macao SAR China,2020,housewifefull4,1,134.03706789085044,wvs7,8
+Macao SAR China,2020,housewifefull4,2,536.1482715634017,wvs7,8
+Macao SAR China,2020,housewifefull4,3,321.08879696241036,wvs7,8
+Macao SAR China,2020,housewifefull4,4,26.00719227732919,wvs7,8
+Macao SAR China,2020,preschoolwork4,1,69.01908719752747,wvs7,8
+Macao SAR China,2020,preschoolwork4,2,422.1167361935738,wvs7,8
+Macao SAR China,2020,preschoolwork4,3,476.1316740003344,wvs7,8
+Macao SAR China,2020,preschoolwork4,4,52.01438455465838,wvs7,8
+Myanmar (Burma),2020,housewifefull4,1,878.2428776728857,wvs7,8
+Myanmar (Burma),2020,housewifefull4,2,311.0860307018992,wvs7,8
+Myanmar (Burma),2020,housewifefull4,3,3.000829878153368,wvs7,8
+Myanmar (Burma),2020,housewifefull4,4,8.002213008408981,wvs7,8
+Myanmar (Burma),2020,preschoolwork4,1,363.10041525655754,wvs7,8
+Myanmar (Burma),2020,preschoolwork4,2,292.0807748069278,wvs7,8
+Myanmar (Burma),2020,preschoolwork4,3,232.06417724386046,wvs7,8
+Myanmar (Burma),2020,preschoolwork4,4,313.0865839540014,wvs7,8
+Nicaragua,2020,housewifefull4,1,207.0572615925824,wvs7,8
+Nicaragua,2020,housewifefull4,2,610.1687418911848,wvs7,8
+Nicaragua,2020,housewifefull4,3,348.0962658657907,wvs7,8
+Nicaragua,2020,housewifefull4,4,35.00968191178929,wvs7,8
+Nicaragua,2020,preschoolwork4,1,153.04232378582176,wvs7,8
+Nicaragua,2020,preschoolwork4,2,622.1720614037984,wvs7,8
+Nicaragua,2020,preschoolwork4,3,394.1089906641423,wvs7,8
+Nicaragua,2020,preschoolwork4,4,31.008575407584804,wvs7,8
 Qatar,2010,housewifefull4,1,481.5079812909552,wvs_combo,8
 Qatar,2010,housewifefull4,2,376.1702232314964,wvs_combo,8
 Qatar,2010,housewifefull4,3,176.42882480709324,wvs_combo,8
@@ -8747,14 +8751,14 @@ Qatar,2010,preschoolwork4,1,471.4169453514466,wvs_combo,8
 Qatar,2010,preschoolwork4,2,366.4303890623619,wvs_combo,8
 Qatar,2010,preschoolwork4,3,183.48862079020512,wvs_combo,8
 Qatar,2010,preschoolwork4,4,35.52066555929938,wvs_combo,8
-Tajikistan,2020,housewifefull4,1,447.12594326041443,wvs7,8
-Tajikistan,2020,housewifefull4,2,294.0828351645679,wvs7,8
-Tajikistan,2020,housewifefull4,3,242.06818404702528,wvs7,8
-Tajikistan,2020,housewifefull4,4,217.0611402405144,wvs7,8
-Tajikistan,2020,preschoolwork4,1,286.0805811464844,wvs7,8
-Tajikistan,2020,preschoolwork4,2,324.091287732381,wvs7,8
-Tajikistan,2020,preschoolwork4,3,366.10312132731923,wvs7,8
-Tajikistan,2020,preschoolwork4,4,224.06311250633746,wvs7,8
+Tajikistan,2020,housewifefull4,1,447.12365184485185,wvs7,8
+Tajikistan,2020,housewifefull4,2,294.08132805903006,wvs7,8
+Tajikistan,2020,housewifefull4,3,242.0669435043717,wvs7,8
+Tajikistan,2020,housewifefull4,4,217.06002785309363,wvs7,8
+Tajikistan,2020,preschoolwork4,1,286.07911505062106,wvs7,8
+Tajikistan,2020,preschoolwork4,2,324.08962684056377,wvs7,8
+Tajikistan,2020,preschoolwork4,3,366.1012451347109,wvs7,8
+Tajikistan,2020,preschoolwork4,4,224.06196423545148,wvs7,8
 Uzbekistan,2011,housewifefull4,1,1085.9002953011181,wvs_combo,8
 Uzbekistan,2011,housewifefull4,2,267.22154732294797,wvs_combo,8
 Uzbekistan,2011,housewifefull4,3,96.07965746443074,wvs_combo,8

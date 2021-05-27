@@ -161,3 +161,352 @@ It is telling, though not surprising, that the complementary set of questions, o
 The third and final category of excluded survey items includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames through the recognition that various forms of sexual harassment are not "flattering" to the justifiability of intimate partner violence committed by husbands.
 In each case, as the included questions are not _directly_ relevant to gender egalitarianism in the public sphere, we concluded that to ensure that the PGE scores tap only a single dimension of attitudes, we would exclude these others.
 Usefully, this decision also allows, when the available survey data permits, future research to take up the estimation of dynamic comparative public opinion of those concepts separately and their relationships to public gender egalitarianism.
+
+# Appendix C: 
+```{r create_pwe_indices}
+dcpo_input_raw_public <- read_csv(here::here("data", "dcpo_input_raw_public.csv"),
+                                  col_types = "cdcddcd")
+public_items <- read_csv(here::here("data-raw", "public_items.csv"),
+                         col_types = "ccddd")
+
+process_dcpo_input_raw <- function(dcpo_input_raw_df) {
+  dcpo_input_raw_df %>% 
+  with_min_yrs(2) %>% 
+  with_min_cy(5) %>% 
+  group_by(country) %>% 
+  mutate(cc_rank = n()) %>% 
+  ungroup() %>% 
+  arrange(-cc_rank)
+} 
+
+dcpo_input_raw_public1 <- process_dcpo_input_raw(dcpo_input_raw_public) %>% 
+  left_join(public_items, by = "item")
+dcpo_input_raw_political1 <- dcpo_input_raw_public1 %>% 
+  filter(political==1)
+dcpo_input_raw_workplace1 <- dcpo_input_raw_public1 %>% 
+  filter(workplace==1)
+dcpo_input_raw_education1 <- dcpo_input_raw_public1 %>% 
+  filter(education==1)
+
+dcpo_input_public_political <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
+                                            scale_q = "polileader4",
+                                            scale_cp = 2)
+save(dcpo_input_political, file = here::here("data", "dcpo_input_political.rda"))
+
+dcpo_input_workplace <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
+                                            scale_q = "job3a",
+                                            scale_cp = 2)
+save(dcpo_input_workplace, file = here::here("data", "dcpo_input_workplace.rda"))
+
+dcpo_input_education <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
+                                            scale_q = "education4",
+                                            scale_cp = 2)
+save(dcpo_input_education, file = here::here("data", "dcpo_input_education.rda"))
+```
+
+```{r dcpo_political, eval=FALSE}
+iter <- 4000
+
+dcpo_output_political <- dcpo(dcpo_input_political,
+                              iter = iter,
+                              chains = 4,
+                              thin = iter/500, # this yields 250 draws per chain, 1000 draws total
+                              pars = c("sd_delta","sd_theta_evolve", "sd_sigma_evolve", "sigma","phi","beta","alpha","delta","theta","y_r_pred","log_lik"))
+```
+
+```{r dcpo_workplace, eval=FALSE}
+iter <- 5000
+
+dcpo_output_workplace <- dcpo(dcpo_input_workplace,
+                              iter = iter,
+                              chains = 4,
+                              thin = iter/500, # this yields 250 draws per chain, 1000 draws total
+                              pars = c("sd_delta","sd_theta_evolve", "sd_sigma_evolve", "sigma","phi","beta","alpha","delta","theta","y_r_pred","log_lik"))
+```
+
+```{r dcpo_education, eval=FALSE}
+iter <- 5000
+
+dcpo_output_education <- dcpo(dcpo_input_education,
+                              iter = iter,
+                              chains = 4,
+                              thin = iter/500, # this yields 250 draws per chain, 1000 draws total
+                              pars = c("sd_delta","sd_theta_evolve", "sd_sigma_evolve", "sigma","phi","beta","alpha","delta","theta","y_r_pred","log_lik"))
+```
+
+
+```{r political}
+load(here::here("data", "political_polileader4_2_4k.rda"))
+
+dcpo_input_political <- dcpo_input
+
+dcpo_output_political <- dcpo_output
+
+save(dcpo_input_political, file = here::here("data", "dcpo_input_political.rda"))
+
+save(dcpo_output_political, file = here::here("data", "dcpo_output_political.rda"))
+```
+
+```{r workplace}
+load(here::here("data", "workplace_job3a_2_5k.rda"))
+
+dcpo_input_workplace <- dcpo_input
+
+dcpo_output_workplace <- dcpo_output
+
+save(dcpo_input_workplace, file = here::here("data", "dcpo_input_workplace.rda"))
+
+save(dcpo_output_workplace, file = here::here("data", "dcpo_output_workplace.rda"))
+```
+
+```{r education}
+load(here::here("data", "education_education4_2_5k.rda"))
+
+dcpo_input_education <- dcpo_input
+
+dcpo_output_education <- dcpo_output
+
+save(dcpo_input_education, file = here::here("data", "dcpo_input_education.rda"))
+
+save(dcpo_output_education, file = here::here("data", "dcpo_output_education.rda"))
+```
+
+
+```{r theta_res_political}
+load(here::here("data", "dcpo_input_political.rda"))
+load(here::here("data", "dcpo_output_political.rda"))
+
+dat <- dcpo_input_political$data
+
+qcodes <- dat %>%
+  dplyr::group_by(question) %>%
+  dplyr::summarize(qq = first(qq) %>%
+                     as.numeric())
+
+kcodes <- dat %>%
+  dplyr::group_by(country) %>%
+  dplyr::summarize(kk = first(kk) %>%
+                     as.numeric())
+
+tcodes <- dat %>%
+  dplyr::group_by(year) %>%
+  dplyr::summarize(tt = first(tt))
+
+ktcodes <- dat %>%
+  dplyr::group_by(country) %>%
+  dplyr::summarize(first_yr = min(year),
+                   last_yr = max(year))
+
+theta_res_political <- rstan::extract(dcpo_output_political, pars = "theta") %>%
+        dplyr::first() %>%
+        purrr::array_branch(1) %>%
+        purrr::map(function(x) {
+          tibble::as_tibble(x) %>%
+          dplyr::mutate(tt = dplyr::row_number()) %>%
+            dplyr::left_join(tcodes, by = "tt") %>%
+            tidyr::pivot_longer(cols = starts_with("V"),
+                                names_to = "kk",
+                                values_to = "pge_mean") %>%
+            dplyr::mutate(year = if_else(tt == 1,
+                                         as.integer(year),
+                                         as.integer(min(year, na.rm = TRUE) + tt - 1)),
+                          kk = stringr::str_replace(kk, "V", "") %>% as.numeric()) %>%
+            dplyr::left_join(kcodes, by = "kk") %>%
+            dplyr::left_join(ktcodes, by = "country") %>%
+            dplyr::filter(year >= first_yr & year <= last_yr) %>%
+            dplyr::arrange(kk, tt) %>%
+            dplyr::select(country, year, pge_mean) %>% 
+            dplyr::rename(political_mean = pge_mean)
+        })
+```
+
+
+```{r theta_res_workplace}
+load(here::here("data", "dcpo_input_workplace.rda"))
+load(here::here("data", "dcpo_output_workplace.rda"))
+
+dat <- dcpo_input_workplace$data
+
+qcodes <- dat %>%
+  dplyr::group_by(question) %>%
+  dplyr::summarize(qq = first(qq) %>%
+                     as.numeric())
+
+kcodes <- dat %>%
+  dplyr::group_by(country) %>%
+  dplyr::summarize(kk = first(kk) %>%
+                     as.numeric())
+
+tcodes <- dat %>%
+  dplyr::group_by(year) %>%
+  dplyr::summarize(tt = first(tt))
+
+ktcodes <- dat %>%
+  dplyr::group_by(country) %>%
+  dplyr::summarize(first_yr = min(year),
+                   last_yr = max(year))
+
+theta_res_workplace <- rstan::extract(dcpo_output_workplace, pars = "theta") %>%
+        dplyr::first() %>%
+        purrr::array_branch(1) %>%
+        purrr::map(function(x) {
+          tibble::as_tibble(x) %>%
+          dplyr::mutate(tt = dplyr::row_number()) %>%
+            dplyr::left_join(tcodes, by = "tt") %>%
+            tidyr::pivot_longer(cols = starts_with("V"),
+                                names_to = "kk",
+                                values_to = "pge_mean") %>%
+            dplyr::mutate(year = if_else(tt == 1,
+                                         as.integer(year),
+                                         as.integer(min(year, na.rm = TRUE) + tt - 1)),
+                          kk = stringr::str_replace(kk, "V", "") %>% as.numeric()) %>%
+            dplyr::left_join(kcodes, by = "kk") %>%
+            dplyr::left_join(ktcodes, by = "country") %>%
+            dplyr::filter(year >= first_yr & year <= last_yr) %>%
+            dplyr::arrange(kk, tt) %>%
+            dplyr::select(country, year, pge_mean) %>% 
+            dplyr::rename(workplace_mean = pge_mean)
+        })
+```
+
+```{r theta_res_education}
+load(here::here("data", "dcpo_input_education.rda"))
+load(here::here("data", "dcpo_output_education.rda"))
+
+dat <- dcpo_input_education$data
+
+qcodes <- dat %>%
+  dplyr::group_by(question) %>%
+  dplyr::summarize(qq = first(qq) %>%
+                     as.numeric())
+
+kcodes <- dat %>%
+  dplyr::group_by(country) %>%
+  dplyr::summarize(kk = first(kk) %>%
+                     as.numeric())
+
+tcodes <- dat %>%
+  dplyr::group_by(year) %>%
+  dplyr::summarize(tt = first(tt))
+
+ktcodes <- dat %>%
+  dplyr::group_by(country) %>%
+  dplyr::summarize(first_yr = min(year),
+                   last_yr = max(year))
+
+theta_res_education <- rstan::extract(dcpo_output_education, pars = "theta") %>%
+        dplyr::first() %>%
+        purrr::array_branch(1) %>%
+        purrr::map(function(x) {
+          tibble::as_tibble(x) %>%
+          dplyr::mutate(tt = dplyr::row_number()) %>%
+            dplyr::left_join(tcodes, by = "tt") %>%
+            tidyr::pivot_longer(cols = starts_with("V"),
+                                names_to = "kk",
+                                values_to = "pge_mean") %>%
+            dplyr::mutate(year = if_else(tt == 1,
+                                         as.integer(year),
+                                         as.integer(min(year, na.rm = TRUE) + tt - 1)),
+                          kk = stringr::str_replace(kk, "V", "") %>% as.numeric()) %>%
+            dplyr::left_join(kcodes, by = "kk") %>%
+            dplyr::left_join(ktcodes, by = "country") %>%
+            dplyr::filter(year >= first_yr & year <= last_yr) %>%
+            dplyr::arrange(kk, tt) %>%
+            dplyr::select(country, year, pge_mean) %>% 
+            dplyr::rename(education_mean = pge_mean)
+        })
+```
+
+```{r}
+load(here::here("data", "pge.rda"))
+load(here::here("data", "dcpo_input.rda"))
+
+pge_pw <- map(1:1000, function(x) {
+  pge[[x]] %>% 
+    left_join(theta_res_political[[x]], by = c("country", "year")) %>% 
+    left_join(theta_res_workplace[[x]], by = c("country", "year")) %>% 
+    left_join(theta_res_education[[x]], by = c("country", "year"))
+})
+
+pge_political_cor <- map(pge_pw, function(x) {
+  with(x, cor(pge_mean, political_mean, use = "pairwise.complete.obs"))
+  }) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2)
+
+pge_workplace_cor <- map(pge_pw, function(x) {
+  with(x, cor(pge_mean, workplace_mean, use = "pairwise.complete.obs"))
+  }) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2)
+
+pge_education_cor <- map(pge_pw, function(x) {
+  with(x, cor(pge_mean, education_mean, use = "pairwise.complete.obs"))
+  }) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2)
+
+political_workplace_cor <- map(pge_pw, function(x) {
+  with(x, cor(political_mean, workplace_mean, use = "pairwise.complete.obs"))
+  }) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2)
+
+political_education_cor <- map(pge_pw, function(x) {
+  with(x, cor(political_mean, education, use = "pairwise.complete.obs"))
+  }) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2)
+
+workplace_education_cor <- map(pge_pw, function(x) {
+  with(x, cor(workplace_mean, education, use = "pairwise.complete.obs"))
+  }) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2)
+```
+
+
+
+
+```{r workplace_construct}
+# https://genderstats.un.org/#/downloads
+lfpr_un <- read_csv(here::here("data", "3b - Labour force participation rate for persons aged 15+  by sex_data.csv"), skip = 1, col_types = "ccdcdcdccccccdddcc") %>% 
+  select(Country, Year, Sex, Value) %>% 
+  pivot_wider(names_from = Sex,
+              values_from = Value) %>% 
+  transmute(country = countrycode::countrycode(Country, 
+                                               origin = "country.name",
+                                               destination = "country.name"),
+            iso2c = countrycode::countrycode(country,
+                                             origin = "country.name",
+                                             destination = "iso2c"),
+            year = Year,
+            flfpr = Female,
+            f2m_ratio = round(Female/Male*100, 2)) %>% 
+  filter(!is.na(country) & !is.na(flfpr)) %>% 
+  left_join(pge[[1]], by = c("country", "year")) %>% 
+  filter(!is.na(pge_mean)) %>% 
+  select(-pge_mean, -pge_polarization)
+
+pge_pw_lfpr <- pge_pw %>% 
+  map(. %>% right_join(lfpr_un, 
+                       by = c("country", "year")))
+
+lfpr_cor <- map(pge_pw_lfpr, function(x) {
+  x %>% 
+    filter(year == 2016) %>% 
+    with(cor(workplace_mean, f2m_ratio, use = "pairwise.complete.obs"))
+  }) %>% 
+  unlist() %>% 
+  mean() %>% 
+  round(2) %>% 
+  paste0("R = ", .)
+
+
+```

@@ -371,7 +371,7 @@ A beta-binomial distribution is used to model the observed survey data given $\e
 Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the unit interval and so give the bounded mean of latent public opinion, $\bar{\theta}_{kt}$, which is our parameter of interest here [see @Solt2020c, 3-8].
 
 ```{r dcpo, eval=FALSE}
-iter <- 4000
+iter <- 5000
 
 dcpo_input <- dcpo_input_public
 
@@ -383,7 +383,7 @@ dcpo_output <- dcpo(dcpo_input,
 ```
 
 ```{r dcpo_results}
-load(here::here("data", "polileader4_2_4k_01-08.rda"))
+load(here::here("data", "polileader4_2_5k_04-08.rda"))
 
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 
