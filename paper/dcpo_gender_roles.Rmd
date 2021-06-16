@@ -371,7 +371,7 @@ A beta-binomial distribution is used to model the observed survey data given $\e
 Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the unit interval and so give the bounded mean of latent public opinion, $\bar{\theta}_{kt}$, which is our parameter of interest here [see @Solt2020c, 3-8].
 
 ```{r dcpo, eval=FALSE}
-iter <- 4000
+iter <- 5000
 
 dcpo_input <- dcpo_input_public
 
@@ -383,7 +383,7 @@ dcpo_output <- dcpo(dcpo_input,
 ```
 
 ```{r dcpo_results}
-load(here::here("data", "polileader4_2_4k_01-08.rda"))
+load(here::here("data", "polileader4_2_5k_05-19.rda")) # poliwork
 
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 
@@ -459,18 +459,16 @@ The result is estimates, in all `r res_cy` country-years spanned by the source d
 Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries in the dataset.
 
 The Scandinavian countries and France are at the top of this list, along with Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
-The latest scores for Egypt, Yemen, Pakistan, the Palestinian Territories, and Burkina Faso have them as the places where public opinion is least favorable to gender equality in the public sphere.
+The latest available scores for Pakistan, Egypt, Yemen, Uzbekistan, and Burkina Faso have them as the places where public opinion is least favorable to gender equality in the public sphere.
 
 ```{r ts_plots, fig.cap="PGE Scores Over Time Within Selected Countries \\label{ts}", fig.height=3.5}
-countries <- c("Norway", "Australia", "United States", "Argentina",
-               "Brazil", "Poland", "South Africa", "Japan",
-               "Turkey", "China", "South Korea", "India", 
-               "Nigeria", "Philippines", "Indonesia", "Egypt")
+countries <- c("Norway", "Australia", "United States", "Brazil",
+               "Argentina", "Poland", "Japan", "China",
+               "South Korea", "Turkey", "South Africa", "Philippines", 
+               "India", "Nigeria", "Indonesia", "Egypt")
 
-countries2 <- c("Norway", "Australia", "U.S.", "Argentina",
-               "Brazil", "Poland", "South Africa", "Japan",
-               "Turkey", "China", "South Korea", "India", 
-               "Nigeria", "Philippines", "Indonesia", "Egypt")
+countries2 <- countries %>% 
+  str_replace("United States", "U.S.")
 
 theta_results %>%
   filter(country %in% countries) %>%
@@ -652,7 +650,7 @@ internal_cs_cor <- map(pge_poliequal,
   round(2) %>% 
   paste0("R = ", .)
 
-internal_cs_label <- tibble(mean = .7, prop = .77, label = internal_cs_cor)
+internal_cs_label <- tibble(mean = .69, prop = .76, label = internal_cs_cor)
 
 internal_cs_plot <- internal_poliequal %>% 
   ggplot(aes(x = mean,
@@ -980,7 +978,7 @@ pge_lfpr <- pge %>%
 
 lfpr_cor <- map(pge_lfpr, function(x) {
   x %>% 
-    filter(year == 2016) %>% 
+    filter(year == 2017) %>% 
     with(cor(pge_mean, f2m_ratio))
   }) %>% 
   unlist() %>% 
@@ -993,6 +991,7 @@ lfpr_label <- tibble(mean = .15, f2m_ratio = 90, label = lfpr_cor)
 # https://stats.oecd.org/index.aspx?queryid=54753
 directors <- rsdmx::readSDMX("https://stats.oecd.org/restsdmx/sdmx.ashx/GetData/GENDER_EMP/.EMP11.WOMEN.TOTAL.2017/all?") %>% 
   as_tibble() %>% 
+  filter(!COU=="OAVG") %>% 
   transmute(country = countrycode::countrycode(COU, "iso3c", "country.name"),
             iso2c = countrycode::countrycode(country,
                                           origin = "country.name",
@@ -1053,7 +1052,7 @@ lfpr_plot + dir_plot +
 
 Finally, Figure&nbsp;\ref{construct_plot} shows additional tests of construct validation.
 As attitudes toward gender egalitarianism in the public sphere plausibly both cause and are caused by women's gains in the workplace, strong relationships between the PGE scores and measures of workplace gender equality provide construct validation for our measure.
-In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the PGE scores to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2016))` countries in 2016, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
+In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the PGE scores to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2017))` countries in 2017, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
 In the right panel, we plot the PGE scores against the percentage of women on the boards of directors of the largest publicly listed companies in `r nrow(directors)` countries in 2017 [see @OECD2020].
 Both correlations are strong.
 Together, this evidence of construct validation and convergent validation attests to the validity of the PGE scores as measures of public opinion towards gender equality in the public sphere.
