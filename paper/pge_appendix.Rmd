@@ -185,7 +185,7 @@ process_dcpo_input_raw <- function(dcpo_input_raw_df) {
   mutate(cc_rank = n()) %>% 
   ungroup() %>% 
   arrange(-cc_rank)
-} 
+}
 
 dcpo_input_raw_public1 <- process_dcpo_input_raw(dcpo_input_raw_public) %>% 
   left_join(public_items, by = "item")
@@ -196,17 +196,17 @@ dcpo_input_raw_workplace1 <- dcpo_input_raw_public1 %>%
 dcpo_input_raw_education1 <- dcpo_input_raw_public1 %>% 
   filter(education==1)
 
-dcpo_input_political <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
+dcpo_input_political <- DCPOtools::format_dcpo(dcpo_input_raw_political1,
                                             scale_q = "polileader4",
                                             scale_cp = 2)
 save(dcpo_input_political, file = here::here("data", "dcpo_input_political.rda"))
 
-dcpo_input_workplace <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
+dcpo_input_workplace <- DCPOtools::format_dcpo(dcpo_input_raw_workplace1,
                                             scale_q = "job3a",
                                             scale_cp = 2)
 save(dcpo_input_workplace, file = here::here("data", "dcpo_input_workplace.rda"))
 
-dcpo_input_education <- DCPOtools::format_dcpo(dcpo_input_raw_public1,
+dcpo_input_education <- DCPOtools::format_dcpo(dcpo_input_raw_education1,
                                             scale_q = "education4",
                                             scale_cp = 2)
 save(dcpo_input_education, file = here::here("data", "dcpo_input_education.rda"))
