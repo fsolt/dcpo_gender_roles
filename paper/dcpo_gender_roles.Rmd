@@ -458,6 +458,8 @@ bottom5 <- p1_data %>%
 ```
 
 We used the `DCPO` package for R [@Solt2020a] to estimate this model on the public gender egalitarianism source data described above.
+The dispersion parameters of the survey items indicate that all of them load well on the latent variable (see online Appendix A).^[
+To provide further confirmation of the unidimensionality of public gender egalitarianism, we divided the source data described above to estimate separate indices of gender egalitarianism in politics, in the workplace, and in education.  The resulting indices all correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years; see online Appendix C.]
 The result is estimates, in all `r res_cy` country-years spanned by the source data, of mean public gender egalitarianism, what we call PGE scores.
 Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries and territories in the dataset.
 
