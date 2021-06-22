@@ -88,6 +88,23 @@ dcpo_input_raw_public <- DCPOtools::dcpo_setup(vars = surveys_egr_public,
                                                file = here::here("data",
                                                                  "dcpo_input_raw_public.csv"))
 
+dcpo_input_raw_private <- DCPOtools::dcpo_setup(vars = surveys_egr_private,
+                                               datapath = here::here("..",
+                                                                     "data", "dcpo_surveys"),
+                                               file = here::here("data",
+                                                                 "dcpo_input_raw_private.csv"))
+
+dcpo_input_raw_balance <- DCPOtools::dcpo_setup(vars = surveys_egr_balance,
+                                               datapath = here::here("..",
+                                                                     "data", "dcpo_surveys"),
+                                               file = here::here("data",
+                                                                 "dcpo_input_raw_balance.csv"))
+
+dcpo_input_raw_dominance <- DCPOtools::dcpo_setup(vars = surveys_egr_dominance,
+                                               datapath = here::here("..",
+                                                                     "data", "dcpo_surveys"),
+                                               file = here::here("data",
+                                                                 "dcpo_input_raw_dominance.csv"))
 ```
 
 ```{r egr_summary_stats, cache = TRUE, cache.extra = tools::md5sum(here::here("data-raw", "dcpo_input_raw_public.csv"))}
@@ -368,7 +385,7 @@ dcpo_output <- dcpo(dcpo_input,
 ```
 
 ```{r dcpo_results, cache=TRUE}
-load(here::here("data", "polileader4_2_5k_05-19.rda")) # poliwork
+load(here::here("data", "poliwork_polileader4_2_5k_05-19.rda"))
 
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 
