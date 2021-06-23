@@ -385,7 +385,7 @@ dcpo_output <- dcpo(dcpo_input,
 ```
 
 ```{r dcpo_results, cache=TRUE}
-load(here::here("data", "poliwork_polileader4_2_5k_05-19.rda"))
+load(here::here("data", "poliwork_polileader4_2_2k.rda"))
 
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 
@@ -990,7 +990,7 @@ pge_lfpr <- pge %>%
 
 lfpr_cor <- map(pge_lfpr, function(x) {
   x %>% 
-    filter(year == 2016) %>% 
+    filter(year == 2017) %>% 
     with(cor(pge_mean, f2m_ratio))
   }) %>% 
   unlist() %>% 
@@ -1039,7 +1039,7 @@ lfpr_plot <- ggplot(lfpr_un %>% filter(year==2016),
                      axis.text  = element_text(size=8),
                      axis.title = element_text(size=9)) +
   coord_cartesian(xlim=c(0, 1)) +
-  labs(x = "Public Gender Egalitarianism, 2016", y = "Female to Male Labor Force Participation Ratio, 2016") +
+  labs(x = "Public Gender Egalitarianism, 2017", y = "Female to Male Labor Force Participation Ratio, 2017") +
   geom_label(data = lfpr_label, aes(label = label))
 
 dir_plot <- ggplot(directors,
@@ -1067,7 +1067,7 @@ lfpr_plot + dir_plot +
 
 Finally, Figure&nbsp;\ref{construct_plot} shows additional tests of construct validation.
 As attitudes toward gender egalitarianism in the public sphere plausibly both cause and are caused by women's gains in the workplace, strong relationships between the PGE scores and measures of workplace gender equality provide construct validation for our measure.
-In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the PGE scores to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2016))` countries in 2016, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
+In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the PGE scores to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2017))` countries in 2016, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
 In the right panel, we plot the PGE scores against the percentage of women on the boards of directors of the largest publicly listed companies in `r nrow(directors)` countries in 2017 [see @OECD2020].
 Both correlations are strong.
 Together, this evidence of construct validation and convergent validation attests to the validity of the PGE scores as measures of public opinion towards gender equality in the public sphere.
