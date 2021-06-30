@@ -16,7 +16,7 @@ author:
 - name: Frederick Solt
   affiliation: University of Iowa
 anonymous: false
-abstract: "Societal attitudes toward gender roles in education, the workplace, and politics play a central part in theorizing on the difficulty women face in achieving political equality, but shortcomings in the available data have prevented direct examination of many implications of these theories. Drawing on recent advances in latent variable modeling of public opinion and a comprehensive collection of survey data, we present the Public Gender Egalitarianism dataset to address this need: comparable estimates of the public's attitudes on gender equality in the public sphere across more than one hundred countries over time. These PGE scores are strongly correlated with responses to individual survey items and with women's rates of participation in the labor force and corporate boards. We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and consequences of collective attitudes toward gender equality in the public sphere. [149/150 words]"
+abstract: "Societal attitudes toward gender roles in the workplace and politics play a central part in theorizing on the difficulty women face in achieving political equality, but shortcomings in the available data have prevented direct examination of many implications of these theories. Drawing on recent advances in latent variable modeling of public opinion and a comprehensive collection of survey data, we present the Public Gender Egalitarianism dataset to address this need: comparable estimates of the public's attitudes on gender equality in the public sphere across more than one hundred countries over time. These PGE scores are strongly correlated with responses to individual survey items and with women's rates of participation in the labor force and corporate boards. We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and consequences of collective attitudes toward gender equality in the public sphere. [148/150 words]"
 keywords: "gender roles, gender inequality, public opinion, political culture, measurement"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 fontsize: 11pt
@@ -60,7 +60,7 @@ library(rsdmx)
 set.seed(324)
 ```
 
-Collective attitudes toward the appropriate roles of women and men in society---whether labeled culture, norms, ideology or public opinion---constitute one of the primary explanations for women's exclusion from the traditionally masculine public sphere of education, the workforce, and political power and policy influence [see, e.g., @Gray2006, 299-302; @Yates2017, 103-104; @Paxton2021, 113-114].
+Collective attitudes toward the appropriate roles of women and men in society---whether labeled culture, norms, ideology, or public opinion---constitute one of the primary explanations for women's exclusion from the traditionally masculine public sphere of the workforce, political power, and policy influence [see, e.g., @Gray2006, 299-302; @Yates2017, 103-104; @Paxton2021, 113-114].
 Yet even a half century after @RuleKrauss1974 [, 1719] called for more and better data on these collective attitudes, what we have available to us remains inadequate for fully examining their causes and consequences.
 In the decades since, national and cross-national surveys have included a plethora of relevant questions, but sustained focus has been scant and the variety of these survey items renders the resulting data incomparable.
 As a consequence, cross-national research has been constrained to study countries at just one or a few time points [see, e.g., @Paxton2003; @Alexander2012; @Ruedin2012; @Glas2020] or to rely on proxies such as predominant religion or the percentage of women in office [see, e.g., @Burns2001, 340-341; @Claveria2014; @Barnes2018].
@@ -180,7 +180,7 @@ back_to_numeric <- function(string_number) {
 ```
 
 In this letter, we present the Public Gender Egalitarianism (PGE) dataset, which is based on the host of survey data available and recent advances in latent variable modeling of public opinion that allow us to make use of this sparse and incomparable data.
-It provides comparable estimates of the public's attitudes on gender equality in the public sphere of politics, paid work, and education across countries and over time.
+It provides comparable estimates of the public's attitudes on gender equality in the public sphere of politics and paid work across countries and over time.
 We show that these PGE scores are strongly correlated with responses to single survey items as well as with measures of women's participation in the workforce and in the boardroom.
 We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and effects of collective attitudes toward gender equality in the public sphere.
 
@@ -368,7 +368,7 @@ The @McGann2019 model depends on dense survey data unlike the sparse data on pub
 @Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable not only when the available survey data are dense but also when ancillary data on population characteristics are available, so it is similarly inappropriate to this application.]
 
 The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item bias.
-That is, $\eta_{ktqr}$, the expected probability that a random person in country $k$ at time $t$ answers question $q$ with a response at least as positive as response $r$, is estimated as varying with the mean and standard deviation of the unbounded latent trait of public opinion, $\bar{\theta'}_{kt}$ and $\sigma_{kt}$; with the dispersion, $\alpha_{q}$, of the question and the difficulty, $\beta_{qr}$, of the question's response category; as well as with a term to capture how responses to particular questions in particular questions may be biased, $\delta_{kq}$: $\eta_{ktqr} = \textrm{logit}^{-1}(\frac{\bar{\theta'}_{kt} - (\beta_{qr} + \delta_{kq})}{\sqrt{\alpha_{q}^2 + (1.7*\sigma_{kt})^2}}) \label{eq:dcpo}$.
+That is, $\eta_{ktqr}$, the expected probability that a random person in country $k$ at time $t$ answers question $q$ with a response at least as positive as response $r$, is estimated as varying with the mean and standard deviation of the unbounded latent trait of public opinion, $\bar{\theta'}_{kt}$ and $\sigma_{kt}$; with the dispersion, $\alpha_{q}$, of the question and the difficulty, $\beta_{qr}$, of the question's response category; as well as with a term to capture how responses to particular questions in particular questions may be biased in particular countries, $\delta_{kq}$: $\eta_{ktqr} = \textrm{logit}^{-1}(\frac{\bar{\theta'}_{kt} - (\beta_{qr} + \delta_{kq})}{\sqrt{\alpha_{q}^2 + (1.7*\sigma_{kt})^2}}) \label{eq:dcpo}$.
 A beta-binomial distribution is used to model the observed survey data given $\eta_{ktqr}$, random-walk priors are used to account for the dynamics in $\bar{\theta'}_{kt}$ and $\sigma_{kt}$, and weakly informative priors are placed on the other parameters.
 Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the unit interval and so give the bounded mean of latent public opinion, $\bar{\theta}_{kt}$, which is our parameter of interest here [see @Solt2020c, 3-8].
 
@@ -385,7 +385,7 @@ dcpo_output <- dcpo(dcpo_input,
 ```
 
 ```{r dcpo_results, cache=TRUE}
-load(here::here("data", "poliwork_polileader4_2_2k.rda"))
+load(here::here("data", "poliwork_polileader4_2_4k_06-23.rda"))
 
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 
@@ -466,7 +466,7 @@ bottom5 <- p1_data %>%
 
 We used the `DCPO` package for R [@Solt2020a] to estimate this model on the public gender egalitarianism source data described above.
 The dispersion parameters of the survey items indicate that all of them load well on the latent variable (see online Appendix A).^[
-To provide further confirmation of the unidimensionality of public gender egalitarianism, we divided the source data described above to estimate separate indices of gender egalitarianism in politics, in the workplace, and in education.  The resulting indices all correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years; see online Appendix C.]
+To provide further confirmation of the unidimensionality of public gender egalitarianism, we divided the source data described above to estimate separate indices of gender egalitarianism (a) in politics and (b) in the workplace.  The two resulting indices correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years; see online Appendix C.]
 The result is estimates, in all `r res_cy` country-years spanned by the source data, of mean public gender egalitarianism, what we call PGE scores.
 Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries and territories in the dataset.
 
@@ -767,7 +767,7 @@ Such future research, however, depends on the validity of the PGE scores.
 Like @Caughey2019 [684-685], we provide evidence of our measure's validity with  convergent validation and construct validation.
 Figure&nbsp;\ref{conv_plot} displays our demonstrations of convergent validation.
 Convergent validation refers to showing that a measure is empirically associated with alternative indicators of the same concept [@Adcock2001, 540].
-Here, we compare PGE scores to responses to individual survey items that were included in the source data, that is, we provide an "internal" validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
+Here, we compare PGE scores to responses to individual survey items that were included in the source data, that is, we provide an 'internal' validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
 In the left panel, we examine the four-point question on political leaders mentioned above, the most common item in the source data across all country-years.
 Then, in the center panel, we look at the question that provides the most data-rich cross-section, which asked whether respondents felt "men generally make better political leaders than women" and was included in Pew Global's Spring 2007 survey.
 Finally, in the right panel, to evaluate how well the PGE scores capture change over time, we focus on the item with the largest number of observations for a single country, which asked respondents to the U.S. General Social Survey whether they agreed or disagreed that "most men are better suited emotionally for politics than are most women."
@@ -961,7 +961,7 @@ wantch_plot + familywoman_plot + psw_de_plot +
 
 We continue, then, to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
 In Figure&nbsp;\ref{surv_const_plot}, we look to individual survey items from a related category of gender egalitarianism, namely questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
-Assuming that attitudes that women should prioritize housework and childcare over education, paid employment, and politics---or convictions that there will be negative consequences if they do not---will lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, evidence for this theoretical relationship will provide construct validation for the PGE score.
+Assuming that attitudes that women should prioritize housework and childcare over paid employment and politics---or convictions that there will be negative consequences if they do not---will lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, evidence for this theoretical relationship will provide construct validation for the PGE scores.
 Exemplars of such items across all available country-years ("a job is alright but what most women really want is a home and children" from the WVS and EVS), in cross-section ("the most important role of a woman is to take care of her home and family" from the Eurobarometer 87.4), and in time series ("a pre-school child is likely to suffer if his or her mother works" from the German ALLBUS, WVS, and EVS) all show strong correlations with the PGE scores.
 
 ```{r cons_valid}
@@ -1067,8 +1067,8 @@ lfpr_plot + dir_plot +
 
 Finally, Figure&nbsp;\ref{construct_plot} shows additional tests of construct validation.
 As attitudes toward gender egalitarianism in the public sphere plausibly both cause and are caused by women's gains in the workplace, strong relationships between the PGE scores and measures of workplace gender equality provide construct validation for our measure.
-In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the PGE scores to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2017))` countries in 2016, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
-In the right panel, we plot the PGE scores against the percentage of women on the boards of directors of the largest publicly listed companies in `r nrow(directors)` countries in 2017 [see @OECD2020].
+In the left panel of Figure&nbsp;\ref{construct_plot}, we compare the PGE scores to the ratio of women's to men's labor force participation rates in `r nrow(lfpr_un %>% filter(year == 2017))` countries in 2017, drawing on data compiled by the Statistics Division of the UN Department of Economic and Social Affairs [-@UNDESA2020].
+In the right panel, we plot the PGE scores against the percentage of women on the boards of directors of the largest publicly listed companies in `r nrow(directors)` countries, also in 2017 [see @OECD2020].
 Both correlations are strong.
 Together, this evidence of construct validation and convergent validation attests to the validity of the PGE scores as measures of public opinion towards gender equality in the public sphere.
 

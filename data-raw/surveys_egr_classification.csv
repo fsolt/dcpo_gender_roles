@@ -108,7 +108,7 @@ evs_combo,jobinde4,d063,c(4:1),1,3,4
 evs_combo,manchildren5,d020,c(1:5),2,2,2
 evs_combo,preschoolwork4,d061,c(1:4),3,3,3
 evs_combo,sparent3,d023,"c(0,2,1)",3,3,4
-evs_combo,unmarried2,a124_40,c(1:0),4,,
+evs_combo,unmarried2,a124_40,c(1:0),4,,4
 evs_combo,wantch4,d062,c(1:4),1,3,3
 evs_combo,work4,d056,c(4:1),3,3,3
 evs2017,busiexecutive4,v78,c(1:4),1,1,1
