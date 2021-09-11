@@ -51,6 +51,9 @@ load(here::here("data", "dcpo_output.rda"))
 dcpo_input_raw_public <- read_csv(here::here("data", "dcpo_input_raw_public.csv"),
                                   col_types = "cdcddcd")
 
+public_items <- read_csv(here::here("data-raw", "public_items.csv"),
+                         col_types = "ccddd")
+
 process_dcpo_input_raw <- function(dcpo_input_raw_df) {
   dcpo_input_raw_df %>% 
   DCPOtools::with_min_yrs(2) %>% 
@@ -61,7 +64,10 @@ process_dcpo_input_raw <- function(dcpo_input_raw_df) {
   arrange(-cc_rank)
 } 
 
-dcpo_input_raw_public1 <- process_dcpo_input_raw(dcpo_input_raw_public)
+dcpo_input_raw_public1 <- process_dcpo_input_raw(dcpo_input_raw_public) %>% 
+  left_join(public_items, by = "item")
+dcpo_input_raw_poliwork1 <- dcpo_input_raw_public1 %>% 
+  filter(political==1|workplace==1)
 
 pge_items <- read_csv(here::here("data-raw", "egr_questions.csv"),
                       col_types = "cccccc")
@@ -87,7 +93,7 @@ beta_results <- DCPO::summarize_dcpo_results(dcpo_input,
                str_trim()) %>% 
     transmute(item, difficulties)
                                     
-items_summary <- dcpo_input_raw_public1 %>%
+items_summary <- dcpo_input_raw_poliwork1 %>%
     dplyr::select(country, year, item, survey) %>%
     distinct() %>%
     separate(survey, c("surv1", "surv2", "surv3"), sep=", ", fill = "left") %>%
@@ -138,38 +144,38 @@ pge_items_table(15:23)
 ```
 
 ```{r pge_items_table4}    
-pge_items_table(24:31)
+pge_items_table(24:30)
 ```
 
 ```{r pge_items_table5}    
-pge_items_table(32:42)
+pge_items_table(31:41)
 ```
 
 \pagebreak
 ```{r pge_items_table6}    
-pge_items_table(43:50)
+pge_items_table(42:50)
 ```
 \vspace{-.95in}
 Notes: Question text may vary slightly across survey datasets, but not, roughly speaking, by more than the translation differences across languages found within the typical cross-national survey dataset.  Lower values of dispersion ($\alpha$) indicate questions that better identify publics with more public gender egalitarianism from those with less.  Items have one difficulty score ($\beta$) for each cutpoint; that is, one less than the number of response categories.  Survey dataset codes correspond to those used in the `DCPOtools` R package; they appear in decreasing order of country-years contributed.
 
 \pagebreak
 # Appendix B: Excluded Survey Items
-To estimate the Public Gender Egalitarianism scores, we collected survey data on questions asking respondents' views of gender equality in the traditionally masculine public sphere of education, paid work, and politics.
-These included questions are nearly always explicit in comparing men and women (but see, for example, `unequalpol4`, which asked responses to the statement "Women do not have the necessary qualities and skills to fill positions of responsibility in politics") and nearly always explicitly invoke education, paid work, or politics, though they may also be broader (see, for example, `equalright2`, which asked "On a different subject, do you think women should have equal rights with men, or shouldn’t they?").
+To estimate the Public Gender Egalitarianism scores, we collected survey data on questions asking respondents' views of gender equality in the traditionally masculine public sphere of paid work and politics.
+These included questions are nearly always explicit in comparing men and women (but see, for example, `unequalpol4`, which asked responses to the statement "Women do not have the necessary qualities and skills to fill positions of responsibility in politics") and nearly always explicitly invoke either paid work or politics, though they may also be broader (see, for example, `equalright2`, which asked "On a different subject, do you think women should have equal rights with men, or shouldn’t they?").
 
 We carefully distinguished these questions from three other categories of questions on gender equality.
 First, the PGE source data do not include the small set of questions focusing on gender equality in the traditionally feminine private sphere of housework and childcare, such as "Men should take as much responsibility as women for the home and children," asked (with differing response categories) in the European Values Survey and the European Social Survey.
 Second, as noted in the text, we also excluded questions asking respondents how women should balance opportunities in the public sphere with their traditional duties in the private sphere, such as whether mothers in the workforce can have similarly warm relationships with their children as mothers who are not, asked in the World Values Survey and many others.
-Given that attitudes that women should prioritize housework and childcare over education, paid employment, and politics---or convictions that there will be negative consequences if they do not---can be expected to lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, this is clearly a very closely related set of items to those we sought, and there are many of them.^[
+Given that attitudes that women should prioritize housework and childcare over paid employment and politics---or convictions that there will be negative consequences if they do not---can be expected to lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, this is clearly a very closely related set of items to those we sought, and there are many of them.^[
 It is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is only rarely included in surveys; one laudable example of this mostly unasked sort of question, apparently first included in Australia's 1989 National Social Science Survey and slowly becoming more common, is the item querying respondents the extent to which they agree with the statement, "Family life often suffers when men concentrate too much on their work."]
-The third and final category of excluded survey items includes respondents' views on various forms of women's domination by men, from whether wives should adopt their husbands' surnames through the recognition that various forms of sexual harassment are not "flattering" to the justifiability of intimate partner violence committed by husbands.
-In each case, as the included questions are not _directly_ relevant to gender egalitarianism in the public sphere, we concluded that to ensure that the PGE scores tap only a single dimension of attitudes, we would exclude these others.
+The third and final category of excluded survey items includes respondents' views on various forms of women's domination by men, from whether wives should always adopt their husbands' surnames through the recognition that various forms of sexual harassment are not "flattering" to the justifiability of intimate partner violence committed by husbands.
+In each case, as the included questions are not _directly_ relevant to gender egalitarianism in the public sphere, we concluded that to ensure that the PGE scores tap only a single dimension of attitudes, we would exclude these others (see also Appendix C).
 Usefully, this decision also allows, when the available survey data permits, future research to take up the estimation of dynamic comparative public opinion of those concepts separately and their relationships to public gender egalitarianism.
 
 \pagebreak
 # Appendix C: Confirming the Unidimensionality of Public Gender Egalitarianism
 
-To provide further confirmation of the unidimensionality of public gender egalitarianism, we used the survey items listed in Appendix A to estimate separate indices of gender egalitarianism in politics, in the workplace, and in education.  As shown in Figure \ref{pge_pwe_corr_plot}, these three indices all correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years.
+To provide further confirmation of the unidimensionality of public gender egalitarianism, we used the survey items listed in Appendix A to estimate separate indices of gender egalitarianism in politics and in the workplace.  As shown in Figure \ref{pge_pwe_corr_plot}, these two indices both correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years.
 
 ```{r create_pwe_indices}
 dcpo_input_raw_public <- read_csv(here::here("data", "dcpo_input_raw_public.csv"),
@@ -193,8 +199,6 @@ dcpo_input_raw_political1 <- dcpo_input_raw_public1 %>%
   filter(political==1)
 dcpo_input_raw_workplace1 <- dcpo_input_raw_public1 %>% 
   filter(workplace==1)
-dcpo_input_raw_education1 <- dcpo_input_raw_public1 %>% 
-  filter(education==1)
 
 dcpo_input_political <- DCPOtools::format_dcpo(dcpo_input_raw_political1,
                                             scale_q = "polileader4",
@@ -206,10 +210,6 @@ dcpo_input_workplace <- DCPOtools::format_dcpo(dcpo_input_raw_workplace1,
                                             scale_cp = 2)
 save(dcpo_input_workplace, file = here::here("data", "dcpo_input_workplace.rda"))
 
-dcpo_input_education <- DCPOtools::format_dcpo(dcpo_input_raw_education1,
-                                            scale_q = "education4",
-                                            scale_cp = 2)
-save(dcpo_input_education, file = here::here("data", "dcpo_input_education.rda"))
 ```
 
 ```{r dcpo_political, eval=FALSE}
@@ -232,18 +232,7 @@ dcpo_output_workplace <- dcpo(dcpo_input_workplace,
                               pars = c("sd_delta","sd_theta_evolve", "sd_sigma_evolve", "sigma","phi","beta","alpha","delta","theta","y_r_pred","log_lik"))
 ```
 
-```{r dcpo_education, eval=FALSE}
-iter <- 5000
-
-dcpo_output_education <- dcpo(dcpo_input_education,
-                              iter = iter,
-                              chains = 4,
-                              thin = iter/500, # this yields 250 draws per chain, 1000 draws total
-                              pars = c("sd_delta","sd_theta_evolve", "sd_sigma_evolve", "sigma","phi","beta","alpha","delta","theta","y_r_pred","log_lik"))
-```
-
-
-```{r political}
+```{r political, eval=FALSE}
 load(here::here("data", "political_polileader4_2_4k.rda"))
 
 dcpo_input_political <- dcpo_input
@@ -255,7 +244,7 @@ save(dcpo_input_political, file = here::here("data", "dcpo_input_political.rda")
 save(dcpo_output_political, file = here::here("data", "dcpo_output_political.rda"))
 ```
 
-```{r workplace}
+```{r workplace, eval=FALSE}
 load(here::here("data", "workplace_job3a_2_5k.rda"))
 
 dcpo_input_workplace <- dcpo_input
@@ -266,19 +255,6 @@ save(dcpo_input_workplace, file = here::here("data", "dcpo_input_workplace.rda")
 
 save(dcpo_output_workplace, file = here::here("data", "dcpo_output_workplace.rda"))
 ```
-
-```{r education}
-load(here::here("data", "education_education4_2_5k.rda"))
-
-dcpo_input_education <- dcpo_input
-
-dcpo_output_education <- dcpo_output
-
-save(dcpo_input_education, file = here::here("data", "dcpo_input_education.rda"))
-
-save(dcpo_output_education, file = here::here("data", "dcpo_output_education.rda"))
-```
-
 
 ```{r theta_res_political}
 load(here::here("data", "dcpo_input_political.rda"))
@@ -376,55 +352,6 @@ theta_res_workplace <- rstan::extract(dcpo_output_workplace, pars = "theta") %>%
         })
 ```
 
-```{r theta_res_education}
-load(here::here("data", "dcpo_input_education.rda"))
-load(here::here("data", "dcpo_output_education.rda"))
-
-dat <- dcpo_input_education$data
-
-qcodes <- dat %>%
-  dplyr::group_by(question) %>%
-  dplyr::summarize(qq = first(qq) %>%
-                     as.numeric())
-
-kcodes <- dat %>%
-  dplyr::group_by(country) %>%
-  dplyr::summarize(kk = first(kk) %>%
-                     as.numeric())
-
-tcodes <- dat %>%
-  dplyr::group_by(year) %>%
-  dplyr::summarize(tt = first(tt))
-
-ktcodes <- dat %>%
-  dplyr::group_by(country) %>%
-  dplyr::summarize(first_yr = min(year),
-                   last_yr = max(year))
-
-theta_res_education <- rstan::extract(dcpo_output_education, pars = "theta") %>%
-        dplyr::first() %>%
-        purrr::array_branch(1) %>%
-        purrr::map(function(x) {
-          tibble::as_tibble(x) %>%
-          dplyr::mutate(tt = dplyr::row_number()) %>%
-            dplyr::left_join(tcodes, by = "tt") %>%
-            tidyr::pivot_longer(cols = starts_with("V"),
-                                names_to = "kk",
-                                values_to = "pge_mean") %>%
-            dplyr::mutate(year = if_else(tt == 1,
-                                         as.integer(year),
-                                         as.integer(min(year, na.rm = TRUE) + tt - 1)),
-                          kk = stringr::str_replace(kk, "V", "") %>% as.numeric()) %>%
-            dplyr::left_join(kcodes, by = "kk") %>%
-            dplyr::left_join(ktcodes, by = "country") %>%
-            dplyr::filter(year >= first_yr & year <= last_yr) %>%
-            dplyr::arrange(kk, tt) %>%
-            dplyr::select(country, year, pge_mean) %>% 
-            dplyr::rename(education_mean = pge_mean)
-        })
-```
-
-
 ```{r pge_pwe_corr}
 load(here::here("data", "pge.rda"))
 load(here::here("data", "dcpo_input.rda"))
@@ -432,8 +359,7 @@ load(here::here("data", "dcpo_input.rda"))
 pge_pw <- map(1:1000, function(x) {
   pge[[x]] %>% 
     left_join(theta_res_political[[x]], by = c("country", "year")) %>% 
-    left_join(theta_res_workplace[[x]], by = c("country", "year")) %>% 
-    left_join(theta_res_education[[x]], by = c("country", "year"))
+    left_join(theta_res_workplace[[x]], by = c("country", "year"))
 })
 
 pge_political_cor <- map(pge_pw, function(x) {
@@ -450,13 +376,6 @@ pge_workplace_cor <- map(pge_pw, function(x) {
   mean() %>% 
   round(2)
 
-pge_education_cor <- map(pge_pw, function(x) {
-  with(x, cor(pge_mean, education_mean, use = "pairwise.complete.obs"))
-  }) %>% 
-  unlist() %>% 
-  mean() %>% 
-  round(2)
-
 political_workplace_cor <- map(pge_pw, function(x) {
   with(x, cor(political_mean, workplace_mean, use = "pairwise.complete.obs"))
   }) %>% 
@@ -464,27 +383,13 @@ political_workplace_cor <- map(pge_pw, function(x) {
   mean() %>% 
   round(2)
 
-political_education_cor <- map(pge_pw, function(x) {
-  with(x, cor(political_mean, education_mean, use = "pairwise.complete.obs"))
-  }) %>% 
-  unlist() %>% 
-  mean() %>% 
-  round(2)
-
-workplace_education_cor <- map(pge_pw, function(x) {
-  with(x, cor(workplace_mean, education_mean, use = "pairwise.complete.obs"))
-  }) %>% 
-  unlist() %>% 
-  mean() %>% 
-  round(2)
-
-pge_pwe_corr_matrix <- matrix(c(1, pge_political_cor, pge_workplace_cor, pge_education_cor,
-                                pge_political_cor, 1, political_workplace_cor, political_education_cor,
-                                pge_workplace_cor, political_workplace_cor, 1, workplace_education_cor,
-                                pge_education_cor, political_education_cor, workplace_education_cor, 1), ncol = 4)
-colnames(pge_pwe_corr_matrix) <- c("Public\nGender\nEgalitarianism", "Political\nGender\nEgalitarianism", "Workplace\nGender\nEgalitarianism", "Education\nGender\nEgalitarianism")
+pge_pwe_corr_matrix <- matrix(c(1, pge_political_cor, pge_workplace_cor,
+                                pge_political_cor, 1, political_workplace_cor,
+                                pge_workplace_cor, political_workplace_cor, 1),
+                              ncol = 3)
+colnames(pge_pwe_corr_matrix) <- c("Public\nGender\nEgalitarianism", "Political\nGender\nEgalitarianism", "Workplace\nGender\nEgalitarianism")
 ```
 
-```{r pge_pwe_corr_plot, fig.width=7, fig.cap = "Pairwise Correlations Among PGE Index and Separate Political, Workplace, and Education Egalitarianism Indices  \\label{pge_pwe_corr_plot}"}
+```{r pge_pwe_corr_plot, fig.width=7, fig.cap = "Pairwise Correlations Among PGE Index and Separate Political and Workplace Egalitarianism Indices  \\label{pge_pwe_corr_plot}"}
 corrplot::corrplot.mixed(pge_pwe_corr_matrix, tl.col = "black", tl.cex = .8, upper = "ellipse")
 ```
