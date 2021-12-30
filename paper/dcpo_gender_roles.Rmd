@@ -464,10 +464,13 @@ bottom5 <- p1_data %>%
 
 ```
 
-We used the `DCPO` package for R [@Solt2020a] to estimate this model on the public gender egalitarianism source data described above.
+We estimated the model using the `DCPO` package for R [@Solt2020a], running four chains for 4,000 iterations each, with the first half discarded as warmup and the remainder thinned by eight to leave us with 1,000 samples.
+The $\hat{R}$ diagnostic had a maximum value of 1.02, indicating the model converged.
+
 The dispersion parameters of the survey items indicate that all of them load well on the latent variable (see online Appendix A).
-The result is estimates, in all `r res_cy` country-years spanned by the source data, of mean public gender egalitarianism, what we call PGE scores.^[
-To provide further confirmation of the unidimensionality of public gender egalitarianism, we estimated two separate indices of gender egalitarianism in politics and in the workplace.  These indices correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years; see online Appendix C.]
+The result is estimates, in all `r res_cy` country-years spanned by the source data, of mean public gender egalitarianism, what we call PGE scores.
+<!-- ^[ -->
+<!-- To provide further confirmation of the unidimensionality of public gender egalitarianism, we estimated two separate indices of gender egalitarianism in politics and in the workplace.  These indices correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years; see online Appendix C.] -->
 Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries and territories in the dataset.
 
 The Scandinavian countries and France are at the top of this list, along with Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
