@@ -774,9 +774,11 @@ Here, we compare PGE scores to responses to individual survey items that were in
 In the left panel, we examine the four-point question on political leaders mentioned above, the most common item in the source data across all country-years.
 Then, in the center panel, we look at the question that provides the most data-rich cross-section, which asked whether respondents felt "men generally make better political leaders than women" and was included in Pew Global's Spring 2007 survey.
 Finally, in the right panel, to evaluate how well the PGE scores capture change over time, we focus on the item with the largest number of observations for a single country, which asked respondents to the U.S. General Social Survey whether they agreed or disagreed that "most men are better suited emotionally for politics than are most women."
-In every case, the correlations---estimated taking into account the uncertainty in the measures^[
-The uncertainty in the PGE score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the political leadership question, but failing to account for this uncertainty would overstate the correlation with the Pew item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`.
-We take up the issue of the importance of taking uncertainty into account when working with the PGE data in a subsequent section.]---are in the expected direction and very strong.
+In every case, the correlations---estimated taking into account the uncertainty in the measures---are in the expected direction and very strong.
+<!-- ^[ -->
+<!-- The uncertainty in the PGE score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the political leadership question, but failing to account for this uncertainty would overstate the correlation with the Pew item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`. -->
+<!-- We take up the issue of the importance of taking uncertainty into account when working with the PGE data in a subsequent section.] -->
+
 
 ```{r construct_validation_survey, cache = TRUE, cache.extra = tools::md5sum(here::here("data", "pge.rda")), fig.cap="Construct Validation: Correlations Between PGE Scores and Individual 'Balancing' Gender Egalitarianism Survey Items \\label{surv_const_plot}", fig.height=4}
 dcpo_input_balance <- DCPOtools::format_dcpo(dcpo_input_raw_balance1,
