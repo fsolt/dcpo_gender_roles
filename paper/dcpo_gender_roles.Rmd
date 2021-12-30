@@ -192,7 +192,7 @@ In all, we identified `r n_items` such survey items that were asked in no fewer 
 The complete list of public gender egalitarianism survey items is included in online Appendix A.  A discussion of excluded survey items---those covering the related but distinct concepts of gender equality in the private sphere, how women should balance opportunities in the public sphere with their traditional duties in the private sphere, or issues of gender dominance such as sexual harassment---is found in online Appendix B.]
 Together, the survey items in the source data were asked in `r n_countries` different countries in at least two time points over `r n_years` years, `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
 Observations for every year in each country surveyed would number `r total_cy`, and a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations.
-Viewed from this complete-data perspective, the available data can be seen to be very, very sparse.
+Compared to this complete set of country-year-items, the available data can be seen to be very, very sparse.
 From a more optimistic standpoint, we note there there are `r n_cy` country-years in which we have at least _some_ information about the public gender egalitarianism of the population, that is, some `r {back_to_numeric(n_cy)/back_to_numeric(spanned_cy) * 100} %>% round()`% of the `r spanned_cy` country-years spanned by the data we collected.
 But there can be no denying Claveria's [-@Claveria2014] observation that the many different survey items employed renders these data incomparable and difficult to use together.
 
@@ -347,7 +347,7 @@ n_data_poorest <- {data_poorest %>%
 The upper left panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
 The United States, with `r us_obs` observations, is far and away the best represented country in the source data, followed by `r others`.
 At the other end of the spectrum, `r n_data_poorest` countries---`r data_poorest`---have only the minimum two observations required to be included in the source dataset at all.
-The upper left panel shows the twelve countries with the most years observed; this group is similar, but with `r adding` joining the list and `r dropping` dropping off.
+The upper right panel shows the twelve countries with the most years observed; this group is similar, but with `r adding` joining the list and `r dropping` dropping off.
 The bottom panel counts the countries observed in each year and reveals just how few relevant survey items were asked before 1990.
 Country coverage reached its peak in `r y_peak_year`, when surveys in `r y_peak_nn` countries included items on gender egalitarianism in the public sphere.
 In the next section, we describe how we are able to make use of all of this sparse and incomparable survey data to generate the PGE scores using a latent variable model.
@@ -368,7 +368,7 @@ The @McGann2019 model depends on dense survey data unlike the sparse data on pub
 @Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable not only when the available survey data are dense but also when ancillary data on population characteristics are available, so it is similarly inappropriate to this application.]
 
 The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item bias.
-That is, $\eta_{ktqr}$, the expected probability that a random person in country $k$ at time $t$ answers question $q$ with a response at least as positive as response $r$, is estimated as varying with the mean and standard deviation of the unbounded latent trait of public opinion, $\bar{\theta'}_{kt}$ and $\sigma_{kt}$; with the dispersion, $\alpha_{q}$, of the question and the difficulty, $\beta_{qr}$, of the question's response category; as well as with a term to capture how responses to particular questions in particular questions may be biased in particular countries, $\delta_{kq}$: $\eta_{ktqr} = \textrm{logit}^{-1}(\frac{\bar{\theta'}_{kt} - (\beta_{qr} + \delta_{kq})}{\sqrt{\alpha_{q}^2 + (1.7*\sigma_{kt})^2}}) \label{eq:dcpo}$.
+That is, $\eta_{ktqr}$, the expected probability that a random person in country $k$ at time $t$ answers question $q$ with a response at least as positive as response $r$, is estimated as varying with the mean and standard deviation of the unbounded latent trait of public opinion, $\bar{\theta'}_{kt}$ and $\sigma_{kt}$; with the dispersion, $\alpha_{q}$, of the question and the difficulty, $\beta_{qr}$, of the question's response category; as well as with a term to capture how responses to particular questions may be biased in particular countries, $\delta_{kq}$: $\eta_{ktqr} = \textrm{logit}^{-1}(\frac{\bar{\theta'}_{kt} - (\beta_{qr} + \delta_{kq})}{\sqrt{\alpha_{q}^2 + (1.7*\sigma_{kt})^2}}) \label{eq:dcpo}$.
 A beta-binomial distribution is used to model the observed survey data given $\eta_{ktqr}$, random-walk priors are used to account for the dynamics in $\bar{\theta'}_{kt}$ and $\sigma_{kt}$, and weakly informative priors are placed on the other parameters.
 Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the unit interval and so give the bounded mean of latent public opinion, $\bar{\theta}_{kt}$, which is our parameter of interest here [see @Solt2020c, 3-8].
 
@@ -764,7 +764,7 @@ internal_plot + internal_cs_plot + internal_us_plot +
 ```
 
 Such future research, however, depends on the validity of the PGE scores.
-Like @Caughey2019 [684-685], we provide evidence of our measure's validity with  convergent validation and construct validation.
+Like @Caughey2019 [684-685], we provide evidence of our measure's validity with convergent validation and construct validation.
 Figure&nbsp;\ref{conv_plot} displays our demonstrations of convergent validation.
 Convergent validation refers to showing that a measure is empirically associated with alternative indicators of the same concept [@Adcock2001, 540].
 Here, we compare PGE scores to responses to individual survey items that were included in the source data, that is, we provide an 'internal' validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
@@ -991,7 +991,7 @@ pge_lfpr <- pge %>%
 lfpr_cor <- map(pge_lfpr, function(x) {
   x %>% 
     filter(year == 2017) %>% 
-    with(cor(pge_mean, f2m_ratio))
+    with(cor(pge_mean, f2m_ratio, use = "pairwise.complete.obs"))
   }) %>% 
   unlist() %>% 
   mean() %>% 
