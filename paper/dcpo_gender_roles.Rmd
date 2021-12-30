@@ -179,7 +179,7 @@ back_to_numeric <- function(string_number) {
 }
 ```
 
-In this letter, we present the Public Gender Egalitarianism (PGE) dataset, which is based on the host of survey data available and recent advances in latent variable modeling of public opinion that allow us to make use of this sparse and incomparable data.
+In this letter, we present the Public Gender Egalitarianism (PGE) dataset, which is based on the host of national and cross-national survey data available and recent advances in latent variable modeling of public opinion that allow us to make use of this sparse and incomparable data.
 It provides comparable estimates of the public's attitudes on gender equality in the public sphere of politics and paid work across countries and over time.
 We show that these PGE scores are strongly correlated with responses to single survey items as well as with measures of women's participation in the workforce and in the boardroom.
 We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and effects of collective attitudes toward gender equality in the public sphere.
@@ -349,7 +349,7 @@ The United States, with `r us_obs` observations, is far and away the best repres
 At the other end of the spectrum, `r n_data_poorest` countries---`r data_poorest`---have only the minimum two observations required to be included in the source dataset at all.
 The upper right panel shows the twelve countries with the most years observed; this group is similar, but with `r adding` joining the list and `r dropping` dropping off.
 The bottom panel counts the countries observed in each year and reveals just how few relevant survey items were asked before 1990.
-Country coverage reached its peak in `r y_peak_year`, when surveys in `r y_peak_nn` countries included items on gender egalitarianism in the public sphere.
+Country coverage reached its peak in `r y_peak_year`, when respondents in `r y_peak_nn` countries were asked items about gender egalitarianism in the public sphere.
 In the next section, we describe how we are able to make use of all of this sparse and incomparable survey data to generate the PGE scores using a latent variable model.
 
 ```{r dcpo_input_public}
