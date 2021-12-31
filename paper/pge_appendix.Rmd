@@ -169,11 +169,29 @@ Second, as noted in the text, we also excluded questions asking respondents how 
 Given that attitudes that women should prioritize housework and childcare over paid employment and politics---or convictions that there will be negative consequences if they do not---can be expected to lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, this is clearly a very closely related set of items to those we sought, and there are many of them.^[
 It is telling, though not surprising, that the complementary set of questions, on how _men_ should balance responsibilities in the private sphere with their traditional roles in the public sphere, is only rarely included in surveys; one laudable example of this mostly unasked sort of question, apparently first included in Australia's 1989 National Social Science Survey and slowly becoming more common, is the item querying respondents the extent to which they agree with the statement, "Family life often suffers when men concentrate too much on their work."]
 The third and final category of excluded survey items includes respondents' views on various forms of women's domination by men, from whether wives should always adopt their husbands' surnames through the recognition that various forms of sexual harassment are not "flattering" to the justifiability of intimate partner violence committed by husbands.
-In each case, as the included questions are not _directly_ relevant to gender egalitarianism in the public sphere, we concluded that to ensure that the PGE scores tap only a single dimension of attitudes, we would exclude these others (see also Appendix C).
+In each case, as the included questions are not _directly_ relevant to gender egalitarianism in the public sphere, we concluded that to ensure that the PGE scores tap only a single dimension of attitudes, we would exclude these others (see also Appendix D).
 Usefully, this decision also allows, when the available survey data permits, future research to take up the estimation of dynamic comparative public opinion of those concepts separately and their relationships to public gender egalitarianism.
 
 \pagebreak
-# Appendix C: Confirming the Unidimensionality of Public Gender Egalitarianism
+# Appendix C: The DCPO Model
+
+There has been a recent blossoming of scholarship developing latent variable models of public opinion based on cross-national survey data [see @Claassen2019; @Caughey2019; @McGann2019; @Kolczynska2020].
+To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion (DCPO) model presented in @Solt2020c.
+@Solt2020c demonstrates that the DCPO model provides a better fit to survey data than the models put forward by @Claassen2019 or @Caughey2019.
+The @McGann2019 model depends on dense survey data unlike the sparse data on public gender egalitarianism described in the preceding section.
+@Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable not only when the available survey data are dense but also when ancillary data on population characteristics are available, so it is similarly inappropriate to this application.
+
+The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item bias.
+
+That is, $\eta_{ktqr}$, the expected probability that a random person in country $k$ at time $t$ answers question $q$ with a response at least as positive as response $r$, is estimated as varying with the mean and standard deviation of the unbounded latent trait of public opinion, $\bar{\theta'}_{kt}$ and $\sigma_{kt}$; with the dispersion, $\alpha_{q}$, of the question and the difficulty, $\beta_{qr}$, of the question's response category; as well as with a term to capture how responses to particular questions may be biased in particular countries, $\delta_{kq}$: $\eta_{ktqr} = \textrm{logit}^{-1}(\frac{\bar{\theta'}_{kt} - (\beta_{qr} + \delta_{kq})}{\sqrt{\alpha_{q}^2 + (1.7*\sigma_{kt})^2}}) \label{eq:dcpo}$.
+
+A beta-binomial distribution is used to model the observed survey data given $\eta_{ktqr}$, random-walk priors are used to account for the dynamics in $\bar{\theta'}_{kt}$ and $\sigma_{kt}$, and weakly informative priors are placed on the other parameters.
+
+Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the unit interval and so give the bounded mean of latent public opinion, $\bar{\theta}_{kt}$, which is our parameter of interest here [see @Solt2020c, 3-8].
+
+
+\pagebreak
+# Appendix D: Confirming the Unidimensionality of Public Gender Egalitarianism
 
 To provide further confirmation of the unidimensionality of public gender egalitarianism, we used the survey items listed in Appendix A to estimate separate indices of gender egalitarianism in politics and in the workplace.  As shown in Figure \ref{pge_pwe_corr_plot}, these two indices both correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years.
 

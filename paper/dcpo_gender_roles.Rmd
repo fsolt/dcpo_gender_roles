@@ -340,9 +340,9 @@ n_data_poorest <- {data_poorest %>%
 (countries_plot + cby_plot) / (ybc_plot)
 ```
 
-<!-- Consider the most frequently asked item in the data we collected, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do." -->
-<!-- Employed by the Americas Barometer, the Arab Barometer, the Eurobarometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years. -->
-<!-- That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the country-years spanned by our data---and remember, this is the _most common_ survey item---again underscores just how sparse and incomparable the available public opinion data is on this topic. -->
+Consider the most frequently asked item in the data we collected, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do."
+Employed by the Americas Barometer, the Arab Barometer, the Eurobarometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years.
+That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the country-years spanned by our data---and remember, this is the _most common_ survey item---again underscores just how sparse and incomparable the available public opinion data is on this topic.
 
 The upper left panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
 The United States, with `r us_obs` observations, is far and away the best represented country in the source data, followed by `r others`.
@@ -362,15 +362,21 @@ save(dcpo_input_poliwork, file = here::here("data", "dcpo_input_poliwork.rda"))
 # Estimating Public Gender Egalitarianism
 
 There has been a recent blossoming of scholarship developing latent variable models of public opinion based on cross-national survey data [see @Claassen2019; @Caughey2019; @McGann2019; @Kolczynska2020].
-To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion  (DCPO) model presented in @Solt2020c.^[
-@Solt2020c demonstrates that the DCPO model provides a better fit to survey data than the models put forward by @Claassen2019 or @Caughey2019.
-The @McGann2019 model depends on dense survey data unlike the sparse data on public gender egalitarianism described in the preceding section.
-@Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable not only when the available survey data are dense but also when ancillary data on population characteristics are available, so it is similarly inappropriate to this application.]
+To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion (DCPO) model presented in @Solt2020c.
+This model accounts for the incomparability of different survey questions in two ways.
+First, it adjusts for the _difficulty_ of each question's responses, that is, how much egalitarianism is indicated by a given response. 
+That different question responses evince more or less of our trait is most easily seen with regard to the ordinal responses to the same question: strongly agreeing with the statement "both the husband and wife should contribute to household income," exhibits more public gender egalitarianism than responding "agree," which in turn is more egalitarian than responding "disagree" or "strongly disagree."
+But this is also true across questions.
+For example, we might suppose that strongly disagreeing that "on the whole, men make better business executives than women do" expresses even more egalitarianism than strongly agreeing merely that both spouses should have paid employment.
+Second, the DCPO model accounts for each question's _dispersion_, its noisiness with regard to our latent trait.
+The lower a question's dispersion, the better that changes in responses to the question map onto changes in public gender egalitarianism.
+Together, the difficulty and dispersion parameters adjust the observed survey data to generate
 
-The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item bias.
-That is, $\eta_{ktqr}$, the expected probability that a random person in country $k$ at time $t$ answers question $q$ with a response at least as positive as response $r$, is estimated as varying with the mean and standard deviation of the unbounded latent trait of public opinion, $\bar{\theta'}_{kt}$ and $\sigma_{kt}$; with the dispersion, $\alpha_{q}$, of the question and the difficulty, $\beta_{qr}$, of the question's response category; as well as with a term to capture how responses to particular questions may be biased in particular countries, $\delta_{kq}$: $\eta_{ktqr} = \textrm{logit}^{-1}(\frac{\bar{\theta'}_{kt} - (\beta_{qr} + \delta_{kq})}{\sqrt{\alpha_{q}^2 + (1.7*\sigma_{kt})^2}}) \label{eq:dcpo}$.
-A beta-binomial distribution is used to model the observed survey data given $\eta_{ktqr}$, random-walk priors are used to account for the dynamics in $\bar{\theta'}_{kt}$ and $\sigma_{kt}$, and weakly informative priors are placed on the other parameters.
-Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the unit interval and so give the bounded mean of latent public opinion, $\bar{\theta}_{kt}$, which is our parameter of interest here [see @Solt2020c, 3-8].
+To address the sparsity of the data---the fact that there are gaps in the source data in the time series of each country, and even many observed country-years have only one or few observed items---DCPO uses simple local-level dynamic linear models (i.e., random-walk priors).
+That is, within each country, each year's value of public gender egalitarianism is a function of the previous year's estimate plus some noise.
+These dynamic models smooth the estimates of public gender egalitarianism over time and allows estimation even in years for which no survey data is available.
+For more detail on the DCPO model, see Appendix C and @Solt2020c [, 3-8].
+
 
 ```{r dcpo, eval=FALSE}
 iter <- 4000
@@ -556,30 +562,7 @@ theta_res <- rstan::extract(dcpo_output, pars = "theta") %>%
             dplyr::select(country, year, pge_mean)
         })
 
-sigma_res <- rstan::extract(dcpo_output, pars = "sigma") %>%
-        dplyr::first() %>%
-        purrr::array_branch(1) %>%
-        purrr::map(function(x) {
-          tibble::as_tibble(x) %>%
-          dplyr::mutate(tt = row_number()) %>%
-            dplyr::left_join(tcodes, by = "tt") %>%
-            tidyr::pivot_longer(cols = starts_with("V"),
-                                names_to = "kk",
-                                values_to = "pge_polarization") %>%
-            dplyr::mutate(year = if_else(tt == 1,
-                                         as.numeric(year),
-                                         min(year, na.rm = TRUE) + tt - 1),
-                          kk = str_replace(kk, "V", "") %>% as.numeric()) %>%
-            dplyr::left_join(kcodes, by = "kk") %>%
-            dplyr::left_join(ktcodes, by = "country") %>%
-            dplyr::filter(year >= first_yr & year <= last_yr) %>%
-            dplyr::arrange(kk, tt) %>%
-            dplyr::select(country, year, pge_polarization)
-        })
-
-pge <- map2(theta_res, sigma_res, function(theta, sigma) {
-  left_join(theta, sigma, by = c("country", "year"))
-})
+pge <- theta_res
 
 save(pge, file = here::here("data", "pge.rda"))
 ```
