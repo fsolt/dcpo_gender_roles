@@ -397,8 +397,8 @@ load(here::here("data", "dcpo_input.rda"))
 load(here::here("data", "dcpo_output.rda"))
 
 theta_results <- DCPO::summarize_dcpo_results(dcpo_input,
-                                              dcpo_output,
-                                              "theta")
+                                        dcpo_output,
+                                        "theta")
 
 res_cy <- nrow(theta_results) %>% 
   scales::comma()
