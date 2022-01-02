@@ -364,13 +364,13 @@ save(dcpo_input_poliwork, file = here::here("data", "dcpo_input_poliwork.rda"))
 There has been a recent blossoming of scholarship developing latent variable models of public opinion based on cross-national survey data [see @Claassen2019; @Caughey2019; @McGann2019; @Kolczynska2020].
 To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion (DCPO) model presented in @Solt2020c.
 The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item-bias terms.
-For a detailed description of the DCPO model, see Appendix C and @Solt2020c [, 3-8]; here we focus on how it deals with the principal issues raised by the source data, incomparability and sparsity.
+For a detailed description of the DCPO model, see online Appendix C and @Solt2020c [, 3-8]; here, we focus on how it deals with the principal issues raised by our source data, incomparability and sparsity.
 
 The DCPO model accounts for the incomparability of different survey questions with two parameters.
 First, it incorporates the _difficulty_ of each question's responses, that is, how much public gender egalitarianism is indicated by a given response. 
-That different question responses evince more or less of our trait is most easily seen with regard to the ordinal responses to the same question: strongly agreeing with the statement "both the husband and wife should contribute to household income," exhibits more public gender egalitarianism than responding "agree," which in turn is more egalitarian than responding "disagree" or "strongly disagree."
+That each response evinces more or less of our trait is most easily seen with regard to the ordinal responses to the same question: strongly agreeing with the statement "both the husband and wife should contribute to household income," exhibits more public gender egalitarianism than responding "agree," which in turn is more egalitarian than responding "disagree" or "strongly disagree."
 But this is also true across questions.
-For example, we might deduce that strongly disagreeing that "on the whole, men make better business executives than women do" expresses even more egalitarianism than strongly agreeing merely that both spouses should have paid employment.
+For example, strongly disagreeing that "on the whole, men make better business executives than women do" likely expresses even more egalitarianism than strongly agreeing merely that both spouses should have paying jobs.
 Second, the DCPO model accounts for each question's _dispersion_, its noisiness with regard to our latent trait.
 The lower a question's dispersion, the better that changes in responses to the question map onto changes in public gender egalitarianism.
 Together, the model's difficulty and dispersion estimates work to generate comparable estimates of the latent variable of public gender egalitarianism from the available but incomparable source data.
@@ -479,7 +479,7 @@ The $\hat{R}$ diagnostic had a maximum value of 1.02, indicating the model conve
 The dispersion parameters of the survey items indicate that all of them load well on the latent variable (see online Appendix A).
 The result is estimates, in all `r res_cy` country-years spanned by the source data, of mean public gender egalitarianism, what we call PGE scores.
 <!-- ^[ -->
-<!-- To provide further confirmation of the unidimensionality of public gender egalitarianism, we estimated two separate indices of gender egalitarianism in politics and in the workplace.  These indices correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years; see online Appendix C.] -->
+<!-- To provide further confirmation of the unidimensionality of public gender egalitarianism, we estimated two separate indices of gender egalitarianism in politics and in the workplace.  These indices correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years; see online Appendix D.] -->
 Figure&nbsp;\ref{cs_mry} displays the most recent available PGE score for each of the `r res_c` countries and territories in the dataset.
 
 The Scandinavian countries and France are at the top of this list, along with Puerto Rico, which has had women of both of its major parties serve as chief executive and as recently as 2020 had a woman from each party holding the two most prominent elected offices on the island.
