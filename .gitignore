@@ -18,6 +18,10 @@ data/polileader4*.rda
 data/dcpo_output.rda
 paper/*cache/
 paper/dcpo_gender_roles_anon*
+paper/pge_appendix_files/*
 paper/ts*
+paper/pge_cover*
+paper/*title*
 data/kfold/*fold*
 data/kfold/*/*fold*
+data/old/*
