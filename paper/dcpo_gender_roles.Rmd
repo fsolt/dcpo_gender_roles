@@ -363,19 +363,22 @@ save(dcpo_input_poliwork, file = here::here("data", "dcpo_input_poliwork.rda"))
 
 There has been a recent blossoming of scholarship developing latent variable models of public opinion based on cross-national survey data [see @Claassen2019; @Caughey2019; @McGann2019; @Kolczynska2020].
 To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion (DCPO) model presented in @Solt2020c.
-This model accounts for the incomparability of different survey questions in two ways.
-First, it adjusts for the _difficulty_ of each question's responses, that is, how much egalitarianism is indicated by a given response. 
+The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item-bias terms.
+For a detailed description of the DCPO model, see Appendix C and @Solt2020c [, 3-8]; here we focus on how it deals with the principal issues raised by the source data, incomparability and sparsity.
+
+The DCPO model accounts for the incomparability of different survey questions with two parameters.
+First, it incorporates the _difficulty_ of each question's responses, that is, how much public gender egalitarianism is indicated by a given response. 
 That different question responses evince more or less of our trait is most easily seen with regard to the ordinal responses to the same question: strongly agreeing with the statement "both the husband and wife should contribute to household income," exhibits more public gender egalitarianism than responding "agree," which in turn is more egalitarian than responding "disagree" or "strongly disagree."
 But this is also true across questions.
-For example, we might suppose that strongly disagreeing that "on the whole, men make better business executives than women do" expresses even more egalitarianism than strongly agreeing merely that both spouses should have paid employment.
+For example, we might deduce that strongly disagreeing that "on the whole, men make better business executives than women do" expresses even more egalitarianism than strongly agreeing merely that both spouses should have paid employment.
 Second, the DCPO model accounts for each question's _dispersion_, its noisiness with regard to our latent trait.
 The lower a question's dispersion, the better that changes in responses to the question map onto changes in public gender egalitarianism.
-Together, the difficulty and dispersion parameters adjust the observed survey data to generate
+Together, the difficulty and dispersion parameters work to generate comparable estimates of the latent variable of public gender egalitarianism from the available but incomparable source data.
 
-To address the sparsity of the data---the fact that there are gaps in the source data in the time series of each country, and even many observed country-years have only one or few observed items---DCPO uses simple local-level dynamic linear models (i.e., random-walk priors).
-That is, within each country, each year's value of public gender egalitarianism is a function of the previous year's estimate plus some noise.
-These dynamic models smooth the estimates of public gender egalitarianism over time and allows estimation even in years for which no survey data is available.
-For more detail on the DCPO model, see Appendix C and @Solt2020c [, 3-8].
+To address the sparsity of the source data---the fact that there are gaps in the time series of each country, and even many observed country-years have only one or few observed items---DCPO uses simple local-level dynamic linear models, i.e., random-walk priors, for each country.
+That is, within each country, each year's value of public gender egalitarianism is modeled as the previous year's estimate plus some noise.
+These dynamic models smooth the estimates of public gender egalitarianism over time and allow estimation even in years for which little or no survey data is available, albeit at the expense of greater measurement uncertainty.
+
 
 
 ```{r dcpo, eval=FALSE}
