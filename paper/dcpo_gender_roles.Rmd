@@ -373,10 +373,10 @@ But this is also true across questions.
 For example, we might deduce that strongly disagreeing that "on the whole, men make better business executives than women do" expresses even more egalitarianism than strongly agreeing merely that both spouses should have paid employment.
 Second, the DCPO model accounts for each question's _dispersion_, its noisiness with regard to our latent trait.
 The lower a question's dispersion, the better that changes in responses to the question map onto changes in public gender egalitarianism.
-Together, the difficulty and dispersion parameters work to generate comparable estimates of the latent variable of public gender egalitarianism from the available but incomparable source data.
+Together, the model's difficulty and dispersion estimates work to generate comparable estimates of the latent variable of public gender egalitarianism from the available but incomparable source data.
 
 To address the sparsity of the source data---the fact that there are gaps in the time series of each country, and even many observed country-years have only one or few observed items---DCPO uses simple local-level dynamic linear models, i.e., random-walk priors, for each country.
-That is, within each country, each year's value of public gender egalitarianism is modeled as the previous year's estimate plus some noise.
+That is, within each country, each year's value of public gender egalitarianism is modeled as the previous year's estimate plus a random shock.
 These dynamic models smooth the estimates of public gender egalitarianism over time and allow estimation even in years for which little or no survey data is available, albeit at the expense of greater measurement uncertainty.
 
 
@@ -473,7 +473,7 @@ bottom5 <- p1_data %>%
 
 ```
 
-We estimated the model using the `DCPO` package for R [@Solt2020a], running four chains for 4,000 iterations each, with the first half discarded as warmup and the remainder thinned by eight to leave us with 1,000 samples.
+We estimated the model using the `DCPO` package for R [@Solt2020a], running four chains for 4,000 iterations each, discarding the first half as warmup, and thinning the remainder by eight, which left us with 1,000 samples.
 The $\hat{R}$ diagnostic had a maximum value of 1.02, indicating the model converged.
 
 The dispersion parameters of the survey items indicate that all of them load well on the latent variable (see online Appendix A).
