@@ -3,6 +3,9 @@ title: 'Appendix to Public Gender Egalitarianism: A Dataset of Dynamic Comparati
   Public Opinion Toward Egalitarian Gender Roles in the Public Sphere'
 author: ""
 date: "`r format(Sys.time(), '%B %d, %Y')`"
+bibliography: dcpo_gender_roles.bib
+biblio-style: apsr
+linestretch: 1.1
 output: 
     pdf_document:
         toc: true
@@ -25,7 +28,7 @@ header-includes:
 ```{r setup, include=FALSE}
 options(tinytex.verbose = TRUE)
 
-knitr::opts_chunk$set(cache = TRUE, echo = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(cache = FALSE, echo = FALSE, message = FALSE, warning = FALSE)
 
 # If `DCPOtools` is not yet installed:
 # remotes::install_github("fsolt/DCPOtools")
@@ -43,8 +46,12 @@ set.seed(324)
 
 \pagebreak
 # Appendix A: Survey Items Used to Estimate Public Gender Egalitarianism 
+Question text may vary slightly across survey datasets, but not, roughly speaking, by more than the translation differences across languages found within the typical cross-national survey dataset.
+Lower values of dispersion ($\alpha$) indicate questions that better identify publics with more public gender egalitarianism from those with less.
+Items have one less difficulty score ($\beta$) than the number of response categories.
+Survey dataset codes correspond to those used in the `DCPOtools` R package; they appear in decreasing order of country-years contributed.
 
-```{r pge_items}
+```{r pge_items, cache=TRUE}
 load(here::here("data", "dcpo_input.rda"))
 load(here::here("data", "dcpo_output.rda"))
 
@@ -56,8 +63,8 @@ public_items <- read_csv(here::here("data-raw", "public_items.csv"),
 
 process_dcpo_input_raw <- function(dcpo_input_raw_df) {
   dcpo_input_raw_df %>% 
-  DCPOtools::with_min_yrs(2) %>% 
-  DCPOtools::with_min_cy(5) %>% 
+  with_min_yrs(2) %>% 
+  with_min_cy(5) %>% 
   group_by(country) %>% 
   mutate(cc_rank = n()) %>% 
   ungroup() %>% 
@@ -94,25 +101,24 @@ beta_results <- DCPO::summarize_dcpo_results(dcpo_input,
     transmute(item, difficulties)
                                     
 items_summary <- dcpo_input_raw_poliwork1 %>%
-    dplyr::select(country, year, item, survey) %>%
-    distinct() %>%
-    separate(survey, c("surv1", "surv2", "surv3"), sep=", ", fill = "left") %>%
-    pivot_longer(cols = starts_with("surv"), values_to = "survey") %>%
-    filter(!is.na(survey)) %>% 
-    group_by(item, survey) %>% 
-    summarize(n_cy = n()) %>% 
-    arrange(item, -n_cy) %>% 
-    group_by(item) %>% 
-    mutate(total_cy = sum(n_cy),
-           all_surveys = paste0(survey, collapse = ", ")) %>% 
-    slice(1) %>% 
-    ungroup() %>% 
-    left_join(pge_items %>% select(item, survey, question_text),
-              by = c("item", "survey")) %>% 
-    left_join(alpha_results, by = "item") %>% 
-    left_join(beta_results, by = "item") %>% 
-    arrange(-total_cy) %>% 
-    select(-survey, -n_cy)
+  dplyr::select(country, year, item, survey) %>%
+  distinct() %>%
+  separate(survey, c("surv1", "surv2", "surv3"), sep=", ", fill = "left") %>%
+  pivot_longer(cols = starts_with("surv"), values_to = "survey") %>%
+  filter(!is.na(survey)) %>% 
+  group_by(item) %>% 
+  mutate(all_surveys = paste0(unique(survey), collapse = ", ")) %>% 
+  ungroup() %>% 
+  distinct(country, year, item, .keep_all = TRUE) %>% 
+  group_by(item) %>% 
+  mutate(n_cy = n()) %>% 
+  ungroup() %>%
+  distinct(item, n_cy, all_surveys) %>% 
+  left_join(public_items %>% select(item, question_text),
+            by = "item") %>% 
+  left_join(alpha_results, by = "item") %>% 
+  left_join(beta_results, by = "item") %>% 
+  arrange(-n_cy)
 ```
 
 ```{r pge_items_table1}  
@@ -120,7 +126,7 @@ pge_items_table <- function(x) {
     items_summary %>% 
         slice(x) %>% 
         transmute(`Survey\nItem\nCode` = item,
-                  `Country-Years` = as.character(total_cy),
+                  `Country-Years` = as.character(n_cy),
                   `Question Text` = str_replace(question_text, "([^(]*)\\(.*", "\\1"),
                   `Dispersion` = dispersion,
                   `Difficulties`= difficulties,
@@ -156,7 +162,7 @@ pge_items_table(31:41)
 pge_items_table(42:50)
 ```
 \vspace{-.95in}
-Notes: Question text may vary slightly across survey datasets, but not, roughly speaking, by more than the translation differences across languages found within the typical cross-national survey dataset.  Lower values of dispersion ($\alpha$) indicate questions that better identify publics with more public gender egalitarianism from those with less.  Items have one difficulty score ($\beta$) for each cutpoint; that is, one less than the number of response categories.  Survey dataset codes correspond to those used in the `DCPOtools` R package; they appear in decreasing order of country-years contributed.
+
 
 \pagebreak
 # Appendix B: Excluded Survey Items
@@ -176,18 +182,55 @@ Usefully, this decision also allows, when the available survey data permits, fut
 # Appendix C: The DCPO Model
 
 There has been a recent blossoming of scholarship developing latent variable models of public opinion based on cross-national survey data [see @Claassen2019; @Caughey2019; @McGann2019; @Kolczynska2020].
-To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion (DCPO) model presented in @Solt2020c.
+To estimate public gender egalitarianism across countries and over time, we draw on the latest of these methods that is appropriate for data that is not only incomparable but also sparse, the Dynamic Comparative Public Opinion (DCPO) model presented in @Solt2020c.^[
 @Solt2020c demonstrates that the DCPO model provides a better fit to survey data than the models put forward by @Claassen2019 or @Caughey2019.
 The @McGann2019 model depends on dense survey data unlike the sparse data on public gender egalitarianism described in the preceding section.
-@Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable not only when the available survey data are dense but also when ancillary data on population characteristics are available, so it is similarly inappropriate to this application.
+@Kolczynska2020 is the very most recent of the five works and builds on each of the others, but the MRP approach developed in that piece is suitable not only when the available survey data are dense but also when ancillary data on population characteristics are available, so it is similarly inappropriate to this application.]
+The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item-bias terms.
 
-The DCPO model is a population-level two-parameter ordinal logistic item response theory (IRT) model with country-specific item bias.
+DCPO models the total number of survey responses expressing at least as much public gender egalitarianism as response category $r$ to each question $q$ in country $k$ at time $t$, $y_{ktqr}$, out of the total number of respondents surveyed, $n_{ktqr}$, using the beta-binomial distribution:
 
-That is, $\eta_{ktqr}$, the expected probability that a random person in country $k$ at time $t$ answers question $q$ with a response at least as positive as response $r$, is estimated as varying with the mean and standard deviation of the unbounded latent trait of public opinion, $\bar{\theta'}_{kt}$ and $\sigma_{kt}$; with the dispersion, $\alpha_{q}$, of the question and the difficulty, $\beta_{qr}$, of the question's response category; as well as with a term to capture how responses to particular questions may be biased in particular countries, $\delta_{kq}$: $\eta_{ktqr} = \textrm{logit}^{-1}(\frac{\bar{\theta'}_{kt} - (\beta_{qr} + \delta_{kq})}{\sqrt{\alpha_{q}^2 + (1.7*\sigma_{kt})^2}}) \label{eq:dcpo}$.
+\begin{equation}
+a_{ktqr} = \phi\eta_{ktqr} \label{eq:bb_a}
+\end{equation}
+\begin{equation}
+b_{ktqr} = \phi(1 - \eta_{ktqr}) \label{eq:bb_b}
+\end{equation}
+\begin{equation}
+y_{ktqr} \sim \textrm{BetaBinomial}(n_{ktqr}, a_{ktqr}, b_{ktqr}) \label{eq:betabinomial}
+\end{equation}
 
-A beta-binomial distribution is used to model the observed survey data given $\eta_{ktqr}$, random-walk priors are used to account for the dynamics in $\bar{\theta'}_{kt}$ and $\sigma_{kt}$, and weakly informative priors are placed on the other parameters.
+where $\phi$ represents an overall dispersion parameter to account for additional sources of survey error beyond sampling error and $\eta_{ktqr}$ is the expected probability that a random person in country $k$ at time $t$ answers question $q$ with a response at least as positive as response $r$.^[
+The ordinal responses to question $q$ are coded to range from 1 (expressing the least public gender egalitarianism) to $R$ (expressing the most public gender egalitarianism), and $r$ takes on all values greater than 1 and less than or equal to $R$.]
 
-Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the unit interval and so give the bounded mean of latent public opinion, $\bar{\theta}_{kt}$, which is our parameter of interest here [see @Solt2020c, 3-8].
+This expected probability, $\eta_{ktqr}$, is in turn estimated as follows:
+
+\begin{equation}
+\eta_{ktqr} = \textrm{logit}^{-1}(\frac{\bar{\theta'}_{kt} - (\beta_{qr} + \delta_{kq})}{\sqrt{\alpha_{q}^2 + (1.7*\sigma_{kt})^2}}) \label{eq:dcpo}
+\end{equation}
+
+In this equation, $\beta_{qr}$ represents the difficulty of response $r$ to question $q$, that is, the degree of public gender egalitarianism the response expresses.  The $\delta_{kq}$ term represents country-specific item bias: the extent to which all responses to a particular question $q$ may be more (or less) difficult in a given country $k$ due to translation issues, cultural differences in response styles, or other idiosyncrasies that render the same survey item not equivalent across countries.^[
+Estimating $\delta_{kq}$ requires repeated administrations of question $q$ in country $k$, so
+when responses to question $q$ are observed in country $k$ in only a single year, the DCPO model sets $\delta_{kq}$ to zero by assumption, increasing the error of the model by any country-item bias that is present.
+Questions that are asked repeatedly over time in only a single country pose no risk of country-specific item bias, so $\delta_{kq}$ in such cases are also set to zero.]
+The dispersion of question $q$, its noisiness in relation to our latent variable, is $\alpha_{q}$. The mean and standard deviation of the unbounded latent trait of public gender egalitarianism are $\bar{\theta'}_{kt}$ and $\sigma_{kt}$, respectively.
+
+Random-walk priors are used to account for the dynamics in $\bar{\theta'}_{kt}$ and $\sigma_{kt}$, and weakly informative priors are placed on the other parameters.^[
+The dispersion parameters $\alpha_{q}$ are drawn from standard half-normal prior distributions, that is, the positive half of N(0, 1).
+The first difficulty parameters for each question, $\beta_{q1}$, are drawn from standard normal prior distributions, and the differences between $\beta$s for each $r$ for the same question $q$ are drawn from standard half-normal prior distributions.
+The item-bias parameters $\delta_{kq}$ receive normally-distributed hierarchical priors with mean 0 and standard deviations drawn from standard half-normal prior distributions.
+The initial value of the mean unbounded latent trait for each country, $\bar{\theta'}_{k1}$, is assigned a standard normal prior, as are the transition variances $\sigma_{\bar{\theta'}}^2$ and $\sigma_{\sigma}^2$; the initial value of the standard deviation of the unbounded latent trait for each country, $\sigma_{k1}$, is drawn from a standard lognormal prior distribution.
+The overall dispersion, $\phi$, receives a somewhat more informative prior drawn from a gamma(4, 0.1) distribution that yields values that are well scaled for that parameter.]
+The dispersion parameters $\alpha_q$ are constrained to be positive and all survey responses are coded with high values indicating more public gender egalitarianism to fix direction.
+The difficulty $\beta$ of "disagree" (on the four-point, "strongly agree" to "strongly disagree" scale) to the statement "On the whole, men make better political leaders than women do" is set to 1 to identify location, and for each question $q$ the difficulties for increasing response categories $r$ are constrained to be increasing.
+The sum of $\delta_{kq}$ across all countries $k$ is set to zero for each question $q$:
+
+\begin{equation}
+\sum_{k = 1}^K \delta_{kq} = 0
+\end{equation}
+
+Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the unit interval and so give the bounded mean of latent public gender egalitarianism, $\bar{\theta}_{kt}$, which is our parameter of interest here [see @Solt2020c, 3-8].
+
 
 
 \pagebreak
@@ -195,7 +238,7 @@ Finally, the logistic function is used to transform $\bar{\theta'}_{kt}$ to the 
 
 To provide further confirmation of the unidimensionality of public gender egalitarianism, we used the survey items listed in Appendix A to estimate separate indices of gender egalitarianism in politics and in the workplace.  As shown in Figure \ref{pge_pwe_corr_plot}, these two indices both correlate very highly with the PGE scores and with each other, reinforcing the conclusion that public gender egalitarianism exists as a single dimension across countries and years.
 
-```{r create_pwe_indices}
+```{r create_pwe_indices, cache=TRUE}
 dcpo_input_raw_public <- read_csv(here::here("data", "dcpo_input_raw_public.csv"),
                                   col_types = "cdcddcd")
 public_items <- read_csv(here::here("data-raw", "public_items.csv"),
@@ -274,7 +317,7 @@ save(dcpo_input_workplace, file = here::here("data", "dcpo_input_workplace.rda")
 save(dcpo_output_workplace, file = here::here("data", "dcpo_output_workplace.rda"))
 ```
 
-```{r theta_res_political}
+```{r theta_res_political, cache=TRUE}
 load(here::here("data", "dcpo_input_political.rda"))
 load(here::here("data", "dcpo_output_political.rda"))
 
@@ -322,7 +365,7 @@ theta_res_political <- rstan::extract(dcpo_output_political, pars = "theta") %>%
         })
 ```
 
-```{r theta_res_workplace}
+```{r theta_res_workplace, cache=TRUE}
 load(here::here("data", "dcpo_input_workplace.rda"))
 load(here::here("data", "dcpo_output_workplace.rda"))
 
@@ -370,7 +413,7 @@ theta_res_workplace <- rstan::extract(dcpo_output_workplace, pars = "theta") %>%
         })
 ```
 
-```{r pge_pwe_corr}
+```{r pge_pwe_corr, cache=TRUE}
 load(here::here("data", "pge.rda"))
 load(here::here("data", "dcpo_input.rda"))
 
@@ -411,3 +454,7 @@ colnames(pge_pwe_corr_matrix) <- c("Public\nGender\nEgalitarianism", "Political\
 ```{r pge_pwe_corr_plot, fig.width=7, fig.cap = "Pairwise Correlations Among PGE Index and Separate Political and Workplace Egalitarianism Indices  \\label{pge_pwe_corr_plot}"}
 corrplot::corrplot.mixed(pge_pwe_corr_matrix, tl.col = "black", tl.cex = .8, upper = "ellipse")
 ```
+
+\pagebreak
+# References  {-}
+
