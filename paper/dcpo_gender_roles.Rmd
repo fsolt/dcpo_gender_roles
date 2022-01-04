@@ -350,7 +350,7 @@ At the other end of the spectrum, `r n_data_poorest` countries---`r data_poorest
 The upper right panel shows the twelve countries with the most years observed; this group is similar, but with `r adding` joining the list and `r dropping` dropping off.
 The bottom panel counts the countries observed in each year and reveals just how few relevant survey items were asked before 1990.
 Country coverage reached its peak in `r y_peak_year`, when respondents in `r y_peak_nn` countries were asked items about gender egalitarianism in the public sphere.
-In the next section, we describe how we are able to make use of all of this sparse and incomparable survey data to generate the PGE scores using a latent variable model.
+In the next section, we describe how we are able to make use of all of this sparse and incomparable survey data to generate complete, comparable time-series PGE scores using a latent variable model.
 
 ```{r dcpo_input_public}
 dcpo_input_poliwork <- DCPOtools::format_dcpo(dcpo_input_raw_poliwork1,
@@ -368,7 +368,7 @@ For a detailed description of the DCPO model, see online Appendix C and @Solt202
 
 The DCPO model accounts for the incomparability of different survey questions with two parameters.
 First, it incorporates the _difficulty_ of each question's responses, that is, how much public gender egalitarianism is indicated by a given response. 
-That each response evinces more or less of our trait is most easily seen with regard to the ordinal responses to the same question: strongly agreeing with the statement "both the husband and wife should contribute to household income," exhibits more public gender egalitarianism than responding "agree," which in turn is more egalitarian than responding "disagree" or "strongly disagree."
+That each response evinces more or less of our latent trait is most easily seen with regard to the ordinal responses to the same question: strongly agreeing with the statement "both the husband and wife should contribute to household income," exhibits more public gender egalitarianism than responding "agree," which in turn is more egalitarian than responding "disagree," which is a more egalitarian response than "strongly disagree."
 But this is also true across questions.
 For example, strongly disagreeing that "on the whole, men make better business executives than women do" likely expresses even more egalitarianism than strongly agreeing merely that both spouses should have paying jobs.
 Second, the DCPO model accounts for each question's _dispersion_, its noisiness with regard to our latent trait.
