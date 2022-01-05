@@ -133,7 +133,8 @@ dcpo_input_raw_private1 <- process_dcpo_input_raw(dcpo_input_raw_private)
 dcpo_input_raw_balance1 <- process_dcpo_input_raw(dcpo_input_raw_balance)
 dcpo_input_raw_dominance1 <- process_dcpo_input_raw(dcpo_input_raw_dominance)
 
-n_surveys <- surveys_egr %>%
+n_surveys <- surveys_egr %>% 
+  filter(agreed == 1) %>%
   distinct(survey) %>% 
   nrow()
 
