@@ -39,6 +39,9 @@ knitr::opts_chunk$set(cache = FALSE, echo = FALSE, message = FALSE, warning = FA
 # If `DCPOtools` is not yet installed:
 # remotes::install_github("fsolt/DCPOtools")
 
+# If development version of `DCPO` is not yet installed:
+# remotes::install_github("fsolt/DCPO")
+
 library(DCPOtools)
 library(DCPO)
 library(tidyverse)
