@@ -55,7 +55,7 @@ set.seed(324)
 
 \pagebreak
 # Appendix A: Survey Items Used to Estimate Public Gender Egalitarianism and Their Distribution
-```{r egr_summary_stats, cache = TRUE, cache.extra = tools::md5sum(here::here("data-raw", "dcpo_input_raw_public.csv"))}
+```{r egr_summary_stats, cache = FALSE, cache.extra = tools::md5sum(here::here("data-raw", "dcpo_input_raw_public.csv"))}
 dcpo_input_raw_public <- read_csv(here::here("data", "dcpo_input_raw_public.csv"),
                                   col_types = "cdcddcd")
 
@@ -64,12 +64,13 @@ public_items <- read_csv(here::here("data-raw", "public_items.csv"),
 
 process_dcpo_input_raw <- function(dcpo_input_raw_df) {
   dcpo_input_raw_df %>% 
-  with_min_yrs(2) %>% 
-  with_min_cy(5) %>% 
-  group_by(country) %>% 
-  mutate(cc_rank = n()) %>% 
-  ungroup() %>% 
-  arrange(-cc_rank)
+    with_min_yrs(2) %>% 
+    with_min_cy(5) %>% 
+    filter(year >= 1972) %>% 
+    group_by(country) %>% 
+    mutate(cc_rank = n()) %>% 
+    ungroup() %>% 
+    arrange(-cc_rank)
 } 
 
 dcpo_input_raw_public1 <- process_dcpo_input_raw(dcpo_input_raw_public) %>% 
