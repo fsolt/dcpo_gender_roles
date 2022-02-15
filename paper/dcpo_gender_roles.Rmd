@@ -116,12 +116,13 @@ public_items <- read_csv(here::here("data-raw", "public_items.csv"),
 
 process_dcpo_input_raw <- function(dcpo_input_raw_df) {
   dcpo_input_raw_df %>% 
-  with_min_yrs(2) %>% 
-  with_min_cy(5) %>% 
-  group_by(country) %>% 
-  mutate(cc_rank = n()) %>% 
-  ungroup() %>% 
-  arrange(-cc_rank)
+    with_min_yrs(2) %>% 
+    with_min_cy(5) %>% 
+    filter(year >= 1972) %>% 
+    group_by(country) %>% 
+    mutate(cc_rank = n()) %>% 
+    ungroup() %>% 
+    arrange(-cc_rank)
 } 
 
 dcpo_input_raw_public1 <- process_dcpo_input_raw(dcpo_input_raw_public) %>% 
@@ -178,6 +179,8 @@ back_to_numeric <- function(string_number) {
     str_replace(",", "") %>% 
     as.numeric()
 }
+
+covered_share_of_spanned <- {back_to_numeric(n_cy)/back_to_numeric(spanned_cy) * 100}
 ```
 
 In this letter, we present the Public Gender Egalitarianism (PGE) dataset, which is based on the host of national and cross-national survey data available and recent advances in latent variable modeling of public opinion that allow us to make use of this sparse and incomparable data.
@@ -194,7 +197,7 @@ The complete list of public gender egalitarianism survey items is included in on
 Together, the survey items in the source data were asked in `r n_countries` different countries in at least two time points over `r n_years` years, `r year_range`, yielding a total of `r n_cyi` country-year-item observations.
 Observations for every year in each country surveyed would number `r total_cy`, and a complete set of country-year-items would encompass `r {n_countries * n_years * n_items} %>% scales::comma()` observations.
 Compared to this complete set of country-year-items, the available data can be seen to be very, very sparse.
-From a more optimistic standpoint, we note there there are `r n_cy` country-years in which we have at least _some_ information about the public gender egalitarianism of the population, that is, some `r {back_to_numeric(n_cy)/back_to_numeric(spanned_cy) * 100} %>% round()`% of the `r spanned_cy` country-years spanned by the data we collected.
+From a more optimistic standpoint, we note there there are `r n_cy` country-years in which we have at least _some_ information about the public gender egalitarianism of the population, that is, some `r round(covered_share_of_spanned)`% of the `r spanned_cy` country-years spanned by the data we collected.
 But there can be no denying Claveria's [-@Claveria2014] observation that the many different survey items employed renders these data incomparable and difficult to use together.
 
 ```{r item_and_country_plots, fig.height = 3.5, fig.cap = "Countries and Years with the Most Observations in the PGE Source Data \\label{item_country_plots}"}
@@ -495,17 +498,31 @@ countries <- c("Norway", "Australia", "United States", "Argentina",
 countries2 <- countries %>% 
   str_replace("United States", "U.S.")
 
-theta_results %>%
+alpha_results <- DCPO::summarize_dcpo_results(dcpo_input,
+                                        dcpo_output,
+                                        "alpha")
+
+c_rawdata <- dcpo_input$data %>% 
+  filter(country %in% countries) %>%
+  mutate(mean = y_r/n_r,
+         country = str_replace(country, "United States", "U.S.") %>% 
+           factor(levels = countries2)) %>% 
+  left_join(alpha_results %>% select(question, alpha_mean = mean), by = "question")
+
+c_res <- theta_results %>% 
   filter(country %in% countries) %>%
   mutate(country = str_replace(country, "United States", "U.S.") %>% 
-           factor(levels = countries2)) %>% 
-  ggplot(aes(x = year, y = mean)) +
-  geom_ribbon(aes(ymin = `10%`, ymax = `90%`, linetype=NA), alpha = .25) +
-  geom_line() +
+           factor(levels = countries2))
+
+ggplot(data = c_rawdata, aes(x = year, y = mean)) +
+  geom_line(aes(color = item, alpha = 1/alpha_mean)) +
+  geom_point(aes(color = item, alpha = 1/alpha_mean)) +
   theme_bw() +
-  theme(legend.position="none") +
+  theme(legend.position = "none") +
   coord_cartesian(xlim = c(1980, 2020), ylim = c(0, 1)) +
   labs(x = NULL, y = "PGE Scores") +
+  geom_ribbon(data = c_res, aes(ymin = `10%`, ymax = `90%`, linetype=NA), alpha = .25) +
+  geom_line(data = c_res) +
   facet_wrap(~country, nrow = 2) +
   theme(axis.text.x  = element_text(size=7,
                                     angle = 90,
