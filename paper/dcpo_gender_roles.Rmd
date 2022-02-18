@@ -398,7 +398,7 @@ dcpo_output <- dcpo(dcpo_input,
 ```
 
 ```{r dcpo_results, cache=TRUE}
-load(here::here("data", "poliwork_polileader4_2_4k_06-23.rda"))
+load(here::here("data", "poliwork_polileader4_2_4k_02_16.rda"))
 
 save(dcpo_input, file = here::here("data", "dcpo_input.rda"))
 
