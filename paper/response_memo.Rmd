@@ -87,11 +87,12 @@ We corrected each of these infelicities with gratitude.
 
 1. **Estimating Public Gender Egalitarianism** R2 suggested that our description of the model could be made more accessible given the broad audience of the _BJPS_ and the work's potential for use in the classroom.
 We agree entirely.
-We revised these paragraphs carefully for readability, shifting much of the technical discussion to an online appendix and instead elaborating on how the model's terms address the twin limitations of the source survey data that we raise in the paper's previous section, their incomparability and their sparsity.
+We revised these paragraphs carefully for readability, shifting much of the technical discussion to Appendix C and instead elaborating on how the model's terms address the twin limitations of the source survey data that we raise in the paper's previous section, their incomparability and their sparsity.
+
+1. **Estimating Public Gender Egalitarianism** R1 requested "more description about how the estimates were obtained," specifically details about iterations, chains, warmup, thinning, and convergence.  We added a short paragraph with this information at p5.
 
 Thank you once more for the opportunity to make revisions.
-We think the paper is much stronger as a result of your comments; in fact, with your assistance, we think it lives up to R3's assessment as an "exemplary demonstration" of the role of replication in scientific progress.
-We hope you all agree.
+We think the paper is much stronger as a result of your comments, and we hope you agree.
 
 # References
 
