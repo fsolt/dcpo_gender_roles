@@ -82,6 +82,9 @@ We set out a list of the specific points raised in the reviews and our responses
 We clarified that we are drawing on both cross-national and single-country surveys at the top of page 2.
 We also revised the sentence on peak country coverage (at the bottom of p3) that prompted R2's question in an effort to avoid any confusion.
 
+1. **Examining the Source Data on Public Gender Egalitarianism** R1 noted three spots in the first few pages where our language was respectively unclear, mistaken, and repeated.
+We corrected each of these infelicities with gratitude.
+
 1. **Estimating Public Gender Egalitarianism** R2 suggested that our description of the model could be made more accessible given the broad audience of the _BJPS_ and the work's potential for use in the classroom.
 We agree entirely.
 We revised these paragraphs carefully for readability, shifting much of the technical discussion to an online appendix and instead elaborating on how the model's terms address the twin limitations of the source survey data that we raise in the paper's previous section, their incomparability and their sparsity.
