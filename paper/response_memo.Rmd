@@ -1,0 +1,95 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    keep_tex: true
+    fig_caption: true
+    latex_engine: xelatex
+    template: ../svm-latex-ms2.tex
+title: |
+    | Public Gender Egalitarianism: A Dataset of Dynamic Comparative
+  Public Opinion Toward Egalitarian Gender Roles in the Public Sphere
+    | Memo to Reviewers
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+fontsize: 11pt
+spacing: single
+bibliography: dcpo_gender_roles.bib
+biblio-style: apsr
+citecolor: black
+linkcolor: black
+endnote: no
+header-includes:
+      - \usepackage{array}
+      - \usepackage{caption}
+      - \usepackage{graphicx}
+      - \usepackage{siunitx}
+      - \usepackage{colortbl}
+      - \usepackage{multirow}
+      - \usepackage{hhline}
+      - \usepackage{calc}
+      - \usepackage{tabularx}
+      - \usepackage{threeparttable}
+      - \usepackage{wrapfig}
+---
+
+```{r setup, include=FALSE}
+options(tinytex.verbose = TRUE)
+
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  dpi = 300)
+
+# If you haven't install `DCPOtools`
+# remotes::install_github("fsolt/DCPOtools")
+
+if (!require(pacman)) install.packages("pacman")
+library(pacman)
+library(patchwork)
+library(rsdmx)
+
+# load all the packages you will use below 
+p_load(
+  dataverse, # data scraping
+  DCPOtools,
+  boot, plm, # analysis
+  flextable, kableExtra, modelsummary, # tabulation
+  gridExtra,
+  latex2exp, # visualization
+  rstan, # Bayesian estimation
+  broom, tidyverse, janitor, # data wrangling
+  dotwhisker # visualization
+) 
+
+# Functions preload
+set.seed(313)
+
+get_legend<-function(myggplot){
+  tmp <- ggplot_gtable(ggplot_build(myggplot))
+  leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box")
+  legend <- tmp$grobs[[leg]]
+  return(legend)
+}
+
+```
+
+
+Thank you for your helpful comments, as well as your general enthusiasm for this piece.
+We set out a list of the specific points raised in the reviews and our responses to them below, roughly in the order they appear in the text:
+
+1. **Introduction** R2 asked if we were "only using cross-national surveys or whether you also incorporate single-country surveys."
+We clarified that we are drawing on both cross-national and single-country surveys at the top of page 2.
+We also revised the sentence on peak country coverage (at the bottom of p3) that prompted R2's question in an effort to avoid any confusion.
+
+1. **Estimating Public Gender Egalitarianism** R2 suggested that our description of the model could be made more accessible given the broad audience of the _BJPS_ and the work's potential for use in the classroom.
+We agree entirely.
+We revised these paragraphs carefully for readability, shifting much of the technical discussion to an online appendix and instead elaborating on how the model's terms address the twin limitations of the source survey data that we raise in the paper's previous section, their incomparability and their sparsity.
+
+Thank you once more for the opportunity to make revisions.
+We think the paper is much stronger as a result of your comments; in fact, with your assistance, we think it lives up to R3's assessment as an "exemplary demonstration" of the role of replication in scientific progress.
+We hope you all agree.
+
+# References
+
+<div id="refs"></div>
