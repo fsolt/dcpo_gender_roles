@@ -344,9 +344,9 @@ n_data_poorest <- {data_poorest %>%
 (countries_plot + cby_plot) / (ybc_plot)
 ```
 
-Consider the most frequently asked item in the data we collected, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do."
+Consider the most frequently asked item in these data, which asks respondents whether they strongly agree, agree, disagree, or strongly disagree with the statement "On the whole, men make better political leaders than women do."
 Employed by the Americas Barometer, the Arab Barometer, the Eurobarometer, the Latinobarómetro, the Pew Research Center, and the World Values Survey, this question was asked in a total of `r polileader4_cy` different country-years.
-That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the country-years spanned by our data---and remember, this is the _most common_ survey item---again underscores just how sparse and incomparable the available public opinion data is on this topic.
+That this constitutes only `r {polileader4_cy*100/(spanned_cy %>% str_replace(",", "") %>% as.numeric())} %>% round()`% of the country-years spanned by our data---and remember, this is the _most common_ survey item---again underscores just how sparse the available public opinion data is on this topic.
 
 The upper left panel of Figure&nbsp;\ref{item_country_plots} shows the dozen countries with the highest count of country-year-item observations.
 The United States, with `r us_obs` observations, is far and away the best represented country in the source data, followed by `r others`.
@@ -379,7 +379,7 @@ Second, the DCPO model accounts for each question's _dispersion_, its noisiness 
 The lower a question's dispersion, the better that changes in responses to the question map onto changes in public gender egalitarianism.
 Together, the model's difficulty and dispersion estimates work to generate comparable estimates of the latent variable of public gender egalitarianism from the available but incomparable source data.
 
-To address the sparsity of the source data---the fact that there are gaps in the time series of each country, and even many observed country-years have only one or few observed items---DCPO uses simple local-level dynamic linear models, i.e., random-walk priors, for each country.
+To address the sparsity of the source data---the fact that there are gaps in the time series of each country, and even many observed country-years have only one or few observed items---DCPO uses local-level dynamic linear models, i.e., random-walk priors, for each country.
 That is, within each country, each year's value of public gender egalitarianism is modeled as the previous year's estimate plus a random shock.
 These dynamic models smooth the estimates of public gender egalitarianism over time and allow estimation even in years for which little or no survey data is available, albeit at the expense of greater measurement uncertainty.
 
@@ -477,7 +477,7 @@ bottom5 <- p1_data %>%
 
 ```
 
-We estimated the model using the `DCPO` package for R [@Solt2020a], running four chains for 4,000 iterations each, discarding the first half as warmup, and thinning the remainder by eight, which left us with 1,000 samples.
+We estimated the model on our source data using the `DCPO` package for R [@Solt2020a], running four chains for 4,000 iterations each, discarding the first half as warmup, and thinning the remainder by eight, which left us with 1,000 samples.
 The $\hat{R}$ diagnostic had a maximum value of 1.02, indicating the model converged.
 
 The dispersion parameters of the survey items indicate that all of them load well on the latent variable (see online Appendix A).
@@ -514,9 +514,10 @@ c_res <- theta_results %>%
   mutate(country = str_replace(country, "United States", "U.S.") %>% 
            factor(levels = countries2))
 
-ggplot(data = c_rawdata, aes(x = year, y = mean)) +
-  geom_line(aes(color = item, alpha = 1/alpha_mean)) +
-  geom_point(aes(color = item, alpha = 1/alpha_mean)) +
+# ggplot(data = c_rawdata, aes(x = year, y = mean)) +
+#   geom_line(aes(color = item, alpha = 1/alpha_mean)) +
+#   geom_point(aes(color = item, alpha = 1/alpha_mean)) +
+ggplot(data = c_res, aes(x = year, y = mean)) +
   theme_bw() +
   theme(legend.position = "none") +
   coord_cartesian(xlim = c(1980, 2020), ylim = c(0, 1)) +
@@ -772,12 +773,11 @@ internal_plot + internal_cs_plot + internal_us_plot +
 
 Such future research, however, depends on the validity of the PGE scores.
 Like @Caughey2019 [684-685], we provide evidence of our measure's validity with convergent validation and construct validation.
-Figure&nbsp;\ref{conv_plot} displays our demonstrations of convergent validation.
 Convergent validation refers to showing that a measure is empirically associated with alternative indicators of the same concept [@Adcock2001, 540].
-Here, we compare PGE scores to responses to individual survey items that were included in the source data, that is, we provide an 'internal' validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
-In the left panel, we examine the four-point question on political leaders mentioned above, the most common item in the source data across all country-years.
-Then, in the center panel, we look at the question that provides the most data-rich cross-section, which asked whether respondents felt "men generally make better political leaders than women" and was included in Pew Global's Spring 2007 survey.
-Finally, in the right panel, to evaluate how well the PGE scores capture change over time, we focus on the item with the largest number of observations for a single country, which asked respondents to the U.S. General Social Survey whether they agreed or disagreed that "most men are better suited emotionally for politics than are most women."
+Here, we compare PGE scores to responses to individual source-data survey items that were used to generate our estimates, that is, we provide an 'internal' validation test [see, e.g., @Caughey2019, 689; @Solt2020c, 10].
+In the left panel of Figure&nbsp;\ref{conv_plot}, we examine the four-point question on political leaders mentioned above, the most common item in the source data across all country-years.
+Then, in the center panel, we look at the question that provides the most data-rich cross-section in the source data, which asked whether respondents felt "men generally make better political leaders than women" and was included in Pew Global's Spring 2007 survey.
+Finally, in the right panel, to evaluate how well the PGE scores capture change over time, we focus on the item with the largest number of observations for a single country in the source data, which asked respondents to the U.S. General Social Survey whether they agreed or disagreed that "most men are better suited emotionally for politics than are most women."
 In every case, the correlations---estimated taking into account the uncertainty in the measures---are in the expected direction and very strong.
 <!-- ^[ -->
 <!-- The uncertainty in the PGE score and in the percentage in the population who would agree with the item does not substantially affect the correlation with the political leadership question, but failing to account for this uncertainty would overstate the correlation with the Pew item, at $R =$ `r with(internal_poliequal, cor(prop, mean)) %>% round(2)`, and the U.S. GSS item, at $R =$ `r with(internal_us, cor(prop, mean, use = "pairwise.complete.obs")) %>% round(2)`. -->
@@ -969,7 +969,7 @@ wantch_plot + familywoman_plot + psw_de_plot +
 ```
 
 We continue, then, to construct validation, which refers to demonstrating, for some _other_ concept believed causally related to the concept a measure seeks to represent, that the measure is empirically associated with measures of that other concept [@Adcock2001, 542].
-In Figure&nbsp;\ref{surv_const_plot}, we look to individual survey items from a related category of gender egalitarianism, namely questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
+In Figure&nbsp;\ref{surv_const_plot}, we look to individual survey items not included in our source data but tapping a related category of gender egalitarianism, namely questions that ask how women should balance opportunities in the public sphere with their traditional duties in the private sphere.
 Assuming that attitudes that women should prioritize housework and childcare over paid employment and politics---or convictions that there will be negative consequences if they do not---will lead to less gender egalitarian opinions with regard to these latter, public-sphere activities, evidence for this theoretical relationship will provide construct validation for the PGE scores.
 Exemplars of such items across all available country-years ("a job is alright but what most women really want is a home and children" from the WVS and EVS), in cross-section ("the most important role of a woman is to take care of her home and family" from the Eurobarometer 87.4), and in time series ("a pre-school child is likely to suffer if his or her mother works" from the German ALLBUS, WVS, and EVS) all show strong correlations with the PGE scores.
 
