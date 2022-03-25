@@ -78,7 +78,7 @@ get_legend<-function(myggplot){
 ```
 
 
-Thank you for your helpful comments, as well as your general enthusiasm for this piece.
+Thank you for your helpful comments, as well as your general enthusiasm for this piece and the dataset it presents.
 We set out a list of the specific points raised in the reviews and our responses to them below, roughly in the order they appear in the article:
 
 1. **Introduction** R2 asked if we were "only using cross-national surveys or whether you also incorporate single-country surveys."
@@ -122,7 +122,7 @@ We worked to reinforce throughout the piece that the 'source-data' questions---t
 We were particularly careful to underscore in this section that our internal test of convergent validation depicted in Figure 5 uses source-data items and that the initial test of construct validation shown in Figure 6 uses items _not_ used to generate the PGE estimates.
 
 1. **Appendix A: Survey Items Used to Estimate Public Gender Egalitarianism and Their Distribution** R1 and R2 both raised the issue of overlap and bridging among the survey items in the source data.
-Bridging and overlap have not been a concern in the literature on generating latent-variable estimates of public opinion across countries and over time from sparse data [see @Claassen2019; @Caughey2019; @Solt2020].
+Bridging and overlap have not been a concern in the literature on generating latent-variable estimates of public opinion across countries and over time from sparse data [see @Claassen2019; @Caughey2019; @Solt2020c].
 This is largely, we think, because the dynamic aspect of the models, that is, the random-walk prior that links the estimate for each country-year to the one before and the one following, are considered to do the work to tie together items that do not overlap (although this surely leads to increased uncertainty in these items' parameters for dispersion and difficulty). 
 Still, the most commonly observed item in our source data, `polileader4` ("On the whole, men make better political leaders than women do"), effectively serves as the bridge between the other items: it overlaps with 39 of the other 50 items, which together cover 91% of the observed country-years, and only a single item (covering 22 country-years) had no observations within a year of a `polileader4` observation.
 We have included a short discussion of overlap and bridging in Appendix A.
