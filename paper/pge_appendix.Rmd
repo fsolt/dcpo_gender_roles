@@ -140,7 +140,7 @@ The number of items observed in the source data for each country-year is plotted
 The PGE scores of country-years with more observed items are likely to be estimated more precisely.
 The estimates for country-years with fewer (or no) observed items rely more heavily (or entirely) on the random-walk prior and are therefore less certain.
 
-Overlap among items have not been a concern in the literature on generating latent-variable estimates of public opinion across countries and over time from sparse data, largely because the dynamic aspect of the models employed, that is, the random-walk prior, works to tie together items that do not overlap [see @Claassen2019; @Caughey2019; @Solt2020]. 
+Overlap among items have not been a concern in the literature on generating latent-variable estimates of public opinion across countries and over time from sparse data, largely because the dynamic aspect of the models employed, that is, the random-walk prior, works to tie together items that do not overlap [see @Claassen2019; @Caughey2019; @Solt2020c]. 
 Nevertheless, the most commonly observed item in the PGE source data, `polileader4`, effectively serves as the bridge between the other items: it has overlapping country-year observations with 39 of the other 50 items (which together cover 91% of the observed country-years), and only a single item (`politics4a`, which covers 22 country-years) had no observations within a year of a `polileader4` observation.
 
 
