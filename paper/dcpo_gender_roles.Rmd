@@ -10,12 +10,12 @@ title: "Public Gender Egalitarianism: A Dataset of Dynamic Comparative Public Op
 thanks: "Corresponding author: [frederick-solt@uiowa.edu](mailto:frederick-solt@uiowa.edu).  Current version: `r format(Sys.time(), '%B %d, %Y')`."
 author:
 - name: Byung-Deuk Woo
-  affiliation: University of Iowa
-- name: Lindsey Allemang
-  affiliation: University of Iowa
+  affiliation: Pohang University of Science and Technology
+- name: Lindsey A. Goldberg
+  affiliation: University of Florida
 - name: Frederick Solt
   affiliation: University of Iowa
-anonymous: true
+anonymous: false
 abstract: "Societal attitudes toward gender roles in the workplace and politics play a central part in theorizing on the difficulty women face in achieving political equality, but shortcomings in the available data have prevented direct examination of many implications of these theories. Drawing on recent advances in latent variable modeling of public opinion and a comprehensive collection of survey data, we present the Public Gender Egalitarianism dataset to address this need: comparable estimates of the public's attitudes on gender equality in the public sphere across more than one hundred countries over time. These PGE scores are strongly correlated with responses to individual survey items and with women's rates of participation in the labor force and corporate boards. We expect that the PGE data will become an invaluable source for broadly cross-national and longitudinal research on the causes and consequences of collective attitudes toward gender equality in politics and the economy. [149/150 words]"
 keywords: "gender roles, gender inequality, public opinion, political culture, measurement"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
