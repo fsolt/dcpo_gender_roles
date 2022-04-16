@@ -1,5 +1,5 @@
 ---
-title: 'Appendix to Public Gender Egalitarianism: A Dataset of Dynamic Comparative
+title: 'Supplementary Materials to Public Gender Egalitarianism: A Dataset of Dynamic Comparative
   Public Opinion Toward Egalitarian Gender Roles in the Public Sphere'
 author: ""
 date: "`r format(Sys.time(), '%B %d, %Y')`"
@@ -25,11 +25,11 @@ header-includes:
       - \usepackage{booktabs}
 ---
 
-\renewcommand{\thepage}{A\arabic{page}}
+\renewcommand{\thepage}{S\arabic{page}}
 \setcounter{figure}{0}
-\renewcommand{\thefigure}{A\arabic{figure}}
+\renewcommand{\thefigure}{S\arabic{figure}}
 \setcounter{table}{0}
-\renewcommand{\thetable}{A\arabic{table}}
+\renewcommand{\thetable}{S\arabic{table}}
 
 ```{r setup, include=FALSE}
 options(tinytex.verbose = TRUE)
